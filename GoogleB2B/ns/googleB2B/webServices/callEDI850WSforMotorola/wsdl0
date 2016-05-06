@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="submitEDI850Motorola" targetNamespace="http://tn-demo.c.sccs-pint-sandbox.internal/googleB2B.webServices:submitEDI850Motorola" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tn-demo.c.sccs-pint-sandbox.internal/googleB2B.webServices:submitEDI850Motorola" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tn-demo.c.sccs-pint-sandbox.internal/googleB2B.webServices:submitEDI850Motorola" xmlns:tns="http://tn-demo.c.sccs-pint-sandbox.internal/googleB2B.webServices:submitEDI850Motorola" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="sendEDI8504Motorola" type="tns:sendEDI8504Motorola"/>
+          <xsd:complexType name="sendEDI8504Motorola">
+            <xsd:sequence>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="submitEDI850Motorola_PortType_sendEDI8504Motorola">
+    <wsdl:part name="parameters" element="tns:sendEDI8504Motorola">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="submitEDI850Motorola_PortType">
+    <wsdl:operation name="sendEDI8504Motorola">
+      <wsdl:input message="tns:submitEDI850Motorola_PortType_sendEDI8504Motorola">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="googleB2B_webServices_submitEDI850Motorola_Binder" type="tns:submitEDI850Motorola_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="sendEDI8504Motorola">
+      <soap:operation soapAction="googleB2B_webServices_submitEDI850Motorola_Binder_sendEDI8504Motorola" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="googleB2B.webServices.submitEDI850Motorola">
+    <wsdl:port name="googleB2B_webServices_submitEDI850Motorola_Port" binding="tns:googleB2B_webServices_submitEDI850Motorola_Binder">
+      <soap:address location="http://localhost:6666/ws/googleB2B.webServices:submitEDI850Motorola/googleB2B_webServices_submitEDI850Motorola_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

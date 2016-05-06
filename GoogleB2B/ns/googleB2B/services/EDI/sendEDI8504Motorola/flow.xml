@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">MotorolaEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">IngramEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/MotorolaEDI;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">ISA~00~          ~00~          ~ZZ~987654322      ~ZZ~123456789      ~140831~1145~U~00200~900018759~0~P~&gt;*GS~PO~987654322~123456789~20140831~1145~17939~X~004010*ST~850~179390002*BEG~00~SA~98011~~08/31/2014*REF~AN~0*DTM~002~09/02/2014*N9~L1~PO HDR COMNTS*MSG~0*N1~ST~Avnet*N3~6700 West Morelos Place*N4~Bejing~North~85226~China*PO1~00010~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~00020~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~00030~4~EA~200.00~DI~VP~SKU-1003~MG~U-450102*PO1~00040~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~00050~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~00060~2~EA~150.00~DI~VP~SKU-1001~MG~U-450105*PO1~00070~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~00080~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~00090~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000100~4~EA~200.00~DI~VP~SKU-1003~MG~U-450102*PO1~000110~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~000120~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000130~2~EA~150.00~DI~VP~SKU-1001~MG~U-450105*PO1~000140~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000150~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~000160~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000170~4~EA~200.00~DI~VP~SKU-1003~MG~U-450102*PO1~000180~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~000190~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000200~2~EA~150.00~DI~VP~SKU-1001~MG~U-450105*PO1~000210~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000220~2~EA~150.00~DI~VP~SKU-1003~MG~U-450105*PO1~000230~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000240~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000250~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000260~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000270~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000280~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000290~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000300~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000310~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000320~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000330~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000340~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000350~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000360~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000370~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000380~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*CTT~0*AMT~TT~0*SE~50~179390002*GE~1~17939*IEA~1~900018759*</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_name">MotorolaEDI</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/IngramEDI;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">ISA~00~          ~00~          ~ZZ~987654321      ~ZZ~123456789      ~140831~1145~U~00200~900018759~0~P~&gt;*GS~PO~987654321~123456789~20140831~1145~17939~X~004010*ST~850~179390001*BEG~00~SA~98011~~08/31/2014*REF~AN~0*DTM~002~09/02/2014*N9~L1~PO HDR COMNTS*MSG~0*N1~ST~Avnet*N3~6700 West Morelos Place*N4~Bejing~North~85226~China*PO1~00010~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~00020~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~00030~4~EA~200.00~DI~VP~SKU-1003~MG~U-450102*PO1~00040~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~00050~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~00060~2~EA~150.00~DI~VP~SKU-1001~MG~U-450105*PO1~00070~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~00080~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~00090~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000100~4~EA~200.00~DI~VP~SKU-1003~MG~U-450102*PO1~000110~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~000120~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000130~2~EA~150.00~DI~VP~SKU-1001~MG~U-450105*PO1~000140~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000150~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~000160~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000170~4~EA~200.00~DI~VP~SKU-1003~MG~U-450102*PO1~000180~3~EA~500.00~DI~VP~SKU-1001~MG~U-450100*PO1~000190~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000200~2~EA~150.00~DI~VP~SKU-1001~MG~U-450105*PO1~000210~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000220~2~EA~150.00~DI~VP~SKU-1003~MG~U-450105*PO1~000230~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000240~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000250~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000260~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000270~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000280~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000290~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000300~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000310~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000320~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000330~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000340~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000350~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000360~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000370~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*PO1~000380~2~EA~150.00~DI~VP~SKU-1002~MG~U-450105*CTT~0*AMT~TT~0*SE~50~179390002*GE~1~17939*IEA~1~900018759*</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">IngramEDI</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">MotorolaEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">edidata</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">IngramEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">MotorolaEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">IngramEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/MotorolaEDI;1;0" TO="/edidata;3;0">
+</MAPCOPY>
+</MAP>
+
+<INVOKE TIMEOUT="" SERVICE="wm.tn:receive" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">node</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">TN_parms</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">MotorolaEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">edidata</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">IngramEDI</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/edidata;3;0" TO="/node;3;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
+</INVOKE>
+</FLOW>
