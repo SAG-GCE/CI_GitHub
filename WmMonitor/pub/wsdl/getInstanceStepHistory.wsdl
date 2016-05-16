@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_process_instance" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:wsdns1="http://localhost/ws/monitor/process/instance/getStepHistory"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/process/instance/getStepHistory" xmlns:tns="http://localhost/ws/monitor/process/instance/getStepHistory" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="__getStepHistoryInput">
+            <xsd:sequence>
+              <xsd:element name="instanceId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="instanceIteration" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="stepId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="stepIteration" nillable="true" type="xsd:anyType" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__getStepHistoryOutput">
+            <xsd:sequence>
+              <xsd:element name="stepList" nillable="true" type="tns:ArrayOf__stepList" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__stepList">
+            <xsd:sequence>
+              <xsd:element name="statusDecode" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="status" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="startTimeString" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="startTime" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="user" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="role" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOf__stepList">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="tns:__stepList[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="getStepHistoryInput">
+		<wsdl:part name="instanceId" type="xsd:string"/>
+		<wsdl:part name="instanceIteration" type="xsd:anyType"/>
+		<wsdl:part name="stepId" type="xsd:string"/>
+		<wsdl:part name="stepIteration" type="xsd:anyType"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getStepHistoryOutput">
+		<wsdl:part name="stepList" type="wsdns1:ArrayOf__stepList"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_process_instancePortType">
+		<wsdl:operation name="getStepHistory">
+			<wsdl:input message="tns:getStepHistoryInput"/>
+			<wsdl:output message="tns:getStepHistoryOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_process_instanceBinding" type="tns:ws_monitor_process_instancePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getStepHistory">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ws_monitor_process_instanceService">
+		<wsdl:port name="ws_monitor_process_instancePort0" binding="tns:ws_monitor_process_instanceBinding">
+			<soap:address location="http://localhost:5555/soap/rpc"/>
+		</wsdl:port>
+	</wsdl:service>
+	</wsdl:definitions>

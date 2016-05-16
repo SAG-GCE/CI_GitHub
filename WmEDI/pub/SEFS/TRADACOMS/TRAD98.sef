@@ -1,0 +1,3687 @@
+.VER 1.6
+.INI
+TRAD93,,1 0 ANA,TD,TRAD93,Tradacoms 93
+.PRIVATE FORESIGHT
+.CTL *
+.TDVER L2TW
+.DATE 05/15/97:12:52:42
+.PUBLIC
+.SETS
+ACKHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][CLO][AOR,M][DNA,,>1]{:>1[ALD][AGD,,>1][AQD,,>1][DNB,,>1]}[KTR,M][MTR,M]}^[MHD@19,M][KFT,M][MTR,M]
+AVLHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][ARF,M][DNA,,>1]{:>1[AVD,M][DNB,,>1]}[ATR][PAT][MTR,M]}^[MHD,M][AFT,M][MTR,M]
+CORHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][CLO][ORD,M][OOL][ITD][DIN][DNA,,>1]{:>1[COD,M][DNB,,>1][PVD,,>1]{:>1[RDQ][DNC,,>1]}}[OTR,M][MTR,M]}^[MHD,M][OFT,M][MTR,M]
+CRAHDR=^[MHD,M][TYP,M][SDT,M][BDT,M][FIL,M][MTR,M]^{:>1[MHD,M][CDT,M][SBK,M][CBK,M][PYD,M][APD,M][AUT][MTR,M]}^[MHD,M][TCM,M][MTR,M]
+CREHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][CLO,M]{:>1[CRF,M][PYT,,>1][OIR,,>1][DNA,,>1]{:>1[CLD,M][DNB,,>1]}[CST,M,>1]}[CTR,M][MTR,M]}^[MHD@22,M][VRS,,>1][MTR,M]^[MHD@19,M][TOT,M][MTR,M]
+CUSHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][NOI,M][CLO,M][NAM,M][LTY,M][INT][STT][TRA][LMI][DNA,,>1][MTR,M]}^[MHD,M][CFT,M][MTR,M]
+DELHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][FDT][MTR,M]^{:>1[MHD@10,M][CLO,M][DEL,M][DNS][DNA,,>1]{:>1[ORF,M]{:>1[DLD,M][DLS,,>1][PID,,>1][DNC,,>1]}}[DTR,M][MTR,M]}^[MHD@27,M][DFT@23,M][MTR,M]
+DLCHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][FDT][MTR,M]^{:>1[MHD,M][CLO,M][ODD,M,>1][DST,M][DNA,,>1]{:>1[DCD][DPI,,>1][DNB,,>1]}{:>1[RCD][RPI,,>1][RNB,,>1]}[DCT][MTR,M]}^[MHD,M][COT,M][MTR,M]
+DRAHDR=^[MHD,M][TYP,M][CDT,M][BDT,M][FIL,M][MTR,M]^{:>1[MHD,M][SDT,M][SBK,M][CBK,M][PYD,M][APD,M][AUT][MTR,M]}^[MHD,M][TDM,M][MTR,M]
+EXCHDR=^[MHD,M][TYP,M][CDT,M][BDT,M][FIL,M][MTR,M]^{:>1[MHD,M][SDT,M][PYD,M][EXC,M,>1][AUT][MTR,M]}^[MHD,M][TEM,M][MTR,M]
+GENHDR=^[MHD,M][CPT,M][FIL,M][MTR,M]^{:>1[MHD,M][MED,M][TXT,M,>1][MTR,M]}^[MHD,M][GFT,M][MTR,M]
+INVFIL=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][FDT][ACD][MTR,M]^{:>1[MHD,M][CLO,M]{:1[IRF,M][PYT,,>1][DNA,,>1]{:>1[ODD,M]{:>1[ILD,M][CIA,,>1][DNC,,>1]}}[STL,M,>1]}[TLR,M][MTR,M]}^[MHD@25,M][VRS,,>1][MTR,M]^[MHD@22,M][TOT,M][MTR,M]
+LPRHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][SFR,M]{:>1[SLO]{:>1[PDS,M]{:>1[SFP][SFS,,>1][RFD,,>1]}}{:>1[SFC][SFX,,>1]}}[SFL,M][MTR,M]}^[MHD,M][LFT,M][MTR,M]
+ORDHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][CLO,M][ORD,M][DIN][DNA,,>1]{:>1[OLD,M][DNB,,>1]}[OTR,M][MTR,M]}^[MHD,M][OFT,M][MTR,M]
+PAYHDR=^[MHD,M][TYP,M][CDT,M][BDT,M][FIL,M][MTR,M]^{:>1[MHD,M][SDT,M][SBK,M][CBK,M][PYD,M][APD,M][AUT][MTR,M]}^[MHD,M][TPM,M][MTR,M]
+PICHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][ORD,M][DNA,,>1][DIN]{:>1[PLD,M][PIC,M,>1][DNC,,>1]}[PTR,M][MTR,M]}^[MHD,M][PFT,M][MTR,M]
+PPRHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][SFR,M]{:>1[PDN,M]{:>1[PLO]{:>1[SFP][SFS,,>1][RFD,,>1]}}{:>1[SFC][SFX,,>1]}}[SFL,M][MTR,M]}^[MHD,M][PPT,M][MTR,M]
+PRIHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][PLR][MTR,M]^{:>1[MHD,M]{:>1[NOI,M][CLR,,>1]{:>1[PRN,M][PRD,,>1][CLP,,>1]{:>1[PRI,M][PRP,M,>1]}{:>1[DSC][DSD,,>1]}[DNC,,>1]}}[MTR,M]}^[MHD,M][PRT,M][MTR,M]
+PROHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M]{:>1[NOI,M]{:>1[PRN,M][PRD,,>1][PRU,,>1][STD,,>1][DNC,,>1]}}[MTR,M]}^[MHD,M][PDT,M][MTR,M]
+RSGRSG=[MHD,M]+5[RSG@3,M][MTR@2,M]
+SADHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][CLO,M][SAR,M][DNA,,>1]{:>1[SAD,M][DNB,,>1]}[SAT,M][MTR,M]}^[MHD,M][ADT,M][MTR,M]
+SNPHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M][CLO,M][SSR,M][DNA,,>1]{:>1[SRF,M]{:>1[SLD,M][DNC,,>1]}}[SST,M][MTR,M]}^[MHD,M][SNT,M][MTR,M]
+SRMHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][MTR,M]^{:>1[MHD,M]{:>1[SRD,M][DNB,,>1]}[SRT,M][PYC][MTR,M]}^[MHD,M][RST,M][MTR,M]
+UCNHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][FDT][MTR,M]^{:>1[MHD@23,M][CLO][UDD,M][UST,M][DNA,,>1]{:>1[UCD][DNB,,>1]}{:>1[RCD][RNB,,>1]}[UCT,M][MTR,M]}^[MHD@20,M][COT,M][MTR,M]
+UPLHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][DNA,,>1][FIL,M][FDT][MTR,M]^{:>1[MHD,M][CLO][UPL,M][UPS][DNA,,>1]{:>1[URF][ULD,M,>1][DNC,,>1]}[UTR,M][MTR,M]}^[MHD,M][UFT,M][MTR,M]
+UTLHDR=^[MHD,M][TYP,M][SDT,M][CDT,M][FIL,M][FDT][REF][MTR,M]^{:>1[MHD,M][CLO,M][BCD,M][PYT,,>1][CDA][DNA,,>1]{:>1[CCD,M][MOD,,>1][ADJ,,>1][MAN]}[VAT,M,>1][PRV,,>1][BTL,M][DEF][MTR,M]}^[MHD@26,M][VTS,M,>1][MTR,M]^[MHD@23,M][TTL,M][MTR,M]
+.SEGS
+ACD=[INLO]
+ADJ=[SEQA,M][SEQB,M][ADJF]
+ADT=[FTNA,M]
+AFT=[FTAR,M]
+AGD=[SEQA,M][SEQB,M][DELQ][DELN]
+ALD=[SEQA,M][SPRO][SACU][CPRO][UNOR][OQTY,M][OUBA][AUCT][TDES][SPRS]
+AOR=[ORNO,M][TCDE]
+APD=[AMPY,M]
+AQD=[SEQA,M][SEQB,M][RDAT][RQTY][XDAT][XQTY]
+ARF=[AREF,M][RPSD,M][RPED,M]
+ATR=[NOPA,M]
+AUT=[AUTR,M]
+AVD=[SEQA,M][APIN,M][SPRO,M][SACU][CPRO][UNOR,M][CLSK][QPRO][DELQ]
+BCD=[IVDT,M][TXDT,M][INVN][PBID][BIFR][BTCD][VDAA][SUMO][CLVM]
+BDT=[BKIC,M][BNAM][SVID,M][BKIN][CUIN]
+BTL=[PTOT][UVLT,M][UTVA,M][BABF][TBTL,M]
+CBK=[BBID,M][ACID,M]
+CCD=[SEQA,M][CCDE,M][TCOD][TMOD][MTNR][MLOC][PRDT][PVDT][NDRP][PRRD][CONS][CONB][ADJF][CONA][BPRI][NUCT][CSDT][CEDT][CPPU][CTOT][TSUP][VATC][VATP][MSAD]
+CDA=[CPSC][ORNO][INSD][REPE]
+CDT=[CIDN,M][CNAM][CADD][VATR]
+CFT=[NOLR,M]
+CIA=[SEQA,M][SEQB,M][SEQC,M][DTYP,M][AOCI,M][ACCR,M][AADJ,M]
+CLD=[SEQA,M][SPRO][SACU][CPRO][UNOR][QTYC,M][UCRV,M][EXLV,M][VATC,M][VATP,M][CRRE,M][MIXI][DRLI][TDES][UCRB][CDSV][IGPI][SCRF]
+CLO=[CLOC,M][CNAM][CADD]
+CLP=[SEQA,M][SEQB,M][SEQC,M][CLOS][CLOE][REGS][REGC]
+CLR=[SEQA,M][SEQB,M][CLOS][CLOE][REGS][REGC]
+COD=[SEQA,M][SPRO][SACU][CPRO][UNOR][OQTY,M][OUCT][PIND][TFIN][TDES][SCRF]
+COT=[FTCO,M]
+CPT=[SEID,M][REID,M]
+CRF=[CRNR,M][CRDT,M][TXDT,M][DNNR][DNDT][CNNR][CNDT]
+CST=[SEQA,M][VATC,M][VATP,M][NRIL,M][LVLA,M][QYCA][VLCA][EVLA,M][SEDA][ASDA,M][VATA,M][APSE][APSI,M]
+CTR=[NCST,M][LVLT,M][QYCT][VLCT][EVLT,M][SEDT][ASDT,M][TVAT,M][TPSE][TPSI,M]
+DCD=[SEQA,M][SPRO,M][SACU][CPRO][UNOR,M][DELQ,M][TDES][SSTC][DUAC][AQTY][SREF]
+DCT=[LCON]
+DEF=[MCDV,M]
+DEL=[DELN,M][NODU][SCAR][DEWT][DEVL][EDAT][LDAT][RATM][DINS][DLOC][TLOC][JORF][TPST]
+DFT=[FTDE,M]
+DIN=[EDAT][LDAT][RATM][DINS][DINN]
+DLD=[SEQA,M][SEQB,M][SPRO,M][SACU][CPRO][UNOR,M][DELQ,M][TDES][SSTC]
+DLS=[SEQA,M][SEQB,M][SEQC,M][TFIN][QUTF][SPRS][SACS][CPRS][PIND][CRLI]
+DNA=[SEQA,M][DNAC][RTEX][GNAR]
+DNB=[SEQA,M][SEQB,M][DNAC][RTEX][GNAR]
+DNC=[SEQA,M][SEQB,M][SEQC,M][DNAC][RTEX][GNAR]
+DNS=[DIND][SDIN]
+DPI=[SEQA,M][SEQB,M][SESH,M]
+DSC=[SEQA,M][SEQB,M][SEQC,M][DAPD,M][DTYP]
+DSD=[SEQA,M][SEQB,M][SEQC,M][SEQD,M][DQGD][DVGD][ADJT,M][AOCI,M][ACCR,M][AADJ,M]
+DST=[DELC,M][DUAC]
+DTR=[LDEL,M]
+END=[NMST,M]
+EXC=[SEQA,M][AEXC][ECOD,M][ETXT]
+FDT=[IVED][DVED]
+FIL=[FLGN,M][FLVN,M][FLDT,M][FLID]
+GFT=[NOTX,M]
+ILD=[SEQA,M][SEQB,M][SPRO,M][SACU][CPRO][UNOR][QTYI,M][AUCT,M][LEXC,M][VATC,M][VATP,M][MIXI][CRLI][TDES][MSPR][SRSP][BUCT][DSCV][DSCP][SUBA][PIND][IGPI][CSDI][TSUP][SCRF]
+INT=[ILOC]
+IRF=[INVN,M][IVDT,M][TXDT,M]
+ITD=[ILOC][CTNM][IADD]
+KFT=[FTAK,M]
+KTR=[LACK,M]
+LFT=[FTSR,M]
+LMI=[BINN][TFAC][DINS]
+LTY=[ORDF,M][DELT,M][INVT,M][STAT,M][DESF,M][PMNT,M][ETFT,M][REGC][OUTY]
+MAN=[SEQA,M][SEQB,M][MADN,M][MTNR][NDIG]
+MED=[METO,M][MEDT,M]
+MHD=[MSRF,M][TYPE,M]
+MOD=[SEQA,M][SEQB,M][MCAT][MCDE][MVAL]
+MTR=[NOSG,M]
+NAM=[LNAM,M][LADD,M][LTEL][LTLX]
+NOI=[SEQA,M][TYPC,M][DARA]
+ODD=[SEQA,M][ORNO,M][DELN,M][NODU][DEWT][PODN][SCAR][DLOC][TLOC][JORF][SCRF]
+OFT=[FTOR,M]
+OIR=[SEQA,M][INVN][IVDT][TXDT][ORNO][SCRF]
+OLD=[SEQA,M][SPRO,M][SACU][CPRO][UNOR,M][OQTY,M][OUCT][PIND][TFIN][TDES][SCRF]
+OOL=[OLOC][CTNM][OOAD]
+ORD=[ORNO,M][CLAS][ORCD][SCRF]
+ORF=[SEQA,M][ORNO,M]
+OTR=[LORD,M]
+PAT=[NOPA,M]
+PDN=[SEQA,M][SPRO][CPRO][IDID][TDES]
+PDS=[SEQA,M][SEQB,M][SPRO][CPRO][IDID][TDES]
+PDT=[NOPR,M]
+PFT=[FTPC,M]
+PIC=[SEQA,M][SEQB,M][CLOC,M][CNAM][CADD][DEPO][QTYP,M]
+PID=[SEQA,M][SEQB,M][SEQC,M][SESH,M]
+PLD=[SEQA,M][SPRO,M][SACU][CPRO][UNOR,M][PREF][TDES]
+PLO=[SEQA,M][SEQB,M][CLOC,M][CNAM][CADD][LOCA]
+PLR=[PLND,M][DARA][SCRF]
+PPT=[FTSR,M]
+PRD=[SEQA,M][SEQB,M][SEQC,M][MSPR][VRMI][TNAC][DLED][MOQY][MOVL][SRPR][PRST][SCRF][VATC][DARA]
+PRI=[SEQA,M][SEQB,M][SEQC,M][PAPD,M][GTYP]
+PRN=[SEQA,M][SEQB,M][LEVC,M][SPRO,M][CPRO][UNOR,M][TDES][UCON][CORI]
+PRP=[SEQA,M][SEQB,M][SEQC,M][SEQD,M][PQGD][PVGD][STPR,M][SBPR]
+PRT=[NOPR,M]
+PRU=[SEQA,M][SEQB,M][SEQC,M][UGWT][ULTH][UWDT][UHYT][UVOL]
+PRV=[SEQA,M][PPAM,M][PADT,M][PAYB]
+PTR=[NOPP,M][LOCD,M]
+PVD=[SEQA,M][SEQB,M][VTCO,M][VRDT,M][OQTY,M]
+PYC=[PRRF,M][DATE,M][SNIC,M][PAYM]
+PYD=[PRRF,M][DATE,M][SNIC,M][PAYM]
+PYT=[SEQA,M][PAYT][PAYD][PAYY]
+RCD=[SEQA,M][SPRO,M][SACU][CPRO][UNOR,M][QTYR,M][TDES][SSTC]
+RDQ=[SEQA,M][SEQB,M][RDAT][RQTY]
+REF=[REFF][SCRF]
+RFD=[SEQA,M][SEQB,M][SEQC,M][SEQD,M][ORNO,M][RDAT]
+RNB=[SEQA,M][SEQB,M][DNAC][RTEX][GNAR]
+RPI=[SEQA,M][SEQB,M][SESH,M]
+RSG=[RSGA,M][RSGB,M]
+RST=[TOTL,M][TOTV,M]
+SAD=[SEQA,M][SPRO,M][SACU][CPRO][QADJ,M][RADJ,M][AUTH][SSTC,M][NSTA]
+SAR=[SAJN,M][SAJD,M]
+SAT=[SLAJ,M]
+SBK=[BBID,M][ACID,M]
+SDT=[SIDN,M][SNAM][SADD][VATN]
+SFC=[SEQA,M][SEQB,M][REFP,M][QPER]
+SFL=[STLD][STLN][STPT]
+SFP=[SEQA,M][SEQB,M][SEQC,M][REFP,M][QPER]
+SFR=[RTRS,M][REPT,M][REPU]
+SFS=[SEQA,M][SEQB,M][SEQC,M][SEQD,M][REPU,M][QPER,M]
+SFX=[SEQA,M][SEQB,M][SEQC,M][REPU,M][QPER,M]
+SLD=[SEQA,M][SEQB,M][SSTC,M][SQTY,M]
+SLO=[SEQA,M][CLOC,M][CNAM][CADD]
+SNT=[FTNS,M]
+SRD=[SEQA,M][CLOC,M][LINE][LIDR,M][LIDA,M][LIDT][LIDV][LIDD]
+SRF=[SEQA,M][SPRO,M][SACU][CPRO]
+SRT=[SRLC,M][SRAP,M][SRDT][SRVT][SDCD][SETC]
+SSR=[SSRN,M][MEDT,M][SSCC,M]
+SST=[SLSN,M]
+STD=[SEQA,M][SEQB,M][SEQC,M][SMCO][UPAL][ULAY][LPAL][UGST][ULST][UWST][UHST][UVST][RSTI][CSTI][NMRS][TPKG][STOI][TMAX][TMIN][PRPF]
+STL=[SEQA,M][VATC,M][VATP,M][NRIL,M][LVLA,M][QYDA][VLDA][SURA][SSUB][EVLA,M][SEDA][ASDA,M][VATA,M][APSE][APSI,M]
+STT=[SLOC]
+STX=[STDS,C][FROM,M][UNTO,M][TRDT,M][SNRF,M][RCRF,C][APRF,C][PRCD,C]
+TCM=[FTNC,M][TVLC,M]
+TDM=[FTND,M][TVLD,M]
+TEM=[FTNE,M]
+TLR=[NSTL,M][LVLT,M][QYDT][VLDT][SURT][TSUB][EVLT,M][SEDT][ASDT,M][TVAT,M][TPSE][TPSI,M]
+TOT=[FASE,M][FASI,M][FVAT,M][FPSE][FPSI,M][FTNI,M]
+TPM=[FTNP,M][TVLP,M]
+TRA=[ITRA]
+TTL=[FASU,M][UVAT,M][FTOP][FBAB][FPSU,M][FTNI,M]
+TXT=[SEQA,M][TEXT,M]
+TYP=[TCDE,M][TTYP]
+UCD=[SEQA,M][SPRO,M][SACU][CPRO][UNOR,M][UPLQ,M][TDES][SSTC][DUAC]
+UCT=[LCON,M]
+UDD=[INRF,M][UPLN,M][NODU][UPWT][POUN][SCAR][DLOC][TLOC][JORF]
+UFT=[FTUP,M]
+ULD=[SEQA,M][SEQB,M][SPRO,M][SACU][CPRO][UNOR,M][UPLQ,M][TDES][SSTC]
+UPL=[UPLN,M][NODU][SCAR][UPWT][UPVL][EUDT][LUDT][UINS][DLOC][TLOC][JORF][TPST]
+UPS=[ELOC][DNAM][DADD][EDAT][LDAT][RATM]
+URF=[SEQA,M][INRF,M]
+UST=[UPLC,M][DUAC]
+UTR=[LUPL,M]
+VAT=[SEQA,M][NDVT][PNDP][VATC,M][VATP,M][UVLA,M][UVTT,M][UCSI,M][NRIL][RFLV]
+VRS=[SEQA,M][VATC,M][VATP,M][VSDE,M][VSDI,M][VVAT,M][VPSE][VPSI,M]
+VTS=[SEQA,M][VATC,M][VATP,M][USDI,M][VTVC,M][UPSI,M]
+.COMS
+AADJ=[_PCT][_PRI]
+ACID=[_NUM,M][_NAM]
+ADJF=[_CDV][_ADJ,M][_CNI]
+AEXC=[_EXA,M][_EXC]
+AQTY=[_UNT][_MEA][_UOM]
+AUCT=[_PRI][_UOM]
+AUTR=[_AUR,M][_AUR][_AUR]
+BABF=[_AMT,M][_CNI]
+CADD=[_ADR][_ADR][_ADR][_ADR][_POS]
+CCDE=[_CON][_EAN][_CDV]
+CIDN=[_LOC][_NUM]
+CLOC=[_LOC][_NUM][_NUM]
+CLOE=[_LOC][_NUM][_NUM]
+CLOS=[_LOC][_NUM][_NUM]
+CLSK=[_UNT][_MEA][_UOM]
+CLVM=[_MEA][_UOM,M]
+CONA=[_MEA,M][_UOM,M][_CNI]
+CONB=[_MEA,M][_UOM,M][_CNI]
+CONS=[_MEA,M][_UOM,M][_CNI]
+CORI=[_EAN][_COD][_DUN][_BRA][_COD]
+CPRO=[_BRA][_COD]
+CPRS=[_BRA][_COD]
+CRRE=[_CRE][_TPC][_TXT]
+CTOT=[_AMT,M][_CNI]
+DADD=[_ADR][_ADR][_ADR][_ADR][_POS]
+DAPD=[_DAT,M][_DAT]
+DARA=[_DAT][_DAT]
+DELN=[_NUM][_DAT]
+DELQ=[_UNT][_MEA][_UOM]
+DEWT=[_MEA][_MEA]
+DIND=[_IND][_IND]
+DINS=[_TXT][_TXT][_TXT][_TXT]
+DLED=[_DAY][_HRS]
+DLOC=[_LOC][_NUM]
+DNAC=[_TAB][_CDV]
+DQGD=[_UNT][_MEA][_UOM][_UNT][_MEA][_UOM]
+DUAC=[_VAR,M][_DUA]
+DVGD=[_PRI][_PRI]
+ELOC=[_LOC][_NUM][_NUM]
+FASU=[_AMT,M][_CNI]
+FBAB=[_AMT,M][_CNI]
+FPSU=[_AMT,M][_CNI]
+FROM=[_IDC,C][_NAM,C]
+FTOP=[_AMT,M][_CNI]
+GNAR=[_TXT][_TXT][_TXT][_TXT]
+IADD=[_ADR][_ADR][_ADR][_ADR][_POS]
+ILOC=[_LOC][_NUM]
+INLO=[_LOC][_NUM]
+INRF=[_NUM][_NUM][_DAT][_DAT]
+ITRA=[_LOC][_NUM]
+LADD=[_ADR,M][_ADR][_ADR][_ADR][_POS]
+LEVC=[_LEV,M][_LEV,M]
+LIDR=[_NUM][_DAT]
+MADN=[_DID,M][_URN,M][_CHD][_PTC][_MSD][_LLF]
+MEDT=[_DAT,M][_TM6]
+METO=[_LOC][_TXT][_TXT]
+MOQY=[_UNT][_UNT][_MEA][_UOM][_UNT]
+MOVL=[_PRI][_PRI]
+MSAD=[_NUM][_TXT]
+MSPR=[_PRI][_PRI][_PRI]
+MVAL=[_MEA,M][_CNI]
+NUCT=[_MEA,M][_UOM,M][_CNI]
+OLOC=[_LOC][_NUM]
+OOAD=[_ADR][_ADR][_ADR][_ADR][_POS]
+OQTY=[_UNT][_MEA][_UOM]
+ORNO=[_NUM][_NUM][_DAT][_DAT]
+OUBA=[_MEA][_DAT]
+OUCT=[_PRI][_UOM]
+PAPD=[_DAT,M][_DAT]
+PAYD=[_DAT,M][_PCT,M]
+PAYY=[_DAY,M][_PCT][_CDV]
+PLND=[_NUM][_NUM]
+PODN=[_NUM][_DAT]
+POUN=[_NUM][_DAT]
+PPAM=[_AMT,M][_CNI]
+PQGD=[_UNT][_MEA][_UOM][_UNT][_MEA][_UOM]
+PRRD=[_UNT,M][_REA][_UNT,M][_REA]
+PRRF=[_RAI,M][_NUM,M]
+PTOT=[_AMT,M][_CNI]
+PVGD=[_PRI][_PRI]
+QADJ=[_UNT][_MEA][_UOM]
+QPER=[_UNT][_MEA][_UOM][_AMT][_CUR]
+QPRO=[_UNT][_MEA][_UOM]
+QTYC=[_UNT][_MEA][_UOM]
+QTYI=[_UNT][_MEA][_UOM]
+QTYP=[_UNT][_MEA][_UOM]
+QTYR=[_UNT][_MEA][_UOM]
+QUTF=[_UNT][_MEA][_UOM]
+RATM=[_TIM][_TIM]
+REFF=[_NUM][_NUM]
+REFP=[_SUM][_PER][_DAT]
+REID=[_LOC][_NUM]
+RQTY=[_UNT][_MEA][_UOM]
+RTEX=[_CDV][_TXT][_CDV][_TXT][_CDV][_TXT][_CDV][_TXT]
+RTRS=[_DAT,M][_PER,M][_CNT,M][_DAT][_CNT]
+SADD=[_ADR][_ADR][_ADR][_ADR][_POS]
+SBPR=[_PRI][_PRI]
+SCRF=[_NUM][_NUM]
+SEID=[_LOC][_NUM]
+SIDN=[_LOC][_NUM]
+SLOC=[_LOC][_NUM]
+SPRO=[_EAN][_COD][_DUN]
+SPRS=[_EAN][_COD][_DUN]
+SQTY=[_UNT][_MEA][_UOM]
+SRPR=[_NUM][_SEQ]
+STDS=[_SID,M][_VER,M]
+STPR=[_PRI][_PRI]
+SUMO=[_DAT][_DAT]
+SVID=[_USR,M][_POS,M]
+TBTL=[_AMT,M][_CNI]
+TCOD=[_USR][_TXT]
+TDES=[_TXT][_TXT]
+TLOC=[_LOC][_NUM]
+TMOD=[_USR][_USR][_USR][_USR]
+TRDT=[_DAT@2,M][_TM6@4,C]
+TYPE=[_MSG,M][_VER,M]
+UCON=[_EAN][_COD][_DUN][_BRA][_COD]
+UCRV=[_PRI,M][_UOM]
+UCSI=[_AMT,M][_CNI]
+UGST=[_MEA][_UOM]
+UGWT=[_MEA][_UOM]
+UHST=[_MEA][_UOM]
+UHYT=[_MEA][_UOM]
+UINS=[_TXT][_TXT][_TXT][_TXT]
+ULST=[_MEA][_UOM]
+ULTH=[_MEA][_UOM]
+UNOR=[_UNT][_MEA][_UOM]
+UNTO=[_IDC,C][_NAM,C]
+UPLN=[_NUM][_DAT]
+UPLQ=[_UNT][_MEA][_UOM]
+UPSI=[_AMT,M][_CNI]
+UPWT=[_MEA][_MEA]
+USDI=[_AMT,M][_CNI]
+UTVA=[_AMT,M][_CNI]
+UVAT=[_AMT,M][_CNI]
+UVLA=[_AMT,M][_CNI]
+UVLT=[_AMT,M][_CNI]
+UVOL=[_MEA][_UOM]
+UVST=[_MEA][_UOM]
+UVTT=[_AMT,M][_CNI]
+UWDT=[_MEA][_UOM]
+UWST=[_MEA][_UOM]
+VATN=[_VAT][_NUM]
+VATR=[_VAT][_NUM]
+VDAA=[_CDV,M][_DAT,M][_AMT,M][_NUM][_NUM]
+VTVC=[_AMT,M][_CNI]
+XQTY=[_UNT][_MEA][_UOM]
+.ELMS 
+NDIG=N,9,9
+_DID=AN,2,2
+_URN=AN,1,10
+_CHD=N,1,1
+_PTC=N,2,2
+_MSD=N,3,3
+_LLF=N,3,3
+ACCR=AN,1,1
+ADJT=AN,1,3
+AMPY=N2,1,15
+AOCI=AN,1,1
+APIN=AN,1,1
+APRF=AN,1,14
+APSE=N2,1,12
+APSI=N2,1,12
+AREF=AN,1,17
+ASDA=N2,1,12
+ASDT=N2,1,12
+AUTH=AN,1,17
+BBID=AN,1,11
+BIFR=AN,1,3
+BINN=AN,1,1
+BKIC=AN,2,2
+BKIN=AN,1,17
+BNAM=AN,1,35
+BPRI=N5,1,15
+BTCD=AN,1,3
+BUCT=N4,1,14
+CDSV=N4,1,14
+CEDT=N,6,6
+CLAS=AN,1,1
+CNAM=AN,1,40
+CNDT=N,6,6
+CNNR=AN,1,17
+CPPU=N5,1,15
+CPSC=AN,17,17
+CRDT=N,6,6
+CRLI=AN,1,4
+CRNR=AN,1,17
+CSDI=AN,1,1
+CSDT=N,6,6
+CSTI=AN,1,1
+CTNM=AN,1,40
+CUIN=AN,1,3
+DATE=N,6,6
+DELC=AN,1,3
+DELT=AN,1,1
+DEPO=AN,1,17
+DESF=AN,1,1
+DEVL=N3,1,13
+DINN=AN,1,17
+DNAM=AN,1,40
+DNDT=N,6,6
+DNNR=AN,1,17
+DRLI=AN,1,4
+DSCP=N3,1,6
+DSCV=N4,1,14
+DTYP=AN,1,1
+DVED=N,6,6
+ECOD=AN,4,4
+EDAT=N,6,6
+ETFT=AN,1,1
+ETXT=AN,1,35
+EUDT=N,6,6
+EVLA=N2,1,12
+EVLT=N2,1,12
+EXLV=N4,1,14
+FASE=N2,1,12
+FASI=N2,1,12
+FLDT=N,6,6
+FLGN=N,1,4
+FLID=AN,1,6
+FLVN=N,1,4
+FPSE=N2,1,12
+FPSI=N2,1,12
+FTAK=N,1,10
+FTAR=N,1,10
+FTCO=N,1,10
+FTDE=N,1,10
+FTNA=N,1,10
+FTNC=N,1,10
+FTND=N,1,10
+FTNE=N,1,10
+FTNI=N,1,10
+FTNP=N,1,10
+FTNS=N,1,10
+FTOR=N,1,10
+FTPC=N,1,10
+FTSR=N,1,10
+FTUP=N,1,10
+FVAT=N2,1,12
+GTYP=AN,1,1
+IDID=N,1,18
+IGPI=AN,1,4
+INSD=N,6,6
+INVN=AN,1,17
+INVT=AN,1,1
+IVDT=N,6,6
+IVED=N,6,6
+JORF=AN,1,17
+LACK=N,1,10
+LCON=N,1,10
+LDAT=N,6,6
+LDEL=N,1,10
+LEXC=N4,1,14
+LIDA=N2,1,12
+LIDD=N2,1,12
+LIDT=N2,1,12
+LIDV=N2,1,12
+LINE=AN,2,2
+LNAM=AN,1,40
+LOCA=AN,1,3
+LOCD=N,1,10
+LORD=N,1,10
+LPAL=N,1,15
+LTEL=N,1,15
+LTLX=N,1,15
+LUDT=N,6,6
+LUPL=N,1,10
+LVLA=N2,1,12
+LVLT=N2,1,12
+MCAT=AN,1,3
+MCDE=AN,1,3
+MCDV=N2,1,12
+MIXI=N,1,1
+MLOC=AN,1,40
+MSRF=N,1,12
+MTNR=AN,1,35
+NCST=N,1,10
+NDRP=N,1,3
+NDVT=N,1,3
+NMRS=N,1,3
+NMST=N,1,5
+NODU=N,1,15
+NOLR=N,1,10
+NOPA=N,1,10
+NOPP=N,1,10
+NOPR=N,1,10
+NOSG=N,1,10
+NOTX=N,1,10
+NRIL=N,1,10
+NSTA=AN,1,1
+NSTL=N,1,10
+ORCD=AN,1,1
+ORDF=AN,1,1
+OUTY=AN,1,2
+PADT=N,6,6
+PAYB=N2,1,12
+PAYM=AN,1,6
+PAYT=AN,1,40
+PBID=N,6,6
+PIND=AN,1,4
+PMNT=AN,1,1
+PNDP=N3,1,6
+PRCD=AN,1,1
+PRDT=N,6,6
+PREF=AN,1,17
+PRPF=AN,1,1
+PRST=AN,1,1
+PVDT=N,6,6
+QYCA=N2,1,12
+QYCT=N2,1,12
+QYDA=N2,1,12
+QYDT=N2,1,12
+RADJ=AN,2,2
+RCRF=AN,1,14
+RDAT=N,6,6
+REGC=AN,1,17
+REGS=AN,1,17
+REPE=AN,1,3
+REPT=AN,1,3
+REPU=AN,3,3
+RFLV=AN,1,3
+RPED=N,6,6
+RPSD=N,6,6
+RSGA=AN,1,14
+RSGB=AN,1,14
+RSTI=AN,1,1
+SACS=N,13,13
+SACU=N,13,13
+SAJD=N,6,6
+SAJN=AN,1,17
+SCAR=AN,1,40
+SDCD=N2,1,12
+SDIN=AN,1,1
+SEDA=N2,1,12
+SEDT=N2,1,12
+SEQA=N,1,10
+SEQB=N,1,10
+SEQC=N,1,10
+SEQD=N,1,10
+SESH=N,18,18
+SETC=N2,1,12
+SLAJ=N,1,10
+SLSN=N,1,10
+SMCO=AN,1,3
+SNAM=AN,1,40
+SNIC=AN,1,14
+SNRF=AN,1,14
+SRAP=N2,1,12
+SRDT=N2,1,12
+SREF=AN,1,17
+SRLC=N,1,10
+SRSP=N4,1,14
+SRVT=N2,1,12
+SSCC=AN,2,2
+SSRN=AN,1,17
+SSTC=AN,1,1
+SSUB=N2,1,12
+STAT=AN,1,1
+STLD=N,1,10
+STLN=N,1,10
+STOI=AN,1,40
+STPT=N,1,10
+SUBA=N4,1,14
+SURA=N2,1,12
+SURT=N2,1,12
+TCDE=N,4,4
+TEXT=AN,1,50
+TFAC=AN,1,1
+TFIN=AN,1,1
+TMAX=N,1,3
+TMIN=N,1,3
+TNAC=N,1,1
+TOTL=N,1,10
+TOTV=N2,1,12
+TPKG=AN,1,40
+TPSE=N2,1,12
+TPSI=N2,1,12
+TPST=AN,1,3
+TSUB=N2,1,12
+TSUP=AN,1,1
+TTYP=AN,1,12
+TVAT=N2,1,12
+TVLC=N2,1,15
+TVLD=N2,1,15
+TVLP=N2,1,15
+TXDT=N,6,6
+TYPC=AN,1,6
+UCRB=N4,1,14
+ULAY=N,1,15
+UPAL=N,1,15
+UPLC=AN,1,3
+UPVL=N3,1,13
+VATA=N2,1,12
+VATC=AN,1,1
+VATP=N3,1,6
+VLCA=N2,1,12
+VLCT=N2,1,12
+VLDA=N2,1,12
+VLDT=N2,1,12
+VPSE=N2,1,12
+VPSI=N2,1,12
+VRDT=AN,1,40
+VRMI=N,1,1
+VSDE=N2,1,12
+VSDI=N2,1,12
+VTCO=AN,1,3
+VVAT=N2,1,12
+XDAT=N,6,6
+_ADJ=N5,1,15
+_ADR=AN,1,35
+_AMT=N2,1,12
+_AUR=AN,1,70
+_BRA=N,15,15
+_CDV=AN,1,3
+_CNI=AN,1,4
+_CNT=N,1,3
+_COD=AN,1,30
+_CON=AN,1,3
+_CRE=AN,2,2
+_CUR=AN,3,3
+_DAT=N,6,6
+_DAY=N,1,3
+_DUA=AN,1,1
+_DUN=N,14,14
+_EAN=N,13,13
+_EXA=AN,13,13
+_EXC=AN,1,53
+_HRS=N,1,2
+_IDC=AN,1,14
+_IND=AN,1,1
+_LEV=AN,1,1
+_LOC=N,13,13
+_MEA=N3,1,13
+_MSG=AN,6,6
+_NAM=AN,1,35
+_NUM=AN,1,17
+_PCT=N3,1,6
+_PER=AN,1,3
+_POS=AN,1,8
+_PRI=N4,1,14
+_RAI=AN,1,1
+_REA=AN,1,4
+_SEQ=N,1,15
+_SID=AN,1,4
+_SUM=AN,1,1
+_TAB=N,1,4
+_TIM=N,4,4
+_TM6=N,6,6
+_TPC=AN,1,2
+_TXT=AN,1,40
+_UNT=N,1,15
+_UOM=AN,1,6
+_USR=AN,1,6
+_VAR=AN,1,3
+_VAT=N,9,9
+_VER=N,1,1
+.CODES
+ACCR=G,N
+ADJT=P,V
+AOCI=A,C
+APRF=ACKHDR,ACKTES,AVLHDR,AVLTES,BTOHDR,BTOTES,CAKHDR,CAKTES,CLAHDR,CLATES,CORHDR,CORTES,CRAHDR,CRATES,CREHDR,CRETES,CUSHDR,CUSTES,DELHDR,DELTES,DLCHDR,DLCTES,DRAHDR,DRATES,DYEHDR,DYETES,EFTHDR,EFTTES,EXCHDR,EXCTES,GENHDR,GENTES,HOTHDR,HOTTES,HSOHDR,HSOTES,INTHDR,INTTES,INVFIL,INVTES,ISSTES,ISSUES,LPRHDR,LPRTES,ORDHDR,ORDTES,PAYHDR,PAYTES,PICHDR,PICTES,PPRHDR,PPRTES,PRIHDR,PRITES,PROHDR,PROTES,PVUHDR,PVUTES,SADHDR,SADTES,SNPHDR,SNPTES,SORHDR,SORTES,SRMHDR,SRMTES,UCNHDR,UCNTES,UPLHDR,UPLTES,UTLHDR,UTLTES
+AUTT=0,1,2
+BIFR=A,B,D,F,H,L,M,Q,S,W,Z
+BINN=N,Y
+BTCD=A,F,I,N,O,P,R
+CCDE=1,2,3,4,5
+CLAS=C,E,N,R,S,X
+CODE=C,T
+CRLI=H,R
+CSDI=D,N
+CSTI=0,1
+CUIN=ATS,BEC,BEF,CHF,DEM,ESB,ESP,FRF,GBP,IEP,ITL,LUF,NLG,PTE,USD,USN,USS
+DATT=001,002,003,004,005,006
+DELC=0,1,2,3,4,A,B,C,D,E,F,G,H,J,K,L,M
+DELT=N,Y
+DESF=N,Y
+DRLI=H,R
+DTYP=A,B,Q,V
+EFTT=0,1,2,3,4,5,6,9
+ETFT=N,Y
+FUNC=001,002,003,004,005,006,007,008,009
+GTYP=Q,V
+IGPI=G,I
+INVT=N,Y
+LATT=001,002,003,004,005,006,007,008,009,010,011,012,013,014,015
+LINE=01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22
+LOCA=1,2,3,4
+MCAT=1,2,3
+NOHC=0,1,2,3
+ORCD=A,B,C,D,E,F,G,H,K,L,N,O,P,R,S,T,W,X
+ORDF=N,Y
+PIND=F,P
+PMNT=N,Y
+PRCD=A,B,C
+PRPF=A,B,C,D
+PRRD=00,01,02,03,04,05,06,07,08,09,10,11,12
+PRST=0,1
+RADJ=01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+RCOD=01,02,03,04,05,06,07,08,09,10,11,99
+REAS=001,002,003,004
+REPT=A,B,F
+REPU=AFC,BFC,CON,CST,DEL,DES,EXP,ORD,OTH,PRD,PUP,REV,RTN,SAL,STC,STK,SUP,YTS
+REVR=A,AA,AB,B,C,D,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,U,V,W,X,Y,Z
+RFLV=C,D,L
+RSTI=0,1
+RTRS=A,B,D,F,H,L,M,Q,S,W,Z
+SMCO=AE,AM,AP,AT,BA,BB,BC,BD,BE,BF,BG,BH,BI,BJ,BK,BL,BN,BO,BP,BQ,BR,BS,BT,BU,BV,BX,BY,BZ,CA,CB,CC,CE,CF,CG,CH,CI,CJ,CK,CL,CN,CO,CP,CR,CS,CT,CU,CV,CX,CY,CZ,DJ,DP,DR,EN,FC,FD,FI,FL,FO,FP,FR,GB,GI,GZ,HG,HR,IN,IZ,JC,JG,JR,JT,JY,KG,LA,LG,LZ,MB,MC,MS,MT,MX,NE,NS,NT,PA,PC,PE,PG,PH,PI,PK,PL,PN,PO,PT,PU,PY,PZ,RD,RG,RL,RO,RT,RZ,SA,SC,SD,SE,SG,SH,SK,SL,SM,ST,SU,SW,SZ,TB,TC,TD,TK,TN,TO,TR,TS,TU,TY,TZ,VA,VG,VI,VL,VO,VP,VQ,VR,VY,WB
+SSCC=01,02,03,04,05,06,07
+SSTC=1,2,3,4,5
+STAT=N,Y
+TCDE=0100,0101,0102,0103,0150,0151,0200,0201,0205,0206,0210,0215,0216,0350,0355,0360,0365,0400,0405,0410,0420,0430,0435,0440,0445,0450,0460,0470,0475,0480,0485,0490,0500,0501,0600,0610,0620,0630,0640,0650,0660,0670,0680,0690,0695,0700,0701,0702,0705,0707,0709,0710,0711,0715,0716,0717,0720,0740,0741,0742,0749,0810,0820,0830,0835,0840,0845,0850,0900,0910,0920,0930,1000,1010,2000,2100,2200,2300,2305,3100,3110,3120,3130,3140,3145,3150,3160,3170,3200,6000,6001,6002,6003,6004,6005,6006,6007,6008,6009,6010,9000,9005,9010,9011,9020,9021%[0100,0101,0102,0103]+PROHDR/2///1[0150,0151]+PRIHDR/2///1[0200,0201]+CUSHDR/2///1[0350,0355,0360,0365,0400,0405,0410,0420,0430,0435,0440,0445,0450,0460,0470,0475,0480,0485,0490]+ORDHDR/2///1+CORHDR/2///1[0600,0610,0620,0630,0640,0650,0660,0695,6001,6002,6003,6004,6005,6006,6007,6008,6009,6010]+DELHDR/2///1[0670,0680,0690,6000]+DLCHDR/2///1[0700,0701,0702,0705,0707,0709]+INVFIL/2///1[0715,0716,0717]+UTLHDR/2///1[0720,0740,0741,0742,0749]+CREHDR/2///1[0820,0830]+SRMHDR/2///1[0900,0910]+UPLHDR/2///1[0920,0930]+UCNHDR/2///1[1000,1010]+PICHDR/2///1[2000]+AVLHDR/2///1[2100]+SNPHDR/2///1[2200]+SADHDR/2///1[2300]+PPRHDR/2///1[2305]+LPRHDR/2///1[3100,3110,3120,3130,3140,3145,3150,3160,3170]+ACKHDR/2///1[0835]+PAYHDR/2///1[0840]+DRAHDR/2///1[0845]+CRAHDR/2///1[0850]+EXCHDR/2///1
+TFAC=N,Y
+TFIN=N,T
+TIME=001,002,003,004,005,006,007
+TNAC=0,1
+TPST=A,B,C,D
+TSCR=00,01,02,03,04,05,06,07,08,09
+TSUP=A,B,C,D,E,F,G,H
+TTYP=ASS-INV,CANCEL-ORDER,COMPLETE-CUS,COMPLETE-PRI,COMPLETE-PRO,CONF-DELIV,CONF-DESP,CONF-ORDERS,CONF-STATUS,CREADV,CREDIT-NOTES,DA,DB,DC,DD,DE,DEBIT-NOTES,DELIVERIES,DELIVERY-ADJ,DLADV,EMC,EXCEPT-ORDER,EXCEPTION,INVOICES,ISS-NOTE,NEW-ORDERS,PAYORD,PCR-NOTE,PCV-NOTE,PEN-NOTE,PROP-ORDERS,QNE-NOTE,RAN-NOTE,REMITTANCE,RET-NOTE,STATEMENT,TRF-NOTE,UPDATE-CUS,UPDATE-PRI,UPDATE-PRO,WHRECEIPT,XFM-NOTE%[COMPLETE-PRO,UPDATE-PRO]+PROHDR/2///2[COMPLETE-PRI,UPDATE-PRI]+PRIHDR/2///2[COMPLETE-CUS,UPDATE-CUS]+CUSHDR/2///2[CANCEL-ORDER,CONF-ORDERS,EXCEPT-ORDER,NEW-ORDERS,PROP-ORDERS]+ORDHDR/2///2[DA,DB,DC,DD,DE,DELIVERIES,DELIVERY-ADJ,ISS-NOTE,PCR-NOTE,PCV-NOTE,PEN-NOTE,QNE-NOTE,RAN-NOTE,RET-NOTE,TRF-NOTE,WHRECEIPT,XFM-NOTE]+DELHDR/2///2[CONF-DELIV,CONF-DESP,CONF-STATUS,EMC]+DLCHDR/2///2[ASS-INV,INVOICES]+INVFIL/2///2[CREDIT-NOTES,DEBIT-NOTES]+CREHDR/2///2[REMITTANCE,STATEMENT]+SRMHDR/2///2[PAYORD]+PAYHDR/2///2[DLADV]+DRAHDR/2///2[CREADV]+CRAHDR/2///2[EXCEPTION]+EXCHDR/2///2
+TYPC=001,002,003,004,005,006,007%[001,002,003,004]+CUSHDR/9///2+PRIHDR/10///2+PROHDR/9///2
+UDAT=0,1,2
+UPLC=0,1,2,3,4,A,B,C,D,E,F,G,H,J,K,L,M
+VATC=A,C,D,E,F,G,H,I,J,K,L,N,O,P,R,S,T,V,X,Z
+VRMI=0,1
+_CON=1,2,3,4,5
+_CRE=01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39
+_CUR=ATS,BEC,BEF,CHF,DEM,ESB,ESP,FRF,GBP,IEP,ITL,LUF,NLG,PTE,USD,USN,USS
+_DUA=C,R
+_IND=%[(1){N,Y}]+///DIND/1[(2){N,Y}]+///DIND/2
+_LEV=%[(1){0,1}]+///LEVC/2
+_MSG=ACKHDR,ACKMNT,ACKTLR,AVLDET,AVLHDR,AVLTLR,CORDER,CORHDR,CORTLR,CRAHDR,CRAINF,CRATLR,CREDIT,CREHDR,CRETLR,CUSHDR,CUSINF,CUSTLR,DELHDR,DELIVR,DELTLR,DLCDET,DLCHDR,DLCTLR,DRAHDR,DRAINF,DRATLR,EXCHDR,EXCINF,EXCTLR,GENHDR,GENRAL,GENTLR,INVFIL,INVOIC,INVTLR,LPRDET,LPRHDR,LPRTLR,ORDERS,ORDHDR,ORDTLR,PAYHDR,PAYINF,PAYTLR,PICHDR,PICKER,PICTLR,PPRDET,PPRHDR,PPRTLR,PRIHDR,PRIINF,PRITLR,PROHDR,PROINF,PROTLR,RSGRSG,SADDET,SADHDR,SADTLR,SNPHDR,SNPSTS,SNPTLR,SRMHDR,SRMINF,SRMTLR,UCNDET,UCNHDR,UCNTLR,UPLHDR,UPLIFT,UPLTLR,UTLBIL,UTLHDR,UTLTLR,UVATLR,VATTLR%[ACKHDR]+ACKHDR/1///2-1[ACKMNT]+ACKHDR/8///2-1[ACKTLR]+ACKHDR/19///2-1[AVLDET]+AVLHDR/8///2-1[AVLHDR]+AVLHDR/1///2-1[AVLTLR]+AVLHDR/16///2-1[CORDER]+CORHDR/8///2-1[CORHDR]+CORHDR/1///2-1[CORTLR]+CORHDR/22///2-1[CRAHDR]+CRAHDR/1///2-1[CRAINF]+CRAHDR/7///2-1[CRATLR]+CRAHDR/15///2-1[CREDIT]+CREHDR/8///2-1[CREHDR]+CREHDR/1///2-1[CRETLR]+CREHDR/19///2-1[CUSHDR]+CUSHDR/1///2-1[CUSINF]+CUSHDR/8///2-1[CUSTLR]+CUSHDR/19///2-1[DELHDR]+DELHDR/1///2-1[DELIVR]+DELHDR/10///2-1[DELTLR][DLCDET]+DLCHDR/9///2-1[DLCHDR]+DLCHDR/1///2-1[DLCTLR]+DLCHDR/20///2-1[DRAHDR]+DRAHDR/1///2-1[DRAINF]+DRAHDR/7///2-1[DRATLR]+DRAHDR/15///2-1[EXCHDR]+EXCHDR/1///2-1[EXCINF]+EXCHDR/7///2-1+EXCHDR/7///2-1[EXCTLR]+EXCHDR/13///2-1+EXCHDR/13///2-1[GENHDR]+GENHDR/1///2-1[GENRAL]+GENHDR/5///2-1+GENHDR/5///2-1[GENTLR]+GENHDR/9///2-1+GENHDR/9///2-1[INVFIL]+INVFIL/1///2-1[INVOIC]+INVFIL/10///2-1+INVFIL/10///2-1[INVTLR]+INVFIL/22///2-1+INVFIL/22///2-1[LPRDET]+LPRHDR/8///2-1+LPRHDR/8///2-1[LPRHDR]+LPRHDR/1///2-1[LPRTLR]+LPRHDR/19///2-1+LPRHDR/19///2-1[ORDERS]+ORDHDR/8///2-1+ORDHDR/8///2-1[ORDHDR]+ORDHDR/1///2-1[ORDTLR]+ORDHDR/17///2-1+ORDHDR/17///2-1[PAYHDR]+PAYHDR/1///2-1[PAYINF]+PAYHDR/7///2-1+PAYHDR/7///2-1[PAYTLR]+PAYHDR/15///2-1+PAYHDR/15///2-1[PICHDR]+PICHDR/1///2-1[PICKER]+PICHDR/8///2-1+PICHDR/8///2-1[PICTLR]+PICHDR/17///2-1+PICHDR/17///2-1[PPRDET]+PPRHDR/8///2-1+PPRHDR/8///2-1[PPRHDR]+PPRHDR/1///2-1[PPRTLR]+PPRHDR/19///2-1+PPRHDR/19///2-1[PRIHDR]+PRIHDR/1///2-1[PRIINF]+PRIHDR/9///2-1+PRIHDR/9///2-1[PRITLR]+PRIHDR/21///2-1+PRIHDR/21///2-1[PROHDR]+PROHDR/1///2-1[PROINF]+PROHDR/8///2-1+PROHDR/8///2-1[PROTLR]+PROHDR/16///2-1+PROHDR/16///2-1[RSGRSG]+RSGRSG/1///2-1[SADDET]+SADHDR/8///2-1+SADHDR/8///2-1[SADHDR]+SADHDR/1///2-1[SADTLR]+SADHDR/16///2-1+SADHDR/16///2-1[SNPHDR]+SNPHDR/1///2-1[SNPSTS]+SNPHDR/8///2-1+SNPHDR/8///2-1[SNPTLR]+SNPHDR/17///2-1+SNPHDR/17///2-1[SRMHDR]+SRMHDR/1///2-1[SRMINF]+SRMHDR/8///2-1+SRMHDR/8///2-1[SRMTLR]+SRMHDR/14///2-1+SRMHDR/14///2-1[UCNDET]+UCNHDR/23///2-1+UCNHDR/23///2-1[UCNHDR]+UCNHDR/1///2-1[UCNTLR]+UCNHDR/20///2-1+UCNHDR/20///2-1[UPLHDR]+UPLHDR/1///2-1[UPLIFT]+UPLHDR/9///2-1+UPLHDR/9///2-1[UPLTLR]+UPLHDR/19///2-1+UPLHDR/19///2-1[UTLBIL]+UTLHDR/9///2-1+UTLHDR/9///2-1[UTLHDR]+UTLHDR/1///2-1[UTLTLR]+UTLHDR/23///2-1+UTLHDR/23///2-1[UVATLR]+UTLHDR/26///2-1+UTLHDR/26///2-1[VATTLR]+INVFIL/25///2-1+CREHDR/22///2-1[DELTLR]+DELHDR/27///2-1
+_NUM=%[(1){A,I,R,S}]+///PRRF/2
+_PER=A,B,D,F,H,L,M,Q,S,W,Z
+_REA=00,01,02,03,04,05,06,07,08,09,10,11,12
+_SID=%[(1){ANA,ANAA}]+///STDS/1[(2){ANA,ANAA}]+//STX//1-1
+_SUM=%[(1){O,T}]+///REFP/1
+_UOM=1,100,1000,ANN,BTU,CM,CM2,CM3,CUFT,CUIN,CWT,DAY,DL,DM2,FC,FLOZ,FT,G,GAL,GJ,GR,HG,HH,HMJ,HUR,IN,KG,KSG,KVA,KVR,KWH,L,LB,M,M2,M3,MG,MIN,MJ,ML,MM,MON,OZ,PT,QAN,QR,QT,SAN,SEC,SQFT,SQIN,SQYD,T,THM,TJ,WEE,YD,ZZ
+_VER=%[(1){1}]+///STDS/2[(2){2}]+RSGRSG/1///2-2[(3){8}]+PROHDR/1///2-2[(4){8}]+PROHDR/8///2-2+PROHDR/8///2-2[(5){8}]+PROHDR/16///2-2+PROHDR/16///2-2[(6){8}]+PRIHDR/1///2-2[(7){8}]+PRIHDR/9///2-2+PRIHDR/9///2-2[(8){8}]+PRIHDR/21///2-2+PRIHDR/21///2-2[(9){8}]+CUSHDR/1///2-2[(10){8}]+CUSHDR/8///2-2[(11){8}]+CUSHDR/19///2-2[(12){9}]+ORDHDR/1///2-2[(13){9}]+ORDHDR/8///2-2+ORDHDR/8///2-2[(14){9}]+ORDHDR/17///2-2+ORDHDR/17///2-2[(15){4}]+PICHDR/1///2-2[(16){4}]+PICHDR/8///2-2+PICHDR/8///2-2[(17){4}]+PICHDR/17///2-2+PICHDR/17///2-2[(18){9}]+DELHDR/1///2-2[(19){9}]+DELHDR/10///2-2[(20){9}][(21){4}]+DLCHDR/1///2-2[(22){4}]+DLCHDR/9///2-2[(23){4}]+DLCHDR/20///2-2[(24){9}]+INVFIL/1///2-2[(25){9}]+INVFIL/10///2-2+INVFIL/10///2-2[(26){4}]+ACKHDR/1///2-2[(27){4}]+ACKHDR/8///2-2[(28){4}]+ACKHDR/19///2-2[(29){4}]+AVLHDR/8///2-2[(30){4}]+AVLHDR/1///2-2[(31){4}]+AVLHDR/16///2-2[(32){6}]+CORHDR/8///2-2[(33){6}]+CORHDR/1///2-2[(34){6}]+CORHDR/22///2-2[(35){3}]+CRAHDR/1///2-2[(36){3}]+CRAHDR/7///2-2[(37){3}]+CRAHDR/15///2-2[(38){9}]+CREHDR/8///2-2[(39){9}]+CREHDR/1///2-2[(40){9}]+CREHDR/19///2-2[(41){3}]+DRAHDR/1///2-2[(42){3}]+DRAHDR/7///2-2[(43){3}]+DRAHDR/15///2-2[(44){3}]+EXCHDR/1///2-2[(45){3}]+EXCHDR/7///2-2+EXCHDR/7///2-2[(46){3}]+EXCHDR/13///2-2+EXCHDR/13///2-2[(47){3}]+GENHDR/1///2-2[(48){3}]+GENHDR/5///2-2+GENHDR/5///2-2[(49){3}]+GENHDR/9///2-2+GENHDR/9///2-2[(50){2}]+LPRHDR/8///2-2+LPRHDR/8///2-2[(51){2}]+LPRHDR/1///2-2[(52){2}]+LPRHDR/19///2-2+LPRHDR/19///2-2[(53){3}]+PAYHDR/1///2-2[(54){3}]+PAYHDR/7///2-2+PAYHDR/7///2-2[(55){3}]+PAYHDR/15///2-2+PAYHDR/15///2-2[(56){2}]+PPRHDR/8///2-2+PPRHDR/8///2-2[(57){2}]+PPRHDR/1///2-2[(58){2}]+PPRHDR/19///2-2+PPRHDR/19///2-2[(59){3}]+SADHDR/8///2-2+SADHDR/8///2-2[(60){3}]+SADHDR/1///2-2[(61){3}]+SADHDR/16///2-2+SADHDR/16///2-2[(62){3}]+SNPHDR/1///2-2[(63){3}]+SNPHDR/8///2-2+SNPHDR/8///2-2[(64){3}]+SNPHDR/17///2-2+SNPHDR/17///2-2[(65){9}]+SRMHDR/1///2-2[(66){9}]+SRMHDR/8///2-2+SRMHDR/8///2-2[(67){9}]+SRMHDR/14///2-2+SRMHDR/14///2-2[(68){3}]+UCNHDR/23///2-2+UCNHDR/23///2-2[(69){3}]+UCNHDR/1///2-2[(70){3}]+UCNHDR/20///2-2+UCNHDR/20///2-2[(71){4}]+UPLHDR/1///2-2[(72){4}]+UPLHDR/9///2-2+UPLHDR/9///2-2[(73){4}]+UPLHDR/19///2-2+UPLHDR/19///2-2[(74){2}]+UTLHDR/9///2-2+UTLHDR/9///2-2[(75){2}]+UTLHDR/1///2-2[(76){2}]+UTLHDR/23///2-2+UTLHDR/23///2-2[(77){2}]+UTLHDR/26///2-2+UTLHDR/26///2-2[(78){9}]+INVFIL/25///2-2+CREHDR/22///2-2[(79){9}]+DELHDR/27///2-2[(80){9}]+INVFIL/22///2-2
+.TEXT,SETS
+ACKHDR~12~6,0,Conditional in this message.  If used at least one of the following sub-elements must be quoted.  If the Total Measure Ordered is quoted the Measure Indicator must be quoted too.
+ACKHDR~12~8~1,0,This is the net cost in pounds, ie. after deducting line discounts, etc., but before applications of VAT, of a traded unit or measure as defined by the measure indicator
+ACKHDR~13~4~2,0,Format:  YYMMDD.  Date of Despatch of Goods where relevant
+ACKHDR~14~3,0,Date on which delivery was requested in format YYMMDD
+ACKHDR~21~1,0,3 for this message
+ACKHDR,0,Acknowledgement File Header
+AVLHDR~11~9~3,0,Only required when delivering variable measure items
+AVLHDR~13~1,0,Number of AVD segments in this message for APIN = 0
+AVLHDR~14~1,0,Number of AVD segments in this message for APIN = 1
+AVLHDR,0,Availability File Header
+CORHDR~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+CORHDR~13~1,0,Date from which the first deliveries are expected.  If only one delivery is expected, this is either date of delivery or earliest date the delivery could take place.  Format:  YYMMDD
+CORHDR~13~4,0,Narrative covering special instructions
+CORHDR~15~7~1,0,This is the net cost in pounds ie. after deducting line discounts, etc. but before the application of VAT, of a traded unit or measure as defined by the measure indicator
+CORHDR~18~3,0,Date on which delivery is expected or required.  Format: YYMMDD. If date is to be announced, transmit as 999999
+CORHDR~20~1,0,Number of COD segments for this order
+CORHDR,0,Complex Order File Header
+CRAHDR~10~2,0,Account to be debited
+CRAHDR~11~2,0,Date of Credit Entry; Format: YYMMDD
+CRAHDR,0,Credit Advice File Header
+CREHDR~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+CREHDR~11,4,This segment is used to specify the settlement terms which apply to the original invoice.  The most favourable must be used for the VAT calculation
+CREHDR~12~2,0,As allocated by the supplier.  The invoice to which the credit refers
+CREHDR~12~3,0,Format: YYMMDD.  The date of invoice to which the credit refers.  Mandatory if INVN is present
+CREHDR~12~5~2,0,As allocated by the supplier when he processes the orders on behalf of the customer
+CREHDR~12~5,0,Identifies the order to which the credit refers
+CREHDR~13~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+CREHDR~15~5,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+CREHDR~16~4,0,Number of CLD segments with this VAT Category Code
+CREHDR~16~5,2,Line Sub-Total Amount (before settlement discount)
+CREHDR~16~8,0,Before VAT has been applied.\\nEVLA = LVLA - QYDA - VLDA
+CREHDR~16,4,All values are in pounds
+CREHDR~17~2,0,Sum of LVLA's in preceding CST segments.  Before VAT
+CREHDR~17~5,0,Sum of EVLA's in preceding CST segments.  Before VAT.
+CREHDR~17~7,0,Sum of ASDA's in preceding CST segments.  Before VAT.
+CREHDR~23~3,0,Percentage rate for VAT Category Code.  As used in INVOIC messages
+CREHDR~20~6,2,File Total Number of Credit Note Messages
+CREHDR~20~6,0,Number of Credit Note Details messages, 'CREDIT' for this file
+CREHDR,0,Credit Note File Header
+CUSHDR~4,4,Identifies the invoicee
+CUSHDR~9~1,0,Starts at 1 and is incremented by 1 for each segment of this type in the message.  Always 1 for this message
+CUSHDR~9~2~004~1~0,0,"REPORT" is used in 'complete transmissions' for sending information which has not changed since previous transmissions
+CUSHDR~9~3~1,0,Start date is mandatory for ADD, AMEND and DELETE
+CUSHDR~9~3,2,Date of Change
+CUSHDR~9~3,0,Format:  YYMMDD
+CUSHDR~9,4,Not repeatable in this message***
+CUSHDR~20~1,0,Total number of Customer Locations on File.  Number of 'CLO' segments
+CUSHDR,0,Customer Information Header
+DELHDR~12~6,0,Date from which the first deliveries are expected.  If only one delivery is expected, this is either date of delivery or earliest date the delivery could take place.  Format:  YYMMDD
+DELHDR~15~2~2,0,As allocated by the supplier when he processes the orders on behalf of the customer
+DELHDR~16~1,0,Value as per corresponding ORF sequence number
+DELHDR~16~2,0,Starts at 1 and is successively incremented by 1 within each nested sequence of this segment
+DELHDR~16~3,0,Either the EAN traded unit code or the supplier's code must be quoted, otherwise special arrangements need to be negotiated
+DELHDR~17~1,0,Takes value of SEQA from ORF segment
+DELHDR~17~2,0,Takes value of SEQB in preceding DLD segment
+DELHDR~17~5,2,Quantity To-Follow or Cancelled
+DELHDR~18~1,0,Takes value of SEQA from ORF segment
+DELHDR~18~2,0,Takes value of SEQB from DLD segment
+DELHDR~18~4,0,Unique reference for the pallet or container
+DELHDR~18,4,Repeat for each pallet delivered
+DELHDR~19~1,0,Takes the value of SEQA in the preceding segment with which this segment is nested
+DELHDR~19~2,0,Takes the value of SEQB in the preceding segment with which this segment is nested
+DELHDR~20~1,0,Number of delivery line detail segments for the delivery
+DELHDR~23~1,0,Total number of delivery details messages on file
+DELHDR,0,Delivery File Header
+DLCHDR~11~8,0,Secondary or transshipment location
+DLCHDR~14~10,0,Advised quantity as given on Order, Delivery Notification or Picking List.  If the Total Measure ordered is quoted, the Measure Indicator must 
+DLCHDR~14,4,This segment normally only used if DELC = 1 or 3.  If DELC = 1, list ALL lines at variance from the original instruction.  If DELC = 3, list ALL lines.  Alternatively, every line may be listed even for a complete delivery.  In this situation, DELC will have a value of 0, and Reason for Variance a value of AA = No Variance
+DLCHDR~15~1,0,Takes the value of SEQA in the preceding segment with which this segment is nested
+DLCHDR~17~1,0,Takes the value of SEQA in the preceding segment with which this segment is nested
+DLCHDR~18~1,0,Number of confirmation line detail segments (DCD and RCD) in the message
+DLCHDR~21~1,0,Total number of confirmation details messages in file
+DLCHDR,0,Delivery Confirmation Header
+DRAHDR~10~2,0,Account to be debited
+DRAHDR~11~2,0,Date of Debit Entry; Format: YYMMDD
+DRAHDR,0,Debit Advice File Header
+EXCHDR~9~2,0,Date of Exception Message; Format YYMMDD
+EXCHDR~10~1,0,Start at 1, incremented by 1 for each EXC segment in message
+EXCHDR~10,4,Repeatable for each exception condition to be reported
+EXCHDR,0,Exception Condition File Header
+GENHDR,0,General Communications File Header
+INVFIL~3,4,Identifies the invoicer
+INVFIL~4,4,Identifies the invoicee
+INVFIL~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+INVFIL~12~1,0,As allocated by the supplier
+INVFIL~13~1,0,Sequence number.  Starts at 1 and increases for each occurrence of the PYT segment
+INVFIL~13,4,This segment is used to specify the settlement terms which apply to the invoice.  The most favourable must be used for the VAT calculation
+INVFIL~14~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+INVFIL~15~2~2,0,As allocated by the supplier when he processes the orders on behalf of the customer
+INVFIL~15~6~1,0,Customer's proof of delivery reference.  Delivery vehicle Reg. No. may be used
+INVFIL~15~8,0,Code for location from which goods were despatched
+INVFIL~16~1,0,Takes the same value as in the corresponding order and delivery references segment
+INVFIL~16~3,0,Either the EAN traded unit code or the supplier's code must be quoted, otherwise special arrangements need to be negotiated
+INVFIL~16~8~1,0,Cost of order unit having applied line discount.  In pounds
+INVFIL~16~12,0,Value zero for the invoice item line for a composite product with component groups with different VAT rate codes.  Starts at 1 and is incremented by 1 for each following invoice item line for the component groups
+INVFIL~16~15~2,0,Price marked on unit.  In poundsI
+INVFIL~16~15~3,0,Price marked on unit.  In pounds
+INVFIL~17~1,0,Takes the value of SEQA in the preceding segment with which this segment is nested
+INVFIL~17~2,0,Takes the value of SEQB in the preceding segment with which this segment is nested
+INVFIL~18~1,0,Takes the value of SEQA in the corresponding ODD segment with which this segment is nested
+INVFIL~18~2,0,Takes the value of SEQB in the corresponding ILD segment with which this segment is nested
+INVFIL~18~6,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+INVFIL~19~4,0,Number of ILD segments with this VAT Category Code
+INVFIL~19~5,0,Before VAT has been applied.  Total of Net Cost Values (LEXC) for this VAT Category Code
+INVFIL~19~10,0,Before VAT has been applied.  EVLA = LVLA - QYDA - VLDA + SURA - SSUB
+INVFIL~19,4,All values are in pounds
+INVFIL~20~2,0,Sum of LVLA's in preceding STL segments.  Before VAT
+INVFIL~20~6,0,Sum of SSUB's in preceding STL segments
+INVFIL~20~7,0,Sum of EVLA's in preceding STL segments.  Before VAT
+INVFIL~20~8,0,Sum of SEDA's in preceding STL segments
+INVFIL~20~9,0,Sum of ASDA's in preceding STL segments.  Before VAT
+INVFIL~20~10,0,Sum of VATA's in preceding STL segments
+INVFIL~20~11,0,Sum of APSE's in preceding STL segments
+INVFIL~20~12,0,Sum of APSI's in preceding STL segments
+INVFIL~26~3,0,Percentage rate for VAT Category Code.  As used in INVOIC messages
+INVFIL~23~6,0,Number of Invoice Details Messages, 'INVOIC' for this file
+INVFIL,0,Invoice File Header
+LPRHDR~11~1,0,Take value of preceding SLO if used or starts at 1 and increases
+LPRHDR~12~1,0,Takes first level sequence from SLO
+LPRHDR~12~5~1,0,Number of traded units.
+LPRHDR~12~5~2,0,Weight or volume or variable unit reported.  Must have associated unit of measure reported (Code List 4).
+LPRHDR~12~5~4,0,Financial amount.  Should have currency indicator unless currency already defined: Use Code Values List 31
+LPRHDR~12~5,0,Used if REPU specifies the function in SFR otherwise QPER in segment SFS should be used.
+LPRHDR~13~6~1,0,Number of traded units.
+LPRHDR~13~6~2,0,Weight or volume or variable unit reported.
+LPRHDR~13~6~3,0,Must have the associated unit of measure (Code List 4).
+LPRHDR~13~6~4,0,Financial amount.  Should have currency indicator, unless currency is already defined:  Use Code Values List 31
+LPRHDR~13~6,0,Quantity for each period by report type
+LPRHDR~13,4,This segment is used only if data for more than one function for a period is to be repeated
+LPRHDR~14~5,0,Used to indicate outstanding order numbers
+LPRHDR~14,4,Used to refer transactions to reports, eg. order numbers/dates to orders in a period
+LPRHDR~15~4,0,Totals per time period, reported if REPU used at SFR indicating data where only one function is being reported.  If not use QPER in SFX
+LPRHDR~15,4,Control totals of location time period
+LPRHDR~16,4,This segment is used only if data for more than one function for a period is to be reported
+LPRHDR~17~2,0,The number of locations for which data is reported.  (SLO segments)
+LPRHDR~20~1,0,Number of LPRDET messages in file
+LPRHDR,0,Location Planning Report Header
+ORDHDR~4~3,0,A maximum of five lines to give the customer's address.  This may be the head office or ordering location
+ORDHDR~9,4,Identifies the delivery location
+ORDHDR~11~1,0,Date of delivery or earliest date the delivery could take place. Format:  YYMMDD
+ORDHDR~14~1,0,Takes the value of SEQA in the preceding segment with which this segment is nested
+ORDHDR~14~2,0,Starts at 1 & incremented by 1 for each 2nd level repeat
+ORDHDR~15~1,0,Number of OLD segments for this order
+ORDHDR~18~1,0,Total Number of order details messages in the file\r\n
+ORDHDR,0,Order File Header
+PAYHDR~10~2,0,Account to be debited
+PAYHDR~11~2,0,Service Processing Date as agreed with Service Bank
+PAYHDR,0,Payment Order File Header
+PICHDR~11~1,0,Date delivery expected, or earliest delivery date
+PICHDR~11~4,0,Narrative covering special instructions applicable to the order.  This is likely to preclude automatic processing
+PICHDR~12~1,0,Starts at 1 and is incremented by 1 for each segment of this type in this message
+PICHDR~12~2,0,Either the EAN traded unit code or the supplier's code must be quoted, otherwise special arrangements need to be negotiated
+PICHDR~13~1,0,Takes the same value as SEQA in the preceding PLD segment
+PICHDR~13~2,0,Consecutive count of PIC segments starting at '1'
+PICHDR~13~3,0,Identifies the consignee.  One of the following must be present
+PICHDR~13~5,0,A maximum of five lines to give the customer's consignee address
+PICHDR~14~1,0,Takes the value of SEQA in the preceding segment with which this segment is nested
+PICHDR~14~2,0,Takes the value of SEQB in the preceding segment with which this segment is nested
+PICHDR~14~3,0,Starts at 1 & incremented by 1 for each 3rd level nesting
+PICHDR~15~1,0,Total number of PLD segments in this message
+PICHDR~15~2,0,Total number of PIC segments within this message
+PICHDR~18~1,0,Number of PICKER messages
+PICHDR,0,Picking Instructions File Header
+PPRHDR~12~5~1,0,Number of traded units.
+PPRHDR~12~5~2,0,Weight or volume or variable unit reported.  Must have associated unit of measure reported (Code List 4).
+PPRHDR~12~5~4,0,Financial amount.  Should have currency indicator unless currency already defined.  Use Code Values List 31
+PPRHDR~12~5,0,Used if REPU specifies the function in SFR otherwise QPER in segment SFS should be used.
+PPRHDR~12,4,Must be used except when LOCA present indicating that location is inactive
+PPRHDR~13~6~1,0,Number of traded units.
+PPRHDR~13~6~2,0,Weight or volume or variable unit reported.
+PPRHDR~13~6~3,0,Must have the associated unit of measure (Code List 4).
+PPRHDR~13~6~4,0,Financial amount.  Should have currency indicator, unless currency is already defined:  Use Code Values List 31
+PPRHDR~13,4,This segment is used only if data for more than one function for a period is to be repeated
+PPRHDR~14~5,0,Used to indicate outstanding order numbers
+PPRHDR~14,4,Used to refer transactions to reports, eg. order numbers/dates to orders in a period
+PPRHDR~15~4~1,0,Totals per time period, reported if REPU used at SFR indicating data of only one function is being reported.  If not use QPER in SFX
+PPRHDR~15,4,Control totals of products and locations per time period (column)
+PPRHDR~16~5,0,Totals per time period mandatory if using this segment, reported if REPU used above indicating data of several functions is being reported.  If not use QPER in SFC
+PPRHDR~16,4,This segment is used only if data for more than one function for a period is to be reported
+PPRHDR~17~2,0,The number of locations for which data is reported.  (PLO segments)
+PPRHDR~20~1,0,Number of PPRDET messages in file
+PPRHDR,0,Product Planning Report Header
+PRIHDR~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+PRIHDR~10~3~1,0,Start date is mandatory for ADD, AMEND and DELETE
+PRIHDR~11~1,0,Takes value of SEQA from NOI segment
+PRIHDR~12~1,0,Takes value of SEQA from NOI segment
+PRIHDR~13~1,0,Takes value of SEQA in preceding NOI segments
+PRIHDR~13~2,0,Takes value of SEQB in preceding PRN segments
+PRIHDR~13~8~3,0,Used for variable measure items Code Values List 4
+PRIHDR~13~12,0,Reference number of the specification which defines the product and/or the contract
+PRIHDR~13~14,0,Overrides the applicability dates in NOI (NOI, DARA)
+PRIHDR~14~1,0,Takes value of SEQA from NOI segment
+PRIHDR~14~2,0,Takes value of SEQB from PRN segment
+PRIHDR~14~4,0,Used when the price details apply to a range of locations
+PRIHDR~14~5,0,Used when the price details apply to a range of locations
+PRIHDR~15~1,0,Takes value of SEQA from NOI segment
+PRIHDR~15~2,0,Takes value of SEQB from PRN segment
+PRIHDR~16~1,0,Takes value of SEQA from NOI segment
+PRIHDR~16~2,0,Takes value of SEQB from PRN segment
+PRIHDR~16~3,0,Takes value of SEQC from PRI segment
+PRIHDR~17~1,0,Takes value of SEQA from NOI segment
+PRIHDR~17~2,0,Takes value of SEQB from PRN segment
+PRIHDR~18~1,0,Takes value of SEQA from NOI segment
+PRIHDR~18~2,0,Takes value of SEQB from PRN segment
+PRIHDR~18~3,0,Takes value of SEQC from DSC segment
+PRIHDR~19~1,0,Takes value of SEQA from NOI segment
+PRIHDR~19~2,0,Takes value of SEQB from PRN segment
+PRIHDR~22~1,0,Number of PRN segments
+PRIHDR,0,Price File Header
+PROHDR~1,4,One message only, at the start of the file
+PROHDR~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+PROHDR~9~3~1,0,Start date is mandatory for ADD, AMEND and DELETE
+PROHDR~10~1,0,Takes value of SEQA from NOI segment
+PROHDR~11~1,0,Takes value of SEQA in the NOI segment
+PROHDR~11~2,0,Takes the value of SEQB in the PRN segment
+PROHDR~11~4~3,2,Marked Price Split Pack Price
+PROHDR~11~14,0,Overrides date range given in NOI segment
+PROHDR~12~1,0,Takes the value of SEQA in NOI segment
+PROHDR~12~2,0,Takes the value of SEQB in PRN segment
+PROHDR~13~1,0,Takes the value of SEQA from NOI segment
+PROHDR~13~2,0,Takes value of SEQB from PRN segment
+PROHDR~13~5,0,For example the number of cartons on a pallet.  Not quoted if variable
+PROHDR~13~6,0,Not quoted if variable
+PROHDR~13~7,0,Not quoted if variable
+PROHDR~14~1,0,Takes the value of SEQA from NOI segment
+PROHDR~14~2,0,Takes the value of SEQB from PRN segment
+PROHDR~17~1,0,Number of PRN segments in the file
+PROHDR,0,Product File Header
+RSGRSG~1~1,0,Consecutive count of messages within the transmission
+RSGRSG,0,Reconciliation Message
+RSGRSG,2,To ensure the integrity of the transmission.
+RSGRSG,3,NOTES:\r\n1) This message must be present if the transmission reconciliation check has been switched on in the STX segment.\r\n2) It must always be the message immediately before the END segment in any transmission.\r\n 
+SADHDR,0,Stock Adjustment Header
+SNPHDR,0,Stock Snapshot Header
+SRMHDR~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+SRMHDR~9~2,0,One of the following 3 customer's references must be present.  If the line detail is not location-specific, use the first sub-element, zero-filled
+SRMHDR~10~1,0,Takes the value of SEQA in the preceding SRD segment with which this segment is nested
+SRMHDR~10~5,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+SRMHDR~12~2,0,Service Processing Date as agreed with Service Bank
+SRMHDR~12,4,This corresponds to the PYD segment used in the Payment Message Set
+SRMHDR,0,Statement/Remittance Details File Header
+UCNHDR~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+UCNHDR~25~7,0,Principal (controlling) despatch location
+UCNHDR~28,4,This segment only used if UPLC = 1 or 3.  If UPLC = 1, list ALL lines at variance from the original instructions.  If UPLC = 3, list ALL lines
+UCNHDR~29~1,0,Takes the value of SEQA in the preceding segment with which this segment is nested
+UCNHDR,0,Uplift Confirmation Header
+UPLHDR~4,4,Identifies the invoicee
+UPLHDR~5~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+UPLHDR~11~9,0,Principal (controlling) despatch location
+UPLHDR~12~4,0,Date from which the first redelivery of uplifted goods is expected.  If only one redelivery is expected, this is either date of redelivery or earliest date the redelivery could take place.\\nFormat:  YYMMDD
+UPLHDR~12~5,0,Only present when more than one redelivery or when redelivery or earliest date of the redelivery could take place.  Format:  YYMMDD
+UPLHDR~14,4,Only used where an original instruction was given resulting in the Uplift(s)
+UPLHDR,0,Uplift File Header
+UTLHDR~3,4,Invoicer
+UTLHDR~4,4,Invoicee
+UTLHDR~5,4,File control numbers
+UTLHDR~6,4,File dates
+UTLHDR~7,4,File level references
+UTLHDR~10,4,Premises being billed
+UTLHDR~11,4,Bill level references
+UTLHDR~12,4,Used to specify the settlement terms which apply to the bill, including penalties for late payment
+UTLHDR~13~2,0,Order references
+UTLHDR~13,4,Contract level references
+UTLHDR~14~2,0,Text statement held on mutually supported file
+UTLHDR~14~4,0,Narrative covering information which cannot be sent in a coded form ie. RTEX/DNAC.  This is likely to preclude automatic processing
+UTLHDR~15~13~1,0,User defined code for adjustment
+UTLHDR~15~13~2,0,Multiplication factor
+UTLHDR~15~13,0,Adjustment applied to CONB
+UTLHDR~15,4,Meter readings and charges
+UTLHDR~16,4,Used to show the factors/values modifying the base price when calculating the price charged
+UTLHDR~17~3~1,0,User defined code for adjustment
+UTLHDR~17~3~2,0,Multiplication factor
+UTLHDR~17,4,Only used when there needs to be more than one adjustment to the meter readings in CCD
+UTLHDR~18~9,0,Number of CCD segments with this VAT Category Code
+UTLHDR~18,4,Repeats for each VAT rate applied in the bill
+UTLHDR~19,4,Only used when VAT affected e.g. where different rates of VAT apply to the prepayment and the current charges
+UTLHDR~20,4,Bill level totals
+UTLHDR~27,4,VAT summary for each VAT rate applied in the file
+UTLHDR~24~6,2,File Total Number of Invoices
+UTLHDR~24~6,0,Number of Utility Bill Details Messages "UTLBIL" for this file
+UTLHDR~24,4,File level totals
+UTLHDR,0,Utility Bill File Header
+.TEXT,SEGS
+ACD,0,Audit Control Details
+ADJ,0,Additional Adjustments
+ADT,0,Adjustment File Totals
+AFT,0,Availability File Totals
+AGD,0,Advice of Goods Despatched
+ALD,0,Acknowledgement Line Details
+AOR,0,Acknowledgement of Order References
+APD,0,Amount Payable
+AQD,0,Expected Delivery Details
+ARF,0,Availability References
+ATR,0,Availability Trailer
+AUT,0,Authentication Result
+AVD,0,Availability Line Details
+BCD,0,Bill Control Data
+BDT,0,Bank Details
+BTL,0,Bill Trailer
+CBK,0,Customer's Bank Details
+CCD,0,Consumption/Charge Details
+CDA,0,Contract Data
+CDT,0,Customer Details
+CFT,0,Customer Information File Totals
+CIA,0,Complex Invoice Line Adjustments
+CLD,0,Credit Note Line Details
+CLO,0,Customer's Location
+CLP,0,Customer's Location References
+CLR,0,Customer's Location References
+COD,0,Complex Order Line Details
+COT,0,Confirmation File Totals
+CPT,0,Communicating Partners
+CRF,0,Credit Note References
+CST,0,VAT Rate Credit 
+CTR,0,Credit Note Trailer
+DCD,0,Delivery Confirmation Details
+DCT,0,Delivery Confirmation Trailer
+DEF,0,Deferred Charges
+DEL~2,3,Number of cases, cartons, packages, etc. transported
+DEL~3,3,If known to the supplier
+DEL~5,3,In cubic metres
+DEL~7,3,Format:  YYMMDD
+DEL~9,3,Narrative covering special instructions, applicable to the complete delivery
+DEL~10,3,Principal (controlling) despatch location
+DEL~11,3,Secondary or transshipment location
+DEL~12,3,Reference number for journey
+DEL~13,3,Indicates type of planned transaction.  (File type 0910).  (See code list 25)
+DEL,0,Delivery Reference
+DFT,0,File Totals 
+DIN,0,Delivery Instructions
+DLD,0,Delivery Line Details
+DLS,0,Delivery Line Supplementary Data
+DNA,0,Data Narrative
+DNB~1,3,Takes the value of SEQA in the preceding segment with which this segment is nested
+DNB,0,Data Narrative
+DNC~1,3,Takes the value of SEQA in the preceding segment with which this segment is nested
+DNC,0,Data Narrative
+DNS,0,Delivery Note Supplementary Data
+DSC,0,Discount Header
+DSD,0,Discount Details
+DST,0,Delivery Status
+DTR,0,Delivery Trailer
+END,0,End of Transmission
+EXC,0,Exception Conditions
+FDT~1,3,Format: YYMMDD
+FDT~2,3,Format: YYMMDD
+FDT,0,File Period Dates
+FIL,0,File Details
+GFT,0,General Communications File Totals
+ILD,0,Invoice Line Details
+INT,0,Invoice to
+IRF,0,Invoice References
+ITD~2,3,Contact name at Invoice Point
+ITD,0,Invoice to Location
+KFT,0,Acknowledgement of File Totals
+KTR,0,Acknowledgement Trailer
+LFT,0,Planning Report Messages
+LMI,0,Miscellaneous Information
+LTY,0,Location Type
+MED,0,Message Details
+MHD,0,Message Header
+MOD,0,Charge Modifiers
+MTR~1,3,Control count of the number of segments comprising message.  The count includes the MHD and MTR segments surrounding the message
+MTR,0,Message Trailer
+NAM,0,Location Name and Address
+NOI,0,Nature of Information
+ODD,0,Order and Delivery References
+OFT,0,Order File Totals
+OIR,0,Original Invoice References
+OLD,0,Order Line Details
+OOL~2,3,Contact name in order office
+OOL,0,Order Office Location
+ORD,0,Order References
+ORF,0,Order References 
+OTR,0,Order Trailer
+PAT,0,Planned Availability
+PDN,0,Product Details
+PDS,0,Product Details
+PDT,0,File Totals
+PFT,0,Picking File Totals
+PIC,0,Picking Instructions Details
+PID,0,Pallet Identity
+PLD,0,Picking Line Details
+PLO,0,Outlet Location Details
+PLR,0,Price List References
+PPT,0,Planning Report Messages
+PRD,0,Product Description
+PRI,0,Price Header
+PRN,0,Product References
+PRP,0,Price Details
+PRT,0,Price File Totals
+PRU,0,Product Dimensions
+PRV,0,Prepayment Received (VAT inclusive)
+PTR,0,Picking Trailer
+PVD,0,Product Variant Details
+PYC,0,Payment Details
+PYD,0,Payment Details
+PYT,0,Settlement Terms
+RCD,0,Returns Confirmation Details
+RDQ,0,Required Delivery Dates
+REF,0,Account Reference Number
+RFD,0,Report References and Dates
+RNB,0,Data Narrative
+RSG,0,Reconciliation Segment
+RST,0,Statement/Remittance File Totals
+SAD,0,Stock Adjustment Details
+SAR,0,Stock Adjustment References
+SAT,0,Stock Adjustment Trailer
+SBK~2,3,Account to be credited
+SBK,0,Supplier's Bank Details
+SDT,0,Supplier Details
+SFC,0,Time Base Control Totals
+SFL,0,Planning Report Trailer
+SFP,0,Planning Report Data
+SFR~1~1,3,Date of first record in each row of the report.  Format: YYMMDD
+SFR~1~2,3,Code which specifies the time period covered by each repeat of data segment.  Code Values List 27
+SFR~1~3,3,Specifies the number of data segments for each product or location
+SFR~1~4,3,Date of last record in each line
+SFR~1~5,3,Indicates the number of periods before the same reporting period repeats, eg the number of working days reported between Mondays, etc
+SFR,0,Planning Report Rules
+SFS,0,Function Data Segment
+SFX,0,Function Data Segment
+SLD,0,Stock Line Details
+SLO,0,Unit Location
+SNT,0,Snapshot File Totals
+SRD,0,Statement/Remittance Line Details
+SRF,0,Stock Reference
+SRT,0,Statement/Remittance Message Totals
+SSR,0,Snapshot References
+SST,0,Snapshot Trailer
+STD,0,Storage Details
+STL,0,VAT Rate Invoice 
+STT,0,Statement to
+STX,0,Start of Transmission
+STX,2,NOTE:*DETAILS OF THE WAY IN WHICH STX IS USED FOR TRANSMISSIONS VIA VALUE ADDED NETWORKS ARE GIVEN IN THE NETWORK USER MANUAL.*\r\n\r\nANA recommends the use of EAN Location Numbers to identify sender and recipient.\r\n 
+TCM,0,Credit Advice Message Totals
+TDM,0,Debit Advice Message Totals
+TEM,0,Exception Condition Message File Totals
+TLR,0,Invoice Trailer
+TOT,0,File Totals
+TPM,0,Payment Message Totals
+TRA,0,Transmission to
+TTL,0,Utility Bill File Totals
+TXT,0,Text
+TYP,0,Transaction Type Details
+UCD,0,Uplift Confirmation Details
+UCT,0,Uplift Confirmation Trailer
+UDD,0,Uplift References
+UFT,0,Uplift File Totals
+ULD,0,Uplift Line Details
+UPL,0,Uplift References
+UPS,0,Uplift Supplementary Data
+URF,0,Uplift Instruction References
+UST,0,Uplift Status
+UTR,0,Uplift Trailer
+VAT,0,Value Added Tax
+VRS,0,VAT Rate Summary
+VTS,0,VAT Rate Summary
+.TEXT,ELMS
+ACCR,0,Accumulation Rules
+ADJT,0,Adjustment Type Indicator
+AMPY,0,Amount Payable
+AMPY,2,Value with implied decimal point (eg in pence)
+AOCI,0,Allowance/Charge Indicator
+APIN,0,Actual/Proposed Status Indicator
+APRF,0,Application Reference
+APSE,0,Payable Sub-Total Amount (before settlement discount)
+APSE,2,After VAT has been applied. APSE = EVLA + VATA
+APSI,0,Payable Sub-Total Amount (after settlement discount has been applied)
+APSI,2,After VAT has been applied.  APSI = ASDA + VATA
+AREF,0,Availability References/Series No.
+AREF,2,Unique reference for this availability report
+ASDA,0,Extended Sub-Total Amount (after settlement discount has been applied)
+ASDA,2,Before VAT has been applied.\\nASDA = EVLA - SEDA
+ASDT,0,Total Amount (after settlement discount has been applied)
+AUTH,0,Authority Reference
+AUTH,2,Reference for adjustment authority
+BBID,0,Bank/Branch Identifier
+BBID,2,eg Sort Code of remitting Bank
+BIFR,0,Bill Frequency Code
+BIFR,2,Code Values List 27
+BINN,0,Booking in Necessity
+BINN,2,Is it necessary to book in before delivering to the branch being described? 
+BKIC,0,Bank Identity Code
+BKIC,2,Service Bank's own identity code
+BKIN,0,Bank Information
+BKIN,2,Customer to Bank information, eg F/X Deal Number
+BNAM,0,Bank Name
+BNAM,2,Service Bank/3rd Party Bank Name
+BPRI,0,Base Price Per Unit
+BTCD,0,Bill Type Code
+BTCD,2,See Code Values List 42
+BUCT,0,Unit Cost Price (excluding VAT) before discount
+BUCT,2,Cost of order unit before applying line discount.  In pounds
+CDSV,0,Credit Discount Value
+CDSV,2,Line discount value.  In pounds.  Used to debit the line discount that had been allowed on the invoice being credited, where this has been explicitly stated
+CEDT,0,Charge End Date
+CEDT,2,Format YYMMDD
+CLAS,0,Order Classification
+CLAS,2,Code Values List 6
+CNAM,0,Customer's Name
+CNAM,2,Customer's registered legal name
+CNDT,0,Collection Note Date
+CNDT,2,Format: YYMMDD
+CNNR,0,Collection Note Number
+CNNR,2,Number of supplier's collection note
+CPPU,0,Price per Unit
+CPPU,2,Price charged
+CPSC,0,Current Price Schedule Reference
+CPSC,2,Applicable price schedule
+CRDT,0,Credit Note Date
+CRDT,2,Format: YYMMDD
+CRLI,0,Credit Line Indicator
+CRLI,2,Code Values List 9
+CRNR,0,Credit Note Number
+CRNR,2,As allocated by the supplier
+CSDI,0,Cash Settlement Discount Identifier
+CSDI,2,Code Values List 11
+CSDT,0,Charge Start Date
+CSDT,2,Format YYMMDD
+CSTI,0,Chargeable Storage Medium Indicator
+CTNM,0,Contact Name
+CUIN,0,Currency Indicator
+CUIN,2,Currency Code (List 31)
+DATE,0,Date relating to message
+DELC,0,Delivery Condition
+DELC,2,Code Values List 21
+DELT,0,Deliver To
+DEPO,0,Depot Code
+DEPO,2,Customer's own code for Depot, where needed
+DESF,0,Despatch From
+DEVL,0,Delivery Volume
+DEVL,2,In cubic metres
+DINN,0,Delivery Instruction Number
+DINN,2,Reference number of pre-defined delivery instructions statement
+DNAM,0,Delivery to Name
+DNAM,2,Company name to whom redelivery of uplifted goods is being made
+DNDT,0,Debit Note Date
+DNDT,2,Format: YYMMDD
+DNNR,0,Debit Note Number
+DNNR,2,Number of debit note raised by customer
+DRLI,0,Debit Line Indicator
+DRLI,2,Code Values List '9'
+DSCP,0,Discount Percentage
+DSCP,2,Line item discount percentage
+DSCV,0,Discount Value
+DSCV,2,Line discount value.  In pounds
+DTYP,0,Discount Type
+DTYP,2,Code Values List 32
+DVED,0,Delivery Period End Date
+DVED,2,Format:  YYMMDD
+ECOD,0,Exception Code
+ECOD,2,Exception Code as agreed with Service Bank
+EDAT,0,Earliest Delivery Date
+EDAT,2,Date of delivery or earliest date the delivery could take place.Format:  YYMMDD
+ETFT,0,Electronic Transmission From/To
+ETXT,0,Exception Text
+ETXT,2,Free format text for Exception Condition not coded
+EUDT,0,Earliest Uplift Date
+EUDT,2,Date from which the first uplifts are expected.  If only one uplift is expected, this is either date of uplift or earliest date the uplift could take place.\\nFormat:  YYMMDD
+EVLA,0,Extended Sub-Total Amount (before settlement discount has been applied)
+EVLT,0,Total Extended Amount (before settlement discount has been applied)
+EXLV,0,Nett Credit Value (before VAT)
+EXLV,2,Credit value of line, before VAT, having applied line discounts.  In pounds.  EXLV = UCRV x QTYC
+FASE,0,File Total Amount (before VAT and settlement discount)
+FASE,2,Sum of VSDE's in VATTLR message
+FASI,0,File Total Amount (before VAT but after settlement discount has been applied)
+FASI,2,Sum of VSDI's in VATTLR message
+FLDT,0,File Creation Date
+FLDT,2,Date the file is created.Format:  YYMMDD
+FLGN,0,File Generation Number
+FLGN,2,This number is sequential, per file type, per trading partner
+FLID,0,File (Reel) Identification
+FLID,2,Reference on the outside of reel containing the file
+FLVN,0,File Version Number
+FLVN,2,Original (which is always 1) is incremented by 1 for each additional copy created
+FPSE,0,File Total Payable (before settlement discount)
+FPSE,2,Sum of VPSE's in VATTLR message. After VAT
+FPSI,0,File Total Payable (after settlement discount has been applied)
+FPSI,2,Sum of VPSI's in VATTLR message.  After VAT
+FTAK,0,File Total Number of Acknowledgements
+FTAK,2,Total number of Acknowledgement details messages on file
+FTAR,0,File Total of Availability Reports
+FTAR,2,Number of AVLDET messages in file
+FTCO,0,File Total of Confirmations
+FTCO,2,Total number of confirmation details messages in file
+FTDE,0,File Total Number of Deliveries
+FTDE,2,Total number of delivery details messages on file
+FTNA,0,File Total Number of Adjustments
+FTNA,2,Total Number of Adjustment Details Messages in file
+FTNC,0,File Total Number of Credit Advice Messages
+FTNC,2,Number of 'CRAINF' Credit Advice Messages
+FTND,0,File Total Number of Debit Advice Messages
+FTND,2,Number of 'DRAINF' Debit Advice Messages
+FTNE,0,File Total Number of Exception Condition Messages
+FTNE,2,Number of 'EXCINF' Exception Condition Messages
+FTNI,0,File Total Number of Invoice Messages
+FTNP,0,File Total Number of Payment Messages
+FTNP,2,Number of 'PAYINF' Payment Detail Messages
+FTNS,0,File Total Number of Snapshots
+FTNS,2,Total Number of Snapshot Details Messages in file
+FTOR,0,File Total Number of Orders
+FTOR,2,Total number of order details messages on file
+FTPC,0,File Total Number of Picking Instructions
+FTPC,2,Number of PICKER messages
+FTSR,0,File Total Detail Messages
+FTUP,0,File Total Number of Uplifts
+FTUP,2,Total number of uplift details messages on file
+FVAT,0,File Total VAT Amount
+FVAT,2,Sum of VVAT's in VATTLR message
+GTYP,0,Graduation Type
+IDID,0,EAN/ISSN Number
+IDID,2,EAN/ISSN Number inc. add-on for issue number
+IGPI,0,Item Group Identifier
+IGPI,2,Code Values List 10
+INSD,0,Installation Date
+INSD,2,Date equipment installed. Format:  YYMMDD
+INVN,0,Invoice Number
+INVN,2,As allocated by the supplier
+INVT,0,Invoice To
+IVDT,0,Date of Invoice
+IVDT,2,Format:  YYMMDD\r\n
+IVED,0,Invoice Period End Date
+IVED,2,Format:  YYMMDD
+JORF,0,Journey Reference
+JORF,2,Reference number for journey
+LACK,0,Lines Acknowledgement
+LACK,2,Number of ALD segments for this order
+LCON,0,Lines Confirmed
+LDAT,0,Latest Delivery Date
+LDAT,2,Only present if more than one delivery or when delivery must take place before this date.Format:  YYMMDD
+LDEL,0,Lines Delivered
+LDEL,2,Number of delivery line detail segments for the delivery
+LEXC,0,Extended Line Cost (excluding VAT)
+LEXC,2,Having applied line discounts.  In pounds.  LEXC = AUCT X QTYI
+LIDA,0,Line Document Amount Payable
+LIDA,2,In Pounds. LIDA = LIDT - LIDD + LIDV
+LIDD,0,Line Document Discount Taken
+LIDD,2,In Pounds
+LIDT,0,Line Document Total (excluding VAT and Discount)
+LIDT,2,In Pounds. Before settlement discount + VAT have been applied
+LIDV,0,Line Document VAT
+LIDV,2,In Pounds
+LINE,0,Statement/Remittance Line Code
+LINE,2,Identifies nature of the entry for the line of the statement/remittance advice\\nCode Values List 15
+LNAM,0,Location Name
+LOCA,0,Location Activity Indicator
+LOCA,2,Used to indicate why a location stops activity and is not included in this report.  Code List 28
+LOCD,0,Number of Locations for Delivery
+LOCD,2,Total number of PIC segments within this message
+LORD,0,Lines Ordered
+LPAL,0,Layers per Storage Medium
+LPAL,2,Not quoted if variable
+LTEL,0,Location Telephone Number
+LTLX,0,Location Telex Number
+LUDT,0,Latest Uplift Date
+LUDT,2,Only present if more than one uplift or when uplift must take place before this date.\\nFormat:  YYMMDD
+LUPL,0,Lines Uplifted
+LUPL,2,Number of line detail segments for the uplift
+LVLA,0,Line Sub-Total Amount (before VAT)
+LVLA,2,Before VAT has been applied. Total of Net Cost Values (EXLV) for this VAT Category Code
+LVLT,0,Lines Total Amount (before settlement discount has been applied)
+MCAT,0,Modifier Category
+MCAT,2,Allowed values: \r\n1 = Factor applied to BPRI; \r\n2 = Value applied to BPRI ; \r\n3 = Percentage applied to BPRI
+MCDE,0,Modifier Code
+MCDE,2,User defined code for the modifier
+MCDV,0,Monthly Charge Deferred Value
+MCDV,2,Deferred charge
+MIXI,0,Mixed VAT Rate Product Indicator
+MLOC,0,Meter Location
+MLOC,2,Additional identification to locate the meter
+MSRF,0,Message Reference
+MSRF,2,Consecutive count of messages within the transmission
+MTNR,0,Meter Number
+MTNR,2,Identifies the meter
+NCST,0,Number of Total Segments
+NCST,2,Number of preceding CST segments
+NDRP,0,Reading Period
+NDRP,2,Number of Days covered by reading period PRDT to PVDT
+NDVT,0,Number of Days' VAT
+NDVT,2,Total days at this VAT rate
+NMRS,0,Negotiated Minimum Remaining Shelf Life
+NMRS,2,In days
+NMST,0,Number of Messages in Transmission
+NMST,2,Control count of the number of messages in a tape or transmission
+NODU,0,Number of Delivery/Uplift Units
+NODU,2,Number of cases, cartons, packages, etc. transported
+NOLR,0,Number of Location Records
+NOLR,2,Total number of Customer Locations on File.  Number of 'CLO' segments
+NOPA,0,Number of Availability Reports
+NOPP,0,Number of Product Lines Picked for this Order
+NOPP,2,Total number of PLD segments in this message
+NOPR,0,Number of Product References
+NOPR,2,Number of PRN segments in the file
+NOSG,0,Number of Segments in Message
+NOSG,2,Control count of the number of segments comprising message.  The count includes the MHD and MTR segments surrounding the message
+NOTX,0,Number of Text Segments
+NOTX,2,Number of TXT segments in the file
+NRIL,0,Number of Item Lines
+NSTA,0,New Status
+NSTA,2,Code Values List 18.  Used to indicate new status as a consequence of the adjustment, where applicable
+NSTL,0,Number of Total Segments
+NSTL,2,Number of preceding STL segments
+ORCD,0,Order Code
+ORCD,2,Code Values List 7
+ORDF,0,Order From
+OUTY,0,Type of Outlet Code
+OUTY,2,Code allocated by customer to classify type of branch (eg. by selling space)
+PADT,0,Prepayment Date
+PADT,2,Payment date as defined by trading partners.  Format YYMMDD
+PAYB,0,Balance of Outstanding Prepayments Received
+PAYB,2,Remaining credit - not used in calculations.
+PAYM,0,Payment Method
+PAYM,2,Express (or override) preference as defined by Bank
+PAYT,0,Terms of Payment
+PAYT,2,Textual description of the settlement terms
+PBID,0,Previous Bill Date
+PBID,2,Format:  YYMMDD
+PIND,0,Special Price Indicator
+PIND,2,Code Values List 5
+PMNT,0,Payment To
+PNDP,0,Percentage Qualifying for Lower / Zero VAT Rate
+PNDP,2,Domestic proportion of bill
+PRCD,0,Transmission Priority Code
+PRCD,2,Code Values List 1 - Appears in the Transmission Header Segment STX
+PRDT,0,Present Read Date
+PRDT,2,Format:  YYMMDD
+PREF,0,Picking Sheet Reference Number
+PREF,2,Unique reference for the picking sheet
+PRPF,0,Product Profile
+PRST,0,Product Status
+PVDT,0,Previous Read Date
+PVDT,2,Format:  YYMMDD
+QYCA,0,Discount Reclaimed for Credit Quantity
+QYCA,2,Value of discount for total quantity for VAT Category Code
+QYCT,0,Total Discount Reclaimed for Credit Quantity
+QYCT,2,Sum of QYCA's in preceding CST segments
+QYDA,0,Discount Amount for Invoice Quantity
+QYDA,2,Value of discount for total quantity for VAT Category Code
+QYDT,0,Total Discount Amount for Invoice Quantity
+QYDT,2,Sum of QYDA's in preceding STL segments
+RADJ,0,Reason for Adjustment
+RADJ,2,Code Values List 20
+RCRF,0,Recipient's Transmission Reference
+RCRF,2,If known to sender
+RDAT,0,Required Delivery Date
+RDAT,2,Date on which delivery is expected or required.  Format YYMMDD
+REGC,0,Customer's Region Code
+REGC,2,Code allocated by customer to classify region of the location
+REGS,0,Supplier's Region Code
+REPE,0,Rental Period
+REPE,2,See Code Values List 27
+REPT,0,Report Type
+REPU,0,Report Function Indicator
+REPU,2,Note:  used to indicate the function of the data being reported.  Code List 29
+RFLV,0,Reason for Lower/Zero VAT Rate
+RFLV,2,Used when premises are lower or zero rated.
+RPED,0,Report Period End Date
+RPED,2,Format:  YYMMDD
+RPSD,0,Report Period Start Date
+RPSD,2,Format:  YYMMDD
+RSGA,0,STX SNRF Reconciliation Field
+RSGA,2,Must equal SNRF in STX segment
+RSGB,0,STX Receiver Reconciliation Field
+RSGB,2,Must equal UNTO in STX segment
+RSTI,0,Returnable Storage Medium Indicator
+SACS,0,Supplier's EAN Article Number for Substituted Consumer (Retail) Unit
+SACS,2,EAN Number allocated to the retail (POS) unit.  (Insert five leading zeros before eight digit codes)
+SACU,0,Supplier's EAN Article Number for the Designated Consumer Unit
+SACU,2,EAN number allocated to the retail (POS) unit.  (Insert five leading zeros before eight digit codes.)
+SAJD,0,Stock Adjustment Date
+SAJD,2,Format: YYMMDD
+SAJN,0,Stock Adjustment Reference Number
+SAJN,2,Unique reference for the stock adjustment details message
+SCAR,0,Name of Carrier
+SCAR,2,If known to supplier
+SDCD,0,Statement/Remittance Discount Totals
+SDCD,2,Net sum of LIDD elements in this message.  The result can be negative
+SDIN,0,Split Delivery Indicator
+SDIN,2,Y = Yes if this delivery is part of a complete or bulk order
+SEDA,0,Sub-Total Settlement Discount Amount
+SEDA,2,For this VAT Category Code
+SEDT,0,Total Settlement Amount
+SEQA,0,First Level Sequence Number
+SEQA,2,Starts at 1 and incremented by 1 for each 1st level repeat
+SEQB,0,Second Level Sequence Number
+SEQB,2,Starts at 1 and is incremented by 1 for each repeat of this segment
+SEQC,0,Third Level Sequence Number
+SEQC,2,Starts at 1 and is incremented by 1 for each repeat of this segment
+SEQD,0,Fourth Level Sequence Number
+SEQD,2,Starts at 1 and is incremented by 1 for each repeat of this segment
+SESH,0,Serial Shipping Container Code
+SETC,0,Settlement Discount Totals
+SLAJ,0,Stock Lines in this Adjustment
+SLAJ,2,Number of SAD segments in this adjustment
+SLSN,0,Stock Lines in this Snapshot
+SLSN,2,Number of SRF segments in this Snapshot
+SMCO,0,Storage Medium Code
+SMCO,2,See code list 30
+SNAM,0,Supplier's Name
+SNAM,2,Supplier's legal name as printed on invoices
+SNIC,0,Supplier's Network Identity code
+SNIC,2,Used by Bank to send message to supplier eg EAN location number
+SNRF,0,Sender's Transmission Reference
+SNRF,2,Reference for the transmission
+SRAP,0,Statement/Remittance Amount Payable
+SRAP,2,Net sum of LIDA elements in this message
+SRDT,0,Statement/Remittance Document Totals
+SRDT,2,Net sum of LIDT elements in this message.  The result can be negative
+SREF,0,Secondary Reference Number
+SREF,2,Second or alternate reference
+SRLC,0,Statement/Remittance Line Count
+SRLC,2,Number of SRD segments in this message
+SRSP,0,Statutory Retail Selling Price (including VAT)
+SRSP,2,Required for items such as drugs which must be sold at a regular price.  In pounds
+SRVT,0,Statement/Remittance VAT Totals
+SRVT,2,Net sum of LIDV elements in this message.  The result can be negative
+SSCC,0,Snapshot Category Code
+SSCC,2,Code Values List 19
+SSRN,0,Snapshot Reference Number
+SSRN,2,Unique reference for this snapshot message
+SSTC,0,Stock Status Code
+SSTC,2,Code Values List 18
+SSUB,0,Sub-Total Subsidy
+SSUB,2,Sub-total of line subsidy values for this VAT Category Code
+STAT,0,Statement To
+STLD,0,Data Lines
+STLN,0,Number of Locations Reported
+STOI,0,Storage Information
+STOI,2,eg. CONTAMINABLE
+STPT,0,Number of Products Reported
+STPT,2,Number of products reported within the file.  Count of product reference numbers
+SUBA,0,Subsidy Amount
+SUBA,2,Subsidy value for this line
+SURA,0,Surcharge Amount
+SURA,2,Freight charges etc. for this VAT Category Code
+SURT,0,Total Surcharge Amount
+SURT,2,Sum of SURA's in preceding STL segments
+TCDE,0,Transaction Code
+TCDE,2,Appears in all file header messages, in segments TYP
+TEXT,0,Text
+TEXT,2,Any text not containing data for computer processing
+TFAC,0,To Follow Acceptability
+TFAC,2,If a part order is delivered is it acceptable to deliver the balance later?
+TFIN,0,To Follow Indicator
+TFIN,2,Code Values List 8
+TMAX,0,Maximum Storage Temperature
+TMAX,2,In degrees celsius
+TMIN,0,Minimum Storage Temperature
+TMIN,2,In degrees celsius
+TNAC,0,Temporarily Not Available Code
+TOTL,0,Total of Details Lines
+TOTV,0,Total of File Value
+TPKG,0,Type of Packaging
+TPKG,2,eg. SHRINK WRAPPED
+TPSE,0,Total payable (before settlement discount)
+TPSI,0,Total payable (after settlement discount)
+TPST,0,Transaction Planning Status
+TPST,2,Indicates type of planned transaction.  (File type 0910). See code list 25
+TSUB,0,Total Subsidy Amount
+TSUP,0,VAT - Type of Supply
+TTYP,0,Transaction Type
+TTYP,2,ANA Standard Code Values - List 3.  Appears in some file header messages, in segment TYP, but not necessary for new users.
+TVAT,0,Total VAT Amount Payable
+TVLC,0,Total Value of Credit Advice Messages
+TVLC,2,Sum of all 'AMPY' segments in 'CRAINF' messages
+TVLD,0,Total Value of Debit Advice Messages
+TVLD,2,Sum of all 'AMPY' segments in 'DRAINF' messages
+TVLP,0,Total Value of Payment Messages
+TVLP,2,Sum of all 'AMPY' segments in 'PAYINF' messages
+TXDT,0,Tax-point Date
+TXDT,2,Format:  YYMMDD (May be the same as the date of invoice)
+TYPC,0,Type of Change
+UCRB,0,Unit Credit Value Before Discount and VAT
+UCRB,2,Credit value of the unit being credited, before applying line discount and VAT in pounds
+ULAY,0,Traded Unit Quantity per Layer
+ULAY,2,Not quoted if variable
+UPAL,0,Traded Unit Quantity per Storage Medium
+UPAL,2,For example the number of cartons on a pallet.  Not quoted if variable
+UPLC,0,Uplift Condition
+UPLC,2,Code Values List 21
+UPVL,0,Uplift Volume
+UPVL,2,In cubic metres
+VATA,0,VAT Amount Payable
+VATA,2,VAT amount at quoted VAT rate
+VATC,0,VAT Rate Category Code
+VATC,2,Code Values List 12
+VATP,0,VAT Rate Percentage
+VATP,2,Percentage rate for VAT Category Code
+VLCA,0,Discount Reclaimed for Credit Value
+VLCA,2,Value of discount for total value for VAT Category Code
+VLCT,0,Total Discount Reclaimed for Credit Value
+VLCT,2,Sum of VLCA's in preceding CST segments
+VLDA,0,Discount Amount for Invoice Value
+VLDA,2,Value of discount for total value for VAT Category Code
+VLDT,0,Total Discount Amount for Invoice Value
+VLDT,2,Sum of VLDA's in preceding STL segments
+VPSE,0,File Sub-Total Payable (before settlement discount)
+VPSI,0,File Sub-Total Payable (after settlement discount)
+VRDT,0,Variant Details
+VRDT,2,Variable data eg. actual size, colour
+VRMI,0,Variable Measure Indicator
+VRMI,2,Used to indicate that the weight and volume information is subject to variation
+VSDE,0,File Sub-Total Amount (before settlement discount)
+VSDI,0,File Sub-Total Amount (after settlement discount)
+VTCO,0,Variant Type Code
+VTCO,2,Code to indicate nature of variant.  Registered with ANA
+VVAT,0,File VAT Sub-Total
+XDAT,0,Expected Delivery Date
+XDAT,2,Date on which delivery is expected in format YYMMDD
+_ADJ,0,Adjustment
+_ADR,0,Address Line
+_AMT,0,Amount
+_AUR,0,Authentication Result
+_BRA,0,Brand No.
+_CDV,0,Code Value
+_CNI,0,C/N indicator
+_CNT,0,Count
+_COD,0,Code
+_CON,0,Consumption/Charge Indicator
+_CRE,0,Reason For Credit Code
+_CUR,0,Currency Code
+_DAT,0,Date
+_DAT,2,Format:  YYMMDD
+_DAY,0,Days
+_DUA,0,Delivery/Uplift Action Details
+_DUN,0,Dun's Number
+_EAN,0,EAN article number
+_EXA,0,Area of Exception Condition
+_EXC,0,Repeat of original content
+_HRS,0,Hours
+_IDC,0,Code
+_IND,0,Yes/No Indicator
+_LEV,0,Level Code
+_LOC,0,EAN Location Number
+_MEA,0,Measure
+_MSG,0,Message Type
+_NAM,0,Name
+_NUM,0,Code or Number
+_PCT,0,Percentage
+_PER,0,Report period base
+_POS,0,Post Code
+_PRI,0,Price
+_RAI,0,Remittance Advice Indicator
+_REA,0,Reading Data Type
+_SEQ,0,Sequence No.
+_SID,0,Syntax Identifier
+_SUM,0,Summary period
+_TAB,0,Code Table
+_TIM,0,Time
+_TM6,0,Time
+_TPC,0,Trading Partner Code
+_TXT,0,Text or Description
+_UNT,0,Units
+_UOM,0,Unit of Measure
+_UOM,2,Abbreviation of ordering measure.  Code list 4
+_USR,0,User Defined Code
+_VAR,0,Reason for Variance Code
+_VAT,0,Numeric VAT Registration Number
+_VER,0,Version
+ACCR~G~1~0,0,Gross
+ACCR~N~1~0,0,Nett
+ADJT~P~1~0,0,Percentage
+ADJT~V~1~0,0,Value
+AOCI~A~1~0,0,Allowance
+AOCI~C~1~0,0,Charge
+APRF~ACKHDR~1~0,0,Acknowledgement of Order
+APRF~ACKTES~1~0,0,Acknowledgement of Order (Test)
+APRF~AVLHDR~1~0,0,Availability Report
+APRF~AVLTES~1~0,0,Availability Report (Test)
+APRF~BTOHDR~1~0,0,Book Order File
+APRF~BTOTES~1~0,0,Book Order File (Test)
+APRF~CAKHDR~1~0,0,Claims Acknowledgement File
+APRF~CAKTES~1~0,0,Claims Acknowledgement File (Test)
+APRF~CLAHDR~1~0,0,Claims File
+APRF~CLATES~1~0,0,Claims File (Test)
+APRF~CORHDR~1~0,0,Complex Order
+APRF~CORTES~1~0,0,Complex Order (Test)
+APRF~CRAHDR~1~0,0,Credit Advice File
+APRF~CRATES~1~0,0,Credit Advice File (Test)
+APRF~CREHDR~1~0,0,Credit Note File
+APRF~CRETES~1~0,0,Credit Note File (Test)
+APRF~CUSHDR~1~0,0,Customer Information File
+APRF~CUSTES~1~0,0,Customer Information File (Test)
+APRF~DELHDR~1~0,0,Delivery Notification File
+APRF~DELTES~1~0,0,Delivery Notification File (Test)
+APRF~DLCHDR~1~0,0,Delivery Confirmation File
+APRF~DLCTES~1~0,0,Delivery Confirmation File (Test)
+APRF~DRAHDR~1~0,0,Debit Advice File
+APRF~DRATES~1~0,0,Debit Advice File (Test)
+APRF~DYEHDR~1~0,0,Dye Instruction File
+APRF~DYETES~1~0,0,Dye Instruction File (Test)
+APRF~EFTHDR~1~0,0,Electronic Funds Transaction File
+APRF~EFTTES~1~0,0,Electronic Funds Transaction File (Test)
+APRF~EXCHDR~1~0,0,Exception Condition File
+APRF~EXCTES~1~0,0,Exception Condition File (Test)
+APRF~GENHDR~1~0,0,General Communications File
+APRF~GENTES~1~0,0,General Communications File (Test)
+APRF~HOTHDR~1~0,0,Hot Card File
+APRF~HOTTES~1~0,0,Hot Card File (Test)
+APRF~HSOHDR~1~0,0,Homeshopping Order File
+APRF~HSOTES~1~0,0,Homeshopping Order File (Test)
+APRF~INTHDR~1~0,0,Interchange Acknowledgement File
+APRF~INTTES~1~0,0,Interchange Acknowledgement File (Test)
+APRF~INVFIL~1~0,0,Invoice File
+APRF~INVTES~1~0,0,Invoice File (Test)
+APRF~ISSTES~1~0,0,Issues File (Test)
+APRF~ISSUES~1~0,0,Issues File
+APRF~LPRHDR~1~0,0,Location Planning Report file
+APRF~LPRTES~1~0,0,Location Planning Report file (Test)
+APRF~ORDHDR~1~0,0,Order File
+APRF~ORDTES~1~0,0,Order File (Test)
+APRF~PAYHDR~1~0,0,Payment Order File
+APRF~PAYTES~1~0,0,Payment Order File (Test)
+APRF~PICHDR~1~0,0,Picking Instructions File
+APRF~PICTES~1~0,0,Picking Instructions File (Test)
+APRF~PPRHDR~1~0,0,Product Planning Report File
+APRF~PPRTES~1~0,0,Product Planning Report File (Test)
+APRF~PRIHDR~1~0,0,Price Information File
+APRF~PRITES~1~0,0,Price Information File (Test)
+APRF~PROHDR~1~0,0,Product Information File
+APRF~PROTES~1~0,0,Product Information File (Test)
+APRF~PVUHDR~1~0,0,Price and Availability Updates File
+APRF~PVUTES~1~0,0,Price and Availability Updates File (Test)
+APRF~SADHDR~1~0,0,Stock Adjustment File
+APRF~SADTES~1~0,0,Stock Adjustment File (Test)
+APRF~SNPHDR~1~0,0,Stock Snapshot File
+APRF~SNPTES~1~0,0,Stock Snapshot File (Test)
+APRF~SORHDR~1~0,0,Supply and Return File
+APRF~SORTES~1~0,0,Supply and Return File (Test)
+APRF~SRMHDR~1~0,0,Statement/Remittance Details File
+APRF~SRMTES~1~0,0,Statement/Remittance Details File (Test)
+APRF~UCNHDR~1~0,0,Uplift Confirmation File
+APRF~UCNTES~1~0,0,Uplift Confirmation File (Test)
+APRF~UPLHDR~1~0,0,Uplift Instruction File
+APRF~UPLTES~1~0,0,Uplift Instruction File (Test)
+APRF~UTLHDR~1~0,0,Utility Bill File
+APRF~UTLTES~1~0,0,Utility Bill File (Test)
+BIFR~A~1~0,0,Annual
+BIFR~B~1~0,0,Every two months
+BIFR~D~1~0,0,Working day
+BIFR~F~1~0,0,Fortnightly
+BIFR~H~1~0,0,Each working hour
+BIFR~L~1~0,0,4 week period (Lunar Month)
+BIFR~M~1~0,0,Monthly (Calendar Month)
+BIFR~Q~1~0,0,Quarterly
+BIFR~S~1~0,0,6 month period
+BIFR~W~1~0,0,Weekly
+BIFR~Z~1~0,0,Bilaterally agreed
+BINN~N~1~0,0,No
+BINN~Y~1~0,0,Yes
+BTCD~A~1~0,0,Amended bill
+BTCD~F~1~0,0,Final bill - last bill when an account is closed
+BTCD~I~1~0,0,Interest bill
+BTCD~N~1~0,0,Normal bill
+BTCD~O~1~0,0,Information only - not used in calculations
+BTCD~P~1~0,0,Prepaid
+BTCD~R~1~0,0,Reconciliation bill
+CLAS~C~1~0,0,Campaign
+CLAS~E~1~0,0,Easter
+CLAS~N~1~0,0,New Release
+CLAS~R~1~0,0,Request (special customer order for items not usually stocked)
+CLAS~S~1~0,0,Stock (replenishment order)
+CLAS~X~1~0,0,Christmas
+CRLI~H~1~0,0,Handling Allowance
+CRLI~R~1~0,0,Returns
+CSDI~D~1~0,0,Item line eligible for cash settlement discount
+CSDI~N~1~0,0,Item line not eligible for cash settlement discount
+CSTI~0~1~0,0,non-chargeable
+CSTI~1~1~0,0,chargeable
+CUIN~ATS~1~0,0,Austria, Schillings
+CUIN~BEC~1~0,0,Convertible Belgian Francs
+CUIN~BEF~1~0,0,Belgium, Franc
+CUIN~CHF~1~0,0,Switzerland, Franc
+CUIN~DEM~1~0,0,Germany, Mark
+CUIN~ESB~1~0,0,For Payments out of Spain
+CUIN~ESP~1~0,0,Spain, Peseta
+CUIN~FRF~1~0,0,France, Franc
+CUIN~GBP~1~0,0,Great Britain, Pound
+CUIN~IEP~1~0,0,Ireland, Punt
+CUIN~ITL~1~0,0,Italy, Lira
+CUIN~LUF~1~0,0,Luxembourg, Franc
+CUIN~NLG~1~0,0,Netherlands, Gilder
+CUIN~PTE~1~0,0,Portugal, Escudo
+CUIN~USD~1~0,0,United States, Dollar
+CUIN~USN~1~0,0,US Dollar, Next Day Funds
+CUIN~USS~1~0,0,US Dollar, Same Day Funds
+DELC~0~1~0,0,Delivered/Uplifted as instructed
+DELC~1~1~0,0,Delivery/Uplift Variance from prior transmitted instruction
+DELC~2~1~0,0,Completely Undelivered/Uncollected: transaction NOT to be replanned
+DELC~3~1~0,0,Delivery/Uplift Variance, with no prior transmitted instruction
+DELC~4~1~0,0,Completely Undelivered/Uncollected; transaction to be replanned
+DELC~A~1~0,0,Delivery picked and packed
+DELC~B~1~0,0,Delivery held at distribution centre
+DELC~C~1~0,0,Delivery despatched from distribution centre (paired with TCDE 0680)
+DELC~D~1~0,0,Delivery arrived at local depot
+DELC~E~1~0,0,Delivery held at local depot
+DELC~F~1~0,0,Delivery despatched from local depot
+DELC~G~1~0,0,Delivery retained in local depot
+DELC~H~1~0,0,Negotiated delivery date confirmed
+DELC~J~1~0,0,Negotiated delivery date adjusted
+DELC~K~1~0,0,Uplift held in local depot (paired with TCDE of 0930)
+DELC~L~1~0,0,Uplift arrived at distribution centre (paired with TCDE of 0930)
+DELC~M~1~0,0,Proof of delivery
+DELT~N~1~0,0,No
+DELT~Y~1~0,0,Yes
+DESF~N~1~0,0,No
+DESF~Y~1~0,0,Yes
+DRLI~H~1~0,0,Handling Allowance
+DRLI~R~1~0,0,Returns
+DTYP~A~1~0,0,Special Allowance
+DTYP~B~1~0,0,Basic
+DTYP~Q~1~0,0,Quantity
+DTYP~V~1~0,0,Value
+ETFT~N~1~0,0,No
+ETFT~Y~1~0,0,Yes
+GTYP~Q~1~0,0,Quantity
+GTYP~V~1~0,0,Value
+IGPI~G~1~0,0,Group
+IGPI~I~1~0,0,Item
+INVT~N~1~0,0,No
+INVT~Y~1~0,0,Yes
+LINE~01~1~0,0,Credit Balance Brought Forward
+LINE~02~1~0,0,Debit Balance Brought Forward
+LINE~03~1~0,0,Credit Balance Carried Forward
+LINE~04~1~0,0,Debit Balance Carried Forward
+LINE~05~1~0,0,Invoice
+LINE~06~1~0,0,Credit Note
+LINE~07~1~0,0,Debit Note
+LINE~08~1~0,0,On-Account Payment
+LINE~09~1~0,0,Deposit
+LINE~10~1~0,0,Direct Debit Notification
+LINE~11~1~0,0,Payment
+LINE~12~1~0,0,Invoice Cancellation
+LINE~13~1~0,0,Credit Note Cancellation
+LINE~14~1~0,0,Debit Note Cancellation
+LINE~15~1~0,0,Rebate
+LINE~16~1~0,0,Rebate Cancellation
+LINE~17~1~0,0,Debit Journal
+LINE~18~1~0,0,Credit Journal
+LINE~19~1~0,0,Cash Payment (Debit)
+LINE~20~1~0,0,Cash Payment (Credit)
+LINE~21~1~0,0,Settlement Discount Payment (Debit)
+LINE~22~1~0,0,Settlement Discount Payment (Credit)
+LOCA~1~1~0,0,Location is unable to return information
+LOCA~2~1~0,0,Location is temporarily closed (eg. holidays)
+LOCA~3~1~0,0,Location has changed its identity
+LOCA~4~1~0,0,Location has ceased trading
+MCAT~1~1~0,0,Factor applied to BPRI
+MCAT~2~1~0,0,Value applied to BPRI
+MCAT~3~1~0,0,Percentage applied to BPRI
+ORCD~A~1~0,0,Order Amendment
+ORCD~B~1~0,0,Branch Delivery Order
+ORCD~C~1~0,0,Cancelled Order
+ORCD~D~1~0,0,Home Delivery Order
+ORCD~E~1~0,0,Exception to Proposed Order
+ORCD~F~1~0,0,Confirmation Order
+ORCD~G~1~0,0,Standing Order
+ORCD~H~1~0,0,Order for Retained Approval Goods
+ORCD~K~1~0,0,Confirmation of Cancelled Order
+ORCD~L~1~0,0,Lines Cancelled in Amended Order
+ORCD~N~1~0,0,New Order
+ORCD~O~1~0,0,Call Off Order
+ORCD~P~1~0,0,Proposed Order
+ORCD~R~1~0,0,Re-Scheduled Order
+ORCD~S~1~0,0,Order for Goods on Approval or Inspection
+ORCD~T~1~0,0,Order Commitment
+ORCD~W~1~0,0,Order Chaser
+ORCD~X~1~0,0,Addition to Existing Order
+ORDF~N~1~0,0,No
+ORDF~Y~1~0,0,Yes
+PIND~F~1~0,0,Free
+PIND~P~1~0,0,Promotion
+PMNT~N~1~0,0,No
+PMNT~Y~1~0,0,Yes
+PRCD~A~1~0,0,Urgent
+PRCD~B~1~0,0,Normal
+PRCD~C~1~0,0,Low
+PRPF~A~1~0,0,fast
+PRPF~B~1~0,0,medium
+PRPF~C~1~0,0,slow
+PRPF~D~1~0,0,non-stock
+PRST~0~1~0,0,stock item
+PRST~1~1~0,0,made to order
+RADJ~01~1~0,0,POD Input Error
+RADJ~02~1~0,0,Short or Over Delivery
+RADJ~03~1~0,0,Item Not Recorded on POD
+RADJ~04~1~0,0,Stock Take Adjustment
+RADJ~05~1~0,0,Other Reason
+RADJ~06~1~0,0,Damages on Receipt from Client
+RADJ~07~1~0,0,Delivery Damage
+RADJ~08~1~0,0,Damage on Transfer from Other Depot
+RADJ~09~1~0,0,Uplift of Damaged Stock
+RADJ~10~1~0,0,Warehouse Damage
+RADJ~11~1~0,0,Adjustment from Damaged to Prime
+RADJ~12~1~0,0,Written Off
+RADJ~13~1~0,0,Damages Returned to Client
+RADJ~14~1~0,0,Intake/Transfer Input Error
+RADJ~15~1~0,0,Returns Input Error
+RADJ~16~1~0,0,Damage to Prime, Receipt from Client
+RADJ~17~1~0,0,Damage to Prime, Damaged during Delivery
+RADJ~18~1~0,0,Damage to Prime, Damaged during Transfer
+RADJ~19~1~0,0,Damage to Prime, Uplifted Damages
+RADJ~20~1~0,0,Damage to Prime, Damaged in Warehouse
+RADJ~21~1~0,0,Out of Date Stock
+RADJ~22~1~0,0,On Client Request
+RADJ~23~1~0,0,Damage to Prime, Out of Date Stock
+RADJ~24~1~0,0,Damage to Prime, On Client Request
+REPT~A~1~0,0,Actual
+REPT~B~1~0,0,Budget
+REPT~F~1~0,0,Forecast
+REPU~AFC~1~0,0,Actual forecast
+REPU~BFC~1~0,0,Base forecast
+REPU~CON~1~0,0,Consumption
+REPU~CST~1~0,0,Costs
+REPU~DEL~1~0,0,Deliveries (Received)
+REPU~DES~1~0,0,Despatches (Sent)
+REPU~EXP~1~0,0,Expenditure
+REPU~ORD~1~0,0,Orders
+REPU~OTH~1~0,0,Other
+REPU~PRD~1~0,0,Production
+REPU~PUP~1~0,0,Promotional Uplift
+REPU~REV~1~0,0,Revenue
+REPU~RTN~1~0,0,Returns
+REPU~SAL~1~0,0,Sales
+REPU~STC~1~0,0,Stock Cover
+REPU~STK~1~0,0,Stock
+REPU~SUP~1~0,0,Seasonal Uplift
+REPU~YTS~1~0,0,Year to Date Sales
+RFLV~C~1~0,0,Combined
+RFLV~D~1~0,0,Domestic usage
+RFLV~L~1~0,0,Low Consumption
+RSTI~0~1~0,0,returnable
+RSTI~1~1~0,0,non-returnable
+SMCO~AE~1~0,0,Aerosol
+SMCO~AM~1~0,0,Ampoule, non-protected
+SMCO~AP~1~0,0,Ampoule, protected
+SMCO~AT~1~0,0,Atomizer
+SMCO~BA~1~0,0,Barrel
+SMCO~BB~1~0,0,Bobbin
+SMCO~BC~1~0,0,Bottlecrate, bottlerack
+SMCO~BD~1~0,0,Board
+SMCO~BE~1~0,0,Bundle
+SMCO~BF~1~0,0,Balloon, non-protected
+SMCO~BG~1~0,0,Bag
+SMCO~BH~1~0,0,Bunch
+SMCO~BI~1~0,0,Bin
+SMCO~BJ~1~0,0,Bucket
+SMCO~BK~1~0,0,Basket
+SMCO~BL~1~0,0,Bale, compressed
+SMCO~BN~1~0,0,Bale, non-compressed
+SMCO~BO~1~0,0,Bottle, non-protected, cylindrical
+SMCO~BP~1~0,0,Balloon, protected
+SMCO~BQ~1~0,0,Bottle, protected cylindrical
+SMCO~BR~1~0,0,Bar
+SMCO~BS~1~0,0,Bottle, non-protected, bulbous
+SMCO~BT~1~0,0,Bolt
+SMCO~BU~1~0,0,Butt
+SMCO~BV~1~0,0,Bottle, protected, bulbous
+SMCO~BX~1~0,0,Box
+SMCO~BY~1~0,0,Board, in bundle/bunch/truss
+SMCO~BZ~1~0,0,Bars, in bundle/bunch/truss
+SMCO~CA~1~0,0,Can, rectangular
+SMCO~CB~1~0,0,Beer crate
+SMCO~CC~1~0,0,Churn
+SMCO~CE~1~0,0,Creel
+SMCO~CF~1~0,0,Coffer
+SMCO~CG~1~0,0,Cage
+SMCO~CH~1~0,0,Chest
+SMCO~CI~1~0,0,Canister
+SMCO~CJ~1~0,0,Coffin
+SMCO~CK~1~0,0,Cask
+SMCO~CL~1~0,0,Coil
+SMCO~CN~1~0,0,Container
+SMCO~CO~1~0,0,Carboy, non-protected
+SMCO~CP~1~0,0,Carboy, protected
+SMCO~CR~1~0,0,Crate
+SMCO~CS~1~0,0,Case
+SMCO~CT~1~0,0,Carton
+SMCO~CU~1~0,0,Cup
+SMCO~CV~1~0,0,Cover
+SMCO~CX~1~0,0,Can, cylindrical
+SMCO~CY~1~0,0,Cylinder
+SMCO~CZ~1~0,0,Canvas
+SMCO~DJ~1~0,0,Demijohn, non-protected
+SMCO~DP~1~0,0,Demijohn, protected
+SMCO~DR~1~0,0,Drum
+SMCO~EN~1~0,0,Envelope
+SMCO~FC~1~0,0,Fruit crate
+SMCO~FD~1~0,0,Framed crate
+SMCO~FI~1~0,0,Firkin
+SMCO~FL~1~0,0,Flask
+SMCO~FO~1~0,0,Footlocker
+SMCO~FP~1~0,0,Filmpack
+SMCO~FR~1~0,0,Frame
+SMCO~GB~1~0,0,Gas bottle
+SMCO~GI~1~0,0,Girder
+SMCO~GZ~1~0,0,Girders, in bundle/bunch/truss
+SMCO~HG~1~0,0,Hogshead
+SMCO~HR~1~0,0,Hamper
+SMCO~IN~1~0,0,Ingot
+SMCO~IZ~1~0,0,Ingots, in bundle/bunch/truss
+SMCO~JC~1~0,0,Jerrican, rectangular
+SMCO~JG~1~0,0,Jug
+SMCO~JR~1~0,0,Jar
+SMCO~JT~1~0,0,Jutebag
+SMCO~JY~1~0,0,Jerrican, cylindrical
+SMCO~KG~1~0,0,Keg
+SMCO~LA~1~0,0,Layer
+SMCO~LG~1~0,0,Log
+SMCO~LZ~1~0,0,Logs, in bundle/bunch/truss
+SMCO~MB~1~0,0,Multiply bag
+SMCO~MC~1~0,0,Milk crate
+SMCO~MS~1~0,0,Multiwall sack
+SMCO~MT~1~0,0,Mat
+SMCO~MX~1~0,0,Match box
+SMCO~NE~1~0,0,Unpacked or unpackaged
+SMCO~NS~1~0,0,Nest
+SMCO~NT~1~0,0,Net
+SMCO~PA~1~0,0,Packet
+SMCO~PC~1~0,0,Parcel
+SMCO~PE~1~0,0,Pallet
+SMCO~PG~1~0,0,Plate
+SMCO~PH~1~0,0,Pitcher
+SMCO~PI~1~0,0,Pipe
+SMCO~PK~1~0,0,Package
+SMCO~PL~1~0,0,Pail
+SMCO~PN~1~0,0,Plank
+SMCO~PO~1~0,0,Pouch
+SMCO~PT~1~0,0,Pot
+SMCO~PU~1~0,0,Tray or Tray Pack
+SMCO~PY~1~0,0,Plates, in bundle/bunch/truss
+SMCO~PZ~1~0,0,Pipes or planks, in bundle/bunch/truss
+SMCO~RD~1~0,0,Rod
+SMCO~RG~1~0,0,Ring
+SMCO~RL~1~0,0,Reel
+SMCO~RO~1~0,0,Roll
+SMCO~RT~1~0,0,Rednet
+SMCO~RZ~1~0,0,Rods, in bundle/bunch/truss
+SMCO~SA~1~0,0,Sack
+SMCO~SC~1~0,0,Shallow crate
+SMCO~SD~1~0,0,Spindle
+SMCO~SE~1~0,0,Sea-chest
+SMCO~SG~1~0,0,Stillage
+SMCO~SH~1~0,0,Sachet
+SMCO~SK~1~0,0,Skeleton case
+SMCO~SL~1~0,0,Slipsheet
+SMCO~SM~1~0,0,Sheetmetal
+SMCO~ST~1~0,0,Sheet
+SMCO~SU~1~0,0,Suitcase
+SMCO~SW~1~0,0,Shrinkwrapped
+SMCO~SZ~1~0,0,Sheets, in bundle/bunch/truss
+SMCO~TB~1~0,0,Tub
+SMCO~TC~1~0,0,Tea-chest
+SMCO~TD~1~0,0,Tube, collapsible
+SMCO~TK~1~0,0,Tank, rectangular
+SMCO~TN~1~0,0,Tin
+SMCO~TO~1~0,0,Tun
+SMCO~TR~1~0,0,Trunk
+SMCO~TS~1~0,0,Truss
+SMCO~TU~1~0,0,Tube
+SMCO~TY~1~0,0,Tank, cylindrical
+SMCO~TZ~1~0,0,Tubes, in bundle/bunch/truss
+SMCO~VA~1~0,0,Vat
+SMCO~VG~1~0,0,Bulk, gas (at 1031 mbar and 15 C)
+SMCO~VI~1~0,0,Vial
+SMCO~VL~1~0,0,Bulk, liquid
+SMCO~VO~1~0,0,Bulk, solid, large particles ("nodules")
+SMCO~VP~1~0,0,Vacuumpacked
+SMCO~VQ~1~0,0,Bulk, liquefied gas (at abnormal temperature/pressure)
+SMCO~VR~1~0,0,Bulk, solid, granular particles ("grains")
+SMCO~VY~1~0,0,Bulk, solid, fine particles ("powders")
+SMCO~WB~1~0,0,Wickerbottle
+SSCC~01~1~0,0,Below Re-order Level
+SSCC~02~1~0,0,Available Stock
+SSCC~03~1~0,0,Physical Stock
+SSCC~04~1~0,0,Book Stock
+SSCC~05~1~0,0,Floor Stock
+SSCC~06~1~0,0,Unplanned Stock
+SSCC~07~1~0,0,Planned Stock
+SSTC~1~1~0,0,Prime
+SSTC~2~1~0,0,Damaged
+SSTC~3~1~0,0,Out of Date
+SSTC~4~1~0,0,Quarantined
+SSTC~5~1~0,0,Written Off
+STAT~N~1~0,0,No
+STAT~Y~1~0,0,Yes
+TCDE~0100~1~0,0,Complete transmission of Product Information File with products chained together
+TCDE~0101~1~0,0,Update transmission of Product Information File with products chained together
+TCDE~0102~1~0,0,Complete transmission of Product Information File with products linked together in a hierarchy
+TCDE~0103~1~0,0,Update transmission of Product Information File with products linked together in a hierarchy
+TCDE~0150~1~0,0,Complete transmission of Price Information File
+TCDE~0151~1~0,0,Update transmission of Price Information File
+TCDE~0200~1~0,0,Complete transmission of Customer Information File
+TCDE~0201~1~0,0,Update transmission of Customer Information File
+TCDE~0205~1~0,0,Complete transmission of Location Information File
+TCDE~0206~1~0,0,Update transmission of Location Information File 
+TCDE~0210~1~0,0,Complete transmission of Retailer Standing Database File
+TCDE~0215~1~0,0,Complete transmission of Retailer Database Report
+TCDE~0216~1~0,0,Update transmission of Retailer Database Report 
+TCDE~0350~1~0,0,Proposed Orders
+TCDE~0350~1~0,1,Planned orders which will subsequently be confirmed.  Usually sent to help a supplier plan production.
+TCDE~0355~1~0,0,Order for goods on approval/inspection
+TCDE~0355~1~0,1,Order for goods which may be returned after a period of inspection without being invoiced
+TCDE~0360~1~0,0,Exceptions to Proposed Orders
+TCDE~0360~1~0,1,Changes to a previously sent proposed order, which could be made either by the customer or the supplier 
+TCDE~0365~1~0,0,Planning Orders
+TCDE~0365~1~0,1,Follow Proposed Orders and will subsequently be confirmed by the customer.  Used to show all lines with details of quantities required and delivery locations.  Intended to give a firm basis for the supplier to plan production and supplies.
+TCDE~0400~1~0,0,Cancelled Orders
+TCDE~0400~1~0,1,Used to cancel outstanding orders.  These may originate either from the customer, when their requirements have changed, or the supplier if they cannot meet the order 
+TCDE~0405~1~0,0,Confirmation of Cancelled Orders
+TCDE~0405~1~0,1,Confirms that outstanding orders have been cancelled within the sender's system 
+TCDE~0410~1~0,0,Export Order
+TCDE~0410~1~0,1,Order placed on UK supplier for delivery overseas
+TCDE~0420~1~0,0,Standing Order
+TCDE~0420~1~0,1,An order for regular supplies, valid over a long term
+TCDE~0430~1~0,0,New Orders
+TCDE~0430~1~0,1,New order for goods and/or services
+TCDE~0435~1~0,0,Order for retained approval goods
+TCDE~0435~1~0,1,Retrospective order to cover goods already received on approval/inspection when these are being retained
+TCDE~0440~1~0,0,Order Amendment
+TCDE~0440~1~0,1,Contains changes to an outstanding order, such as quantities, prices and delivery dates.  To minimise transmission costs, only send the details for the products which have been amended.  Use transaction codes 0475 for re-scheduled orders or transaction code 0485 for additional lines.  Note that order amendments can rarely be processed automatically.  
+TCDE~0445~1~0,0,Order Chaser
+TCDE~0445~1~0,1,Used to chase delivery of an outstanding order
+TCDE~0450~1~0,0,Copy Orders
+TCDE~0450~1~0,1,A copy of an order previously sent by EDI or other media.
+TCDE~0460~1~0,0,Confirmation of Order by Ordering Company
+TCDE~0460~1~0,1,Used for example when an order is placed by telephone or fax
+TCDE~0470~1~0,0,Mixed Order Types
+TCDE~0470~1~0,1,The file contains a mixture of different types of order.  Each order should be processed according to the Order Code given in ORD ORCD.
+TCDE~0475~1~0,0,Re-Scheduled Orders
+TCDE~0475~1~0,1,Used to change the delivery date of an order or order line.  Only the lines which have been re-sheduled need be sent
+TCDE~0480~1~0,0,Call-Off Orders
+TCDE~0480~1~0,1,Request for delivery against a contract, blanket or standing order
+TCDE~0485~1~0,0,Addition to Existing Orders, Existing Requirements Unchanged
+TCDE~0485~1~0,1,Additional lines to be added to an outstanding order.  Only the new lines need be sent
+TCDE~0490~1~0,0,Order Commitment
+TCDE~0490~1~0,1,A contract to supply, not an instruction to deliver
+TCDE~0500~1~0,0,Complete transmission of Hot Card File
+TCDE~0501~1~0,0,Update transmission of Hot Card File
+TCDE~0600~1~0,0,Delivery
+TCDE~0600~1~0,1,A notification of delivery against an order, containing details of all the lines on the order.  Normally produced by the supplier once goods have been picked for that order 
+TCDE~0610~1~0,0,Consignment Note
+TCDE~0610~1~0,1,Sent by the supplier to the carrier to control the movement of a consignment through the distribution network to the customer
+TCDE~0620~1~0,0,Instruction to Deliver
+TCDE~0620~1~0,1,A request for a delivery to be made
+TCDE~0630~1~0,0,Planned Delivery
+TCDE~0630~1~0,1,Used to report the status of a future delivery 
+TCDE~0640~1~0,0,Delivery Adjustment
+TCDE~0640~1~0,1,A notification of changes to a delivery, used when amendments are made or requested after a proposed delivery or request to deliver has been sent
+TCDE~0650~1~0,0,Balance
+TCDE~0650~1~0,1,Used to notify details of a part delivery when balances are accepted. Only includes those lines which are being delivered, not all the lines on the order, some of which may already have been received.
+TCDE~0660~1~0,0,Proposed Delivery
+TCDE~0660~1~0,1,Advance notice of an impending delivery
+TCDE~0670~1~0,0,Confirmation of Delivery
+TCDE~0670~1~0,1,Confirms the goods and quantities which have been delivered at a location
+TCDE~0680~1~0,0,Confirmation of Despatch
+TCDE~0680~1~0,1,Confirms the goods and quantities which have been despatched to a location
+TCDE~0690~1~0,0,Confirmation of Delivery Status Report
+TCDE~0690~1~0,1,Confirms the status of a delivery in preparation or transit  
+TCDE~0695~1~0,0,Warehouse Receipt
+TCDE~0695~1~0,1,Notification that goods have been received at a warehouse 
+TCDE~0700~1~0,0,Invoices Only
+TCDE~0700~1~0,1,Commercial document (sales invoice) issued by a supplier to a customer listing the goods or services supplied and stating the sum of money due.  For ease of reconciliation it is recommended that one invoice relates to one order and/or one delivery.  Contains tax details where applicable.
+TCDE~0701~1~0,0,Self Billed Invoices
+TCDE~0701~1~0,1,Commercial invoice raised by the customer based on the order placed, delivery received and the contract of supply 
+TCDE~0702~1~0,0,Retrospective Self-Billed Invoice
+TCDE~0702~1~0,1,Commercial invoice raised by the customer retrospectively
+TCDE~0705~1~0,0,Factored Invoice
+TCDE~0705~1~0,1,Commercial invoice sent by a supplier to a factor who will be receiving the payment from the customer
+TCDE~0707~1~0,0,Assigned Debt Invoice.  Used by sellers to send an invoice file via EDI to the buyers advising them that the debt has been assigned to the factoring company
+TCDE~0709~1~0,0,Copy Invoice
+TCDE~0709~1~0,1,Not for VAT purposes.  Raised when copies of an invoice document are sent from one party to another by EDI for information purposes only.  The original invoice may have been sent by EDI or on paper.
+TCDE~0710~1~0,0,Credit Claims (Newstrade)
+TCDE~0710~1~0,1,Claim for credit against unsold copies of a newspaper or magazine
+TCDE~0711~1~0,0,Sales Report
+TCDE~0711~1~0,1,Not final claim for credit.  Report of sales of newpspaers and magazines
+TCDE~0715~1~0,0,Utility Bill
+TCDE~0715~1~0,1,Commercial invoice for metered services.  Contains tax details where applicable.
+TCDE~0716~1~0,0,Copy Bill
+TCDE~0716~1~0,1,Not for VAT purposes.  Copy of a utility bill previously sent by EDI or other means.  For information purposes only.
+TCDE~0717~1~0,0,Utility Credit Note
+TCDE~0717~1~0,1,Credit notes only
+TCDE~0720~1~0,0,Debit Notes Only
+TCDE~0720~1~0,1,Notification of a sum or sums owing, raised by the debtor (customer).  Trading partners should agree whether this will conatin VAT details, or whether the supplier will subsequently raise a Credit Note as the VAT document.
+TCDE~0740~1~0,0,Credit Notes Only
+TCDE~0740~1~0,1,Notification of a sum or sums to be credited.  Usually sent by a supplier to a customer
+TCDE~0741~1~0,0,Self Billed Credit Notes
+TCDE~0741~1~0,1,A credit note raised by the customer based on information already known 
+TCDE~0742~1~0,0,Retrospective Self-Billed Credit Note
+TCDE~0742~1~0,1,Credit note raised by the customer retrospectively
+TCDE~0749~1~0,0,Copy Credit Note
+TCDE~0749~1~0,1,Not for VAT purposes.  Copy of a credit note sent by EDI  or other means for information only
+TCDE~0810~1~0,0,Electronic Funds Transaction
+TCDE~0820~1~0,0,Statement Details Only
+TCDE~0820~1~0,1,List of credits and debits with the outstanding balance, sent either as a report or to request payment from the customer by the supplier
+TCDE~0830~1~0,0,Remittance Details Only
+TCDE~0830~1~0,1,Details of the items against which a payment is being made.  Sent by the payer to the payee.
+TCDE~0835~1~0,0,Payment Order
+TCDE~0835~1~0,1,Instruction on a bank to make a payment to a third party
+TCDE~0840~1~0,0,Debit Advice
+TCDE~0840~1~0,1,Notification given by the bank to the payer to confirm that a payment has been, or will be, taken from their account
+TCDE~0845~1~0,0,Credit Advice
+TCDE~0845~1~0,1,Notification given by the bank to the payee that a credit payment has been, or will be, made to their account
+TCDE~0850~1~0,0,Exception
+TCDE~0850~1~0,1,Report from the bank to the payer that a problem has been identified with a payment
+TCDE~0900~1~0,0,Uplift Notification
+TCDE~0900~1~0,1,Notification of a an uplift (collection) of goods which is being, or has been made
+TCDE~0910~1~0,0,Planned Uplift
+TCDE~0910~1~0,1,Advance notification of an uplift (collection) of goods which is to be made
+TCDE~0920~1~0,0,Uplift Confirmation
+TCDE~0920~1~0,1,Confirmation of the items and quantities which are being, or have been, uplifted
+TCDE~0930~1~0,0,Confirmation of Uplift Status Report
+TCDE~0930~1~0,1,Report of the status of an uplift (collection) which is being, or is due to be, made
+TCDE~1000~1~0,0,Picking Instructions Only
+TCDE~1000~1~0,1,Instructions on what to pick for an order or delivery
+TCDE~1010~1~0,0,Picking Instructions Amendments
+TCDE~1010~1~0,1,Change to a picking instruction
+TCDE~2000~1~0,0,Availability Report Only
+TCDE~2000~1~0,1,Report of actual or planned stock availability 
+TCDE~2100~1~0,0,Stock Snapshot Only
+TCDE~2100~1~0,1,Report of current stock holdings, usually sent by the stockholder to a supplier
+TCDE~2200~1~0,0,Stock Adjustment Only
+TCDE~2200~1~0,1,Notification of adjustments to stock holdings, usually sent by a third party stockholder (eg a carrier) to the owner of the stock
+TCDE~2300~1~0,0,Product Planning Report
+TCDE~2300~1~0,1,Planning report on products held at different locations 
+TCDE~2305~1~0,0,Location Planning Report
+TCDE~2305~1~0,1,Planning report for locations holding various products
+TCDE~3100~1~0,0,Acknowledement that an Order has been received, with no further reference to the original purchase order line details
+TCDE~3110~1~0,0,Acknowledgement that an Order, with line details as shown, has been received, with no reference as to whether or not the supplier can meets its requirements
+TCDE~3120~1~0,0,Acknowledgement, including expected delivery, for ALL lines ordered.
+TCDE~3130~1~0,0,Acknowledgement, including expected delivery, for SOME lines ordered.  The recipient must assume the remaining lines will be, or have been, acknowledged separately.  (Not used by EDICUG)
+TCDE~3140~1~0,0,Acknowledgement providing expected delivery information ONLY for those lines where the Supplier cannot meet the requested delivery date(s).  It is assumed that the lines not included will be delivered as requested.  (Not used by EDICUG)
+TCDE~3145~1~0,0,Acknowledgement of order not able to be supplied.  Query outstanding on customer account.  No reference is made to the order line details
+TCDE~3150~1~0,0,Acknowledgement changing details which have previously been advised, eg. change in Date, Quantity, Price, etc.  All details for a line must be shown, including those which have not changed
+TCDE~3160~1~0,0,Acknowledgement category NOT defined.  Will be used where the supplier's system does not have inbuilt indicators
+TCDE~3170~1~0,0,Acknowledgement that a request to cancel an order has been received and actioned.  No reference is made to the orde line details.  (Not used by EDICUG)
+TCDE~3200~1~0,0,Claims Acknowledgement (Newstrade)
+TCDE~3200~1~0,1,Response to a claim for credit, indicating which claims have been accepted or rejected
+TCDE~6000~1~0,0,Equipment Movement Confirmation
+TCDE~6000~1~0,1,Confirms the transfer of an item of equipment
+TCDE~6001~1~0,0,Pallet Exchange Note
+TCDE~6001~1~0,1,Notification that pallets have been, or are to be exchanged.  These may be either full or empty pallets.  Used when different types of pallet movements are being recorded (ie mixed file type).
+TCDE~6002~1~0,0,Pallet Control Voucher
+TCDE~6002~1~0,1,Control document issued when goods have been delivered on pallets and no empty pallets were available for exchange.
+TCDE~6003~1~0,0,Pallet Issue Note
+TCDE~6003~1~0,1,Notification that fresh pallets have been, or are to be issued.  May also be used when goods on pallets have been recalled.
+TCDE~6004~1~0,0,Pallet Return Note
+TCDE~6004~1~0,1,Notification that pallets have been, or are to be returned
+TCDE~6005~1~0,0,Pallet Transfer Note
+TCDE~6005~1~0,1,Record of, or request for transfer of pallets 
+TCDE~6006~1~0,0,Pallet Query Note
+TCDE~6006~1~0,1,Request for information on the status of pallet movements.  Used when no empty pallets or control vouchers were received. 
+TCDE~6007~1~0,0,Pallet Return Advice Note
+TCDE~6007~1~0,1,Notification that returns have been made 
+TCDE~6008~1~0,0,Pallet Ex Factory Movement
+TCDE~6008~1~0,1,Record of pallet transfers out of a factory.  Pallets may be empty or full. 
+TCDE~6009~1~0,0,Pallet Collection Request
+TCDE~6009~1~0,1,Request for pallets to be collected/uplifted
+TCDE~6010~1~0,0,Load Collection Request
+TCDE~6010~1~0,1,Request for goods to be collected/uplifted
+TCDE~9000~1~0,0,Issues (Newstrade)
+TCDE~9000~1~0,1,Master file showing details of the current issues of a magazine or newspaper, with selling restrictions
+TCDE~9005~1~0,0,Supply and Returns (Newstrade)
+TCDE~9005~1~0,1,Report of the number of copies of an issued newspaper or magazine which have been sold or remain unsold
+TCDE~9010~1~0,0,Dye Order
+TCDE~9010~1~0,1,Order for special textile dying and finishing operations
+TCDE~9011~1~0,0,Return Dye Instruction
+TCDE~9011~1~0,1,Accompanies the returned dyed and finished items
+TCDE~9020~1~0,0,Complete transmission of Price and Availability Update File
+TCDE~9021~1~0,0,Update transmission of Price and Availability Update File
+TFAC~N~1~0,0,No
+TFAC~Y~1~0,0,Yes
+TFIN~N~1~0,0,Not to follow
+TFIN~T~1~0,0,To follow
+TNAC~0~1~0,0,become available
+TNAC~1~1~0,0,not available
+TPST~A~1~0,0,New Delivery/Uplift
+TPST~B~1~0,0,Delivery/Uplift Adjustment
+TPST~C~1~0,0,Delivery/Uplift Cancellation
+TPST~D~1~0,0,Delivery/Uplift to be negotiated
+TSUP~A~1~0,0,Ordinary sale
+TSUP~B~1~0,0,Hire purchase, conditional sale, credit sale or similar loan
+TSUP~C~1~0,0,Loan
+TSUP~D~1~0,0,Exchange
+TSUP~E~1~0,0,Hire, lease or rental
+TSUP~F~1~0,0,Process (making goods from someone else's materials)
+TSUP~G~1~0,0,Sales on Commission (eg. by an Auctioneer)
+TSUP~H~1~0,0,Sale or Return, or similar terms
+TTYP~ASS-INV~1~0,0,Assigned Debt Invoice (TCDE 0707)
+TTYP~CREADV~1~0,0,Credit Advice (TCDE 0845)
+TTYP~DA~1~0,0,Instruction to Deliver; Delivery to Customer (used with TCDE 0620)
+TTYP~DB~1~0,0,Instruction to Deliver; Internal Company Movement Out (used with TCDE 0620)
+TTYP~DC~1~0,0,Instruction to Deliver; Returns to Client
+TTYP~DC~1~0,1,(used with TCDE 0620)
+TTYP~DD~1~0,0,Proposed Delivery; Receipt from Supplier
+TTYP~DD~1~0,1,(used with TCDE 0660)
+TTYP~DE~1~0,0,Proposed Delivery; Internal Company Movement In (used with TCDE 0660)
+TTYP~DLADV~1~0,0,Debit Advice (TCDE 0840)
+TTYP~EMC~1~0,0,Equipment Movement Confirmation (TCDE 6000)
+TTYP~INVOICES~1~0,0,Invoices Only (TCDE 0700)
+TTYP~ISS-NOTE~1~0,0,Pallet Issue Note (TCDE 6003)
+TTYP~PAYORD~1~0,0,Payment Order (TCDE 0835)
+TTYP~PCR-NOTE~1~0,0,Pallet Collection Request (TCDE 6009)
+TTYP~PCV-NOTE~1~0,0,Pallet Control Voucher (TCDE 6002)
+TTYP~PEN-NOTE~1~0,0,Pallet Exchange Note (TCDE 6001)
+TTYP~QNE-NOTE~1~0,0,Pallet Query Note (TCDE 6006)
+TTYP~RAN-NOTE~1~0,0,Pallet Return Advice Note (TCDE 6007)
+TTYP~RET-NOTE~1~0,0,Pallet Return Note (TCDE 6004)
+TTYP~TRF-NOTE~1~0,0,Pallet Transfer Note (TCDE 6005)
+TTYP~XFM-NOTE~1~0,0,Pallet Ex Factory Movement (TCDE 6008)
+TYPC~001~1~0,0,ADD
+TYPC~002~1~0,0,AMEND
+TYPC~003~1~0,0,DELETE
+TYPC~004~1~0,0,REPORT
+TYPC~005~1~0,0,REFRESH (complete report including some changes since the last transmission)
+TYPC~006~1~0,0,REACTIVATE
+TYPC~007~1~0,0,DEACTIVATE
+UPLC~0~1~0,0,Delivered/Uplifted as instructed
+UPLC~1~1~0,0,Delivery/Uplift Variance from prior transmitted instruction
+UPLC~2~1~0,0,Completely Undelivered/Uncollected: transaction NOT to be replanned
+UPLC~3~1~0,0,Delivery/Uplift Variance, with no prior transmitted instruction
+UPLC~4~1~0,0,Completely Undelivered/Uncollected; transaction to be replanned
+UPLC~A~1~0,0,Delivery picked and packed
+UPLC~B~1~0,0,Delivery held at distribution centre
+UPLC~C~1~0,0,Delivery despatched from distribution centre (paired with TCDE 0680)
+UPLC~D~1~0,0,Delivery arrived at local depot
+UPLC~E~1~0,0,Delivery held at local depot
+UPLC~F~1~0,0,Delivery despatched from local depot
+UPLC~G~1~0,0,Delivery retained in local depot
+UPLC~H~1~0,0,Negotiated delivery date confirmed
+UPLC~J~1~0,0,Negotiated delivery date adjusted
+UPLC~K~1~0,0,Uplift held in local depot (paired with TCDE of 0930)
+UPLC~L~1~0,0,Uplift arrived at distribution centre (paired with TCDE of 0930)
+UPLC~M~1~0,0,Proof of delivery
+VATC~A~1~0,0,Mixed VAT rate item
+VATC~C~1~0,0,Original VAT liability on copy invoices sent to Insurers - VATP would be as charged by the repairer/supplier.  Applicable when policy holder is VAT registered.
+VATC~D~1~0,0,Insurance Premium Tax
+VATC~E~1~0,0,Export item
+VATC~F~1~0,0,Free export item, VAT charged
+VATC~G~1~0,0,Free export item, VAT not charged
+VATC~H~1~0,0,Higher rate
+VATC~I~1~0,0,Import item
+VATC~J~1~0,0,Higher rated free goods, VAT charged
+VATC~K~1~0,0,Higher rated free goods, VAT not charged
+VATC~L~1~0,0,Lower rate
+VATC~N~1~0,0,Input Tax paid but not reclaimable
+VATC~O~1~0,0,Services outside the scope of VAT
+VATC~P~1~0,0,Credit Line payments which will be due to the Policy Holder or Insurer to settle - always deducted from the invoice value.
+VATC~R~1~0,0,Reconciliation - Invoice raised for VAT only
+VATC~S~1~0,0,Standard rate
+VATC~T~1~0,0,Standard rated free goods, VAT charged
+VATC~V~1~0,0,Standard rated free goods, VAT not charged
+VATC~X~1~0,0,Exemption from VAT
+VATC~Z~1~0,0,Zero rate
+VRMI~0~1~0,0,does not affect pricing
+VRMI~1~1~0,0,affects pricing
+_CON~1~1~0,0,Consumption only
+_CON~2~1~0,0,Combined consumption and charge
+_CON~3~1~0,0,Charge only (consumption-based)
+_CON~4~1~0,0,Charge only (fixed)
+_CON~5~1~0,0,Readings for information only
+_CRE~01~1~0,0,Excess quantity ordered
+_CRE~02~1~0,0,Order duplicated
+_CRE~03~1~0,0,Product ordered in error
+_CRE~04~1~0,0,Product not approved
+_CRE~05~1~0,0,Substitute product not accepted
+_CRE~06~1~0,0,Delivery instruction error
+_CRE~07~1~0,0,Delivery address error
+_CRE~08~1~0,0,Damage in transit
+_CRE~09~1~0,0,Loss in transit
+_CRE~10~1~0,0,Delivery refused - appointment
+_CRE~11~1~0,0,Delivery refused - late
+_CRE~12~1~0,0,Delivery refused - other reasons
+_CRE~13~1~0,0,Split order deliveries not accepted
+_CRE~14~1~0,0,Promotional discount error
+_CRE~15~1~0,0,Settlement discount error
+_CRE~16~1~0,0,Trade discount error
+_CRE~17~1~0,0,Trade price error
+_CRE~18~1~0,0,VAT rate error
+_CRE~19~1~0,0,Extension error
+_CRE~20~1~0,0,Damage on premises
+_CRE~21~1~0,0,Out of date
+_CRE~22~1~0,0,Surplus to requirements
+_CRE~23~1~0,0,Sale or return
+_CRE~24~1~0,0,Superceded product
+_CRE~25~1~0,0,Deteriorated product
+_CRE~26~1~0,0,Advertising allowance
+_CRE~27~1~0,0,Promotion allowance
+_CRE~28~1~0,0,Rebate
+_CRE~29~1~0,0,Retrospective discount
+_CRE~30~1~0,0,Coupon redemption
+_CRE~31~1~0,0,Returnable containers
+_CRE~32~1~0,0,Goods used for demonstrations
+_CRE~33~1~0,0,Free goods charged in error
+_CRE~34~1~0,0,Agreed settlement
+_CRE~35~1~0,0,Equipment rental
+_CRE~36~1~0,0,Concession
+_CRE~37~1~0,0,Third party delivery
+_CRE~38~1~0,0,Short delivery
+_CRE~39~1~0,0,Incorrect product delivered
+_CUR~ATS~1~0,0,Austria, Schillings
+_CUR~BEC~1~0,0,Convertible Belgian Francs
+_CUR~BEF~1~0,0,Belgium, Franc
+_CUR~CHF~1~0,0,Switzerland, Franc
+_CUR~DEM~1~0,0,Germany, Mark
+_CUR~ESB~1~0,0,For Payments out of Spain
+_CUR~ESP~1~0,0,Spain, Peseta
+_CUR~FRF~1~0,0,France, Franc
+_CUR~GBP~1~0,0,Great Britain, Pound
+_CUR~IEP~1~0,0,Ireland, Punt
+_CUR~ITL~1~0,0,Italy, Lira
+_CUR~LUF~1~0,0,Luxembourg, Franc
+_CUR~NLG~1~0,0,Netherlands, Gilder
+_CUR~PTE~1~0,0,Portugal, Escudo
+_CUR~USD~1~0,0,United States, Dollar
+_CUR~USN~1~0,0,US Dollar, Next Day Funds
+_CUR~USS~1~0,0,US Dollar, Same Day Funds
+_DUA~C~1~0,0,Cancel
+_DUA~R~1~0,0,Rebook
+_IND~N~1~1,0,No
+_IND~Y~1~1,0,Yes
+_IND~N~1~2,0,No
+_IND~Y~1~2,0,Yes
+_LEV~0~1~1,0,customer is not authorised to buy this product
+_LEV~1~1~1,0,customer is authorised to buy this product
+_MSG~ACKHDR~1~0,0,Acknowledgement File Header
+_MSG~ACKMNT~1~0,0,Acknowledgement Details
+_MSG~ACKTLR~1~0,0,Acknowledgement Trailer
+_MSG~AVLDET~1~0,0,Availability Report Details
+_MSG~AVLHDR~1~0,0,Availability File Header
+_MSG~AVLTLR~1~0,0,Availability File Trailer
+_MSG~CORDER~1~0,0,Complex Order Details
+_MSG~CORHDR~1~0,0,Complex Order File Header
+_MSG~CORTLR~1~0,0,Complex Order Trailer
+_MSG~CRAHDR~1~0,0,Credit Advice File Header
+_MSG~CRAINF~1~0,0,Credit Advice Line Details
+_MSG~CRATLR~1~0,0,Credit Advice File Trailer
+_MSG~CREDIT~1~0,0,Credit Note Details
+_MSG~CREHDR~1~0,0,Credit Note File Header
+_MSG~CRETLR~1~0,0,Credit Note File Trailer
+_MSG~CUSHDR~1~0,0,Customer Information Header
+_MSG~CUSINF~1~0,0,Customer Information Details
+_MSG~CUSTLR~1~0,0,Customer Information Trailer
+_MSG~DELHDR~1~0,0,Delivery File Header
+_MSG~DELIVR~1~0,0,Delivery Details
+_MSG~DELTLR~1~0,0,Delivery File Trailer
+_MSG~DLCDET~1~0,0,Delivery Confirmation Details
+_MSG~DLCHDR~1~0,0,Delivery Confirmation Header
+_MSG~DLCTLR~1~0,0,Delivery Confirmation Trailer
+_MSG~DRAHDR~1~0,0,Debit Advice File Header
+_MSG~DRAINF~1~0,0,Debit Advice Line Details
+_MSG~DRATLR~1~0,0,Debit Advice File Trailer
+_MSG~EXCHDR~1~0,0,Exception Condition File Header
+_MSG~EXCINF~1~0,0,Exception Condition Line Details
+_MSG~EXCTLR~1~0,0,Exception Condition File Trailer
+_MSG~GENHDR~1~0,0,General Communications File Header
+_MSG~GENRAL~1~0,0,General Communications Text
+_MSG~GENTLR~1~0,0,General Communications Trailer
+_MSG~INVFIL~1~0,0,Invoice File Header
+_MSG~INVOIC~1~0,0,Invoice Details
+_MSG~INVTLR~1~0,0,Invoice File Trailer
+_MSG~LPRDET~1~0,0,Location Planning Report Details
+_MSG~LPRHDR~1~0,0,Location Planning Report Header
+_MSG~LPRTLR~1~0,0,Location Planning Report Trailer
+_MSG~ORDERS~1~0,0,Order Details
+_MSG~ORDHDR~1~0,0,Order File Header
+_MSG~ORDTLR~1~0,0,Order File Trailer
+_MSG~PAYHDR~1~0,0,Payment Order File Header
+_MSG~PAYINF~1~0,0,Payment Order Line Details
+_MSG~PAYTLR~1~0,0,Payment Order File Trailer
+_MSG~PICHDR~1~0,0,Picking Instructions File Header
+_MSG~PICKER~1~0,0,Picking Instructions File Details
+_MSG~PICTLR~1~0,0,Picking Instructions File Trailer
+_MSG~PPRDET~1~0,0,Product Planning Report Details
+_MSG~PPRHDR~1~0,0,Product Planning Report Header
+_MSG~PPRTLR~1~0,0,Product Planning Report Trailer
+_MSG~PRIHDR~1~0,0,Price File Header
+_MSG~PRIINF~1~0,0,Price Details
+_MSG~PRITLR~1~0,0,Price File Trailer
+_MSG~PROHDR~1~0,0,Product File Header
+_MSG~PROINF~1~0,0,Product Details
+_MSG~PROTLR~1~0,0,Product File Trailer
+_MSG~RSGRSG~1~0,0,Reconciliation Message
+_MSG~SADDET~1~0,0,Stock Adjustment Details
+_MSG~SADHDR~1~0,0,Stock Adjustment Header
+_MSG~SADTLR~1~0,0,Stock Adjustment Trailer
+_MSG~SNPHDR~1~0,0,Stock Snapshot Header
+_MSG~SNPSTS~1~0,0,Stock Snapshot Details
+_MSG~SNPTLR~1~0,0,Stock Snapshot Trailer
+_MSG~SRMHDR~1~0,0,Statement/Remittance Details File Header
+_MSG~SRMINF~1~0,0,Statement/Remittance Line Details
+_MSG~SRMTLR~1~0,0,Statement/Remittance Details File Trailer
+_MSG~UCNDET~1~0,0,Uplift Confirmation Details
+_MSG~UCNHDR~1~0,0,Uplift Confirmation Header
+_MSG~UCNTLR~1~0,0,Uplift Confirmation Trailer
+_MSG~UPLHDR~1~0,0,Uplift File Header
+_MSG~UPLIFT~1~0,0,Uplift File Details
+_MSG~UPLTLR~1~0,0,Uplift File Trailer
+_MSG~UTLBIL~1~0,0,Utility Bill File Details
+_MSG~UTLHDR~1~0,0,Utility Bill File Header
+_MSG~UTLTLR~1~0,0,Utility Bill File Trailer
+_MSG~UVATLR~1~0,0,Utility Bill VAT Trailer
+_MSG~VATTLR~1~0,0,File VAT Trailer
+_NUM~A~1~1,0,Accompanying Remittance Advice
+_NUM~I~1~1,0,Invoice
+_NUM~R~1~1,0,Remittance Advice
+_NUM~S~1~1,0,Statement
+_PER~A~1~0,0,Annual
+_PER~B~1~0,0,Every two months
+_PER~D~1~0,0,Working day
+_PER~F~1~0,0,Fortnightly
+_PER~H~1~0,0,Each working hour
+_PER~L~1~0,0,4 week period (Lunar Month)
+_PER~M~1~0,0,Monthly (Calendar Month)
+_PER~Q~1~0,0,Quarterly
+_PER~S~1~0,0,6 month period
+_PER~W~1~0,0,Weekly
+_PER~Z~1~0,0,Bilaterally agreed
+_REA~00~1~0,0,Normal Reading - Default Value
+_REA~01~1~0,0,Estimated (manual) Reading
+_REA~02~1~0,0,Estimated (computer) Reading
+_REA~03~1~0,0,Removed Meter Reading
+_REA~04~1~0,0,Customer's Own Reading
+_REA~05~1~0,0,Computer Reading
+_REA~06~1~0,0,Exchange Meter Reading
+_REA~07~1~0,0,Corrector Meter Reading
+_REA~08~1~0,0,No Reading Available
+_REA~09~1~0,0,Third Party Normal Reading
+_REA~10~1~0,0,Third Party Estimated (manual) Reading
+_REA~11~1~0,0,Third Party Estimated (computer) Reading
+_REA~12~1~0,0,Reading for Information Only
+_SID~ANAA~1~1,0,Reconciliation facility used
+_SID~ANA~1~2,0,The Article Number Association (UK) Ltd
+_SID~ANAA~1~2,0,Reconciliation facility used
+_SUM~O~1~1,0,Opening
+_SUM~T~1~1,0,Total
+_UOM~1~1~0,0,1 consumer units
+_UOM~100~1~0,0,100 consumer units
+_UOM~1000~1~0,0,1000 consumer units
+_UOM~ANN~1~0,0,Year
+_UOM~BTU~1~0,0,British Thermal Unit
+_UOM~CM~1~0,0,Centimetre
+_UOM~CM2~1~0,0,Square Centimetre
+_UOM~CM3~1~0,0,Cubic Centimetre
+_UOM~CUFT~1~0,0,Cubic Foot
+_UOM~CUIN~1~0,0,Cubic Inch
+_UOM~CWT~1~0,0,Hundredweight
+_UOM~DAY~1~0,0,Day
+_UOM~DL~1~0,0,Decilitre
+_UOM~DM2~1~0,0,Square Decimetre
+_UOM~FC~1~0,0,Thousand Cubic Feet
+_UOM~FLOZ~1~0,0,Fluid Ounce
+_UOM~FT~1~0,0,Foot
+_UOM~G~1~0,0,Gramme
+_UOM~GAL~1~0,0,Gallon
+_UOM~GJ~1~0,0,Giga Joule (109 Joules)
+_UOM~GR~1~0,0,Grain
+_UOM~HG~1~0,0,Hectogramme
+_UOM~HH~1~0,0,Hundred Cubic Feet
+_UOM~HMJ~1~0,0,Hundred Mega Joules
+_UOM~HUR~1~0,0,Hour
+_UOM~IN~1~0,0,Inch
+_UOM~KG~1~0,0,Kilogramme
+_UOM~KSG~1~0,0,Kilosegment (64,000 bytes)
+_UOM~KVA~1~0,0,Kilovolt-ampere
+_UOM~KVR~1~0,0,Kilovar (reactive power)
+_UOM~KWH~1~0,0,Kilowatt-hour
+_UOM~L~1~0,0,Litre
+_UOM~LB~1~0,0,Pound
+_UOM~M~1~0,0,Metre
+_UOM~M2~1~0,0,Square Metre
+_UOM~M3~1~0,0,Cubic Metre
+_UOM~MG~1~0,0,Milligramme
+_UOM~MIN~1~0,0,Minute
+_UOM~MJ~1~0,0,Mega Joule (106 Joules)
+_UOM~ML~1~0,0,Millilitre
+_UOM~MM~1~0,0,Millimetre
+_UOM~MON~1~0,0,Month
+_UOM~OZ~1~0,0,Ounce
+_UOM~PT~1~0,0,Pint
+_UOM~QAN~1~0,0,Quarter Year
+_UOM~QR~1~0,0,Quarter
+_UOM~QT~1~0,0,Quart
+_UOM~SAN~1~0,0,Half Year
+_UOM~SEC~1~0,0,Second
+_UOM~SQFT~1~0,0,Square Foot
+_UOM~SQIN~1~0,0,Square Inch
+_UOM~SQYD~1~0,0,Square Yard
+_UOM~T~1~0,0,Tonne
+_UOM~THM~1~0,0,Therm 
+_UOM~TJ~1~0,0,Tera Joule (1012 Joules)
+_UOM~WEE~1~0,0,Week
+_UOM~YD~1~0,0,Yard
+_UOM~ZZ~1~0,0,Undefined - only used in intermediate stages of a calculation
+.TEXT,COMS
+AADJ~1,5,Adjustment Percentage
+AADJ~1,2,Actual adjustment percentage
+AADJ~1,3,Actual adjustment percentage
+AADJ~2,5,Adjustment Amount
+AADJ~2,2,Actual adjustment amount
+AADJ~2,3,Actual adjustment amount
+AADJ,0,Actual Adjustment
+ACID~1,5,Account Number
+ACID~2,5,Account Name
+ACID,0,Account Identifier
+ADJF~1,5,Adjustment Factor Code
+ADJF~2,5,Adjustment Factor Value
+ADJF~2,2,User defined code for adjustment
+ADJF,0,Adjustment Factor
+AEXC~1,5,Area of Exception Condition
+AEXC~1,2,MMMMMMSSSEEEE
+AEXC~1,3,MMMMMMSSSEEEE
+AEXC~2,5,Repeat of original content
+AEXC~2,2,Repeated content of original element
+AEXC~2,3,Repeated content of original element
+AEXC,0,Area of Exception Condition
+AEXC,2,Name of Message (M), Segment (S) and Element (E) in format:
+AQTY~1,5,Number of Traded Units required
+AQTY~1,2,Total number of traded units required in units defined in the preceding UNOR element
+AQTY~1,3,Total number of traded units required in units defined in the preceding UNOR element
+AQTY~2,5,Total Measure Ordered
+AQTY~2,2,Total weight, volume, length required.  Required when ordering variable measure items
+AQTY~2,3,Total weight, volume, length required.  Required when ordering variable measure items
+AQTY~3,5,Measure Indicator
+AQTY~3,2,Abbreviations for order measure.  Mandatory if Total Measure ordered used.  Code Values List 4
+AQTY~3,3,Abbreviations for order measure.  Mandatory if Total Measure ordered used.  Code Values List 4
+AQTY,0,Advised Quantity
+AQTY,2,Advised quantity as given on Order, Delivery Notification or Picking List.  If the Total Measure ordered is quoted, the Measure Indicator must also be quoted
+AUCT~1,5,Cost Price
+AUCT~1,2,This is the net cost in pounds, ie. after deducting line discounts, etc., but before applications of VAT, of a traded unit or measure as defined by the measure indicator
+AUCT~1,3,Cost of order unit having applied line discount.  In pounds
+AUCT~2,5,Measure Indicator
+AUCT~2,2,Abbreviation for the measure, eg. pounds, metres, litres.  Mandatory for variable measure items.  Code Values List 4
+AUCT~2,3,Abbreviation for the measure.  Mandatory for variable measure items.  See Code List 4
+AUCT,0,Unit Cost Price (Excluding vat)
+AUTR~1,5,Authentication Result 1
+AUTR~1,2,Results of authentication process specified by Bank
+AUTR~1,3,Results of authentication process specified by Bank
+AUTR~2,5,Authentication Result 2
+AUTR~3,5,Authentication Result 3
+AUTR,0,Authentication Result
+BABF~1,5,Balance Brought Forward
+BABF~1,2,FTOP of previous bill
+BABF~1,3,FTOP of previous bill
+BABF~2,5,Credit Indicator
+BABF~2,2,Allowed Value: R
+BABF~2,3,Allowed Value: R
+BABF,0,Balance Brought Forward
+BABF,2,Only used for amended accounts
+CADD~1,5,Customer's Address Line 1
+CADD~2,5,Customer's Address Line 2
+CADD~3,5,Customer's Address Line 3
+CADD~4,5,Customer's Address Line 4
+CADD~5,5,Customer's Post Code
+CADD~5,2,Customer's Post Code
+CADD,0,Customer's Address
+CADD,2,A maximum of five lines to give the customer's address
+CCDE~1,5,Consumption/Charge Indicator
+CCDE~1,2,Code to indicate use of this segment.  Code Values List 43
+CCDE~1,3,Code to indicate use of this segment.  Code Values List 43
+CCDE~2,5,EAN-13 Article Number
+CCDE~2,2,EAN article number allocated to the service or product
+CCDE~2,3,EAN article number allocated to the service or product
+CCDE~3,5,Supplier Code
+CCDE~3,2,Supplier's internal reference
+CCDE~3,3,Supplier's internal reference
+CCDE,0,Charge Type Code
+CIDN~1,5,Customer's EAN Location Number
+CIDN~1,2,EAN Location number identifying the customer
+CIDN~1,3,EAN Location number identifying the customer
+CIDN~2,5,Customer's Identity Allocated by Supplier
+CIDN~2,2,Customer's Code as allocated/used by supplier
+CIDN~2,3,Customer's Code as allocated/used by supplier
+CIDN,0,Customer's Identity
+CLOC~1,5,Customer's EAN Location Number
+CLOC~1,2,EAN Location number identifying the customer's location
+CLOC~1,3,EAN Location number identifying the customer's location
+CLOC~2,5,Customer's Own Location Number
+CLOC~2,2,Customer's identity for the location to which the goods ordered are to be/have been delivered
+CLOC~2,3,Customer's own identity for the location to which the goods ordered are to be/have been delivered
+CLOC~3,5,Supplier's Identity of Customer's Location
+CLOC~3,2,Supplier's reference for the customer's location
+CLOC~3,3,Supplier's reference for the customer's location
+CLOC,0,Customer's Location
+CLOC,2,One of the following 3 customer's references must be present
+CLOE~1,5,EAN Location Number
+CLOE~2,5,Customer's Own Code
+CLOE~3,5,Supplier's Identification
+CLOE,0,End Customer's Location Identity
+CLOE,2,Used to quote a range of locations
+CLOS~1,5,EAN Location Number
+CLOS~2,5,Customer's Own Code
+CLOS~3,5,Supplier's Identification
+CLOS,0,Start Customer's Location Identity
+CLOS,2,Used to quote a range of locations
+CLSK~1,5,Number of Closing Stock Order Units
+CLSK~1,2,Planned Closing Stock if APIN=1
+CLSK~1,3,Planned Closing Stock if APIN=1
+CLSK~2,5,Total Measure of Closing Stock
+CLSK~2,2,Number of traded units of closing stock
+CLSK~2,3,Number of traded units of closing stock
+CLSK~3,5,Measure Indicator
+CLSK~3,2,Total weight, volume, etc. of closing stock.  Only required for variable measure items
+CLSK~3,3,Total weight, volume, etc. of closing stock.  Only required for variable measure items
+CLSK,0,Closing Stock for the Period
+CLSK,2,Actual Closing Stock if APIN=0
+CLVM~1,5,Calorific Value
+CLVM~2,5,Unit of Measure
+CLVM,0,Calorific Value in Specified Units
+CLVM,2,Calorific value of gas supply
+CONA~1,5,Units Consumed
+CONA~1,2,Calculated from CONB after adjustment, ADJF, has been applied
+CONA~1,3,Calculated from CONB after adjustment, ADJF, has been applied
+CONA~2,5,Unit of Measure
+CONA~2,2,See Code Values List 4
+CONA~2,3,See Code Values List 4
+CONA~3,5,Negative Indicator
+CONA~3,2,Allowed Value: R
+CONA~3,3,Allowed Value: R
+CONA,0,Consumption (Adjusted units)
+CONA,2,Adjusted consumption
+CONB~1,5,Units Consumed
+CONB~1,2,Difference between present and previous readings in PRRD
+CONB~1,3,Difference between present and previous readings in PRRD
+CONB~2,5,Unit of Measure
+CONB~2,2,See Code Values List 4
+CONB~2,3,See Code Values List 4
+CONB~3,5,Negative Indicator
+CONB~3,2,Allowed value: R
+CONB~3,3,Allowed value: R
+CONB,0,Consumption (Base units)
+CONB,2,Supply consumed in meter units\r\n
+CONS~1,5,Units Consumed
+CONS~2,5,Unit of Measure
+CONS~2,2,See Code Values List 4
+CONS~2,3,See Code Values List 4
+CONS~3,5,Negative Indicator
+CONS~3,2,Allowed value: R
+CONS~3,3,Allowed value: R
+CONS,0,Consumption (Billing units)
+CONS,2,Supply consumed in billing units
+CORI~1,5,EAN-13 Article Number
+CORI~1,2,EAN Code of the unit being replaced.  (Insert five leading zeros before eight-digit codes)
+CORI~1,3,EAN article number allocated to the replaced item
+CORI~2,5,Supplier's Code
+CORI~2,2,Supplier's internal reference (non-EAN) identifying the replaced unit
+CORI~2,3,Supplier's internal reference (non-EAN) identifying the replaced item
+CORI~3,5,DUN-14 Code
+CORI~3,2,Code for the replaced unit allocated under the alternative (DUN-14) EAN system
+CORI~3,3,Code for the replaced item allocated under the altnerative (DUN-14) EAN system
+CORI~4,5,Customer's Own Brand EAN Number
+CORI~4,2,Used when 'own label' units coded with in-store numbers are being replaced
+CORI~4,3,Customer's Own Brand EAN Number*Used when 'own label' units coded with in-store numbers are being replaced
+CORI~5,5,Customer's Item Code
+CORI~5,2,EAN prefix - 2 dig; Customer's number - 5 dig; Consumer Unit number - 8 dig
+CORI~5,3,Customer's internal reference for the replaced unit - non-EAN format
+CORI,0,Code for Replaced Item
+CORI,2,Used when the item described replaces another item for ordering purposes
+CPRO~1,5,Customer's Own Brand EAN Number
+CPRO~1,2,Can be used for ""own label"" items allocated a customer's internal number
+CPRO~1,3,Can be used for 'own label' items allocated an in-store number in a general format.  EAN Prefix - 2 dig; customer's number - 5 dig; 
+CPRO~2,5,Customer's Item Code
+CPRO~2,2,Customer's internal reference for the item (non-EAN)
+CPRO~2,3,Consumer unit
+CPRO,0,Customer's Product Number
+CPRS~1,5,Customer's Own Brand Number (EAN)
+CPRS~1,2,Can be used for 'own label' items allocated an in-store number in a general format.  EAN Prefix - 2 dig; customer number - 5 dig; Consumer Unit Number - 8 dig
+CPRS~1,3,Can be used for 'own label' items allocated an in-store number in a general format.  EAN Prefix - 2 dig; customer number - 5 dig; Consumer Unit Number - 8 dig
+CPRS~2,5,Customer's Item Code
+CPRS~2,2,Customer's internal reference for the item - non EAN format
+CPRS~2,3,Customer's internal reference for the item - non EAN format
+CPRS,0,Customer's Substituted Product Code
+CRRE~1,5,ANA Credit Reason Code
+CRRE~1,2,Code Values List 13
+CRRE~1,3,Code Values List 13
+CRRE~2,5,Trading Partner's Own Code
+CRRE~2,2,As agreed between partners
+CRRE~2,3,As agreed between partners
+CRRE~3,5,Credit Reason Description
+CRRE~3,2,Plain language description
+CRRE~3,3,Plain language description
+CRRE,0,Reason for Credit
+CTOT~1,5,Total Charge for Charge Type
+CTOT~1,2,NUCT x CPPU
+CTOT~1,3,NUCT x CPPU
+CTOT~2,5,Credit Indicator
+CTOT~2,2,Allowed value: R
+CTOT~2,3,Allowed value: R
+CTOT,0,Total Charge for Charge Type
+DADD~1,5,Delivery Address Line 1
+DADD~2,5,Delivery Address Line 2
+DADD~3,5,Delivery Address Line 3
+DADD~4,5,Delivery Address Line 4
+DADD~5,5,Delivery Post Code
+DADD,0,Delivery to Address
+DADD,2,Company address to whom redelivery of uplifted goods is being made
+DAPD~1,5,Start Date
+DAPD~2,5,End Date
+DAPD,0,Discount Applicability Dates
+DAPD,2,Used to indicate the time period over which the discount details apply
+DARA~1,5,Start Date
+DARA~1,2,Start date is mandatory for ADD, AMEND and DELETE
+DARA~2,5,End Date
+DARA,0,Date Range
+DARA,2,Used to indicate the dates from and to which the price list is applicable.  Format: YYMMDD
+DELN~1,5,Delivery Note Number
+DELN~1,2,Delivery note number as allocated by the supplier
+DELN~1,3,Delivery note number as allocated by the supplier
+DELN~2,5,Date of Document
+DELN~2,2,Format:  YYMMDD.  Date of Despatch of Goods where relevant
+DELN~2,3,Date of despatch where appropriate.  YYMMDD
+DELN,0,Delivery Note Details
+DELQ~1,5,Number of Order Units in Delivery
+DELQ~1,2,Number of supplier's ordering units in delivery
+DELQ~1,3,Number of supplier's traded units in delivery
+DELQ~2,5,Total Measure of Delivery
+DELQ~2,2,Total weight, volume, size, etc. of delivery.  Required when delivering variable measure items
+DELQ~2,3,Total weight, volume, size, etc. of delivery.  Required when delivering variable measure items
+DELQ~3,5,Measure Indicator
+DELQ~3,2,Abbreviation for the order measure.  Mandatory if Total Measure of Delivery used.  Code Values List 4
+DELQ~3,3,Abbreviation defining the order measure.  Mandatory if Total Measure of Delivery used.  Code Values List 4
+DELQ,0,Delivery Quantity
+DELQ,2,At least one of the following sub-elements must be quoted.  If the Total Measure of Delivery is quoted the Measure Indicator must be quoted too
+DEWT~1,5,Vehicle Tare Weight
+DEWT~1,2,In kilos
+DEWT~1,3,In kilos
+DEWT~2,5,Total Goods Weight
+DEWT~2,2,In kilos
+DEWT~2,3,In kilos
+DEWT,0,Delivery Weights
+DIND~1,5,Substitution Indicator
+DIND~1,2,Substitution Permissable Y/N
+DIND~1,3,Substitution Permissable Y/N
+DIND~2,5,Back Order Indicator
+DIND~2,2,Back Order Permissible Y/N
+DIND~2,3,Back Order Permissible Y/N
+DIND,0,Delivery Indicators
+DINS~1,5,Delivery Instruction Narrative Line 1
+DINS~2,5,Delivery Instruction Narrative Line 2
+DINS~3,5,Delivery Instruction Narrative Line 3
+DINS~4,5,Delivery Instruction Narrative Line 4
+DINS,0,Delivery Instruction Narrative
+DINS,2,Narrative covering special instructions applicable to orders
+DLED~1,5,Working Days
+DLED~2,5,Hours
+DLED,0,Delivery Lead Time
+DLED,2,It is expected that this will be expressed either as working days or hours
+DLOC~1,5,EAN Location Number
+DLOC~1,2,EAN Location number for despatch location
+DLOC~1,3,EAN location number for despatch location
+DLOC~2,5,Supplier's Own Location Code
+DLOC~2,2,Own code for despatch location
+DLOC~2,3,Supplier's own code for the despatch location
+DLOC,0,Despatch Location
+DNAC~1,5,Code Table Number
+DNAC~1,2,Number of relevant code list
+DNAC~1,3,Number of relevant code list
+DNAC~2,5,Code Value
+DNAC~2,2,Code Value from list
+DNAC~2,3,Code value from code list
+DNAC,0,Data Narrative Code
+DNAC,2,Standard data narrative previously defined and agreed by sender and recipient
+DQGD~1,5,Traded Units From
+DQGD~2,5,Total Measure From
+DQGD~3,5,Measure Indicator
+DQGD~3,2,Code Values List 4
+DQGD~4,5,Traded Units To
+DQGD~5,5,Total Measure To
+DQGD~6,5,Measure Indicator
+DQGD~6,2,Code Values List 4
+DQGD,0,Quantity Graduations
+DUAC~1,5,Reason for Variance
+DUAC~1,2,Code Values List 17
+DUAC~1,3,Code Values List 17
+DUAC~2,5,Delivery Confirmation Action
+DUAC~2,2,Code Values List 26
+DUAC~2,3,Code Values List 26
+DUAC,0,Delivery/Uplift Action Details
+DVGD~1,5,From
+DVGD~2,5,To
+DVGD,0,Value Graduations
+ELOC~1,5,EAN Location Number
+ELOC~1,2,EAN location number for delivery location
+ELOC~1,3,EAN location number for delivery location
+ELOC~2,5,Own Location Code
+ELOC~2,2,Other coded identity allocated by customer
+ELOC~2,3,Other coded identity allocated by customer
+ELOC~3,5,Suppliers id.
+ELOC~3,2,Own code for redelivery location
+ELOC~3,3,Own code for redelivery location
+ELOC,0,Delivery to Location
+ELOC,2,Location to which redelivery of uplifted goods is being made
+FASU~1,5,Bill File Total Amount before VAT
+FASU~1,2,Sum of UVLT
+FASU~1,3,Sum of UVLT
+FASU~2,5,Credit Indicator
+FASU~2,2,Allowed Value: R
+FASU~2,3,Allowed Value: R
+FASU,0,Bill File Total Amount Before VAT
+FBAB~1,5,File Total Balance Brought Forward
+FBAB~1,2,Sum of BABF
+FBAB~1,3,Sum of BABF
+FBAB~2,5,Credit Indicator
+FBAB~2,2,Allowed Value: R
+FBAB~2,3,Allowed Value: R
+FBAB,0,File Total Balance Brought Forward
+FPSU~1,5,Bill File Total Payable including VAT
+FPSU~2,5,Credit Indicator
+FPSU~2,2,Sum of TBTL
+FPSU,0,Bill File Total Payable Including VAT
+FROM~1,3,Codes can be agreed by interchange parties
+FROM~2,3,Mandatory if no code used
+FROM,0,Identification of Transmission Sender
+FROM,2,Code or name transmitted
+FTOP~1,5,File Total of Payment Details
+FTOP~1,2,Sum of PTOT
+FTOP~1,3,Sum of PTOT
+FTOP~2,5,Credit Indicator
+FTOP~2,2,Allowed Value: R
+FTOP~2,3,Allowed Value: R
+FTOP,0,File Total of Payment Details
+GNAR~1,5,General Narrative Line 1
+GNAR~2,5,General Narrative Line 2
+GNAR~3,5,General Narrative Line 3
+GNAR~4,5,General Narrative Line 4
+GNAR,0,General Narrative
+IADD~1,5,Invoice to Address Line 1
+IADD~2,5,Invoice to Address Line 2
+IADD~3,5,Invoice to Address Line 3
+IADD~4,5,Invoice to Address Line 4
+IADD~5,5,Post Code
+IADD,0,Invoice to Address
+IADD,2,A maximum of 5 lines to give the invoice office address
+ILOC~1,5,Invoice EAN Location Number
+ILOC~1,2,EAN location number to identify invoice point
+ILOC~1,3,EAN Location number to identify invoice point
+ILOC~2,5,Customer's Invoice Location Code
+ILOC~2,2,Customer's own code identifying invoice point
+ILOC~2,3,Customer's own code identifying invoice point
+ILOC,0,Invoice Location
+ILOC,2,Location to which invoices should be addressed.  Quoted if location receives invoices but not deliveries
+INLO~1,5,Invoice System EAN Location Number
+INLO~1,2,EAN location number for system generating this invoice file
+INLO~1,3,EAN location number for system generating this invoice file
+INLO~2,5,Invoice System Supplier's Own Code
+INLO~2,2,Supplier's own code for system generating this invoice file
+INLO~2,3,Supplier's own code for system generating this invoice file
+INLO,0,Invoice System Location Details
+INRF~1,5,Customer's Instruction Number
+INRF~1,2,As allocated by the customer to identify the instruction
+INRF~1,3,As allocated by the customer to identify the instruction
+INRF~2,5,Supplier's Instruction Number
+INRF~2,2,As allocated by the supplier when processing instructions on behalf of the customer
+INRF~2,3,As allocated by the supplier when processing instructions on behalf of the customer
+INRF~3,5,Date Instruction placed by Customer
+INRF~3,2,File date can be issued instead if customer and supplier agree.  Format: YYMMDD
+INRF~3,3,File date can be issued instead if customer and supplier agree.  Format:  YYMMDD
+INRF~4,5,Date Instruction received by Supplier
+INRF~4,2,Format: YYMMDD
+INRF~4,3,Format:  YYMMDD
+INRF,0,Instruction References
+ITRA~1,5,EAN Location number
+ITRA~1,2,EAN Location number identifying point to which invoice transmissions should be made
+ITRA~1,3,EAN Location number identifying point to which invoice transmissions should be made
+ITRA~2,5,Customer's Code for Transmission Recipient
+ITRA~2,2,Customer's own code identifying point to which invoice transmissions should be made
+ITRA~2,3,Customer's own code identifying point to which invoice transmissions should be made
+ITRA,0,Invoice Transmission Recipient
+ITRA,2,Location to which invoice transmission should be made.  Quoted if different from ILOC
+LADD~1,5,Location Address Line 1
+LADD~2,5,Location Address Line 2
+LADD~3,5,Location Address Line 3
+LADD~4,5,Location Address Line 4
+LADD~5,5,Location Post Code
+LADD,0,Location Address
+LADD,2,A maximum of four lines plus post code to give the address of the location
+LEVC~1,5,Level Code
+LEVC~1,2,0  =  customer is not authorised to buy this product
+LEVC~1,3,First unit in a chain or hierarchy= 1:subsequent levels increase by 1
+LEVC~2,5,Authorisation
+LEVC~2,2,1  =  customer is authorised to buy this product
+LEVC,0,Level References
+LEVC,2,Shows the level of this product in the hierarchy or chain
+LIDR~1,5,Line Document Number
+LIDR~1,2,The number of the original document to which the line relates, else a number allocated by the message sender
+LIDR~1,3,The number of the original document to which the line relates, else a number allocated by the message sender\r\n
+LIDR~2,5,Line Document Date
+LIDR~2,2,Format:  YYMMDD
+LIDR~2,3,Format:  YYMMDD
+LIDR,0,Line Document Reference
+LIDR,2,If the line details are not document specific, one of the sub-elements should be used and zero-filled
+MEDT~1,5,Date of Message
+MEDT~1,2,Date of message (rather than transmission).
+MEDT~1,3,Date of message (rather than transmission).
+MEDT~2,5,Time of Message
+MEDT~2,2,Format: YYMMDD
+MEDT~2,3,Format: YYMMDD
+MEDT,0,Message Date and Time
+METO~1,5,EAN Location Number of Department of Person
+METO~1,2,EAN Location number for point for which message is intended
+METO~1,3,EAN Location number for point for which message is intended
+METO~2,5,Title of Person
+METO~2,2,Formal title of person for whom message is intended
+METO~2,3,Formal title of person for whom message is intended
+METO~3,5,Name of Department of Person
+METO~3,2,Plain language description
+METO~3,3,Plain language description
+METO,0,Message to
+MOQY~1,5,Minimum Ordering Quantity
+MOQY~2,5,Maximum Ordering Quantity
+MOQY~3,5,Ordering Measure
+MOQY~3,2,Used for variable measure items Code Values List 4
+MOQY~4,5,Measure Indicator
+MOQY~5,5,Ordering Multiple
+MOQY,0,Ordering Quantity
+MOVL~1,5,Minimum Ordering Value
+MOVL~2,5,Maximum Ordering Value
+MOVL,0,Ordering Value
+MOVL,2,In pounds
+MSAD~1,5,Sub-address Code
+MSAD~2,5,Sub-address Line
+MSAD,0,Meter 
+MSAD,2,Identification of a user beyond the metered point of supply in code or text form e.g. a network address
+MSPR~1,5,Manufacturer's Recommended Selling Price
+MSPR~1,2,In pounds
+MSPR~1,3,In pounds
+MSPR~2,5,Marked Price
+MSPR~3,5,Split Pack Price
+MSPR~3,2,Price marked on unit.  In pounds
+MSPR,0,Selling On Price Manufacturer's Recommended
+MSPR,2,In pounds
+MVAL~1,5,Modifier Value
+MVAL~1,2,Value of modifier
+MVAL~1,3,Value of modifier
+MVAL~2,5,Credit Indicator
+MVAL~2,2,Allowed value: R.  Used when the value is negative.
+MVAL~2,3,Allowed value: R.  Used when the value is negative.
+MVAL,0,Modifier Value
+NUCT~1,5,Units Billed
+NUCT~2,5,Unit of Measure
+NUCT~2,2,See Code Values List 4
+NUCT~3,5,Negative Indicator
+NUCT~3,2,Allowed Value: R
+NUCT~3,3,Allowed Value: R
+NUCT,0,Number of Units for Charge Type
+NUCT,2,Number of units for this CCDE
+OLOC~1,5,Order Office EAN Location Number
+OLOC~1,2,EAN location number for order office
+OLOC~1,3,EAN location number for order office
+OLOC~2,5,Customer's Code for Order Office
+OLOC~2,2,Customer's own code for order office
+OLOC~2,3,EAN location number for order office
+OLOC,0,Order Office Location
+OLOC,2,Location to which order queries should be sent
+OOAD~1,5,Order Office Address Line 1
+OOAD~2,5,Order Office Address Line 2
+OOAD~3,5,Order Office Address Line 3
+OOAD~4,5,Order Office Address Line 4
+OOAD~5,5,Post Code
+OOAD,0,Order Office Address
+OOAD,2,A maximum of 5 lines to give the order office address
+OQTY~1,5,Number of Traded Units Ordered
+OQTY~1,2,Total number of traded units required eg. 100 (x 24 Cans), in units defined in preceding UNOR element.
+OQTY~1,3,Total number of traded units required eg. 100 (x 24 Cans), in units defined in the preceding UNOR element
+OQTY~2,5,Total Measure Ordered
+OQTY~2,2,Total weight, volume, length required.  Required when ordering variable measure items
+OQTY~2,3,Total weight, volume, length ordered.  Required when ordering variable measure items
+OQTY~3,5,Measure Indicator
+OQTY~3,2,Abbreviation for the ordering measure eg. pounds, metres, litres.  Code Values List 4.  Mandatory if Total Measure Ordered Used
+OQTY~3,3,Mnemonic defining the ordering measure, eg. pounds, metres, litres.  Code Values List 4.  Mandatory if Total Measure Ordered used
+OQTY,0,Quantity Ordered
+OQTY,2,At least one of the following sub-elements must be quoted.  If the Total Measure Ordered is quoted the Measure Indicator must be quoted too
+ORNO~1,5,Customer's Order Number
+ORNO~1,3,As allocated by the customer to identify the order
+ORNO~2,5,Supplier's Order Number
+ORNO~2,2,As allocated by the customer to identify the order
+ORNO~2,3,As allocated by the supplier to identify the order
+ORNO~3,5,Date Order Placed by customer
+ORNO~3,2,As allocated by the supplier to identify the order
+ORNO~3,3,File date can be issued instead if customer and supplier agree
+ORNO~4,5,Date Order Received by Supplier
+ORNO~4,2,Date order placed, which may be date of file. Format:  YYMMDD
+ORNO~4,3,Format YYMMDD
+ORNO,0,Order Number and Date
+OUBA~1,5,Oustanding Balance
+OUBA~1,2,The current outstanding balance according to the supplier's records
+OUBA~1,3,The current outstanding balance according to the supplier's records
+OUBA~2,5,Balance Date
+OUBA~2,2,Format:  YYMMDD
+OUBA~2,3,Format:  YYMMDD
+OUBA,0,Outstanding Balance
+OUBA,2,Current outstanding balance per supplier's records at a given date
+OUCT~1,5,Cost Price
+OUCT~1,2,This is the net cost in pounds ie. after deducting line discounts, etc. but before the application of VAT, of a traded unit or measure as defined by the measure indicator
+OUCT~1,3,Optional field identifying the agreed or expected cost per unit ordered.  This is the net cost in pounds ie. after deducting line discounts, etc. but before the application of VAT, of a traded unit or measure as defined by the measure indicator
+OUCT~2,5,Measure Indicator
+OUCT~2,2,Abbreviation for the measure eg. pounds, metres, litres.  Mandatory for variable measure items.  Code Values List 4
+OUCT~2,3,Mnemonic defining the measure, eg. pounds, metres, litres.  Mandatory for variable measure items.  Code Values List 4
+OUCT,0,Ordering Unit Cost
+PAPD~1,5,Start Date
+PAPD~2,5,End Date
+PAPD,0,Price Applicability Dates
+PAPD,2,Used to idicate the time period over which the price details apply
+PAYD~1,5,Payment Date
+PAYD~1,2,Date that payment should be made available to the payee to obtain the specified discount
+PAYD~1,3,Date that payment should be made available to the payee to obtain the specified discount
+PAYD~2,5,Settlement Discount Percentage
+PAYD~2,2,Percentage discount applicable
+PAYD~2,3,Percentage discount applicable
+PAYD,0,Payment Date and Terms
+PAYD,2,Settlement terms agreed between the buyer and seller, expressed in terms of payment due date and percentage
+PAYY~1,5,Number of Days
+PAYY~1,2,Days until payment is due is defined as the number of calendar days after a reference date, usually the date of the invoice, that payment is to be made available to the payee
+PAYY~1,3,Days until payment is due is defined as the number of calendar days after a reference date, commonly the date of invoice, that the payment is to be made available to the payee
+PAYY~2,5,Settlement Discount Percentage
+PAYY~2,2,Percentage discount applicable
+PAYY~2,3,Percentage discount applicable
+PAYY~3,5,Settlement Code
+PAYY~3,2,Code for settlement terms.  User defined
+PAYY~3,3,Code for settlement terms.  User defined
+PAYY,0,Settlement Terms
+PAYY,2,Settlement terms described using calendar days after a reference date and/or code
+PLND~1,5,Suppliers Price List
+PLND~2,5,Customers Price List
+PLND,0,Price List Number
+PLND,2,Used to indicate the price list reference numbers
+PODN~1,5,Proof of Delivery Number
+PODN~1,2,Customer's proof of delivery reference.  Delivery vehicle Reg. No. may be used
+PODN~1,3,Customer's proof of delivery number
+PODN~2,5,Date Goods Delivered to Customer
+PODN~2,2,Format:  YYMMDD
+PODN~2,3,Format:  YYMMDD
+PODN,0,Proof of Delivery Details
+POUN~1,5,Proof of Uplift Number
+POUN~1,2,Customer's proof of uplift number.  Delivery vehicle Reg No may be used
+POUN~1,3,Customer's proof of uplift number.  Delivery vehicle Reg No may be used
+POUN~2,5,Date Goods Uplifted from Customer
+POUN~2,2,Format: YYMMDD
+POUN~2,3,Format: YYMMDD
+POUN,0,Proof of Uplift Details
+PPAM~1,5,Prepayment Amount
+PPAM~2,5,Credit Line Indicator
+PPAM~2,2,Allowed Value: R. Only used if debit payment e.g. returned cheque
+PPAM~2,3,Allowed Value: R. Only used if debit payment e.g. returned cheque
+PPAM,0,Prepayment Amount
+PQGD~1,5,Traded Units From
+PQGD~2,5,Measure From
+PQGD~3,5,Measure Indicator
+PQGD~3,2,Code Values List 4
+PQGD~4,5,Traded Units To
+PQGD~5,5,Total Measure To
+PQGD~6,5,Measure Indicator
+PQGD~6,2,Code Values List 4
+PQGD,0,Quantity Graduations
+PRRD~1,5,Present Reading
+PRRD~2,5,Type
+PRRD~2,2,See Code Values List 44
+PRRD~2,3,See Code Values List 44
+PRRD~3,5,Previous Reading
+PRRD~4,5,Type
+PRRD~4,2,See Code Values List 44
+PRRD~4,3,See Code Values List 44
+PRRD,0,Reading Data
+PRRD,2,Meter readings
+PRRF~1,5,REMADV/PAYORD indicator
+PRRF~1,2,To indicate related message:
+PRRF~1,3,To indicate related message:
+PRRF~2,5,Primary Reference
+PRRF~2,2,A = Accompanying Remittance Advice, I = Invoice, R = Remittance Advice, S = Statement
+PRRF,0,Primary Reference
+PTOT~1,5,Total of Payment Details
+PTOT~1,3,Sum of PPAM
+PTOT~2,5,Credit Indicator
+PTOT~2,2,Sum of PPAM
+PTOT,0,Total of Payment Details
+PVGD~1,5,From
+PVGD~2,5,To
+PVGD,0,Value Graduations
+QADJ~1,5,Number of Traded Units Adjusted
+QADJ~1,2,Number of supplier's ordering units adjusted.
+QADJ~1,3,Number of supplier's ordering units adjusted.
+QADJ~2,5,Total Measure Adjusted
+QADJ~2,2,Total weight, volume, size etc. adjusted.  Required when adjusting variable measure items.
+QADJ~2,3,Total weight, volume, size etc. adjusted.  Required when adjusting variable measure items.
+QADJ~3,5,Measure Indicator
+QADJ~3,2,Abbreviation for the adjustment measure eg. pounds, metres, litres.  Mandatory if Total measure Adjusted used.  Code Values List 4
+QADJ~3,3,Abbreviation for the adjustment measure eg. pounds, metres, litres.  Mandatory if Total measure Adjusted used.  Code Values List 4
+QADJ,0,Quantity Adjusted
+QADJ,2,At least one of the following sub-elements must be quoted.  If the Total Measure Adjusted is quoted the Measure Indicator must be quoted too.
+QPER~1,5,Total Traded Units
+QPER~2,5,Total Variable Units
+QPER~3,5,Measure Indicator
+QPER~4,5,Total Financial Units
+QPER~5,5,Currency Indicator
+QPER,0,Quantity Data
+QPRO~1,5,Number of Order Units Produced
+QPRO~1,2,Actual if APIN = 0
+QPRO~1,3,Actual if APIN = 0
+QPRO~2,5,Total Measure Produced this Period
+QPRO~2,2,Planned if APIN = 1
+QPRO~2,3,Planned if APIN = 1
+QPRO~3,5,Measure Indicator
+QPRO~3,2,Number of supplier's ordering units produced for the period
+QPRO,0,Quantity Produced
+QPRO,2,Quantity produced for the period
+QTYC~1,5,Number of Traded Units Credited
+QTYC~1,2,Number of supplier's traded units credited
+QTYC~1,3,Number of supplier's traded units credited
+QTYC~2,5,Total Measure Credited
+QTYC~2,2,Total credited volume, size etc required when crediting variable measure items
+QTYC~2,3,Total credited volume, size etc required when crediting variable measure items
+QTYC~3,5,Measure Indicator
+QTYC~3,2,Abbreviation for the ordering measure, see Code List 4
+QTYC~3,3,Abbreviation for the ordering measure, see Code List 4
+QTYC,0,Quantity Credited
+QTYC,2,At least one of the following sub-elements must be quoted.  If the Total Measure Credited is quoted the Measure Indicator must be quoted too
+QTYI~1,5,Number of Traded Units Invoiced
+QTYI~1,2,Number of supplier's traded units invoiced
+QTYI~1,3,Invoiced*Number of supplier's traded units invoiced
+QTYI~2,5,Total Measure Invoiced
+QTYI~2,2,Total invoiced volume, size etc required when invoicing variable measure items
+QTYI~2,3,Total invoiced volume, size etc required when invoicing variable measure items
+QTYI~3,5,Measure Indicator
+QTYI~3,2,Abbreviation for the ordering measure, see Code List 4.  Mandatory if Ordering Measure used
+QTYI~3,3,Abbreviation for the ordering measure, see Code List 4.  Mandatory if Ordering Measure used
+QTYI,0,Quantity Invoiced
+QTYI,2,At least one of the following sub-elements must be quoted.  If the Total Measure Invoiced is quoted the Measure Indicator must be quoted too
+QTYP~1,5,Number of Traded Units to be Picked
+QTYP~1,2,Total number of traded units required eg. 100 (x 24 Cans), in units defined in previous UNOR element
+QTYP~1,3,Total number of traded units required eg. 100 (x 24 Cans), in units defined in previous UNOR element
+QTYP~2,5,Total Measure to be Picked
+QTYP~2,2,Total weight, volume, length required.  Required when ordering variable measure items
+QTYP~2,3,Total weight, volume, length required.  Required when ordering variable measure items
+QTYP~3,5,Measure Indicator
+QTYP~3,2,Mnemonic defining the ordering measure, eg. pounds, metres, litres.  Mandatory if Total Measure Ordered used.  Code Values List 4
+QTYP~3,3,Mnemonic defining the ordering measure, eg. pounds, metres, litres.  Mandatory if Total Measure Ordered used.  Code Values List 4
+QTYP,0,Quantity to Be Picked
+QTYP,2,At least one of the following sub-elements must be quoted.  If the Total Measure to be picked is quoted the Measure Indicator must be quoted too
+QTYR~1,5,Number of Traded Units Returned
+QTYR~1,2,Number of supplier's units returned
+QTYR~1,3,Number of supplier's traded units returned
+QTYR~2,5,Total Measure Returned
+QTYR~2,2,Total weight, volume, etc. returned.  Required where returning variable measure items
+QTYR~2,3,Total weight, volume, etc. returned.  Required where returning variable measure items
+QTYR~3,5,Measure Indicator
+QTYR~3,2,Abbreviation for returned measure.  Mandatory if Total Measure Returned used.  Code Values List 4
+QTYR~3,3,Abbreviation for returned measure.  Mandatory if Total Measure Returned used.  Code Values List 4
+QTYR,0,Quantity Returned
+QTYR,2,At least 1 of the 3 sub-elements must be used.  Measure Indicator to be used if Total Measure Returned used
+QUTF~1,5,Number of Order Units
+QUTF~1,2,Number of supplier's ordering units to-follow or cancelled
+QUTF~1,3,Number of supplier's ordering units to-follow or cancelled\r\n
+QUTF~2,5,Total Measure
+QUTF~2,2,Total weight, volume, size, etc. to-follow or cancelled.  Required only for variable measure items
+QUTF~2,3,Total weight, volume, size, etc. to-follow or cancelled.  Required only for variable measure items
+QUTF~3,5,Measure Indicator
+QUTF~3,2,Abbreviation defining the ordering measure eg. pounds, metres, litres.  Mandatory if there is a Total Measure. Code Values List 4
+QUTF~3,3,Abbreviation defining the ordering measure eg. pounds, metres, litres.  Mandatory if there is a Total Measure. Code Values List 4
+QUTF,0,Quantity or Cancelled
+QUTF,2,If Total Measure is quoted the Measure Indicator must be quoted too
+RATM~1,5,Earliest Time
+RATM~1,2,Format:  HHMM
+RATM~1,3,Format:  HHMM
+RATM~2,5,Latest Time
+RATM~2,2,Format:  HHMM
+RATM~2,3,Format:  HHMM
+RATM,0,Required Arrival Time
+RATM,2,Required delivery arrival time.
+REFF~1,5,Supplier's Reference
+REFF~1,2,level references.
+REFF~2,5,Customer's Reference
+REFF,0,Account Identifier
+REFP~1,5,Summary Period
+REFP~1,2,Maybe O = Opening or T = Total
+REFP~2,5,Report Period Number
+REFP~2,2,Indicates the report period to which data applies
+REFP~2,3,Indicates the report period to which the data applies
+REFP~3,5,Period End Date
+REFP~3,2,Indicates date that period ends
+REFP~3,3,Indicates date that period ends.  Format: YYMMDD
+REFP,0,Period Reference
+REFP,2,Use either of the sub-elements not both.
+REID~1,5,Recipient's EAN Location Number
+REID~1,2,EAN Location number identifying recipient
+REID~1,3,EAN Location number identifying recipient
+REID~2,5,Recipient's Own Identity Code
+REID~2,2,Receipient identification as used by sender
+REID~2,3,Receipient identification as used by sender
+REID,0,Recipient's Identity
+REID,2,Used to direct the message from the transmission reception point
+RQTY~1,5,Number of Traded Units Required
+RQTY~1,2,Total number of traded units required
+RQTY~2,5,Total Measure Required
+RQTY~2,2,Total weight, volume etc. required.  Used when ordering variable measure items
+RQTY~3,5,Measure Indicator
+RQTY~3,2,Code Values List 4
+RQTY,0,Quantity Required
+RTEX~1,5,First Line Registered Text Code
+RTEX~1,2,Code values MUST be registered with ANA prior to use.  The same application code may be repeated up to 4 times, or up to 4 different codes may be used
+RTEX~1,3,Application codes to define the function of the text must be registered with the ANA prior to use.  The same application code may be repeated up to 4 times, or up to 4 different codes may be used in each repeat of the segment.
+RTEX~2,5,Application Text
+RTEX~3,5,Second Line Registered Text Code
+RTEX~4,5,Application Text
+RTEX~5,5,Third Line Registered Text Code
+RTEX~6,5,Application Text
+RTEX~7,5,Fourth Line Registered Text Code
+RTEX~8,5,Application Text
+RTEX,0,Registered Text
+RTEX,2,Essential text, where not provided for by specific fields may be communicated using this element.  Application codes to define the function of the text must be registered with the ANA prior to use.  The same application code may be repeated up to 4 times, or up to 4 different codes may be used
+RTRS~1,5,Date of First Entry
+RTRS~1,2,Date of first record in each row of the report.  Format: YYMMDD
+RTRS~2,5,Report Period Base
+RTRS~2,2,Code which specifies the time period covered by each repeat of data segment.  Code Values List 27
+RTRS~3,5,Number of Report Segments per Row
+RTRS~3,2,Specifies the number of data segments for each product or location
+RTRS~4,5,Date at End of Period
+RTRS~4,2,Date of last record in each line
+RTRS~5,5,Number of Periods in a Base Cycle
+RTRS~5,2,Indicates the number of periods before the same reporting period repeats, eg the number of working days reported between Mondays, etc
+RTRS,0,Report Time Rules
+SADD~1,5,Supplier's Address Line 1
+SADD~2,5,Supplier's Address Line 2
+SADD~3,5,Supplier's Address Line 3
+SADD~4,5,Supplier's Address Line 4
+SADD~5,5,Supplier's Post Code
+SADD~5,2,Supplier's Post Code
+SADD,0,Supplier's Address
+SADD,2,A maximum of five lines to give the supplier's address
+SBPR~1,5,Starting Price
+SBPR~2,5,Nett price
+SBPR~2,2,before discount and
+SBPR,0,Split Box Price
+SBPR,2,Unit price when split from a larger pack: before discount and after discount has been applied
+SCRF~1,5,Specification No.
+SCRF~1,3,Specification No. to which order relates
+SCRF~2,5,Contract No.
+SCRF~2,3,Contract No. to which order relates
+SCRF,0,Specification/Contract References
+SCRF,2,Used to indicate the contract or specification to which the price list applies
+SEID~1,5,Sender's EAN Location Number
+SEID~1,2,EAN Location number identifying sender
+SEID~2,5,Sender's Own Identity Code
+SEID~2,2,Sender's identification allocated/used by sender
+SEID,0,Sender's Identity
+SIDN~1,5,Supplier's EAN Location Number
+SIDN~1,2,EAN Location number identifying supplier
+SIDN~1,3,EAN location number identifying supplier
+SIDN~2,5,Supplier's Identity Allocated by Customer
+SIDN~2,2,Supplier's Code as allocated/used by customer
+SIDN~2,3,Supplier's Code as allocated/used by customer
+SIDN,0,Supplier's Identity
+SLOC~1,5,EAN Location Number
+SLOC~1,2,EAN Location number identifying statement location
+SLOC~1,3,EAN Location number identifying statement location\r\n
+SLOC~2,5,Customer's Statement Location Code
+SLOC~2,2,Customer's own code identifying statement location
+SLOC~2,3,Customer's own code identifying statement location
+SLOC,0,Statement Location
+SLOC,2,Address to which statement should be sent
+SPRO~1,5,EAN-13 Article Number for the Traded Unit
+SPRO~1,2,EAN article number allocated to the unit of trade
+SPRO~1,3,EAN article number allocated to the unit of trade
+SPRO~2,5,Supplier's Code for the Traded Unit
+SPRO~2,2,Supplier's internal reference (non-EAN) identifying the traded unit
+SPRO~2,3,Supplier's internal reference (non-EAN) identifying the traded unit
+SPRO~3,5,Dun-14 Code for Traded Unit
+SPRO~3,2,Code for traded unit allocated under EAN-DUN14
+SPRO~3,3,Code for the traded unit allocated under the alternative (DUN-14) EAN system
+SPRO,0,Supplier's Product Number
+SPRO,2,Either the EAN traded unit code or the supplier's code must be quoted
+SPRS~1,5,EAN-13 Article Number for the Traded Unit
+SPRS~1,2,EAN article number allocated to the unit of trade
+SPRS~1,3,EAN Article number allocated to the unit of trade
+SPRS~2,5,Supplier's Code for the Traded Unit
+SPRS~2,2,Supplier's internal reference (non-EAN) identifying the traded unit
+SPRS~2,3,Supplier's internal reference (non-EAN) identifying the traded unit
+SPRS~3,5,Dun-14 Code for the Traded Unit
+SPRS~3,2,Code for the traded unit allocated under the alternate (DUN-14) EAN system
+SPRS~3,3,Code for the traded unit allocated under the alternative (DUN-14) EAN system
+SPRS,0,Supplier's Substituted Product Number
+SPRS,2,If the product ordered was substituted, then either the EAN traded unit code or the supplier's code must be quoted, otherwise special arrangements need to be negotiated
+SQTY~1,5,Number of Traded Units Held
+SQTY~1,2,Number of supplier's ordering units held
+SQTY~1,3,Number of supplier's ordering units held
+SQTY~2,5,Total Measure Held
+SQTY~2,2,Total weight, volume, size, etc. held.  Required when holding variable measure items.
+SQTY~2,3,Total weight, volume, size, etc. held.  Required when holding variable measure items.
+SQTY~3,5,Measure Indicator
+SQTY~3,2,Abbreviation for the held measure eg. pounds, metres, litres.  Mandatory if Total Measure Hold Used.  Code Values List 4
+SQTY~3,3,Abbreviation for the held measure eg. pounds, metres, litres.  Mandatory if Total Measure Hold Used.  Code Values List 4
+SQTY,0,Quantity Held
+SQTY,2,At least one of the following sub-elements must be quoted.  If the Total Measure Held is quoted the Measure Indicator must be quoted too
+SRPR~1,5,Reporting Group
+SRPR~2,5,Reporting Sequence
+SRPR,0,Supplier's Reporting Reference
+STDS,0,Syntax Rules Identifier
+STPR~1,5,Starting Price
+STPR~1,2,before discount and
+STPR~2,5,Nett Price
+STPR~2,2,after discount has been applied
+STPR,0,Standard Price
+STPR,2,Unit price:before discount and after discount has been applied
+SUMO~1,5,Start Date
+SUMO~1,2,Format:  YYMMDD
+SUMO~2,5,End Date
+SUMO~2,2,Format:  YYMMDD
+SUMO,0,Supply Period
+SVID~1,5,Service Code
+SVID~1,2,Name of service as allocated by Service Bank
+SVID~1,3,Name of service as allocated by Service Bank
+SVID~2,5,User Code
+SVID~2,2,Customer's user number as allocated by Bank
+SVID~2,3,Customer's user number as allocated by Bank
+SVID,0,Service Identity
+TBTL~1,5,Total Bill Amount Payable
+TBTL~1,3,BABF + UVLT + UTVA - PTOT
+TBTL~2,5,Credit Indicator
+TBTL~2,2,BABF + UVLT + UTVA - PTOT
+TBTL,0,Total Bill Amount Payable
+TCOD~1,5,Tariff Code
+TCOD~2,5,Tariff Description
+TCOD,0,Tariff Code
+TDES~1,5,Traded Unit Description Line 1
+TDES~2,5,Traded Unit Description Line 2
+TDES,0,Traded Unit Description
+TDES,2,Full description of the item being traded.  Consistent with any label or packaging
+TLOC~1,5,EAN Location Number
+TLOC~1,2,EAN Location number for transshipment location
+TLOC~1,3,EAN location number for transhipment location
+TLOC~2,5,Supplier's Own Location Number
+TLOC~2,2,Own code for transshipment location
+TLOC~2,3,Own code for transshipment location
+TLOC,0,Transshipment Location
+TLOC,2,Secondary or transshipment location
+TMOD~1,5,Tariff Code Modifier 1
+TMOD~2,5,Tariff Code Modifier 2
+TMOD~3,5,Tariff Code Modifier 3
+TMOD~4,5,Tariff Code Modifier 4
+TMOD,0,Tariff Code Modifier
+TMOD,2,User defined codes
+TRDT~2,3,Format: YYMMDD
+TRDT~4,3,Format: HHMMSS (if required by the particular application)
+TRDT,0,Date and Time of Transmission
+TYPE~1,5,Type
+TYPE~1,2,`UVATLR'
+TYPE~2,5,Version Number
+TYPE~2,2,`2' for this version
+TYPE,0,Type of Message
+UCON~1,5,EAN-13 Article Number
+UCON~1,2,EAN code for the unit (consumer unit or intermediate level) contained in the unit being described.  If the latter is the lowest coded level, insert 13 zeros.  (Insert five leading zeros before eight-digit codes)
+UCON~1,3,EAN code for the unit (consumer unit or intermediate level) contained in the unit being described.  If the latter is the lowest code level, insert 13 zeros.  (Insert five leading zeros before eight-digit codes)
+UCON~2,5,Supplier's Code
+UCON~2,2,Suppliers internal reference (non-EAN) identifying the unit contained
+UCON~2,3,Supplier's internal reference (non-EAN) identifying the unit contained
+UCON~3,5,DUN-14 Code
+UCON~3,2,Code for the unit contained allocated under the alternative (DUN-14) EAN system
+UCON~3,3,Code for the Unit contained allocated under the alternative (DUN-14) system
+UCON~4,5,Customer's Own Brand EAN Number
+UCON~4,2,Used when 'own label' units coded with in-store numbers are contained
+UCON~4,3,Used when 'own label' units coded with in-store numbers are contained.  EAN Prefix - 2 dig; customer's number - 5 dig; Consumer Unit Number - 8 dig
+UCON~5,5,Customer's Item Code
+UCON~5,2,EAN prefix - 2 dig; Customer's number - 5 dig; Consumer Unit number - 8 dig
+UCON~5,3,Customer's internal reference for the unit contained - non-EAN format
+UCON,0,Code for Unit Contained
+UCRV~1,5,Credit Value (before VAT)
+UCRV~1,2,Credit value of unit being credited, before VAT, having applied line discount.  In pounds
+UCRV~1,3,Credit value of unit being credited, before VAT, having applied line discount.  In pounds
+UCRV~2,5,Measure Indicator
+UCRV~2,2,Abbreviation for the measure, see Code List 4.  Mandatory for variable measure items
+UCRV~2,3,Abbreviation for the measure, see Code List 4.  Mandatory for variable measure items
+UCRV,0,Unit Credit Value (Before vat)
+UCSI~1,5,Total Charge including VAT
+UCSI~1,2,After settlement discount has been applied, plus VAT
+UCSI~1,3,After settlement discount has been applied, plus VAT
+UCSI~2,5,Credit Line Indicator
+UCSI~2,2,Allowed value: R
+UCSI~2,3,Allowed value: R
+UCSI,0,Total Charge for VAT Category Including VAT
+UGST~1,5,Total Measure
+UGST~2,5,Unit of Measure
+UGST~2,2,See code list 4
+UGST,0,Gross Weight of Storage Medium
+UGWT~1,5,Total Measure
+UGWT~2,5,Unit of Measure
+UGWT~2,2,See code list 4
+UGWT,0,Gross Weight of Unit
+UHST~1,5,Total Measure
+UHST~2,5,Unit of Measure
+UHST~2,2,See code list 4
+UHST,0,Height of Storage Medium
+UHYT~1,5,Total Measure
+UHYT~2,5,Unit of Measure
+UHYT~2,2,See code list 4
+UHYT,0,Height of Unit
+UINS~1,5,Uplift Instruction Narrative Line 1
+UINS~2,5,Uplift Instruction Narrative Line 2
+UINS~3,5,Uplift Instruction Narrative Line 3
+UINS~4,5,Uplift Instruction Narrative Line 4
+UINS,0,Uplift Instruction Narrative
+UINS,2,Narrative covering special instructions
+ULST~1,5,Total Measure
+ULST~2,5,Unit of Measure
+ULST~2,2,See code list 4
+ULST,0,Length of Storage Medium
+ULTH~1,5,Total Measure
+ULTH~2,5,Unit of Measure
+ULTH~2,2,See code list 4
+ULTH,0,Length of Unit
+UNOR~1,5,Consumer Units in Traded Unit
+UNOR~1,2,Number of consumer units making up the suppliers traded unit
+UNOR~1,3,Number of consumer units making up the supplier's traded unit
+UNOR~2,5,Order Measure
+UNOR~2,2,Required when an item is ordered as a multiple of a defined measure
+UNOR~2,3,Required when an item is ordered as a multiple of a defined measure
+UNOR~3,5,Measure Indicator
+UNOR~3,2,Abbreviation for the ordering measure eg. pounds, metres, litres.  Code Values List 4.  Mandatory if Total Measure Ordered used
+UNOR~3,3,Required when an item is ordered as a multiple of a defined measureMnemonic defining the ordering measure, eg. pounds, metres, litres.  Code Values List 4.  Mandatory if Ordering Measure used
+UNOR,0,Unit of Ordering
+UNOR,2,At least one of the following sub-elements must be quoted.  If Ordering Measure is used the Measure Indicator must also be quoted.
+UNTO~1,3,Codes can be agreed by interchange parties
+UNTO~2,3,Mandatory if no code used
+UNTO,0,Identification of Transmission Recipient
+UNTO,2,Code or name transmitted
+UPLN~1,5,Uplift Note Number
+UPLN~1,2,Unique reference to Uplift Note
+UPLN~1,3,Unique reference to Uplift Note
+UPLN~2,5,Date of Uplift Note
+UPLN~2,2,Format: YYMMDD
+UPLN,0,Uplift Note Details
+UPLN,2,Uplift Note number and date.  May also be used to reference "Returns to Supplier" note
+UPLQ~1,5,Number of Traded Units in Uplift
+UPLQ~1,2,Number of supplier's traded units in uplift
+UPLQ~1,3,Number of supplier's traded units in uplift
+UPLQ~2,5,Total Uplift Measure
+UPLQ~2,2,Total weight volume, etc. in uplift.  Required if uplifting variable measure items
+UPLQ~2,3,Total weight, volume, etc. in uplift.  Required when uplifting variable measure units
+UPLQ~3,5,Measure Indicator
+UPLQ~3,2,Abbreviation of uplift measure.  Code Values List 4
+UPLQ~3,3,Abbreviation for uplift measure.  Code Values List 4
+UPLQ,0,Uplift Quantity
+UPLQ,2,Quote at least 1 of the 3 sub-elements.  Measure Indicator to be shown if Total Uplift Measure used
+UPSI~1,5,File Total for VAT Category (including VAT)
+UPSI~1,3,USDI + VTVC
+UPSI~2,5,Credit Indicator
+UPSI~2,2,USDI + VTVC
+UPSI,0,File Total for VAT Category (Including vat)
+UPWT~1,5,Vehicle Tare Weight
+UPWT~1,2,In kilos
+UPWT~1,3,In kilos
+UPWT~2,5,Total Goods Weight
+UPWT~2,2,In kilos
+UPWT~2,3,In kilos
+UPWT,0,Uplift Weights
+USDI~1,5,(before VAT) Credit Indicator
+USDI~1,3,Total charge payable at this VAT rate - sum of UVLA in corresponding VAT segments
+USDI~2,2,Total charge payable at this VAT rate - sum of UVLA in corresponding VAT segments
+USDI,0,File Total for VAT Category (Before vat)
+UTVA~1,5,Bill Total VAT Amount Payable
+UTVA~1,2,Sum of UVTT
+UTVA~1,3,Sum of UVTT
+UTVA~2,5,Credit Indicator
+UTVA~2,2,Only used if actual consumption is less than previous estimate.  Allowed Value: R
+UTVA~2,3,Only used if actual consumption is less than previous estimate.  Allowed Value: R
+UTVA,0,Bill Total VAT Amount Payable
+UVAT~1,5,Bill File Total VAT Amount
+UVAT~1,2,Sum of UTVA
+UVAT~1,3,Sum of UTVA
+UVAT~2,5,Credit Indicator
+UVAT~2,2,Allowed Value: R
+UVAT~2,3,Allowed Value: R
+UVAT,0,Bill File Total VAT Amount
+UVLA~1,5,Total Charge Before VAT
+UVLA~1,2,Amount after settlement discount and subsidy have been applied
+UVLA~1,3,Amount after settlement discount and subsidy have been applied
+UVLA~2,5,Credit Line Indicator
+UVLA~2,2,Allowed Value: R
+UVLA~2,3,Allowed Value: R
+UVLA,0,Total Charge for VAT Category Before VAT
+UVLT~1,5,Total Charge Before VAT
+UVLT~1,2,Sum of CTOT in CCD
+UVLT~1,3,Sum of CTOT in CCD
+UVLT~2,5,Credit Indicator
+UVLT~2,2,Only used if actual consumption is less than previous estimated consumption.  Allowed Value: R
+UVLT~2,3,Only used if actual consumption is less than previous estimated consumption.  Allowed Value: R
+UVLT,0,Total Charge for Premises Before VAT
+UVOL~1,5,Total Measure
+UVOL~2,5,Unit of Measure
+UVOL~2,2,See code list 4
+UVOL,0,Volume of Unit
+UVST~1,5,Total Measure
+UVST~2,5,Unit of Measure
+UVST~2,2,See code list 4
+UVST,0,Volume of Storage Medium
+UVTT~1,5,VAT Amount Payable
+UVTT~1,2,VAT amount at quoted rate
+UVTT~1,3,VAT amount at quoted rate
+UVTT~2,5,Credit Line Indicator
+UVTT~2,2,Allowed Value: R
+UVTT~2,3,Allowed Value: R
+UVTT,0,VAT Amount Payable
+UWDT~1,5,Total Measure
+UWDT~2,5,Unit of Measure
+UWDT~2,2,See code list 4
+UWDT,0,Width of Unit
+UWST~1,5,Total Measure
+UWST~2,5,Unit of Measure
+UWST~2,2,See code list 4
+UWST,0,Width of Storage Medium
+VATN~1,5,Numeric VAT Registration Number
+VATN~1,2,Trader's VAT number allocated by HM Customs & Excise
+VATN~1,3,Trader's VAT number allocated by HM Customs & Excise
+VATN~2,5,Alphanumeric VAT Registration Number
+VATN~2,2,Government department or non-UK VAT number
+VATN~2,3,Government department or non-UK VAT number
+VATN,0,Supplier's VAT Registration Number
+VATR~1,5,Numeric VAT Registration Number
+VATR~1,2,Trader's VAT number allocated by HM Customs & Excise
+VATR~1,3,Trader's VAT number allocated by HM Customs & Excise
+VATR~2,5,Alphanumeric VAT Registration Number
+VATR~2,2,Government department or non-UK VAT number
+VATR~2,3,Government department or non-UK VAT number
+VATR,0,Customer's VAT Registration Number
+VDAA~1,5,VAT Declaration Code
+VDAA~1,2,User defined coded statement
+VDAA~1,3,User defined coded statement
+VDAA~2,5,Date of Bill Withdrawn
+VDAA~2,2,IVDT of previous bill
+VDAA~2,3,IVDT of previous bill
+VDAA~3,5,VAT Total Amount on Bill Withdrawn
+VDAA~3,2,UTVA of previous bill
+VDAA~3,3,UTVA of previous bill
+VDAA~4,5,Amended Invoice Reference
+VDAA~4,2,INVN of previous bill
+VDAA~4,3,INVN of previous bill
+VDAA~5,5,Premises Reference of Previous Bill
+VDAA~5,2,CLOC of previous bill
+VDAA~5,3,INVN of previous bill
+VDAA,0,VAT Declaration for Amended Account
+VDAA,2,Mandatory for amended accounts
+VTVC~1,5,File Total VAT for VAT Category
+VTVC~1,2,Sum of UVTT
+VTVC~1,3,Sum of UVTT
+VTVC~2,5,Credit Indicator
+VTVC,0,File Total VAT for VAT Category
+XQTY~1,5,Number of Traded Units Expected
+XQTY~1,2,Total number of traded units expected
+XQTY~1,3,Total number of traded units expected
+XQTY~2,5,Total Measure Expected
+XQTY~2,2,Total weight, volume etc.  Used when referring to variable measure items
+XQTY~2,3,Total weight, volume etc.  Used when referring to variable measure items
+XQTY~3,5,Measure Indicator
+XQTY~3,2,Code Values List 4
+XQTY~3,3,Code Values List 4
+XQTY,0,Quantity Expected
+XQTY,2,If the Total Measure Quantity is quoted, the Measure Indicator must be used

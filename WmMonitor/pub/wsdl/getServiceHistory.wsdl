@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="pub_monitor_service" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:wsdns1="http://localhost/pub/monitor/service/getHistory"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/pub/monitor/service/getHistory" xmlns:tns="http://localhost/pub/monitor/service/getHistory" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="__getHistoryInput">
+            <xsd:sequence>
+              <xsd:element name="contextID" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__getHistoryOutput">
+            <xsd:sequence>
+              <xsd:element name="history" nillable="true" type="tns:ArrayOf__history" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__history">
+            <xsd:sequence>
+              <xsd:element name="ROOTCONTEXTID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="PARENTCONTEXTID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CONTEXTID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="AUDITTIMESTAMP" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="AUDITTIMESTRING" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="USERID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="RESUBMITTABLE" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="DURATION" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="SERVICENAME" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="STATUS" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="ERRORMESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="STATUSDECODE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SERVERID" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOf__history">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="tns:__history[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="_getHistoryInput">
+		<wsdl:part name="contextID" type="xsd:string"/>
+	</wsdl:message>
+	
+	<wsdl:message name="_getHistoryOutput">
+		<wsdl:part name="history" type="wsdns1:ArrayOf__history"/>
+	</wsdl:message>
+	<wsdl:portType name="pub_monitor_servicePortType">
+		<wsdl:operation name="getHistory">
+			<wsdl:input message="tns:_getHistoryInput"/>
+			<wsdl:output message="tns:_getHistoryOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="pub_monitor_serviceBinding" type="tns:pub_monitor_servicePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getHistory">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/pub.monitor.service" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/pub.monitor.service" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

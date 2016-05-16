@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<IDataXMLCoder version="1.0">
+		<record javaclass="com.wm.data.BasicData">
+			<record name="version" javaclass="com.wm.data.BasicData">
+				<value name="major">1</value>
+				<value name="minor">0</value>
+			</record>
+		<record name="types" javaclass="com.wm.data.BasicData">
+
+				<idatacodable name="53o75f004pscbspr0000001b" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75f004pscbspr0000001b</value>
+					<value name="TypeName">EANCOM 2 CONTRL</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2010-01-29 12:00:23.803</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">2</value>
+					<value name="transaction">CONTRL</value>
+				</idatacodable>		</record>
+	</record>
+</IDataXMLCoder>

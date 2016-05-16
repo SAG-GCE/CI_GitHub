@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="system_package">yes</value>
+  <value name="version">9.6.0.0.93</value>
+  <value name="build">93</value>
+  <record name="startup_services" javaclass="com.wm.util.Values">
+    <null name="wm.loggingUtility:start"/>
+  </record>
+  <record name="shutdown_services" javaclass="com.wm.util.Values">
+    <null name="wm.loggingUtility:stop"/>
+  </record>
+  <null name="replication_services"/>
+  <null name="requires"/>
+  <value name="listACL">Developers</value>
+  <value name="name">WmLogUtil</value>
+  <value name="build"></value>
+  <value name="description">A Utility to extract documents from the Broker Log Queue, for subsequent insertion into a database.</value>
+  <value name="time">2015-11-03 06:31:55</value>
+  <value name="jvm_version">1.6</value>
+  <value name="publisher">Software AG</value>
+  <value name="patch_nums">all</value>
+</Values>

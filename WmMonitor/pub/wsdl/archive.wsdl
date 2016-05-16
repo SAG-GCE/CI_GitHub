@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_archive" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+			xmlns:wsdns1="http://localhost/ws/monitor/archive/archive">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/archive/archive" xmlns:tns="http://localhost/ws/monitor/archive/archive">
+          <xsd:complexType name="__archiveInput">
+            <xsd:sequence>
+              <xsd:element name="batchSize" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="archiveAction" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="days" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="todate" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="hours" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="minutes" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="processesOption" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="activationsOption" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="servicesOption" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="documentsOption" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="serverdataOption" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="processesArchiveStatus" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="activationsArchiveStatus" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="servicesArchiveStatus" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__archiveOutput">
+            <xsd:sequence>
+              <xsd:element name="Outputs" nillable="true" type="tns:__Outputs" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__Outputs">
+            <xsd:sequence>
+              <xsd:element name="ProcessMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DocumentsErrorMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="DocumentsMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ProcessErrorMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ServicesMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ServicesErrorMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ActivationsMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ActivationsErrorMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ServerDataMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ServerDataErrorMessage" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="archiveInput">
+		<wsdl:part name="batchSize" type="xsd:string"/>
+		<wsdl:part name="archiveAction" type="xsd:string"/>
+		<wsdl:part name="days" type="xsd:string"/>
+		<wsdl:part name="todate" type="xsd:string"/>
+		<wsdl:part name="hours" type="xsd:string"/>
+		<wsdl:part name="minutes" type="xsd:string"/>
+		<wsdl:part name="processesOption" type="xsd:string"/>
+		<wsdl:part name="activationsOption" type="xsd:string"/>
+		<wsdl:part name="servicesOption" type="xsd:string"/>
+		<wsdl:part name="documentsOption" type="xsd:string"/>
+		<wsdl:part name="serverdataOption" type="xsd:string"/>
+		<wsdl:part name="processesArchiveStatus" type="xsd:string"/>
+		<wsdl:part name="activationsArchiveStatus" type="xsd:string"/>
+		<wsdl:part name="servicesArchiveStatus" type="xsd:string"/>
+	</wsdl:message>
+	
+	<wsdl:message name="archiveOutput">
+		<wsdl:part name="Outputs" type="wsdns1:__Outputs"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_archivePortType">
+		<wsdl:operation name="archive">
+			<wsdl:input message="tns:archiveInput"/>
+			<wsdl:output message="tns:archiveOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_archiveBinding" type="tns:ws_monitor_archivePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="archive">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.archive" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.archive" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

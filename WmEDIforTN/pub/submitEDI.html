@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
+		<title>Submit Test EDI Data</title>
+		<link rel="stylesheet" type="text/css" href="/WmRoot/webMethods.css">
+		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+		<base target="_self">
+        <style>
+			.listbox  { width: 100%; }
+		</style>
+		<script src="/WmRoot/webMethods.js.txt"></script>
+
+
+<SCRIPT>
+
+	function doSubmit() {
+		document.a.action=document.a.url.value;
+	}
+</SCRIPT>
+	</head>
+
+	<body onLoad="setNavigation('submitEDI.html', '', 'foo');">
+		<table width=100% >
+			<tr>
+				<td class="menusection-Logs">Submit Test EDI Data</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td class="evenrow-l"><br>
+				You can copy an EDI document into the following form and then click <b>Submit</b>.
+				After you have submitted the document, you can check Trading Networks to view
+				the document.<br><br>
+              		</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%">
+					<FORM name="a" METHOD="POST" target="msgWindow" ONSUBMIT=doSubmit()>
+						<!-- title bar -->
+						<tr>
+							<td class="heading" colspan=2>Set URL and Data</td>
+						</tr>
+
+						<!-- table labels --->
+      					<tr>
+							<td nowrap class="oddrow">URL</td>
+							<td nowrap class="oddcol-l">&nbsp;
+							<input type="text" name="url" size="70" value="http://localhost:5555/invoke/wm.tn/receive">
+							</td>
+                    			</tr>
+
+						<tr>
+							<td nowrap class="evenrow">prt Ignore Document</td>
+							<td nowrap class="evencol-l">&nbsp;
+								<select NAME="prtIgnoreDocument">
+									<option value = "false">false
+									<option value = "true">true
+								</select>
+							</td>
+						</tr>
+						<!-- mailhost row -->
+						<tr>
+							<td nowrap class="evenrow">EDI<br>data</td>
+							<td nowrap class="evencol-l">&nbsp;
+							<textarea rows="25" name="edidata" cols="70"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td class="action" colspan="2">
+							<input type="submit" value="Submit"  >
+							</td>
+						</tr>
+					</form>
+					</table>
+				</td>
+			</tr>
+
+		</table>
+	</body>
+</html>

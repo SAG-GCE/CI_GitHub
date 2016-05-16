@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<IDataXMLCoder version="1.0">
+		<record javaclass="com.wm.data.BasicData">
+			<record name="version" javaclass="com.wm.data.BasicData">
+				<value name="major">1</value>
+				<value name="minor">0</value>
+			</record>
+		<record name="types" javaclass="com.wm.data.BasicData">
+
+				<idatacodable name="53o75b0080kb75m40000003b" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003b</value>
+					<value name="TypeName">EANCOM 01B APERAK</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">APERAK</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m40000003c" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003c</value>
+					<value name="TypeName">EANCOM 01B BANSTA</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">BANSTA</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m40000003d" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003d</value>
+					<value name="TypeName">EANCOM 01B CNTCND</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">CNTCND</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m40000003e" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003e</value>
+					<value name="TypeName">EANCOM 01B COACSU</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">COACSU</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m40000003f" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003f</value>
+					<value name="TypeName">EANCOM 01B COMDIS</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">COMDIS</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m40000003g" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003g</value>
+					<value name="TypeName">EANCOM 01B CONDRA</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">CONDRA</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m40000003h" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003h</value>
+					<value name="TypeName">EANCOM 01B CONTRL</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">CONTRL</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m40000003i" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m40000003i</value>
+					<value name="TypeName">EANCOM 01B CREMUL</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">CREMUL</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003j" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003j</value>
+					<value name="TypeName">EANCOM 01B DEBMUL</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">DEBMUL</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003k" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003k</value>
+					<value name="TypeName">EANCOM 01B DELFOR</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">DELFOR</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003l" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003l</value>
+					<value name="TypeName">EANCOM 01B DESADV</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">DESADV</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003m" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003m</value>
+					<value name="TypeName">EANCOM 01B DIRDEB</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">DIRDEB</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003n" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003n</value>
+					<value name="TypeName">EANCOM 01B FINCAN</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">FINCAN</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003o" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003o</value>
+					<value name="TypeName">EANCOM 01B FINSTA</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">FINSTA</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003p" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003p</value>
+					<value name="TypeName">EANCOM 01B GENRAL</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">GENRAL</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003q" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003q</value>
+					<value name="TypeName">EANCOM 01B HANMOV</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">HANMOV</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003r" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003r</value>
+					<value name="TypeName">EANCOM 01B IFCSUM</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">IFCSUM</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003s" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003s</value>
+					<value name="TypeName">EANCOM 01B IFTMAN</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">IFTMAN</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003t" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003t</value>
+					<value name="TypeName">EANCOM 01B IFTMBC</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">IFTMBC</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003u" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003u</value>
+					<value name="TypeName">EANCOM 01B IFTMBF</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">IFTMBF</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000003v" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000003v</value>
+					<value name="TypeName">EANCOM 01B IFTMIN</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">IFTMIN</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000040" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000040</value>
+					<value name="TypeName">EANCOM 01B IFTSTA</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">IFTSTA</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000041" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000041</value>
+					<value name="TypeName">EANCOM 01B INSDES</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">INSDES</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000042" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000042</value>
+					<value name="TypeName">EANCOM 01B INVOIC</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">INVOIC</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000043" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000043</value>
+					<value name="TypeName">EANCOM 01B INVRPT</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">INVRPT</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000044" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000044</value>
+					<value name="TypeName">EANCOM 01B MSCONS</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">MSCONS</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000045" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000045</value>
+					<value name="TypeName">EANCOM 01B ORDCHG</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">ORDCHG</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000046" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000046</value>
+					<value name="TypeName">EANCOM 01B ORDERS</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">ORDERS</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000047" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000047</value>
+					<value name="TypeName">EANCOM 01B ORDRSP</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">ORDRSP</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000048" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000048</value>
+					<value name="TypeName">EANCOM 01B OSTENQ</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">OSTENQ</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m500000049" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m500000049</value>
+					<value name="TypeName">EANCOM 01B OSTRPT</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">OSTRPT</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004a" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004a</value>
+					<value name="TypeName">EANCOM 01B PARTIN</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">PARTIN</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004b" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004b</value>
+					<value name="TypeName">EANCOM 01B PAYMUL</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">PAYMUL</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004c" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004c</value>
+					<value name="TypeName">EANCOM 01B PRICAT</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">PRICAT</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004d" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004d</value>
+					<value name="TypeName">EANCOM 01B PRODAT</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">PRODAT</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004e" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004e</value>
+					<value name="TypeName">EANCOM 01B PROINQ</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">PROINQ</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004f" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004f</value>
+					<value name="TypeName">EANCOM 01B QALITY</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">QALITY</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004g" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004g</value>
+					<value name="TypeName">EANCOM 01B QUOTES</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">QUOTES</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004h" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004h</value>
+					<value name="TypeName">EANCOM 01B RECADV</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">RECADV</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004i" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004i</value>
+					<value name="TypeName">EANCOM 01B REMADV</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">REMADV</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004j" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004j</value>
+					<value name="TypeName">EANCOM 01B REQOTE</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">REQOTE</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004k" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004k</value>
+					<value name="TypeName">EANCOM 01B RETANN</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">RETANN</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004l" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004l</value>
+					<value name="TypeName">EANCOM 01B RETINS</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">RETINS</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004m" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004m</value>
+					<value name="TypeName">EANCOM 01B SLSFCT</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">SLSFCT</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004n" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004n</value>
+					<value name="TypeName">EANCOM 01B SLSRPT</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">SLSRPT</value>
+				</idatacodable>
+				<idatacodable name="53o75b0080kb75m50000004o" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75b0080kb75m50000004o</value>
+					<value name="TypeName">EANCOM 01B TAXCON</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2013-07-29 10:03:12.900</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">EANCOM</value>
+					<value name="version">01B</value>
+					<value name="transaction">TAXCON</value>
+				</idatacodable>		</record>
+	</record>
+</IDataXMLCoder>

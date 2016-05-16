@@ -1,0 +1,91 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Document Details</title>
+</head>
+
+<body bgcolor="#D9D9FF">
+
+<form name="xml_form" action="/invoke/wm.server/reflect">
+  <input type="hidden" name="nextPage" value="main.dsp"><a href="main.dsp" <center><div
+  align="center"><center><p><img src="../../WmTN/header_tradingnetworks.gif" width="800"
+  height="102" alt="header_tradingnetworks.gif (20945 bytes)"></a></p>
+  </center></div><p>&nbsp;</p>
+  <div align="center"><center><table border="0" cellspacing="1" width="80%"
+  style="font-family: Agenda-Medium; font-size: 10pt">
+    <tr>
+      <td width="100%" colspan="4" height="44" style="border: thin solid rgb(192,192,192)"><div
+      align="center"><center><p><font face="Agenda-Bold"><big>Document Detail</big></font></td>
+    </tr>
+    <tr align="center">
+      <td width="10%" height="20" style="border: thin solid rgb(192,192,192)"><font
+      face="Agenda-Medium">Date</font></td>
+<!-- %scope bizdoc% -->
+      <td width="40%" height="20" style="border: thin solid rgb(192,192,192)" align="left">%value DocTimeStamp%</td>
+<!-- %end% -->
+      <td width="10%" height="20" style="border: thin solid rgb(192,192,192)"><font
+      face="Agenda-Medium">Document Type</font></td>
+      <td width="40%" height="20" style="border: thin solid rgb(192,192,192)" align="left">%value TypeName%</td>
+    </tr>
+    <tr align="center">
+      <td width="10%" height="20" style="border: thin solid rgb(192,192,192)"><font
+      face="Agenda-Medium">Sender</font></td>
+      <td width="40%" height="20" style="border: thin solid rgb(192,192,192)" align="left">%value SenderCorp%</td>
+      <td width="10%" height="20" style="border: thin solid rgb(192,192,192)"><font
+      face="Agenda-Medium">Document Number</font></td>
+      <td width="40%" height="20" style="border: thin solid rgb(192,192,192)" align="left">%value NativeIdentifier%</td>
+    </tr>
+    <tr align="center">
+      <td width="10%" height="20" style="border: thin solid rgb(192,192,192)"><font
+      face="Agenda-Medium">Receiver</font></td>
+      <td width="40%" height="20" style="border: thin solid rgb(192,192,192)" align="left">%value ReceiverCorp%</td>
+<!-- %scope bizdoc% -->
+      <td width="10%" height="20" style="border: thin solid rgb(192,192,192)"><big><font
+      face="Agenda-Medium">Status</font></big></td>
+      <td width="40%" height="20" style="border: thin solid rgb(192,192,192)" align="left">%value SystemStatus%</td>
+<!-- %end% -->
+    </tr>
+    <tr align="center">
+      <td width="80%" height="25" colspan="4"></td>
+    </tr>
+<!-- %loop Attrib% -->
+    <tr align="center">
+      <td width="50%" height="26" style="border: thin solid rgb(192,192,192)"><big><div
+      align="left"><p><font face="Agenda-Medium">%value name%</font></big></td>
+      <td width="50%" height="26" style="border: thin solid rgb(192,192,192)"><big><font
+      face="Agenda-Medium">%value value%</font></big></td>
+    </tr>
+<!-- %end% -->
+    <tr align="center">
+      <td width="50%" height="26" "></td>
+      <td width="50%" height="26" "></td>
+    </tr>
+    <tr align="center">
+      <td width="20%" vAlign="top"><big><font face="Agenda-Medium"><strong><div align="left"><p>Update
+      Document Status</strong></font></big></td>
+      <td width="80%"><ul>
+        <li><a
+          href="../../invoke/wm.tn.web/getSingleDocument?newSystemStatus=RECEIVED&docId=%value docId%&SenderCorp=%value SenderCorp%&ReceiverCorp=%value ReceiverCorp%&NativeIdentifier=%value NativeIdentifier%&TypeName=%value TypeName%"><font
+          face="Agenda-Medium"><big><big>Received</big></big></font></a></li>
+        <li><a
+          href="../../invoke/wm.tn.web/getSingleDocument?newSystemStatus=PROCESSING&docId=%value docId%&SenderCorp=%value SenderCorp%&ReceiverCorp=%value ReceiverCorp%&NativeIdentifier=%value NativeIdentifier%&TypeName=%value TypeName%"><big><big><font
+          face="Agenda-Medium">Processing</font></big></big></a></li>
+        <li><a
+          href="../../invoke/wm.tn.web/getSingleDocument?newSystemStatus=ACKNOWLEDGED&docId=%value docId%&SenderCorp=%value SenderCorp%&ReceiverCorp=%value ReceiverCorp%&NativeIdentifier=%value NativeIdentifier%&TypeName=%value TypeName%"><big><big><font
+          face="Agenda-Medium">Acknowledged</font></big></big></a></li>
+      </ul>
+      </td>
+    </tr>
+    <tr align="center">
+      <td width="100%" align="center" height="118" colspan="4"><div align="center"><center><p><textarea
+      rows="15" name="Content" cols="60">%value Content%</textarea></td>
+    </tr>
+    <tr align="center">
+      <td width="100%" height="26" colspan="4"></td>
+    </tr>
+  </table>
+  </center></div>
+</form>
+</body>
+</html>

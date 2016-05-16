@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+
+
+  <COMMENT>invoke validation service (if required)</COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE TIMEOUT="" SERVICE="wm.tn.doc:verify" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>invoke verification (if required)</COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="wm.tn.doc:persist" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>save document (if required)</COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
+</INVOKE>
+<INVOKE TIMEOUT="" SERVICE="wm.tn.doc:validate" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>invoke validation service (if required)</COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
+</INVOKE>
+</FLOW>

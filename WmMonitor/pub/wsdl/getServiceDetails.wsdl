@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_service" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:wsdns1="http://localhost/ws/monitor/service/getDetails"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/service/getDetails" xmlns:tns="http://localhost/ws/monitor/service/getDetails" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="__getDetailsInput">
+            <xsd:sequence>
+              <xsd:element name="contextId" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__getDetailsOutput">
+            <xsd:sequence>
+              <xsd:element name="details" nillable="true" type="tns:__details" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__details">
+            <xsd:sequence>
+              <xsd:element name="ROOTCONTEXTID" nillable="true" type="xsd:string"/>
+              <xsd:element name="PARENTCONTEXTID" nillable="true" type="xsd:string"/>
+              <xsd:element name="CONTEXTID" nillable="true" type="xsd:string"/>
+              <xsd:element name="SERVICENAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="AUDITTIMESTAMP" nillable="true" type="xsd:anyType"/>
+              <xsd:element name="AUDITTIMESTRING" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="USERID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="RESUBMITTABLE" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="DURATION" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="STATUS" nillable="true" type="xsd:anyType"/>
+              <xsd:element name="STATUSDECODE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="ERRORMESSAGE" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="SERVERID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="EXTERNALID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="root" nillable="true" type="tns:__root" minOccurs="0"/>
+              <xsd:element name="parent" nillable="true" type="tns:__parent" minOccurs="0"/>
+              <xsd:element name="children" nillable="true" type="tns:ArrayOf__children" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__root">
+            <xsd:sequence>
+              <xsd:element name="SERVICENAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="CONTEXTID" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__parent">
+            <xsd:sequence>
+              <xsd:element name="SERVICENAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="CONTEXTID" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__children">
+            <xsd:sequence>
+              <xsd:element name="SERVICENAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="CONTEXTID" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOf__children">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="tns:__children[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="getDetailsInput">
+		<wsdl:part name="contextId" type="xsd:string"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getDetailsOutput">
+		<wsdl:part name="details" type="wsdns1:__details"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_servicePortType">
+		<wsdl:operation name="getDetails">
+			<wsdl:input message="tns:getDetailsInput"/>
+			<wsdl:output message="tns:getDetailsOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_serviceBinding" type="tns:ws_monitor_servicePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getDetails">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.service" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.service" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

@@ -1,0 +1,20 @@
+%comment%
+This is the text version output template of generateFAReport service.
+%end%
+%ifvar val -isnull%
+  !!Values is not exists!! %nl%
+ %endifvar%
+
+ %loop results%
+ DocumentID: %value DOCID%%nl%
+ Group ID: %value GROUPID%%nl%
+ Sender ID: %value SENDERID%%nl%
+ Reveiver ID: %value RECEIVERID%%nl%
+ Group Type: %value GROUPTYPE%%nl%
+ Document Type: %value DOCTYPEID%%nl%
+ Group Version: %value GROUPVERSION%%nl%
+ FA Status: %value FASTATUS%%nl%
+ Doc Timestamp: %value DOCTIMESTAMP%%nl%
+ FA Timstamp: %value FATIMESTAMP%%nl%
+ Related DocID: %value RELATEDDOCID%%nl%
+%end loop%

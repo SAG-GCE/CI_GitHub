@@ -1,0 +1,93 @@
+
+<HTML>
+<HEAD>
+	<TITLE>FA REPORT</TITLE>
+	<link rel="stylesheet" type="text/css" href="/WmRoot/webMethods.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<script src="/WmRoot/webMethods.js.txt"></script>
+
+	<SCRIPT language="JavaScript">
+		function addReport (url, target)
+		{
+//			var OpenContent = window.open (url, 'View Document' ,'width=800,height=700,scrollbars=yes,toolbar=no,location=no,resizable=yes');
+			document.location=url;
+		}
+
+		function writeDocID(docId)
+		{
+			var test = docId.substr(0, 4);
+			if ("EDI_" == test) {
+				w(docId);
+			} else {
+				w("<a href=\"javascript:addReport('/WmEDIforTN/viewTNDoc.dsp?docID=" + docId + "', '" + docId + "');\""); 
+				w("onMouseOver=\"window.status='View Document';return true\"");
+				w("onMouseOut=\"window.status='';return true\" >" + docId + "</a>");
+
+			}
+		}	
+	</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+%comment%
+This is the HTML version output template of generateFAReport service.
+%end%
+%ifvar val -isnull%
+  !!Values is not exists!! %nl%
+ %endifvar%
+
+ 	<caption align = left>
+ 	<H1>FA report:</H1>
+ 	</caption>
+<table width=100%>
+	<tr>
+ 		<td class="oddcol"> Document ID &nbsp;</td>
+ 		<td class="oddcol"> Document Type &nbsp;</td>
+ 		<td class="oddcol"> Sender &nbsp;</td>
+ 		<td class="oddcol"> Receiver &nbsp;</td>
+ 		<td class="oddcol"> Group ID &nbsp;</td>
+ 		<td class="oddcol"> Group Type &nbsp;</td>
+ 		<td class="oddcol"> Group Version &nbsp;</td>
+ 		<td class="oddcol"> FA Status &nbsp;</td>
+ 		<td class="oddcol"> Doc Timestamp &nbsp;</td>
+ 		<td class="oddcol"> FA Timestamp &nbsp;</td>
+	</tr>
+	<script>resetRows();</script>
+
+%loop results%
+ 	<tr>
+		<script>writeTD('rowdata');</script>
+<!--
+			%ifvar DOCID -notempty%
+				<a href="javascript:addReport('/WmEDIforTN/viewTNDoc.dsp?docID=%value DOCID%', '%value DOCID%');" 
+					onMouseOver="window.status='View Document';return true" 
+					onMouseOut="window.status='';return true" >%value DOCID%</a>
+			%else%
+				000000000000000000000000
+			%endif%
+-->
+			<script>writeDocID('%value DOCID%');</script>
+
+
+		</td>
+ 		<script>writeTD('rowdata');</script>%value DOCTYPEID%</td>
+ 		<script>writeTD('rowdata');</script>%value SENDERID%</td>
+ 		<script>writeTD('rowdata');</script>%value RECEIVERID%</td>
+ 		<script>writeTD('rowdata');</script>%value GROUPID%</td>
+ 		<script>writeTD('rowdata');</script>%value GROUPTYPE%</td>
+ 		<script>writeTD('rowdata');</script>%value GROUPVERSION%</td>
+ 		<script>writeTD('rowdata');</script>%value FASTATUS%</td>
+ 		<script>writeTD('rowdata');</script>%value DOCTIMESTAMP%</td>
+ 		<script>writeTD('rowdata');</script>%value FATIMESTAMP%</td>
+	</tr>
+
+	<script>swapRows();</script>
+
+%end loop%
+
+</table>
+</BODY>
+</HTML>
+

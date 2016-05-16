@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_process_model" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+			xmlns:wsdns1="http://localhost/ws/monitor/dls">
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/dls" xmlns:tns="http://localhost/ws/monitor/dls" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="ArrayOfstring">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="xsd:string[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+          <xsd:complexType name="__modelNames">
+            <xsd:sequence>
+              <xsd:element name="description" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="processPath" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="modelName" nillable="true" type="xsd:string"/>
+              <xsd:element name="modelId" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOf__modelNames">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="tns:__modelNames[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+	</wsdl:types>
+	
+	<wsdl:message name="getServiceNames"/>
+	<wsdl:message name="getServiceNamesOutput">
+		<wsdl:part name="serviceNames" type="wsdns1:ArrayOfstring"/>
+	</wsdl:message>
+
+	<wsdl:message name="getDocumentNames"/>
+	<wsdl:message name="getDocumentNamesOutput">
+		<wsdl:part name="documentNames" type="wsdns1:ArrayOfstring"/>
+	</wsdl:message>
+
+	<wsdl:message name="getAllProcessModels"/>
+	<wsdl:message name="getAllProcessModelsOutput">
+		<wsdl:part name="modelNames" type="wsdns1:ArrayOf__modelNames"/>
+	</wsdl:message>
+	
+	<wsdl:portType name="ws_monitor_dlsPortType">
+		<wsdl:operation name="getServiceNames">
+			<wsdl:input message="tns:getServiceNames"/>
+			<wsdl:output message="tns:getServiceNamesOutput"/>
+		</wsdl:operation>
+		<wsdl:operation name="getDocumentNames">
+			<wsdl:input message="tns:getDocumentNames"/>
+			<wsdl:output message="tns:getDocumentNamesOutput"/>
+		</wsdl:operation>
+		<wsdl:operation name="getAllProcessModels">
+			<wsdl:input message="tns:getAllProcessModels"/>
+			<wsdl:output message="tns:getAllProcessModelsOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="ws_monitor_dlsBinding" type="tns:ws_monitor_dlsPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getServiceNames">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.service" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.service" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getDocumentNames">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.document" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.document" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getAllProcessModels">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.model" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.dls" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

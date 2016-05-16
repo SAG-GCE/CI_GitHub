@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_service" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:wsdns1="http://localhost/ws/monitor/service/getList"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/service/getList" xmlns:tns="http://localhost/ws/monitor/service/getList" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="__getListInput">
+            <xsd:sequence>
+              <xsd:element name="keyword" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="serviceName" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="serverId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="statusSet" nillable="true" type="tns:ArrayOfstring" minOccurs="0"/>
+              <xsd:element name="range" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="fromDate" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="toDate" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="filterOnLast" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="username" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="rootContextID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="parentContextID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="contextID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="maxRows" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="topLevelOnly" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="isAnd" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOfstring">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="xsd:string[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+          <xsd:complexType name="__getListOutput">
+            <xsd:sequence>
+              <xsd:element name="thumbnails" nillable="true" type="tns:ArrayOf__thumbnails" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__thumbnails">
+            <xsd:sequence>
+              <xsd:element name="ROOTCONTEXTID" nillable="true" type="xsd:string"/>
+              <xsd:element name="PARENTCONTEXTID" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="CONTEXTID" nillable="true" type="xsd:string"/>
+              <xsd:element name="SERVICENAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SERVERID" nillable="true" type="xsd:string"/>
+              <xsd:element name="USERID" nillable="true" type="xsd:string"/>
+              <xsd:element name="FIRSTSTATUS" nillable="true" type="xsd:anyType"/>
+              <xsd:element name="FIRSTSTATUSDECODE" nillable="true" type="xsd:string"/>
+              <xsd:element name="FIRSTTIME" nillable="true" type="xsd:anyType"/>
+              <xsd:element name="FIRSTTIMESTRING" nillable="true" type="xsd:string"/>
+              <xsd:element name="LASTSTATUS" nillable="true" type="xsd:anyType"/>
+              <xsd:element name="LASTSTATUSDECODE" nillable="true" type="xsd:string"/>
+              <xsd:element name="LASTTIME" nillable="true" type="xsd:anyType"/>
+              <xsd:element name="LASTTIMESTRING" nillable="true" type="xsd:string"/>
+              <xsd:element name="DURATION" nillable="true" type="xsd:anyType" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOf__thumbnails">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="tns:__thumbnails[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="getListInput">
+		<wsdl:part name="keyword" type="xsd:string"/>
+		<wsdl:part name="serviceName" type="xsd:string"/>
+		<wsdl:part name="serverId" type="xsd:string"/>
+		<wsdl:part name="statusSet" type="wsdns1:ArrayOfstring"/>
+		<wsdl:part name="range" type="xsd:string"/>
+		<wsdl:part name="fromDate" type="xsd:string"/>
+		<wsdl:part name="toDate" type="xsd:string"/>
+		<wsdl:part name="filterOnLast" type="xsd:string"/>
+		<wsdl:part name="username" type="xsd:string"/>
+		<wsdl:part name="rootContextID" type="xsd:string"/>
+		<wsdl:part name="parentContextID" type="xsd:string"/>
+		<wsdl:part name="contextID" type="xsd:string"/>
+		<wsdl:part name="maxRows" type="xsd:string"/>
+		<wsdl:part name="topLevelOnly" type="xsd:string"/>
+		<wsdl:part name="isAnd" type="xsd:string"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getListOutput">
+		<wsdl:part name="thumbnails" type="wsdns1:ArrayOf__thumbnails"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_servicePortType">
+		<wsdl:operation name="getList">
+			<wsdl:input message="tns:getListInput"/>
+			<wsdl:output message="tns:getListOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_serviceBinding" type="tns:ws_monitor_servicePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getList">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.service" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.service" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

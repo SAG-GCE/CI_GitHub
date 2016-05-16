@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<IDataXMLCoder version="1.0">
+		<record javaclass="com.wm.data.BasicData">
+			<record name="version" javaclass="com.wm.data.BasicData">
+				<value name="major">1</value>
+				<value name="minor">0</value>
+			</record>
+		<record name="types" javaclass="com.wm.data.BasicData">
+
+				<idatacodable name="0ag2ks0034l24lgn0000031o" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">0ag2ks0034l24lgn0000031o</value>
+					<value name="TypeName">UNEDIFACT 3 CONTRL</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2008-04-07 14:25:03.511</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">UNEDIFACT</value>
+					<value name="version">3</value>
+					<value name="transaction">CONTRL</value>
+				</idatacodable>		</record>
+	</record>
+</IDataXMLCoder>

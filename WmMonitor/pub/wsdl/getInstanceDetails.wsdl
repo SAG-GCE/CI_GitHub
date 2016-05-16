@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_process_instance" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:wsdns1="http://localhost/ws/monitor/process/instance/getDetails"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/process/instance/getDetails" xmlns:tns="http://localhost/ws/monitor/process/instance/getDetails">
+          <xsd:complexType name="__getDetailsInput">
+            <xsd:sequence>
+              <xsd:element name="instanceId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="instanceIteration" nillable="true" type="xsd:anyType" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__getDetailsOutput">
+            <xsd:sequence>
+              <xsd:element name="details" nillable="true" type="tns:__details" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__details">
+            <xsd:sequence>
+              <xsd:element name="instanceId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="instanceIteration" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="parentInstanceId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="parentInstanceIteration" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="modelId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="modelName" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="customId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="startTimeString" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="startTime" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="endTimeString" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="endTime" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="status" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="statusDecode" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="contextId" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="getDetailsInput">
+		<wsdl:part name="instanceId" type="xsd:string"/>
+		<wsdl:part name="instanceIteration" type="xsd:anyType"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getDetailsOutput">
+		<wsdl:part name="details" type="wsdns1:__details"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_process_instancePortType">
+		<wsdl:operation name="getDetails">
+			<wsdl:input message="tns:getDetailsInput"/>
+			<wsdl:output message="tns:getDetailsOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_process_instanceBinding" type="tns:ws_monitor_process_instancePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getDetails">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

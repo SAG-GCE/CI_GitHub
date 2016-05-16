@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//SoftQuad Software//DTD HoTMetaL PRO 6.0::19990601::extensions to HTML 4.0//EN" "hmpro6.dtd">
+<HTML> 
+  <HEAD> 
+	 <TITLE>EDI Properties Settings</TITLE>
+<!--(Links)=========================================================-->
+	 <LINK REL="StyleSheet" HREF="webM_Styles.css"> 
+  </HEAD>
+   
+<!--(Body)==========================================================-->
+  <BODY BGCOLOR="FFFFCC"> 
+	 <H1><A NAME="TOP">EDI Properties Settings</A></H1> 
+	 <P>Updating properties on the <B>Properties Settings</B> page changes the
+		properties in the EDI properties.cnf file and in memory, which results in the
+		changes taking effect immediately. The properties.cnf file is located in the
+		<I>webMethods\IntegrationServer</I>\packages\WmEDI\config directory, where
+		<I>webMethods\IntegrationServer</I> is the directory in which your Integration
+		Server is installed.</P> 
+	 <P>You can add properties not currently listed on the <B>Properties
+		Settings</B> page. If the property you want to set is not listed, add it by
+		making a new line on the <B> Properties Settings</B>page. Be sure you use the
+		correct case.</P> 
+	 <P>For a description of a property, click the link for the property or the
+		property type in the following lists.</P> 
+	 <TABLE WIDTH="82%" CELLSPACING="0"> 
+		<TR> 
+		  <TD WIDTH="282"> 
+			 <P CLASS="webM-TableHead">Property</P></TD> 
+		  <TD WIDTH="307"> 
+			 <P CLASS="webM-TableHead">Property Type</P></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="282" CLASS="webM-Level2"> <A
+			 HREF="#EDIBigDocThreshold">EDIBigDocThreshold</A></TD> 
+		  <TD WIDTH="307" CLASS="webM-Level2">
+			 <A HREF="#functional_acknowledgment">Functional Acknowledgment</A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="282" CLASS="webM-Level2"> <A
+			 HREF="#EDIencoding">EDIencoding</A></TD> 
+		  <TD WIDTH="307" CLASS="webM-Level2"> <A
+			 HREF="#large_document_handling">Large Document Handling</A> </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="282" CLASS="webM-Level2">
+			 <A HREF="#EDIMaxFATransactionErrors">EDIMaxFATransactionErrors</A></TD> 
+		  <TD WIDTH="307" CLASS="webM-Level2"> <A
+			 HREF="#miscellaneous">Miscellaneous</A></TD> 
+		</TR> 
+	 </TABLE> <BR> 
+	 <H2><A NAME="functional_acknowledgment"> Functional Acknowledgment (FA)
+		Property</A></H2> 
+	 <H3><A NAME="EDIMaxFATransactionErrors">EDIMaxFATransactionErrors</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The maximum number of errors that
+			 can be reported for any one FA transaction.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Possible Values:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> <I>n</I>, a positive
+			 whole number indicating the maximum number of errors for any one FA
+			 transaction. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">-1, indicating any
+			 number of errors can be reported for any one FA transaction.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 100, indicating that
+			 up to and including 100 errors can be reported for any one FA transaction.</TD>
+		  
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="large_document_handling"> Large Document Handling
+		Property</A></H2> 
+	 <H3><A NAME="EDIBigDocThreshold">EDIBigDocThreshold</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The threshold size at which the
+			 EDI Module should consider a document to be large.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Possible Values:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> <I>-n</I>, any
+			 negative whole number indicating that the EDI Module considers no documents as
+			 large. The EDI Module processes all documents in the traditional manner,
+			 reading the document content into memory during processing.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">0, indicating that the
+			 EDI Module considers all documents large. Because all documents that The EDI
+			 Module receives contain more than 0 bytes, the EDI Module uses large document
+			 handling for all documents. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"><I>n</I>, any positive
+			 whole number indicating the number of bytes over which the EDI Module considers
+			 a document to be large. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> -1, indicating that
+			 the EDI Module considers no documents to be large.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you want the EDI
+			 Module to consider all documents over 1,000,000 bytes to be large, set this
+			 property to 1000000:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT SIZE="-1">
+			 EDIBigDocThreshold=1000000</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="miscellaneous"> Miscellaneous Property</A></H2> 
+	 <H3><A NAME="EDIencoding">EDIencoding</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The type of character encoding
+			 that the EDI Module should use when converting an EDI document to a
+			 String.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Possible Values:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> UTF-8, ISO8859-1,
+			 etc.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> UTF-8</TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> </BODY>
+</HTML>

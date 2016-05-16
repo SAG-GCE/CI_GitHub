@@ -1,0 +1,4517 @@
+.INI
+830,,002 003GM,X,X12-2003,Planning Schedule with Release Capability
+.SETS
+830=^+2[!ST*1,M]+1[!BFR*1,M][NTE*1,F,100][.CUR*1][.REF*1,,12][.PER*1,,3][.TAX*1,,3][.FOB*1]{N1:200[N1*1][N2*1,,2][N3*1,,2][N4*1][REF*2,,12][PER*2,,3][FOB*2]}[.CTP*1,,25][.SSS*1,,25][.CSH*1][.ITD*1,,2][.DTM*1,,10][.PID*1,,200][.MEA*1,,40][.PWK*1,,25][.PKG*1,,25][.TD1*1,,2][.TD5*1,,12][.TD3*1,,12][.TD4*1,,5][.MAN*1,,10]^{LIN:10000+32[!LIN*1,M]+1[!UIT*1,M][.CUR*1]{SLN:100+2[.SLN*1]+1[.PID*1,,1000]}[.PO3*1,,25][.CTP*1,,25][PID*2,,1000][MEA*2,,40][.PWK*1,,25][.PKG*1,,25][.PO4*1][PRS*1][REF*2,,12][PER*2,,3][.SSS*1,,25][.ITA*1,,10][.ITD*1,,2][.TAX*1,,3][.FOB*1]{N1:200[N1*1][.N2*2,,2][.N3*1,,2][.N4*2][REF*2,,12][PER*2,,3][.FOB*1]}{SDP:104[!SDP*1,M][!FST*1,M,104]}[.SDQ*1,,50][ATH*1,,20]{SHP:25[SHP*1][REF*2,,5]}[.TD1*1][TD5*2,,12][.TD3*1,,12][.TD4*1,,5][.MAN*1,,10]}^+72[!CTT*1,M]+1[!SE*1,M]
+.SEGS
+ATH=[672][373][380][380][373]+C0305C0405R0203,@M.C.C..C
+BFR=[353][127][328][675][676][373][373][373][373][367][324]+R0203,@M.C.C@M@M@M@M@M.C..
+CSH=[563][564][565][508][596][559][560]+C0203C0607,###C####C
+CTP=[687][236][212][380][355][648][649]+C0203C0405C0607,###C##C##C
+CTT=[354][347][81][355][183][355][352]+C0304C0506,@M...C..C.
+CUR=[98][100][280][98][100][669][374][373][337][374][373][337][374][373][337][374][373][337][374][373][337]+C0807C0907C1110C1210C1413C1513C1716C1816C2019C2119,#M#M#####C###C###C###C###C##
+DTM=[374][373][337][623]+R0203,#M#C#C#
+FOB=[146][309][352][334][335][309][352]+C0302C0405C0706,#M#C###C#C#,@M.C...C.C.
+FST=[380][680][681][373][373][374][337][128][127]+C0607P0809,@M@M@M@M...C.C.C
+ITA=[248][559][560][331][341][359][360][378][332][339][355][380][352][150]+C0809C1011E060708L020313,#M##C#M##C#C#C#C##C##C#
+ITD=[336][333][338][370][351][446][386][362][388][389][342][352][765]+C0910L080405L03040513,.@M.C.C.C.C.C.C..C.C.C.C
+LIN=[350][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234]+C0405C0607C0809C1011C1213C1415C1617C1819C2021C2223C2425C2627C2829C3031,.@M@M..C..C..C..C..C..C..C..C..C..C..C..C..C..C
+MAN=[88][87],#M#M
+MEA=[737][738][739][355][740][741][935][936][752]+C0304C0504C0604C0703E0803R03050608,###C#C#C#C##C#,...C.C.C.C..C.
+N1=[98][93][66][67]+P0304R0203,@M.C.C.C
+N2=[93][93],@M.,#M#
+N3=[166][166],@M.
+N4=[19][156][116][26][309][310]+C0102P0506R0105c0102p0506,.C.C....C,#C#C####C
+NTE=[363][3],.@M
+PER=[366][93][365][364][326]+C0304,#M###C#,@M...C.
+PID=[349][750][348][751][352][752]+C0304R0405,#M###C#C#,@M...C.C.
+PKG=[349][753][348][754][352]+C0304R0405,#M###C#C
+PO3=[371][373][236][212][639][380][355][352]+L040305,#M###C##M#M#
+PO4=[356][357][355][352][103][187][384][355][352][385][355][352][82][189][65][355]+C0203C1011L060708L16131415,###C####C#C###C#####C
+PRS=[682][352],@M.
+PWK=[755][756][757][98][66][67][352]+P0506,#M#M###C#C#
+REF=[128][127][352]+R0203,#M#C#C,@M.C.C
+SDP=[678][679][678][679][678][679][678][679],@M@M......
+SDQ=[355][66][67][380][67][380][67][380][67][380][67][380][67][380][67][380][67][380][67][380][67][380]+C0506C0708C0910C1112C1314C1516C1718C1920C2122,#M##M#M##C##C##C##C##C##C##C##C##C
+SE=[96][329],@M@M
+SHP=[673][380][374][373][337][373][337]+C0102C0304,..C..C..C.
+SLN=[350][350][661][380][355][212][639][662][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234][235][234]+C0608C0706C0910C1112C1314C1516C1718C1920C2122C2324C2526C2728,#M##M#M#M#C##C##C##C##C##C##C##C##C##C##C##C
+SSS=[248][559][560][561][359][360][352],#M#M#M####
+ST=[143][329],@M@M
+TAX=[325][309][310][309][310][309][310][309][310][309][310][441]+C0203C0405C0607C0809C1011R0102,#C##C##C##C##C##C#
+TD1=[103][80][23][22][79][187][81][355]+C0102C0304C060708,##C##C###C#C
+TD3=[40][206][207][187][81][355][102]+C0203C040506,#M##C##C#C#
+TD4=[152][208][209][352]+C0203R0104,#C##C#C
+TD5=[133][66][67][91][387][368][309][310][731][732][733]+C0203C0708C1011R020405,##C#C#C#C###C###C,..C.C.C.C...C...C
+UIT=[355][212][639]+C0302,@M.C.
+.ELMS
+100=ID,3,3
+102=ID,1,1
+103=ID,5,5
+116=ID,5,9
+127=AN,1,30
+128=ID,2,2
+133=ID,1,2
+143=ID,3,3
+146=ID,2,2
+150=ID,3,3
+152=ID,2,3
+156=ID,2,2
+166=AN,1,35
+183=R,1,8
+187=ID,1,2
+189=R,1,8
+19=AN,2,19
+206=AN,1,4
+207=AN,1,10
+208=ID,1,1
+209=ID,2,4
+212=R,1,14
+22=ID,1,10
+23=ID,1,1
+234=AN,1,30
+235=ID,2,2
+236=ID,3,3
+248=ID,1,1
+26=ID,2,2
+280=R,4,6
+3=AN,1,60
+309=ID,1,2
+310=AN,1,25
+324=AN,1,22
+325=AN,1,20
+326=AN,1,45
+328=AN,1,30
+329=AN,4,9
+331=ID,2,2
+332=R,1,6
+333=ID,1,2
+334=ID,2,2
+335=ID,3,6
+336=ID,2,2
+337=TM,4,4
+338=R,1,6
+339=R,1,10
+341=AN,1,16
+342=R,1,5
+347=R,1,10
+348=ID,2,2
+349=ID,1,1
+350=AN,1,6
+351=N0,1,3
+352=AN,1,80
+353=ID,2,2
+354=N0,1,6
+355=ID,2,2
+356=N0,1,6
+357=R,1,8
+359=R,1,9
+360=N2,1,9
+362=N2,1,10
+363=ID,3,3
+364=AN,7,21
+365=ID,2,2
+366=ID,2,2
+367=AN,1,30
+368=ID,2,2
+370=DT,6,6
+371=ID,2,2
+373=DT,6,6
+374=ID,3,3
+378=ID,1,1
+380=R,1,10
+384=R,1,9
+385=R,1,9
+386=N0,1,3
+387=AN,1,35
+388=DT,6,6
+389=N2,1,10
+40=ID,2,2
+441=ID,1,1
+446=DT,6,6
+508=AN,1,35
+559=ID,2,2
+560=ID,2,10
+561=AN,1,45
+563=ID,1,1
+564=ID,1,1
+565=N2,2,9
+596=DT,6,6
+623=ID,2,2
+639=ID,2,2
+648=ID,3,3
+649=R,1,10
+65=R,1,6
+66=ID,1,2
+661=ID,1,1
+662=ID,1,1
+669=ID,3,3
+67=ID,2,17
+672=ID,2,2
+673=ID,2,2
+675=ID,2,2
+676=ID,1,1
+678=ID,1,2
+679=ID,1,1
+680=ID,1,1
+681=ID,1,1
+682=ID,1,2
+687=ID,2,2
+731=ID,2,2
+732=ID,2,2
+733=R,1,4
+737=ID,2,2
+738=ID,1,3
+739=R,1,10
+740=R,1,10
+741=R,1,10
+750=ID,2,3
+751=ID,1,12
+752=ID,2,2
+753=ID,1,5
+754=ID,1,7
+755=ID,2,2
+756=ID,2,2
+757=N0,1,2
+765=N0,1,2
+79=AN,1,25
+80=N0,1,7
+81=R,1,8
+82=R,1,6
+87=AN,1,45
+88=ID,1,2
+91=ID,1,2
+93=AN,1,35
+935=ID,2,2
+936=ID,2,2
+96=N0,1,6
+98=ID,2,2
+.CODES
+102=N,R:T
+103=BAG,BAL,BBL,BDL,BEM,BIC,BIN,BLK,BOB,BOX,BRG,BSK,BXI,BXT,CAB,CAG,CAN,CAR,CAS,CBC,CBY,CCS,CHE,CHS,CLD,CNT,COL,CON,COR,CRD,CRT,CSK,CTN,CYL,DBK,DRK,DRM,DSK,DTB,FIR,FLO,FRM,FSK,FWR,HED,HGH,HPT,HRB,HRK,HTB,JAR,KEG,KIT,KRK,KTB,LBK,LIF,LOG,LSE,LUG,LVN,MRP,NOL,PAL,PCK,PCS,PIR,PKG,PLF,PLN,PLT,POV,PRK,QTR,RAL,RCK,REL,ROL,RVR,SAK,SHK,SID,SKD,SKE,SLV,SPI,SPL,TBE,TBN,TKT,TLD,TNK,TRC,TRK,TRY,TSS,TUB,UNP,UNT,VEH,VPK,WHE,WLC,WRP|01,04,07,10,13,16,19,22,25,28,31,34,37,40,43,46,49,51:55,58,59,61,64,67,70,71,73,74,76,79,80,82,85,88:92,94
+128=01:03,61:64,A1,AA:AG,AI,AL:AP,AR:AU,AW,BC,BD,BK:BN,BR,BT,C1:C3,CA:CH,CJ:CP,CR:CU,DB,DC,DE,DF,DI,DK,DL,DN:DS,DW,EB,ED,EI,EL,EN,EP:ET,EZ,FA,FE,FI,FN,FP,FR,FS,GB,GC,GE,GP,GR,GS,HB,HC,HP,IA:IC,II,IL,IN,IO,IR:IT,IV,JA,JB,JE,JS,LA,LB,LF,LI,LN:LP,LS,LT,LW,MA:MC,ME:MI,MK,MN,MP,MS,MY,NA,NS,OB,OC,OI,OM,OP,OS,P1:P4,PA:PT,PV:PZ,QR,RB,RC,RE,RF,RI,RL:RN,RP:RT,RV:RX,SA:SF,SH,SI,SL:SR,ST:SV,TB,TF,TI,TL:TO,TR,TX,UB,UD,UG,UN,US,UT,VA:VC,VM,VN,VP,VR:VT,VV,WM,WN,WR,WS,WY,XC,XP,ZA:ZC,ZZ%[01:03,61:64,A1,AA:AG,AI,AL:AP,AR:AU,AW,BC,BD,BK:BN,BR,BT,C1:C3,CA:CH,CJ:CP,CR:CU,DB,DC,DE,DF,DI,DK,DL,DN:DS,DW,EB,ED,EI,EL,EN,EP:ET,EZ,FA,FE,FI,FN,FP,FR,FS,GB,GC,GE,GP,GR,GS,HB,HC,HP,IA:IC,II,IL,IN,IO,IR:IT,IV,JA,JB,JE,JS,LA,LB,LF,LI,LN:LP,LS,LT,LW,MA:MC,ME:MI,MK,MN,MP,MS,MY,NA,NS,OB,OC,OI,OM,OP,OS,P1:P4,PA:PT,PV:PZ,QR,RB,RC,RE,RF,RI,RL:RN,RP,RQ,RS,RV:RX,SA:SF,SH,SI,SL:SR,ST:SV,TB,TF,TI,TL:TO,TR,TX,UB,UD,UG,UN,US,UT,VA:VC,VM,VN,VP,VR:VT,VV,WM,WN,WR,WS,WY,XC,XP,ZA:ZC,ZZ{HS,IF,RU,TC}]+830/13///1[01:03,61:64,A1,AA:AG,AI,AL:AP,AR:AU,AW,BC,BD,BK:BN,BR,BT,C1:C3,CA:CH,CJ:CP,CR:CU,DB,DC,DE,DF,DI,DK,DL,DN:DS,DW,EB,ED,EI,EL,EN,EP:ET,EZ,FA,FE,FI,FN,FP,FR,FS,GB,GC,GE,GP,GR,GS,HB,HC,HP,IA:IC,II,IL,IN,IO,IR:IT,IV,JA,JB,JE,JS,LA,LB,LF,LI,LN:LP,LS,LT,LW,MA:MC,ME:MI,MK,MN,MP,MS,MY,NA,NS,OB,OC,OI,OM,OP,OS,P1:P4,PA:PT,PV:PZ,QR,RB,RC,RE,RF,RI,RL:RN,RP:RT,RV:RX,SA:SF,SH,SI,SL:SR,ST:SV,TB,TF,TI,TL:TO,TR,TX,UB,UD,UG,UN,US,UT,VA:VC,VM,VN,VP,VR:VT,VV,WM,WN,WR,WS,WY,XC,XP,ZA:ZC,ZZ{HS,IF,RU,TC}]+830/43///1[01:03,61:64,A1,AA:AG,AI,AL:AP,AR:AU,AW,BC,BD,BK:BN,BR,BT,C1:C3,CA:CH,CJ:CP,CR:CU,DB,DC,DE,DF,DI,DK,DL,DN:DS,DW,EB,ED,EI,EL,EN,EP:ET,EZ,FA,FE,FI,FN,FP,FR,FS,GB,GC,GE,GP,GR,GS,HB,HC,HP,IA:IC,II,IL,IN,IO,IR:IT,IV,JA,JB,JE,JS,LA,LB,LF,LI,LN:LP,LS,LT,LW,MA:MC,ME:MI,MK,MN,MP,MS,MY,NA,NS,OB,OC,OI,OM,OP,OS,P1:P4,PA:PT,PV:PZ,QR,RB,RC,RE,RF,RI,RL:RN,RP:RT,RV:RX,SA:SF,SH,SI,SL:SR,ST:SV,TB,TF,TI,TL:TO,TR,TX,UB,UD,UG,UN,US,UT,VA:VC,VM,VN,VP,VR:VT,VV,WM,WN,WR,WS,WY,XC,XP,ZA:ZC,ZZ{HS,IF,RU,TC}]+830/58///8[01:03,61:64,A1,AA:AG,AI,AL:AP,AR:AU,AW,BC,BD,BK:BN,BR,BT,C1:C3,CA:CH,CJ:CP,CR:CU,DB,DC,DE,DF,DI,DK,DL,DN:DS,DW,EB,ED,EI,EL,EN,EP:ET,EZ,FA,FE,FI,FN,FP,FR,FS,GB,GC,GE,GP,GR,GS,HB,HC,HP,IA:IC,II,IL,IN,IO,IR:IT,IV,JA,JB,JE,JS,LA,LB,LF,LI,LN:LP,LS,LT,LW,MA:MC,ME:MI,MK,MN,MP,MS,MY,NA,NS,OB,OC,OI,OM,OP,OS,P1:P4,PA:PT,PV:PZ,QR,RB,RC,RE,RF,RI,RL:RN,RP:RT,RV:RX,SA:SF,SH,SI,SL:SR,ST:SV,TB,TF,TI,TL:TO,TR,TX,UB,UD,UG,UN,US,UT,VA:VC,VM,VN,VP,VR:VT,VV,WM,WN,WR,WS,WY,XC,XP,ZA:ZC,ZZ{HS,IF,RU,TC}]+830/62///1
+133=1:9,A,B,D,I,O,R,S,V,Z%[A,B,D,O,S]+830/64///1
+143=101,104,105,107:111,113:116,204:208,210,211,213,214,216,300:310,312:317,319,321,350,352,354,404,407,408,410,411,416:426,440,460:466,468,469,480,485,486,490:492,499,810,819,820,822,823,827,829,830,832,840,843:846,849,850,855,856,860:865,867:870,874:882,884,885,888:893,901,905,920,924:926,928,940:946,980,990,994:999%[830]+830/1///1
+146=CA,CC,CF,DF,FO,HP,IC,MX,NC,NS,PA:PC,PO,PP,PU,RC,RF,RS,TP,WC,ZZ
+150=005,010,015,020,025,030,035,040,045,050,055,060,065,070,075,080,085,090,095,100,105,110,115,120,130,135,140,145,150,155,160,165,170,175,180,185,186,190,205,210,215,220,225,230,235,240,245,250,255,260,265,270,275,280,285,290,295,300,310,315,320,325,330,335,340,345,350,355,360,365,370,375,380,385,390,392,393,395,400,405,410,415,416,420,425,426,430,435,440,445,450,455,460,465,470,475,480,485,490,495,500,505,510,515,520,525,535,540,545,550,555,560,565,570,580,585,586,590,595,600,605,610,615,620,625,635,640,641,645,650,665,670,675,680,685,690,695:697,700,705,706,720,725,730:732,735,736,740,745,750,755,760,762,999,AAA,AAJ,AAM:AAO,AAT,ADH,ADV,AFB,ALC,AMC,APT,ARB,ASC,BAA:BAD,BAF,BAP,BAS,BBK,BDX,BEY,BFD,BLA,BLC,BLD,BLK,BLW,BND,BOB,BRA,BRD,CAA:CAH,CAJ:CAL,CAO:CAW,CBO,CBP,CBR,CBW,CBX,CCA,CCH,CDA,CDF,CER,CGL,CHG,CHN,CIR,CLN,CLS,CMF,CMI,CMP,CNS,COA,COD,COF,COL:CON,COU,CRA,CRC,CRF,CSA,CSC,CSE,CSF,CSR,CTA,CTC,CTF,CTG,CTL,CUA,CUD,CUS,DAA:DAD,DBD,DCS,DCT,DDA,DDC,DDD,DDF,DEA,DEL,DEM,DEP,DER:DET,DFW,DIS,DIV,DLH,DMC,DMD,DOC,DON,DRC,DRP,DRY,DSC,DSF,DST,DTL,DTU,DWC,EEA:EED,EEF:EEH,EEP,EEX,EIC,EMS,ENC,ENS,EPC,EPS,ESC,EUC,EVC,EXC,EXL,EXM,EXP,EXS,FAB:FAH,FCB,FCD,FDL,FFA,FFC,FFI,FFL,FFN,FFP,FFR,FRC,FUE,FWA,GAR,GDR,GGA,GGF,GRD,HAN,HAZ,HDG,HET,HHA,HHB,HHG,HIC,HOC,HOL,HOS,HOX,HUL,HZS,IAA:IAC,IDL,IIA,IIP,IIU,INC,INP,INR,INS,IPC,IPU,IRA,ISD,ITC,LAA:LAE,LAY,LCG,LCR,LDG,LDS,LFT,LID,LLC,LLD,LLF,LLS,LMC,LNT,LOA,LOC,LPC,LSC,LSH,LTC,LUP,LUS,MAA:MAE,MAR,MDM,MES,MIL,MIN,MMC,MMF,MMS,MMT,MNC,MRK,MSC,MSG,MTR,MVT,NAA,NAB,NAL,NFY,NHB,NYD,NYP,OAA:OAC,ONC,OOC,OOF,OPC,ORM,OSO,OSS,OUT,OVR,PAA:PAJ,PBA,PBE,PBL,PCT,PEN,PER,PIR,PMU,PMX,POD,POS,PPC,PPH,PPI,PPM:PPO,PPR:PPT,PRB,PRC,PRE,PRM,PSC,PSH,PST,PUC,PUD,PWH,PWT,QAA,QQD,RAA:RAM,RCA,RCB,RCE,RCG,RCL,RCP,RCS,RDF,REF,REG,REP,REQ,RES,RGA,RGC,RLC,RMD,RPC,RRC,RRD,RRF,RRN,RRP,RRR,RTC,SAA:SAK,SAM,SAN,SAT,SBC,SCC,SCG,SCL,SCU,SDC,SDL,SEC,SEG,SEL,SER,SFT,SGL,SHL,SLC,SOC,SPA,SPC,SPD,SPL,SPS:SPU,SRG,SSA:SSC,SSF,SSL,SSO,SSP,SSS,SST,SSX,STF,STM,STP,STR,STW,SUC,SUF,SUP,SUR,SVA,SWC,TAA:TAL,TAX,TAY,TCM,TDT,TER,TLC,TOC,TRC,TRF,TRN,TRP,TRU,TSC,TST,TTA,TTB,TTD,TTL,TTM,TTP,TTR:TTT,TTV,TUR,TWO,UND,UNL,USF,USV,USW,UTP,UUC,UUM,UUT,VAA,VAB,VCR,VOR,VVL,VVP,WAR,WEA,WFH,WRC,WRE,WSA,WTG,WWC,ZFF
+152=AK,AT,AV,AW,BA,BL,BN,BW,CD,CE,CI,CM,CO,CR,CW,CY,DA,DN,DS:DU,DW,ER,EW,EX,FG,FL,FP,FR,FS,GI,HE,HM,HO,HP,HR,HT,HV,HW,IB,IC,IP,IR,IS,JS,LC,LD,LF,LS,LT,MC,MF,MP,MR,NC:NE,NH,NP,NS,NT,NW,NX,OS,PB,PG,PI,PS,PW,RB,RM,RO,RR:RT,SC:SE,SH,SI,SK,SM,SP,SR,ST,TA,TN,TS,TT,TV,UN,UP,US,VT,WD,WE,WH,WI,WM,WO,WW,XP,A1M,A3M,A5M,AGG,AMM,ASY,BCP,CAR,CCH,CLS,CMD,CNL,CNS,CON,COU,DIS,END,EXC,EXP,EXU,EZE,HAN,HQT,JLX,LBT,MES,MEX,MIN,MOT,MRF,OBL,OCA,OCS,OCV,OEH,OFU,OHC,ONC,ONS,OOB,OOD,OPR,OPT,OSB,OST,OTC,OTD,OTS,OVR,OWR,PHR,PMM,PMR,PUP,RDR,RRR,SCL,SEC,SER,SGL,SHL,SLC,TLS,TOF,TRK,VAN
+187=A:Z,A1:A3
+208=4,6,9,A,D,E,I,R,U
+23=A:C,E:I,L,N,S:U,Z
+235=AB,AC,AI,AR,B1:B7,BC,BE,BL,BN:BP,CA,CB,CD,CE,CG,CI,CL:CN,CP:CU,DC,DE,DG,DL,DN,DR,EC,EN,EQ,FI,FL,FP,FS,GC,GD,GN,GR,GS,HI,HN,IB,IM,IN,IS,IT,IZ,JS,LT,LU,MA,MF,MG,MN,MS,MT,NC,ND,NH,OE,OH,ON,OP,PA,PC:PE,PG,PI:PO,PR:PT,PW,RC,RD,RK,RN:RP,RR,RS,RU,RY,SE,SF,SK,SM,SN,SQ,SR,ST:SV,SZ,TM,UC,UI,UP,US,UV,VA:VC,VE,VN:VP,VS,VU,VV,VX,ZZ%[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///10[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///12[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///14[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///16[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///18[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///2[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///20[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///22[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///24[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///26[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///28[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///30[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///4[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///6[AB,BP,CR,EC,ON,PD,PN,PO,RC,RN,RU,RY,UP,VP]+830/30///8
+236=ALT,CAT,CDV,CON,CUP,CUS,DAP,DIS,DPR,DSC,EUP,FET,ICL,INV,MAX,MIN,MNR,MSR,MXR,PAQ,PBQ,PIE,PPD,PRO,PRP,QTE,RES,SHD,SUM,TOT,TRF,UCP
+248=A,C,N
+309=D,W,AC,CC,CI,CL,CO,CS,CY,DC,DE,FA,FE,FI,FV,IM,IP,MI,NS,OA,OL,OP,OR,PL,PP,RS,RT,SC,SL,SN,SP,TC,TL,TN,TX,WH,ZZ
+331=01:08,ZZ
+333=1:8,ZZ
+334=01,02,ZZ
+335=CAF,CIF,DAF,DDP,EXQ,EXS,EXW,FAS,FCA,FCI,FCP,FOB,FOR,FOT,ZZZ
+336=01:14,ZZ
+348=AA,AI,BI,CA,CI,CR,DR,EI,FA,FD,IS,NE,NR,OP,PA,RM,ST,TI,TX,VI,ZZ
+349=F,S,X
+353=00:08,10:19,ZZ%[00,04,05]+830/2///1
+355=01:05,08,10:15,24,26,27,31,50,51,53,54,56,58:86,AA,AC,AM,AP,AS,AY,B2:B9,BA:BZ,C1:C9,CA:DI,DK:DM,DP,DR:DT,DZ,E3:E5,E7:E9,EA,ED,EF,EM,EP,EV,EX:FA,FC,FM,FO,FP,FT,GA,GB,GG:GI,GL,GM,GR,GS,GY:HL,HO,HP,HR:HW,HY,IN,JB,JO,JR,JU,KA,KD,KE,KG:KI,KK:KN,KT,KV,KW,LA:LC,LE:LK,LM:LP,LR:LT,LY,M1:M4,M6,MA:MC,ME:MZ,NB,NC,NL:NN,NT,NV,OP,OT,OZ,P1:P9,PA:PP,PR:PT,PV:PZ,Q1,QD,QR:QU,RA,RD,RE,RG,RK:RO,S2,SA:SY,T1,TA:TZ,UN,VI,VT,WB,WE,WH,WI,WK,WP,WR,WT,YD,YL,YR,YT,ZZ%[01:05,08,10:15,24,26,27,31,50,51,53,54,56,58:86,AA,AC,AM,AP,AS,AY,B2:B9,BA:BZ,C1:C9,CA:DI,DK:DM,DP,DR:DT,DZ,E3:E5,E7:E9,EA,ED,EF,EM,EP,EV,EX:FA,FC,FM,FO,FP,FT,GA,GB,GG:GI,GL,GM,GR,GS,GY:HL,HO,HP,HR:HW,HY,IN,JB,JO,JR,JU,KA,KD,KE,KG:KI,KK:KN,KT,KV,KW,LA:LC,LE:LK,LM:LP,LR:LT,LY,M1:M4,M6,MA:MC,ME:MZ,NB,NC,NL:NN,NT,NV,OP,OT,OZ,P1:P9,PA:PP,PR:PT,PV:PZ,Q1,QD,QR:QU,RA,RD,RE,RG,RK:RO,S2,SA:SY,T1,TA:TZ,UN,VI,VT,WB,WE,WH,WI,WK,WP,WR,WT,YD,YL,YR,YT,ZZ{B1,DJ,DO,GD,GN,IC,IT,MD,ND,NG,NS,ON,PQ,PU,RP,RU,SZ,T2,WG}]+830/31///1[01:05,08,10:15,24,26,27,31,50,51,53,54,56,58:86,AA,AC,AM,AP,AS,AY,B2:B9,BA:BZ,C1:C9,CA:DI,DK:DM,DP,DR:DT,DZ,E3:E5,E7:E9,EA,ED,EF,EM,EP,EV,EX:FA,FC,FM,FO,FP,FT,GA,GB,GG:GI,GL,GM,GR,GS,GY:HL,HO,HP,HR:HW,HY,IN,JB,JO,JR,JU,KA,KD,KE,KG:KI,KK:KN,KT,KV,KW,LA:LC,LE:LK,LM:LP,LR:LT,LY,M1:M4,M6,MA:MC,ME:MZ,NB,NC,NL:NN,NT,NV,OP,OT,OZ,P1:P9,PA:PP,PR:PT,PV:PZ,Q1,QD,QR:QU,RA,RD,RE,RG,RK:RO,S2,SA:SY,T1,TA:TZ,UN,VI,VT,WB,WE,WH,WI,WK,WP,WR,WT,YD,YL,YR,YT,ZZ{B1,DJ,DO,GD,GN,IC,IT,MD,ND,NG,NS,ON,PQ,PU,RP,RU,SZ,T2,WG}]+830/38///4[01:05,08,10:15,24,26,27,31,50,51,53,54,56,58:86,AA,AC,AM,AP,AS,AY,B2:B9,BA:BZ,C1:C9,CA:DI,DK:DM,DP,DR:DT,DZ,E3:E5,E7:E9,EA,ED,EF,EM,EP,EV,EX:FA,FC,FM,FO,FP,FT,GA,GB,GG:GI,GL,GM,GR,GS,GY:HL,HO,HP,HR:HW,HY,IN,JB,JO,JR,JU,KA,KD,KE,KG:KI,KK:KN,KT,KV,KW,LA:LC,LE:LK,LM:LP,LR:LT,LY,M1:M4,M6,MA:MC,ME:MZ,NB,NC,NL:NN,NT,NV,OP,OT,OZ,P1:P9,PA:PP,PR:PT,PV:PZ,Q1,QD,QR:QU,RA,RD,RE,RG,RK:RO,S2,SA:SY,T1,TA:TZ,UN,VI,VT,WB,WE,WH,WI,WK,WP,WR,WT,YD,YL,YR,YT,ZZ{B1,DJ,DO,GD,GN,IC,IT,MD,ND,NG,NS,ON,PQ,PU,RP,RU,SZ,T2,WG}]+830/68///4[01:05,08,10:15,24,26,27,31,50,51,53,54,56,58:86,AA,AC,AM,AP,AS,AY,B2:B9,BA:BZ,C1:C9,CA:DI,DK:DM,DP,DR:DT,DZ,E3:E5,E7:E9,EA,ED,EF,EM,EP,EV,EX:FA,FC,FM,FO,FP,FT,GA,GB,GG:GI,GL,GM,GR,GS,GY:HL,HO,HP,HR:HW,HY,IN,JB,JO,JR,JU,KA,KD,KE,KG:KI,KK:KN,KT,KV,KW,LA:LC,LE:LK,LM:LP,LR:LT,LY,M1:M4,M6,MA:MC,ME:MZ,NB,NC,NL:NN,NT,NV,OP,OT,OZ,P1:P9,PA:PP,PR:PT,PV:PZ,Q1,QD,QR:QU,RA,RD,RE,RG,RK:RO,S2,SA:SY,T1,TA:TZ,UN,VI,VT,WB,WE,WH,WI,WK,WP,WR,WT,YD,YL,YR,YT,ZZ{B1,DJ,DO,GD,GN,IC,IT,MD,ND,NG,NS,ON,PQ,PU,RP,RU,SZ,T2,WG}]+830/68///6
+363=ALL,CHG,CUS,DEL,GEN,INS,INV,LIN,LOI,ORI,PAY,PMT,PRI,PUR,QUT,REV,SPH,TRA,WHI,ZZZ%[ALL,CHG,CUS,DEL,GEN,INS,INV,LIN,LOI,ORI,PAY,PMT,PRI,PUR,QUT,REV,SPH,TRA,WHI,ZZZ{BOL,INT,LAB,MFG,OTH,PKG,TAF,TCF,TIL,TLF,TRF,TSF,WRP}]+830/3///1
+365=EM,FX,IT,PS,TE,TL,TM,TX%[EM,FX,IT,PS,TE,TL,TM,TX{AU,FT}]+830/14///3[EM,FX,IT,PS,TE,TL,TM,TX{AU,FT}]+830/44///3[EM,FX,IT,PS,TE,TL,TM,TX{AU,FT}]+830/55///3
+366=AC,AD,AP,AR,BD,CB,CC,CE,CR,CW,EB,EN,EX,HM,IC,NP,NT,OC,OD,PM,PR,QA,QC,QI,RD,SA,SC,SD,SR,SU,TA,TR,WH,ZZ%[BD,CW,EX,PR,QC,SU{DC}]+830/14///1[BD,CW,EX,PR,QC,SU{DC}]+830/44///1[BD,CW,EX,PR,QC,SU{DC}]+830/55///1
+368=AN,AS,AV,BK,BP,BT,BW,CA,CC,CE,CI,CK,CM:CP,CS,DD,DE,DS,EC,ED,EW,FS,HQ,IC,IP,IS,LM,LS,NF,NN,NS,OB,OF,OP,PA,PD,PH,PI,PK,PN:PP,PR,PS,RD,RW,SD,SL,SP,SQ,SS,UR,ZZ
+371=AQ,BD,DC,EV,GU,GW,LD,MC,PC,PQ,PS,QO,QP,QT,SC,UM,UP,WD,WO,ZZ
+374=001:043,050:101,106:115,119:122,124:134%[011,050,051]+830/58///6[011,050,051]+830/61///3
+378=1:7,Z
+40=2B,2O,4B,4O,AC,AF,AT,BC,BG,BO,BR,BX,CA:CC,CG:CX,DT,DX,FH,FN,FR,FT,FX,HC,HO,HP,HV,ID,IX,LU,NX,OB,OT,OV,PT,PU,RC,RE:RG,RI,RO,RR,RT,SC,SK,ST,SV,TA:TC,TF:TM,TO,TR,TT:TV,UL,UX,VC,VE,VL,VO,VR:VT
+441=0:9,A,B
+559=AA,AI,AX,BI,CM,EU,GU,NE,NR,OP,PI,ST,TD,TI,VI
+560=AA,AC,AF,AJ,AM:AO,AT,BC,BD,BF,BP,C1,CA:CG,CK:CP,CR:CT,CW,CX,CZ,DA,DC,DD,DF,DI,DL,DM,DS,E1,E2,EC,EG,EN,EP,EX,FA,FC,FG,FI,FL,FN,FP,FR,FS,GA,GF,GI,GP,GU,H1,HC,HD,HH,HS,IA,IC,ID,IG,IM:IP,IR:IU,KO,L1,LA,LC,LD,LF,LS,MF,MI,ML,MS,MT,OA,OC,OF,PA:PC,PE,PF,PH,PI,PL:PO,PR:PT,QD,RC:RF,RN,RP,S1,S2,SA:SE,SH,SI,SL,SO,SP,SR:SU,SW,SX,T1,TA:TD,TL,TM,TO,TP,TR:TT,TV,TX,UC,UM,US,UT,V1,V2,VL,VP,WC,WH,XP,YY,ZZ,A0010,A0020,A0030,B0010,B0020,B0030,B0040,C0010:C0012,C0020,C0030,C0032,C0036,C0038,C0040,C0050,C0060,C0070,C0072,C0080,C0090,D0010,D0020,D0022,D0024,D0030,D0031,D0040,E0010,E0020,E0024,E0030,E0040,F0010:F0012,F0014,F0018,F0020,F0030,G0010,G0052,H0010,I0010,I0012:I0014,I0020:I0022,L0010,L0012,L0020,L0022,M0010,M0020,M0022,M0024,M0030,M0040,M0042,N0010,N0020,N0032,O0010,O0012,O0020,P0010,P0012,P0014,P0016,P0018:P0020,P0022,P0024,P0028,P0030,P0040,P0050,P0060,Q0010,R0010,R0020,R0030,R0040,R0050,R0060,R0070,R0072,R0074,R0076,R0080,R0090,R0100,R0110,R0112,S0010,S0012,S0014,S0016,S0018,S0020,S0022,S0024,S0030,S0040,S0050,S0052,S0054,S0056,S0058,S0060,S0070,S0080,S0092,S0093,T0010,T0012,T0020,T0022,T0030,T0040,T0050,T0060,T0064,T0070,T0080,T0084,T0090,V0010,V0020,W0010,X0010
+563=B,F,N,W,Y,Z
+564=0,1,Z
+623=CD,CS,CT,ED,ES,ET,MD,MS,MT,PD,PS,PT
+639=AP,BR,CA,CP,CT,DI,DR,DS,ES,HF,HP,LC:LE,LM,NC,NE,NQ,PA,PD,PE,PO,PP,PR,PT,PY,QE,QH,QS,QT,RC:RE,RM,RT,SR,TB:TF,TM,TP,WC:WE,WH,WM
+648=CSD,CSR,DIS,PSP,SEL
+66=1:5,7:9,10:16,18:22,91,92,ZZ
+661=A,D,I,S
+662=A,D,I
+669=IMF,LNF,LNS,NYC,PHI,ZUR
+672=FI,GS,LB,LM,MT,PQ,PR,ZZ
+673=01:42,45,46,53:57%[01,02]+830/61///1
+675=BB,DL,JS,SH,ZZ%[BB,DL,JS,SH,ZZ{KB,PD,PS}]+830/2///4
+676=A,C,D,R
+678=1:9,A:H,J:Z%[1:9,A:H,J:Z{SG,SL,SP,SX,SY,SZ}]+830/57///1[1:9,A:H,J:Z{SG,SL,SP,SX,SY,SZ}]+830/57///3[1:9,A:H,J:Z{SG,SL,SP,SX,SY,SZ}]+830/57///5[1:9,A:H,J:Z{SG,SL,SP,SX,SY,SZ}]+830/57///7
+679=A:G,Y,Z
+680=A:E,S,Z%[A:E,S,Z{P}]+830/58///2
+681=A,D,F,M,Q,S,T,W,Z%[D,W]+830/58///3
+682=1:7,A,B,D,G,H,J:N,P,R:U,W%[1:7,A,B,D,G,H,J:N,P,R:U,W{8,9,E,F,I,Q,X,Y}]+830/42///1
+687=AG,BG,BR,CN,CO,DE,DI,EX,JB,MF,OE,RS,ST,TR,WH,WS
+731=BS,SB,SC,SS,ZZ
+732=AA,AD,CD,CW,SD,WD,WW,ZZ
+737=9L,AA,AE,BA,BL,BP,BZ,CH,CN,CO,CS,CT,DT,EA,EE,EN,LC,LL,LM,P1,PC,PD,PL,PO,RL,RN,RP,SE,SH,SL,SM,SP,SR,ST,SU,TD,TE,TI,TL,TR,WT
+738=A:G,L:O,R:U,X,AA:AH,AZ:BH,BO,BW,CA,CB,CD:CL,CN:CP,CR,CS,CU,CW,DA:DI,DL,DN,DP,DS:DU,DW,DY,EA:EH,EL,EN,EX,FA:FF,FH,FI,FL,FN,FT,FV,FW,GA:GH,GP,GW,HA:HJ,HM,HP,HR,HT,IA:IV,IZ,JA,KA,KB,LA:LG,LL:LP,LS,LT,LW,MA:MG,MI,MJ,MN,MS,MU,MV,MX,NA:NG,NL,NM,NP,NS,NU,OA:OT,OW,PA:PS,PW,PZ,QA,RA:RS,RU:RW,SA:SX,TA:TV,TX,UA,VH,VW,WA:WE,WL,WM,WT,WU,XA,XH,XP,XQ,XZ:YC,ZA:ZC,ZH,ZN:ZP,ZS,ZV,ZW,PSA,ZAL,ZAS,ZBI,ZCA,ZCB,ZCE,ZCO,ZCR,ZCU,ZFE,ZFS,ZGE,ZMG,ZMN,ZMO,ZNB,ZNI,ZPB,ZSB,ZSE,ZSI,ZSN,ZTA,ZTE,ZTI,ZZN,ZZR,ZZZ
+750=02,08:23,25,28:30,32:43,54:56,58:79,99,9A,9B
+752=1S,2S,BS,BT,IN,OA,OS,OT,R0:R9,RA:RZ,TP,TS
+753=34:40,42:45,60:63,65:68
+755=01,02,11:14,AA,AD,AO,AP,BL,BT,CA,CC,CD,CI,CM,CP,DC,DD,DM,DN,DR,EA,FD,FH,IT,IV,LC,MA:MD,MM,MR,MS,PC,PD,PI,PT,RF,RT,SI,SM,SN,SQ:SS,US,VD,VM
+756=AE,AM,BM,BW,EL,IE,IM,SE,SM,SN,TE,TM,WS
+88=L,S,GM,PB,SM,SR,SS,UC,ZZ
+91=A:E,H:U,W,X,AC,AE,BP,BU,CE,LT,PC,PT,SR,SS,TC,VE%[A:E,H:U,W,X,AC,AE,BP,BU,CE,LT,PC,PT,SR,SS,TC,VE{GG,GR,GS}]+830/64///4
+935=01:10
+936=01:27%[]+830/38///8
+98=11,AC,AD,AG,AK,AO,BK,BL,BN,BO,BS,BT,BW,BY,C1,C2,CA:CE,CL:CP,CR,CS,DB,DC,DE,DS,EC,EE,EM,EP,EX,FH,FR,FW,IA,IC,II,IK,IM,IN,IS,IT,LN,LP,MA,MC,MF,MI,MP,N1,N2,OB,OC,OI,OO,OP,OT,OV,OW,PA:PG,PJ,PM,PN,PP,PR,PT:PV,RB,RC,RE,RL,RM,RP,RR,RS,SA,SC:SI,SM:SP,SS:SU,SW,TO,TR:TT,UC,UP,VN,WH,ZZ%[BT,CA,IC,MI,OB,SE,SF,ST,SU]+830/50///1[BT,CA,IC,MI,OB,SE,SF,ST,SU]+830/9///1
+.TEXT,SETS
+830,0,Planning Schedule with Release Capability
+830,1,PS
+830,2,This standard provides the standardized format and establishes the data contents of a planning schedule with release capability transaction set. The planning schedule with release capability transaction set provides for customary and established business practice relative to the transfer of forecasting/material release information between organizations.The planning schedule transaction may be used in various ways or in a combination of ways, such as: (1) a simple forecast; (2) a forecast with the buyer's authorization for the seller to commit to resources, such as labor or material; (3) a forecast that is also used as an order release mechanism, containing such elements as resource authorizations, period-to-date cumulative quantities,and specific ship/delivery patterns for requirements that have been represented in "buckets," such as weekly, monthly, or quarterly. The order release forecast may also contain all data related to purchase orders, as required, because the order release capability eliminates the need for discrete generation of purchase orders.
+830~30,0,At least one occurrence of loop LIN is required.
+830~33,0,Loop SLN is optional, but, if used, segment SLN is mandatory.
+830~50,0,Loop N1 is optional but, if used, segment N1 is mandatory.
+830~57,0,At least one occurrence of loop SDP is required.
+830~61,0,Loop SHP is optional but, if used, segment SHP is mandatory.
+830~68,0,Number of line items (CTT01) is the accumulation of the number of LIN segments. Hash total (CTT02) is the sum of the values of the quantities (FST01) for each FST segment.
+830~9,0,Loop N1 is optional but, if used, segment N1 is mandatory.
+.TEXT,SEGS
+ATH,0,Resource Authorization
+ATH,1,To specify resource authorizations (i.e., finished labor, material, etc.) in the planning schedule.
+ATH~0,2,It is imperative that negotiations defining "Financial Commitment" have previously occurred and are agreed to by both buyer and seller.\r\n\r\nATH02 - Resource Authorization Thru-Date: The date through which the buyer authorizes the seller to commit the resource defined in element ATH01.\r\n\r\nATH03 - Current Cumulative Requirements Quantity: The cumulative quantity that has been authorized to-date from the cumulative start-date (ATH05) through the resource authorization thru-date (ATH02).\r\n\r\nATH04 - Maximum Cumulative Requirements Quantity: The maximum cumulative quantity that has been authorized to-date from the cumulative start-date (ATH05) through the resource authorization thru-date (ATH02). This is a high water mark. If the forecast decreases, the current cumulative requirements quantity also decreases, but the maximum cumulative requirements quantity does not decrease.\r\n\r\nATH05 - Cumulative Start-Date: The date where the cumulative quantity count starts. This date might be the start-date of a contract period, a calendar or fiscal year, or other.\r\n\r\n
+BFR,0,Beginning Segment for Planning Schedule
+BFR,1,To indicate the beginning of a planning schedule transaction set; whether a ship or delivery based forecast; and related forecast envelope dates
+BFR~0,2,If BFR01 equals "04" (Net Change) - BFR09 is required.\r\n\r\nBFR02 is the identifying number for a forecast assigned by the orderer/purchaser.\r\n\r\nBFR06 - Forecast Horizon Start Date: The date when the forecast horizon (envelope) begins.\r\n\r\nBFR07 - Forecast Horizon End Date: The date when the forecast horizon (envelope) ends.\r\n\r\nBFR08 - Date Forecast Generated: The date the forecast data was generated.\r\n\r\nBFR09 - Date Forecast Updated: The date the forecast was updated with "Net Change" data. (Used only when element 353 in BFR04 equals "04", meaning net change.)\r\n\r\n
+CSH,0,Header Sale Condition
+CSH,1,To specify general conditions or requirements of the sale
+CSH~0,2,CSH04 is the account number to which the purchase amount is to be charged.\r\n\r\n
+CTP,0,Pricing Information
+CTP,1,To specify pricing information
+CTP~0,2,Example of use of CTP03 and CTP04. PRICE  QUANTITY RANGE 1.00   0 to 999 0.75   1000 to 4999 0.50   5000 to 9999 0.25   10000 and above CTP03  CTP04 1.00   0 0.75   1000 0.50   5000 0.25   10000 \r\n\r\nExample of use of CTP03, CTP04 and CTP07. CTP03  CTP04  CTP07 1.00   0      0.90 0.75   1000   0.90 0.50   5000   0.90 0.25   10000  0.90 \r\n\r\nCTP07 is a multiplier factor to arrive at a final discounted price. A multiplier of 90 would be the factor if a 10% discount is given.\r\n\r\n
+CTT,0,Transaction Totals
+CTT,1,To transmit a hash total for a specific element in the transaction set
+CTT~0,2,This segment is intended to provide hash totals to validate transaction completeness and correctness.\r\n\r\n
+CUR,0,Currency
+CUR,1,To specify the currency (dollars, pounds, francs, etc.) used in a transaction
+CUR~0,2,Monetary values are assumed to be expressed in the currency of the country of the transaction originator unless the optional CUR segment is used to specify a different currency. The CUR segment also permits the transaction originator to indicate a specific exchange rate, foreign exchange location and date/time as the basis for a currency conversion. Example 1. Assuming the currency of the transaction originator is U.S. dollars, the following CUR segment, when used in the heading area of a transaction, would indicate that all monetary values appearing in the transaction are expressed in Canadian Dollars (CAD). (In this example the exchange rate is at the discretion of the receiver).CUR*BY*CAD* N/LExample 2. Assuming the currency of the transaction originator is U.S. dollars, the following CUR segment, when used in the detail area of a transaction, describes a currency conversion for that particular item from U.S. dollars to Canadian dollars. It also indicates that a specific exchange rate, at a specified foreign exchange location on a given date/time be used as the basis for the currency conversion. Notes below the diagram describe the meaning of the element values.\r\n\r\nCUR*BY*USD*1.20*SE*CAD*NY*007*840821*1400 N/L       1      2    3      4 1. Identifies the buyer's (BY) currency as U.S. dollars (USD). 2. The multiplier (1.20) is the exchange rate factor for the conversion. 3. Identifies the seller's (SE) currency as Canadian dollars (CAD). 4. Indicates the basis for the exchange rate as the New York Foreign Exchange (NY) and the effective date/time (007) as August 21, 1984 (840821) at 2:00 P.M. (1400).   The value for this item is to be converted to Canadian dollars (CAD) at the exchange rate of 1.20, based on the New York Foreign Exchange (NY) at 2:00 P.M. (1400) on August 21, 1984. The actual unit price conversion for the item would be:   The unit price value 7.50 (U.S. dollars) multiplied by the exchange rate (1.20) equals 9.00 Canadian dollars (7.50 X 1.20 = 9.00) CUR07 through CUR21 provide for five (5) dates/times relating to the currency conversion, i.e., effective date, expiration date, etc.   See the ANSI X12.3 Data Dictionary for a complete list of date/time qualifiers.\r\n\r\n
+DTM,0,Date/Time Reference
+DTM,1,To specify pertinent dates and times
+FOB,0,F.O.B. Related Instructions
+FOB,1,To specify transportation instructions relating to shipment
+FOB~0,2,FOB01 indicates which party will pay the carrier.\r\n\r\nFOB02 is the code specifying transportation responsibility location.\r\n\r\nFOB06 is the code specifying title passage location.\r\n\r\n
+FST,0,Forecast Schedule
+FST,1,To specify the forecasted dates and quantities
+FST~0,2,As qualified by FST02 and FST03, FST04 represents either a discrete forecast date, the first date of a forecasted bucket (weekly, monthly, quarterly, etc.) or the start date of a flexible interval.\r\n\r\nIf FST03 - "F" (indicating flexible interval) and FST04 and FST05 are required. FST04 would be used for the start date of the flexible interval and FST05 would be used for the end date of the flexible interval.\r\n\r\nFST06 - To qualify time in FST07. The purpose of the FST07 element is to express the specific time of day in a 24-hour clock, to satisfy "just-in-time" requirements. As an alternative, the ship/delivery pattern segment (SDP) may be used to define an approximate time, such as "AM" or "PM".\r\n\r\n
+ITA,0,Allowance, Charge or Service
+ITA,1,To specify allowances, charges or services
+ITA~0,2,ITA12 is the quantity of free goods.\r\n\r\n
+ITD,0,Terms of Sale/Deferred Terms of Sale
+ITD,1,To specify terms of sale.
+ITD~0,2,If ITD01 equals 04 - ITD10 is required and either ITD11 or ITD12 is required. If ITD01 equals 05 - ITD06 or ITD07 is required. If ITD01 does not equal 04 or 05 - ITD03 or ITD08 is required.\r\n\r\n
+LIN,0,Item Identification Detail
+LIN,1,To specify basic item identification data.
+LIN~0,2,See the Data Dictionary for a complete list of ID's.\r\n\r\nLIN01 is the line item identification (DM Number 266388)\r\n\r\nLIN02 through LIN31 provide for fifteen (15) different product/service ID's for each item. For Example: Case, Color, Drawing No., UPC No., ISBN No., Model No., SKU.\r\n\r\n
+MAN,0,Marks and Numbers
+MAN,1,To indicate identifying marks and numbers for shipping containers
+MEA,0,Measurements
+MEA,1,To specify physical measurements, including dimensions, tolerances, weights and counts.
+MEA~0,2,When citing dimensional tolerances, any measurement requiring a sign (+ or -), or any measurement where a positive (+) value cannot be assumed use MEA05 as the negative (-) value and MEA06 as the positive (+) value.\r\n\r\n
+N1,0,Name
+N1,1,To identify a party by type of organization, name and code
+N1~0,2,This segment, used alone, provides the most efficient method of providing organizational identification. To obtain this efficiency the "ID Code" (N104) must provide a key to the table maintained by the transaction processing party.\r\n\r\n
+N2,0,Additional Name Information
+N2,1,To specify additional names or those longer than 35 characters in length
+N3,0,Address Information
+N3,1,To specify the location of the named party
+N4,0,Geographic Location
+N4,1,To specify the geographic place of the named party
+N4~0,2,A combination of either N401 through N404 (or N405 and N406) may be adequate to specify a location.\r\n\r\nN402 is required only if city name (N401) is in the USA or Canada.\r\n\r\n
+NTE,0,Note/Special Instruction
+NTE,1,To transmit information in a free-form format, if necessary, for comment or special instruction
+NTE~0,2,The NTE segment permits free-form information/data which, under ANSI X12 standard implementations, is not machine processable. The use of the "NTE" segment should therefore be avoided, if at all possible, in an automated environment.\r\n\r\n
+PER,0,Administrative Communications Contact
+PER,1,To identify a person or office to whom administrative communications should be directed
+PER~0,2,This segment is used to specify who is to be contacted on various conditions related to the transaction. The term "Communication" in the title and purpose relates to interpersonal communications, not network or telecommunications contacts.\r\n\r\n
+PID,0,Product/Item Description
+PID,1,To describe a product in coded or free-form format
+PID~0,2,Use PID03 to indicate the organization that publishes the code list being referred to.\r\n\r\nPID04 should be used for industry-specific product description codes.\r\n\r\nUse PID06 when necessary to refer to the product surface or layer being described in the segment.\r\n\r\n
+PKG,0,Marking, Packaging, Loading
+PKG,1,To describe marking, packaging, loading and unloading requirements.
+PKG~0,2,Use MEA (Measurements) segment to define dimensions, tolerances weights, counts, physical restrictions, etc.\r\n\r\nUse PKG03 to indicate the organization that publishes the code list being referred to.\r\n\r\nPKG04 should be used for industry-specific packaging description codes.\r\n\r\nSpecial marking or tagging data can be given in PKG05 (Description).\r\n\r\n
+PO3,0,Additional Item Detail
+PO3,1,To specify additional item related data involving variations in normal price/quantity structure.
+PO3~0,2,Some examples of price/quantity variations are: price in different units from the PO1 segment, price changes by date, or price changes by quantity (break and level).\r\n\r\nPO307 defines the unit of measure for PO306.\r\n\r\n
+PO4,0,Item Physical Details
+PO4,1,To specify the physical qualities, packaging, weights and dimensions relating to the item.
+PO4~0,2,PO403 - The "Unit of Measure Code" (Element #355) in this segment position is for purposes of defining the pack (PO401) /size (PO402) measure which indicates the quantity in the inner pack unit. Example: If the carton contains 24 12-Ounce packages, it would be described as follows: Element 356 = 24; Element 357 = 12; Element 355 = OZ.\r\n\r\nPO416 defines the unit of measure for PO413, PO414, and PO415.\r\n\r\n
+PRS,0,Part Release Status
+PRS,1,To indicate the status of the part being ordered with respect to this material release (only use if the planning schedule is considered to be an order/material release).
+PWK,0,Paperwork
+PWK,1,To specify the type and transmission of paperwork relating to product or order.
+PWK~0,2,PWK05 and PWK06 may be used to identify the addressee by a code number.\r\n\r\nPWK07 may be used to indicate special information to be shown on the specified report.\r\n\r\n
+REF,0,Reference Numbers
+REF,1,To transmit identifying numbers
+SDP,0,Ship/Delivery Pattern
+SDP,1,To identify specific ship/delivery requirements
+SDP~0,2,The intent of this segment is to define the routine ship or delivery patterns, as required, when order quantities are in "buckets", such as weekly, monthly. Ship/Delivery patterns eliminate the need to transmit discrete quantities and dates for each required shipment or delivery. It is assumed that a "bucketed" quantity is to be divided equally by the ship/delivery pattern. For example, a weekly quantity of 100 with a delivery pattern of Monday and Wednesday would result in 50 to be delivered on Monday and 50 to be delivered on Wednesday.\r\n\r\n
+SDQ,0,Destination Quantity
+SDQ,1,To specify destination and quantity detail.
+SDQ~0,2,SDQ02 is used only if different than previously defined in the transaction set.\r\n\r\n
+SE,0,Transaction Set Trailer
+SE,1,To indicate the end of the transaction set and provide the count of the transmitted segments (including the beginning (ST) and ending (SE) segments).
+SE~0,2,SE is the last segment of each transaction set.\r\n\r\n
+SHP,0,Shipped/Received Information
+SHP,1,To specify shipment and/or receipt information
+SHP~0,2,The SHP segment is used to communicate shipment, delivery, or receipt information and may include discrete or cumulative quantities, dates, and times.\r\n\r\nIf SHP01 = "02", "07", "08", "09", or "10" (indicating cumulative quantities), then SHP04 and SHP06 are required to identify the start and end dates of the quantity count.\r\n\r\nSHP04 - The date shipped, delivered, received, or the cumulative quantity start date (as qualified by SHP03).\r\n\r\nSHP06 - The cumulative quantity end date.\r\n\r\n
+SLN,0,Subline Item Detail
+SLN,1,To specify product subline detail item data
+SLN~0,2,See the Data Dictionary for a complete list of ID's.\r\n\r\nSLN01 is the identifying number for the subline item. It is related to (but not necessarily equivalent to) the baseline item number. Example: 1.1 or 1A might be used as a subline number to relate to baseline number 1.\r\n\r\nSLN02 is the identifying number for the subline level. The subline level is analogous to the level code used in a bill of materials.\r\n\r\nSLN03 through SLN28 provide for eleven (11) different product/service ID's for each item. For example: Case, Color, Drawing No., UPC No., ISBN No., Model No., SKU.\r\n\r\n
+SSS,0,Special Services
+SSS,1,To specify special conditions or services associated with the purchased product
+SSS~0,2,SSS07 (Description) is normally used to clarify/expand on the services to be provided.\r\n\r\n
+ST,0,Transaction Set Header
+ST,1,To indicate the start of a transaction set and to assign a control number
+ST~0,2,The transaction set identifier (ST01) is intended for use by the translation routines of the interchange partners to select the appropriate transaction set definition (e.g., 810 selects the invoice transaction set).\r\n\r\n
+TAX,0,Sales Tax Reference
+TAX,1,To provide data required for proper notification/determination of applicable sales and related taxes applying to the transaction.
+TAX~0,2,Tax ID number is, in many instances, referred to as a "Tax Exemption Number." The paired (combined) use of data elements 309 and 310 provides for the designation of five (5) taxing jurisdictions.\r\n\r\nTAX01 is required if tax exemption is being claimed.\r\n\r\n
+TD1,0,Carrier Details (Quantity and Weight)
+TD1,1,To specify the transportation details relative to commodity, weight and quantity.
+TD3,0,Carrier Details (Equipment)
+TD3,1,To specify transportation details relating to the equipment used by the carrier.
+TD4,0,Carrier Details (Special Handling/Hazardous Materials)
+TD4,1,To specify transportation special handling requirements and hazardous materials information
+TD5,0,Carrier Details (Routing Sequence/Transit Time)
+TD5,1,To specify the carrier, sequence of routing and to provide transit time information
+TD5~0,2,When specifying a routing sequence to be used for the shipment movement in lieu of specifying each carrier within the movement:  use TD502 to identify the party responsible for defining the routing sequence; use TD503 to identify the actual routing sequence, specified by the party identified in TD502.\r\n\r\n
+UIT,0,Unit Detail
+UIT,1,To specify item unit data
+.TEXT,ELMS
+100,0,Currency Code
+100,1,Code (Standard ISO) for country in whose currency the charges are specified.
+102,0,Ownership Code
+102,1,Code indicating the relationship of equipment to carrier.
+102~N~1~0,0,Not Customer Owned or Leased
+102~R~1~0,0,Seller Owned, Returnable
+102~S~1~0,0,Customer Owned or Leased
+102~T~1~0,0,Trip Leased
+103,0,Packaging Code
+103,1,Code identifying the type of packaging. Part 1. Packaging form. Part 2. Packaging Material.
+103~01~1~0,0,Aluminum
+103~04~1~0,0,As Specified by the DOT
+103~07~1~0,0,Burlap
+103~10~1~0,0,Chemically Hardened Fibre
+103~13~1~0,0,Cloth
+103~16~1~0,0,Cloth Top
+103~19~1~0,0,Cloth or Fabric
+103~22~1~0,0,Compressed
+103~25~1~0,0,Corrugated or Solid
+103~28~1~0,0,Double-wall Paper
+103~31~1~0,0,Fibre
+103~34~1~0,0,Fibre (Paperboard)
+103~37~1~0,0,Fiberboard
+103~40~1~0,0,Fiberboard Metal
+103~43~1~0,0,Glass
+103~46~1~0,0,In Inner Containers
+103~49~1~0,0,Insulated
+103~51~1~0,0,Wire Mesh
+103~52~1~0,0,Iron or Steel
+103~53~1~0,0,Jumbo
+103~54~1~0,0,Special Jumbo
+103~55~1~0,0,Lead
+103~58~1~0,0,Metal
+103~59~1~0,0,Metal Cans
+103~61~1~0,0,Moisture Resistant
+103~64~1~0,0,Molded Plastic
+103~67~1~0,0,Multiple-wall Paper (2 or more walls)
+103~70~1~0,0,Multiple-wall Paper (3 or more walls)
+103~71~1~0,0,Not Otherwise Specified
+103~73~1~0,0,Other than Glass
+103~74~1~0,0,Other than Metal or Plastic Tubes, or Glass
+103~76~1~0,0,Paper
+103~79~1~0,0,Plastic
+103~80~1~0,0,Polyethylene Lined
+103~82~1~0,0,Pulpboard
+103~85~1~0,0,Rubber
+103~88~1~0,0,Rubber and Fabric
+103~89~1~0,0,Special
+103~90~1~0,0,Standard
+103~91~1~0,0,Stainless Steel
+103~92~1~0,0,Tubes, Metal or Plastic
+103~94~1~0,0,Wood
+103~BAG~1~0,0,Bag
+103~BAL~1~0,0,Bale
+103~BBL~1~0,0,Barrel
+103~BDL~1~0,0,Bundle
+103~BEM~1~0,0,Beam
+103~BIC~1~0,0,Bing Chest
+103~BIN~1~0,0,Bin
+103~BLK~1~0,0,Bulk
+103~BOB~1~0,0,Bobbin
+103~BOX~1~0,0,Box
+103~BRG~1~0,0,Barge
+103~BSK~1~0,0,Basket or hamper
+103~BXI~1~0,0,Box, with inner container
+103~BXT~1~0,0,Bucket
+103~CAB~1~0,0,Cabinet
+103~CAG~1~0,0,Cage
+103~CAN~1~0,0,Can
+103~CAR~1~0,0,Carrier
+103~CAS~1~0,0,Case
+103~CBC~1~0,0,Containers of Bulk Cargo
+103~CBY~1~0,0,Carboy
+103~CCS~1~0,0,Can Case
+103~CHE~1~0,0,Cheeses
+103~CHS~1~0,0,Chest
+103~CLD~1~0,0,Car Load, Rail
+103~CNT~1~0,0,Container
+103~COL~1~0,0,Coil
+103~CON~1~0,0,Cones
+103~COR~1~0,0,Core
+103~CRD~1~0,0,Cradle
+103~CRT~1~0,0,Crate
+103~CSK~1~0,0,Cask
+103~CTN~1~0,0,Carton
+103~CYL~1~0,0,Cylinder
+103~DBK~1~0,0,Dry Bulk
+103~DRK~1~0,0,Double-length Rack
+103~DRM~1~0,0,Drum
+103~DSK~1~0,0,Double-length Skid
+103~DTB~1~0,0,Double-length Tote Bin
+103~FIR~1~0,0,Firkin
+103~FLO~1~0,0,Flo-bin
+103~FRM~1~0,0,Frame
+103~FSK~1~0,0,Flask
+103~FWR~1~0,0,Forward Reel
+103~HED~1~0,0,Heads of Beef
+103~HGH~1~0,0,Hogshead
+103~HPT~1~0,0,Hopper Truck
+103~HRB~1~0,0,On Hanger or Rack in Boxes
+103~HRK~1~0,0,Half-standard Rack
+103~HTB~1~0,0,Half-Standard Tote Bin
+103~JAR~1~0,0,Jar
+103~KEG~1~0,0,Keg
+103~KIT~1~0,0,Kit
+103~KRK~1~0,0,Knockdown Rack
+103~KTB~1~0,0,Knockdown Tote Bin
+103~LBK~1~0,0,Liquid Bulk
+103~LIF~1~0,0,Lifts
+103~LOG~1~0,0,Log
+103~LSE~1~0,0,Loose
+103~LUG~1~0,0,Lug
+103~LVN~1~0,0,Lift Van
+103~MRP~1~0,0,Multi-Roll Pack
+103~NOL~1~0,0,Noil
+103~PAL~1~0,0,Pail
+103~PCK~1~0,0,Packed - not otherwise specified
+103~PCS~1~0,0,Pieces
+103~PIR~1~0,0,Pirns
+103~PKG~1~0,0,Package
+103~PLF~1~0,0,Platform
+103~PLN~1~0,0,Pipeline
+103~PLT~1~0,0,Pallet
+103~POV~1~0,0,Private Vehicle
+103~PRK~1~0,0,Pipe Rack
+103~QTR~1~0,0,Quarter of Beef
+103~RAL~1~0,0,Rail (Semiconductor)
+103~RCK~1~0,0,Rack
+103~REL~1~0,0,Reel
+103~ROL~1~0,0,Roll
+103~RVR~1~0,0,Reverse Reel
+103~SAK~1~0,0,Sack
+103~SHK~1~0,0,Shook
+103~SID~1~0,0,Side of Beef
+103~SKD~1~0,0,Skid
+103~SKE~1~0,0,Skid, elevating or lift truck
+103~SLV~1~0,0,Sleeve
+103~SPI~1~0,0,Spin Cylinders
+103~SPL~1~0,0,Spool
+103~TBE~1~0,0,Tube
+103~TBN~1~0,0,Tote Bin
+103~TKT~1~0,0,Tank Truck
+103~TLD~1~0,0,Intermodal Trailer/Container Load (Rail)
+103~TNK~1~0,0,Tank
+103~TRC~1~0,0,Tierce
+103~TRK~1~0,0,Trunk and Chest
+103~TRY~1~0,0,Tray
+103~TSS~1~0,0,Trunk, Salesmen Sample
+103~TUB~1~0,0,Tub
+103~UNP~1~0,0,Unpacked
+103~UNT~1~0,0,Unit
+103~VEH~1~0,0,Vehicles
+103~VPK~1~0,0,Van Pack
+103~WHE~1~0,0,On Own Wheel
+103~WLC~1~0,0,Wheeled Carrier
+103~WRP~1~0,0,Wrapped
+116,0,Postal Code
+116,1,Code defining international postal zone code excluding punctuation and blanks (zip code for United States).
+127,0,Reference Number
+127,1,Reference number or identification number as defined for a particular Transaction Set, or as specified by the Reference Number Qualifier. Also see Reference Number Qualifier, (128).
+128,0,Reference Number Qualifier
+128,1,Code qualifying the Reference Number.
+128~01~1~0,0,ABA Transit/routing Number Including Check Digit (9 Digits)
+128~02~1~0,0,Swift Identification (8 or 11 Digits)
+128~03~1~0,0,Chips (3 or 4 Digits)
+128~61~1~0,0,Immediate Transportation No. for in bond movement
+128~62~1~0,0,Transportation Exportation No.for in Bond Movement
+128~63~1~0,0,Immediate exportation No. for in bond movement
+128~64~1~0,0,Transit No. for in Bond Movement
+128~A1~1~0,0,Analysis number/Test number
+128~AA~1~0,0,Accounts Receivable Statement Number
+128~AB~1~0,0,Acceptable Source Purchaser ID
+128~AC~1~0,0,Air Cargo Transfer Manifest
+128~AD~1~0,0,Acceptable Source DUNS Number
+128~AE~1~0,0,Authorization for Expense (AFE) Number
+128~AF~1~0,0,Airlines Flight Identification Number
+128~AG~1~0,0,Agent's Shipment Number
+128~AI~1~0,0,Associated Invoices
+128~AL~1~0,0,Accounting Location Number.
+128~AM~1~0,0,Adjustment Memo (Charge Back)
+128~AN~1~0,0,Sending Company Audit Number (ACH Transfers)
+128~AO~1~0,0,Appointment Number
+128~AP~1~0,0,Accounts Receivable Number
+128~AR~1~0,0,Arrival Code
+128~AS~1~0,0,Acceptable Source Supplier ID
+128~AT~1~0,0,Appropriation Number
+128~AU~1~0,0,Authorization to Meet Competition No.
+128~AW~1~0,0,Air Waybill Number
+128~BC~1~0,0,Buyer's Contract Number
+128~BD~1~0,0,Bid Number
+128~BK~1~0,0,Broker's Order Number
+128~BL~1~0,0,Government Bill of Lading
+128~BM~1~0,0,Bill of Lading Number
+128~BN~1~0,0,Booking Number
+128~BR~1~0,0,Broker or Sales Office Number
+128~BT~1~0,0,Batch Number
+128~C1~1~0,0,Customer material specification number
+128~C2~1~0,0,Customer process specification number
+128~C3~1~0,0,Customer specification number
+128~CA~1~0,0,Cost Allocation Reference
+128~CB~1~0,0,Combined Shipment
+128~CC~1~0,0,Contract Co-op Number
+128~CD~1~0,0,Credit Note Number
+128~CE~1~0,0,Class of Contact Code
+128~CF~1~0,0,Fleet Reference Number
+128~CG~1~0,0,Consignee's Order Number
+128~CH~1~0,0,Customer catalog number
+128~CJ~1~0,0,Clause Number
+128~CK~1~0,0,Check Number
+128~CL~1~0,0,Seller's Credit Memo
+128~CM~1~0,0,Credit Memo
+128~CN~1~0,0,Carrier's Reference Number (PRO/Invoice)
+128~CO~1~0,0,Customer Order Number
+128~CP~1~0,0,Condition of Purchase Document Number
+128~CR~1~0,0,Customer Reference Number
+128~CS~1~0,0,Condition of Sale Document Number
+128~CT~1~0,0,Contract Number
+128~CU~1~0,0,Clear Text Clause
+128~DB~1~0,0,Buyer's Debit Memo
+128~DC~1~0,0,Dealer purchase order number
+128~DE~1~0,0,Depositor Number
+128~DF~1~0,0,Defense Federal Acquisition Regulations (DFAR)
+128~DI~1~0,0,Distributor Invoice No.
+128~DK~1~0,0,Dock Number
+128~DL~1~0,0,Debit Memo
+128~DN~1~0,0,Draft Number
+128~DO~1~0,0,Delivery Order No.
+128~DP~1~0,0,Department Number
+128~DQ~1~0,0,Delivery Quote Numeric
+128~DR~1~0,0,Dock Receipt Number
+128~DS~1~0,0,Defense Priorities Allocation System (DPAS) Priority Rating
+128~DW~1~0,0,Deposit Sequence Number
+128~EB~1~0,0,Embargo Permit Number
+128~ED~1~0,0,Export Declaration
+128~EI~1~0,0,Employer's Identification Number
+128~EL~1~0,0,Electronic device pin number
+128~EN~1~0,0,Embargo Number
+128~EP~1~0,0,Export Permit Number
+128~EQ~1~0,0,Equipment Number
+128~ER~1~0,0,Container or Equipment Receipt Number
+128~ES~1~0,0,Employer's Social Security Number
+128~ET~1~0,0,Excess Transportation
+128~EZ~1~0,0,Electronic Data Interchange Agreement Number
+128~FA~1~0,0,Federal Acquisition Regulations (FAR)
+128~FE~1~0,0,Failure mechanism number
+128~FI~1~0,0,File Identifier
+128~FN~1~0,0,Forwarder's/Agent's Reference Number
+128~FP~1~0,0,Forestry Permit Number
+128~FR~1~0,0,Freight Bill Number
+128~FS~1~0,0,Final Sequence Number
+128~GB~1~0,0,Grain Block Number
+128~GC~1~0,0,Government Contract Number
+128~GE~1~0,0,Geographic Number
+128~GP~1~0,0,Government Priority Number
+128~GR~1~0,0,Grain Order Reference Number
+128~GS~1~0,0,General Services Administration Regulations (GSAR)
+128~HB~1~0,0,Bill & Hold Invoice No.
+128~HC~1~0,0,Heat Code
+128~HP~1~0,0,Pack & Hold Invoice No.
+128~IA~1~0,0,Internal Vendor Number
+128~IB~1~0,0,In Bond Number
+128~IC~1~0,0,Inbound-to Party
+128~II~1~0,0,Initial Sample Inspection Report Number
+128~IL~1~0,0,Internal Order Number
+128~IN~1~0,0,Consignee's Invoice Number
+128~IO~1~0,0,Inbound-to or Outbound-from Party
+128~IR~1~0,0,Intra Plant Routing
+128~IS~1~0,0,Invoice Number Suffix
+128~IT~1~0,0,Internal Customer Number
+128~IV~1~0,0,Seller's Invoice Number
+128~JA~1~0,0,Beginning Job Sequence Number
+128~JB~1~0,0,Job (Project) Number
+128~JE~1~0,0,Ending Job Sequence Number
+128~JS~1~0,0,Job Sequence Number
+128~LA~1~0,0,Shipping Label Serial Number
+128~LB~1~0,0,Lockbox
+128~LF~1~0,0,Assembly Line Feed Location
+128~LI~1~0,0,Line Item Identifier (Seller's)
+128~LN~1~0,0,Non pickup Limited Tariff Number
+128~LO~1~0,0,Load Planning Number
+128~LP~1~0,0,For Pickup Limited Freight Tariff Number
+128~LS~1~0,0,Bar-Coded Serial Number
+128~LT~1~0,0,Lot Number
+128~LW~1~0,0,Location Within Equipment
+128~MA~1~0,0,Ship Notice/Manifest Number
+128~MB~1~0,0,Master Bill of Lading
+128~MC~1~0,0,Microfilm Number
+128~ME~1~0,0,Message Address or ID
+128~MF~1~0,0,Manufacturers Part Number
+128~MG~1~0,0,Meter Number
+128~MH~1~0,0,Manufacturing Order Number
+128~MI~1~0,0,Mill Order Number
+128~MK~1~0,0,Manifest Key Number
+128~MN~1~0,0,MICR Number
+128~MP~1~0,0,Multiple P.O.s of an Invoice
+128~MS~1~0,0,Manufacturer's Material Safety Data Sheet Number
+128~MY~1~0,0,Model year number
+128~NA~1~0,0,North American Hazardous Classification Number
+128~NS~1~0,0,National Stock Number
+128~OB~1~0,0,Ocean Bill of Lading
+128~OC~1~0,0,Ocean Container Number
+128~OI~1~0,0,Original Invoice Number
+128~OM~1~0,0,Ocean Manifest
+128~OP~1~0,0,Original Purchase Order
+128~OS~1~0,0,Outbound-from Party
+128~P1~1~0,0,Previous contract number
+128~P2~1~0,0,Previous Drug Enforcement Administration Number.
+128~P3~1~0,0,Previous customer reference number.
+128~P4~1~0,0,Project Code
+128~PA~1~0,0,Price Area Number
+128~PB~1~0,0,Payer's Financial Institution Account Number (Check, Draft, or Wire) Originating Company Account Number (ACH Transfers)
+128~PC~1~0,0,Production Code
+128~PD~1~0,0,Promotion/Deal Number
+128~PE~1~0,0,Plant Number
+128~PF~1~0,0,Prime Contractor Contract Number
+128~PG~1~0,0,Product Group
+128~PH~1~0,0,Priority Rating
+128~PI~1~0,0,Price List Change or Issue Number
+128~PJ~1~0,0,Packer Number
+128~PK~1~0,0,Packing List Number
+128~PL~1~0,0,Price List Number
+128~PM~1~0,0,Part Number
+128~PN~1~0,0,Permit Number
+128~PO~1~0,0,Purchase Order Number
+128~PP~1~0,0,Purchase Order Revision Number
+128~PQ~1~0,0,Payee Identification
+128~PR~1~0,0,Price Quote Number
+128~PS~1~0,0,Purchase Order Number Suffix
+128~PT~1~0,0,Purchase Option Agreement
+128~PV~1~0,0,Product change information number
+128~PW~1~0,0,Prior purchase order number
+128~PX~1~0,0,Previous Invoice Number
+128~PY~1~0,0,Payee's Financial Institution Account Number (Check, Draft, or Wire) Originating Company Account Number (ACH Transfers)
+128~PZ~1~0,0,Product Change Notice Number
+128~QR~1~0,0,Quality Report Number
+128~RB~1~0,0,Rate code number
+128~RC~1~0,0,Rail Routing Code
+128~RE~1~0,0,Release Number
+128~RF~1~0,0,Export Reference Number
+128~RI~1~0,0,Release invoice number for prior bill and hold.
+128~RL~1~0,0,Reserve Assembly Line Feed Location
+128~RM~1~0,0,Raw material supplier Dun & Bradstreet number
+128~RN~1~0,0,Run Number
+128~RP~1~0,0,Repetitive Pattern Code
+128~RQ~1~0,0,Purchase Requisition No.
+128~RR~1~0,0,Payer's Financial Institution Transit Routing No. (ACH Transfers) ODFI (ACH Transfers)
+128~RS~1~0,0,Returnable Container Serial Number
+128~RT~1~0,0,Payee's Financial Institution Transit Routing No. (Check, Draft, or Wire) RDFI Transit Routing Number (ACH Transfers)
+128~RV~1~0,0,Receiving Number
+128~RW~1~0,0,AAR RWC (Origin Carrier, SPLC, and RWC Number)
+128~RX~1~0,0,Resubmit number
+128~SA~1~0,0,Salesperson
+128~SB~1~0,0,Sales Region Number
+128~SC~1~0,0,Shipper Car Order Number
+128~SD~1~0,0,Sales Division Number
+128~SE~1~0,0,Serial Number
+128~SF~1~0,0,Ship From
+128~SH~1~0,0,Sender Defined Clause
+128~SI~1~0,0,Shipper's Identifying Number for Shipment (SID)
+128~SL~1~0,0,Sales/Territory Code
+128~SM~1~0,0,Sales Office Number
+128~SN~1~0,0,Seal Number
+128~SO~1~0,0,Shipper's Order (Invoice Number)
+128~SP~1~0,0,Scan Line
+128~SQ~1~0,0,Container Sequence Number
+128~SR~1~0,0,Sales Responsibility
+128~ST~1~0,0,Store Number
+128~SU~1~0,0,Sub Code
+128~SV~1~0,0,Service Charge Number
+128~TB~1~0,0,Trucker's Bill of Lading
+128~TF~1~0,0,Transfer Number
+128~TI~1~0,0,TIR Number
+128~TL~1~0,0,Tax License Exemption
+128~TM~1~0,0,Travel Manifest (ACI or OTR)
+128~TN~1~0,0,Transaction Reference Number
+128~TO~1~0,0,Terminal Operator Number
+128~TR~1~0,0,Government Transportation Request
+128~TX~1~0,0,Tax Exempt Number
+128~UB~1~0,0,Unacceptable Source Purchaser ID
+128~UD~1~0,0,Unacceptable Source DUNS Number
+128~UG~1~0,0,U.S. Government Transportation Control Number
+128~UN~1~0,0,United Nations Hazardous Classification Number
+128~US~1~0,0,Unacceptable Source Supplier ID
+128~UT~1~0,0,Unit Train
+128~VA~1~0,0,Vessel Agent Number
+128~VB~1~0,0,Veterans Administration Acquisition Regulations (VAAR)
+128~VC~1~0,0,Vendor Contract Number
+128~VM~1~0,0,Vessel Name
+128~VN~1~0,0,Vendor Order Number
+128~VP~1~0,0,Vendor Product Number
+128~VR~1~0,0,Vendor ID Number
+128~VS~1~0,0,Vendor Order Number Suffix
+128~VT~1~0,0,Motor Vehicle ID Number
+128~VV~1~0,0,Voucher
+128~WM~1~0,0,Weight Agreement Number
+128~WN~1~0,0,Well Number
+128~WR~1~0,0,Warehouse Receipt Number
+128~WS~1~0,0,Warehouse storage location number
+128~WY~1~0,0,Rail Waybill Number
+128~XC~1~0,0,Cargo Control Number
+128~XP~1~0,0,Previous Cargo Control Number
+128~ZA~1~0,0,Supplier
+128~ZB~1~0,0,Ultimate Consignee
+128~ZC~1~0,0,Connecting Carrier
+128~ZZ~1~0,0,Mutually Defined
+133,0,Routing Sequence Code
+133,1,Code describing the relationship of a carrier to a specific shipment movement.
+133~1~1~0,0,1st Carrier after Origin Carrier
+133~2~1~0,0,2nd Carrier after Origin Carrier
+133~3~1~0,0,3rd Carrier after Origin Carrier
+133~4~1~0,0,4th Carrier after Origin Carrier
+133~5~1~0,0,5th Carrier after Origin Carrier
+133~6~1~0,0,6th Carrier after Origin Carrier
+133~7~1~0,0,7th Carrier after Origin Carrier
+133~8~1~0,0,8th Carrier after Origin Carrier
+133~9~1~0,0,9th Carrier after Origin Carrier
+133~A~1~0,0,Origin Carrier, Agent's Routing (Rail)
+133~B~1~0,0,Origin/Delivery Carrier (Any Mode)
+133~D~1~0,0,DELY (Delivery Switch Carrier)
+133~I~1~0,0,Origin Switch Carrier
+133~O~1~0,0,Origin Carrier (Air, Motor, or Ocean)
+133~R~1~0,0,Origin Carrier, Rule 11 Shipment
+133~S~1~0,0,Origin Carrier, Shipper's Routing (Rail)
+133~V~1~0,0,Intermediate Switch Carrier at Origin
+133~Z~1~0,0,Mutually Defined
+143,0,Transaction Set Identifier Code
+143,1,Code uniquely identifying a Transaction Set.
+143~101~1~0,0,Flight Confirmation
+143~104~1~0,0,Shipment Information (Air)
+143~105~1~0,0,Container/Equipment Transfer (Air)
+143~107~1~0,0,Shipment Information for Export Declaration (Air)
+143~108~1~0,0,Shipment Information for Import (Air)
+143~109~1~0,0,Shipment Information for Pick-Up/Delivery Order
+143~110~1~0,0,Freight Details and Invoice (Air)
+143~111~1~0,0,Freight Details and Invoice Summary (Air)
+143~113~1~0,0,Inquiry (Air)
+143~114~1~0,0,Shipment Identities and Status Reply (Air)
+143~115~1~0,0,Status Details Reply (Air)
+143~116~1~0,0,Repetitive Pattern Maintenance (Air)
+143~204~1~0,0,Shipment Information (Motor)
+143~205~1~0,0,Container/Equipment Transfer (Motor)
+143~206~1~0,0,Shipment Pick-Up Order (Motor)
+143~207~1~0,0,Shipment Information for Export Declaration
+143~208~1~0,0,Shipment Information for Import (Motor)
+143~210~1~0,0,Freight Details and Invoice (Motor)
+143~211~1~0,0,Freight Details and Invoice Summary (Motor)
+143~213~1~0,0,Inquiry (Motor)
+143~214~1~0,0,Shipment Status Message (Motor)
+143~216~1~0,0,Repetitive Pattern Maintenance (Motor)
+143~300~1~0,0,Reservation (Booking Request - Ocean)
+143~301~1~0,0,Confirmation (Ocean)
+143~302~1~0,0,Container/Specialized Equip. Pick-Up Order/Canc.
+143~303~1~0,0,Cancellation (Ocean)
+143~304~1~0,0,Shipment Information (Ocean)
+143~305~1~0,0,Container/Equipment Transfer (Ocean)
+143~306~1~0,0,Dock Receipt
+143~307~1~0,0,Shipment Information for Export Declaration (Ocean)
+143~308~1~0,0,Shipment Information for Import (Ocean)
+143~309~1~0,0,Manifest
+143~310~1~0,0,Freight Details and Invoice (Ocean)
+143~312~1~0,0,Arrival Notice (Ocean)
+143~313~1~0,0,Inquiry (Ocean)
+143~314~1~0,0,Shipment Identities and Status Reply (Ocean)
+143~315~1~0,0,Status Details Reply (Ocean)
+143~316~1~0,0,Repetitive Pattern Maintenance (Ocean)
+143~317~1~0,0,Delivery (Pick-Up) Order (Ocean)
+143~319~1~0,0,Cargo Terminal Information (Ocean)
+143~321~1~0,0,Demurrage Guarantee (Ocean)
+143~350~1~0,0,Customs Release Information (Ocean)
+143~352~1~0,0,Carrier General Order Status (Ocean)
+143~354~1~0,0,Automated Manifest Removal (Ocean)
+143~404~1~0,0,Shipment Information (Rail)
+143~407~1~0,0,Shipment Information for Export Declaration
+143~408~1~0,0,Shipment Information for Import (Rail)
+143~410~1~0,0,Freight Details and Invoice (Rail)
+143~411~1~0,0,Freight Details and Invoice Summary (Rail)
+143~416~1~0,0,Repetitive Pattern Maintenance (Rail)
+143~417~1~0,0,Waybill Interchange (Rail)
+143~418~1~0,0,Advance Interchange Consist
+143~419~1~0,0,Empty Car Advance Disposition
+143~420~1~0,0,Car Handling Information
+143~421~1~0,0,Industrial Switch List
+143~422~1~0,0,Straight Plan Demurrage
+143~423~1~0,0,Average Agreement Demurrage
+143~424~1~0,0,Switch Bills
+143~425~1~0,0,Revenue Waybill Trace
+143~426~1~0,0,Revenue Waybill Trace Response
+143~440~1~0,0,Shipment Weights
+143~460~1~0,0,Rate Format Docket Data
+143~461~1~0,0,Rate Format Level Data
+143~462~1~0,0,Rate Format Sub-Level Data
+143~463~1~0,0,Rate Set Docket Index
+143~464~1~0,0,Rate Set Docket Data
+143~465~1~0,0,Rate Set Sub-Level Data
+143~466~1~0,0,Rate Set Request
+143~468~1~0,0,Journal Log
+143~469~1~0,0,Rate Distribution Set
+143~480~1~0,0,Docket/Cluster Terminator
+143~485~1~0,0,Concurrence, Factor Change, Publisher Change
+143~486~1~0,0,Proposal Rejection or Trace, Docket Expiration
+143~490~1~0,0,Dynamic Group Definition
+143~491~1~0,0,Rate Increase/Decrease Transmittal
+143~492~1~0,0,Demurrage/Detention/Storage Rates
+143~499~1~0,0,Application Acceptance Rejection Advice
+143~810~1~0,0,X12.2 Invoice
+143~819~1~0,0,X12.43 Operating Expense Statement
+143~820~1~0,0,X12.4 Remittance/Payment Advice
+143~822~1~0,0,X12.25 Customer Account Analysis
+143~823~1~0,0,X12.38 Lockbox
+143~827~1~0,0,X12.47 Financial Return Notice
+143~829~1~0,0,X12.48 Payment Cancellation Request
+143~830~1~0,0,X12.14 Planning Schedule
+143~832~1~0,0,X12.13 Price/Sales Catalog
+143~840~1~0,0,X12.7 Request for Quotation
+143~843~1~0,0,X12.8 Response to Request for Quotation
+143~844~1~0,0,X12.26 Product Transfer Account Adjustment
+143~845~1~0,0,X12.27 Price Authorization Acknowledgment/Status
+143~846~1~0,0,X12.28 Inventory Advice
+143~849~1~0,0,X12.50 Response to Product Transfer Account Adjustment
+143~850~1~0,0,X12.1 Purchase Order
+143~855~1~0,0,X12.9 Purchase Order Acknowledgment
+143~856~1~0,0,X12.10 Ship Notice/Manifest
+143~860~1~0,0,X12.15 Purchase Order Change
+143~861~1~0,0,X12.12 Receiving Advice
+143~862~1~0,0,X12.37 Shipping Schedule
+143~863~1~0,0,X12.41 Report of Test Results
+143~864~1~0,0,X12.34 Text Transaction
+143~865~1~0,0,X12.16 Purchase Order Change Acknowledgment
+143~867~1~0,0,X12.33 Product Transfer and Resale Report
+143~868~1~0,0,X12.30 Electronic Form Structure
+143~869~1~0,0,X12.11 Order Status Inquiry
+143~870~1~0,0,X12.23 Order Status Report
+143~874~1~0,0,Purchase Order - Multipoint
+143~875~1~0,0,Purchase Order (UCS)
+143~876~1~0,0,Purchase Order Change (UCS)
+143~877~1~0,0,Purchase Order Adjustment (UCS)
+143~878~1~0,0,Product Authorization/De-Authorization (UCS)
+143~879~1~0,0,Price Change (UCS)
+143~880~1~0,0,Invoice (UCS)
+143~881~1~0,0,Credit Memo/Debit Memo (UCS)
+143~882~1~0,0,Statement (UCS)
+143~884~1~0,0,Shipment Advice (UCS)
+143~885~1~0,0,Receiving Advice (UCS)
+143~888~1~0,0,Item Maintenance (UCS)
+143~889~1~0,0,Promotion Announcement (UCS)
+143~890~1~0,0,Prepayment Adjustment Advice (UCS)
+143~891~1~0,0,Promotion Announcement Change
+143~892~1~0,0,Promotion Announcement Confirmation
+143~893~1~0,0,Promotion Announcement Confirmation Change
+143~901~1~0,0,Completed Payments
+143~905~1~0,0,Remittance Advice (UCS)
+143~920~1~0,0,Loss or Damage Claim - General Commodities
+143~924~1~0,0,Loss or Damage Claim - Automotive
+143~925~1~0,0,Claim Tracer
+143~926~1~0,0,Claim Status Report and Tracer Reply
+143~928~1~0,0,Automotive Inspection Detail
+143~940~1~0,0,Warehouse Shipping Order
+143~941~1~0,0,Warehouse Inventory Status Report
+143~942~1~0,0,Warehouse Activity Report
+143~943~1~0,0,Stock Transfer Shipment Advice
+143~944~1~0,0,Stock Transfer Receipt Advice
+143~945~1~0,0,Warehouse Shipping Advice
+143~946~1~0,0,Delivery Information Message
+143~980~1~0,0,Functional Group Totals
+143~990~1~0,0,Generalized Feedback
+143~994~1~0,0,Administrative Message
+143~995~1~0,0,Advisory Information
+143~996~1~0,0,File Transfer
+143~997~1~0,0,X12.20 Functional Acknowledgment
+143~998~1~0,0,Set Cancellation
+143~999~1~0,0,Acceptance/Rejection Advice
+146,0,Shipment Method of Payment
+146,1,Code identifying payment terms for transportation charges.
+146~CA~1~0,0,Advance Collect
+146~CC~1~0,0,Collect
+146~CF~1~0,0,Collect, Freight Credited to Payment Customer
+146~DF~1~0,0,Defined by Buyer and Seller
+146~FO~1~0,0,FOB Port of Call
+146~HP~1~0,0,Half Prepaid
+146~IC~1~0,0,Information Copy, No Payment Due
+146~MX~1~0,0,Mixed
+146~NC~1~0,0,Service Freight, No Charge
+146~NS~1~0,0,Not Specified
+146~PA~1~0,0,Advance Prepaid
+146~PB~1~0,0,Customer Pick-up/Backhaul
+146~PC~1~0,0,Prepaid but Charged to Customer
+146~PO~1~0,0,Prepaid Only
+146~PP~1~0,0,Prepaid (by Seller)
+146~PU~1~0,0,Pickup
+146~RC~1~0,0,Return Container Freight Paid by Customer
+146~RF~1~0,0,Return Container Freight Free
+146~RS~1~0,0,Return Container Freight Paid by Supplier
+146~TP~1~0,0,Third Party Pay
+146~WC~1~0,0,Weight Condition
+146~ZZ~1~0,0,Mutually Defined
+150,0,Special Charge Code
+150,1,Code identifying type of special charge.
+150~005~1~0,0,Activation of Carnet
+150~010~1~0,0,Add on - Destination
+150~015~1~0,0,Add on - Origin
+150~020~1~0,0,Address Correction
+150~025~1~0,0,Advance Destination Amount
+150~030~1~0,0,Advance Destination Fee
+150~035~1~0,0,Advance Origin Amount
+150~040~1~0,0,Advance Origin Fee
+150~045~1~0,0,Advance Fee
+150~050~1~0,0,Agent Disbursement - Destination
+150~055~1~0,0,Agent Disbursement Fee - Destination
+150~060~1~0,0,Agent Disbursement - Origin
+150~065~1~0,0,Agent Disbursement Fee - Origin
+150~070~1~0,0,Aid Export Certificate
+150~075~1~0,0,Air Express Charge
+150~080~1~0,0,Air Transportation Charge
+150~085~1~0,0,Airline Opening Fee
+150~090~1~0,0,Airport Tax - Destination
+150~095~1~0,0,Airport Tax - Origin
+150~100~1~0,0,Airport Terminal Handling Charge
+150~105~1~0,0,Acknowledgement of Delivery Fee (AOD)
+150~110~1~0,0,Amending Export Documentation
+150~115~1~0,0,Assembly Fee
+150~120~1~0,0,Banking Drafts
+150~130~1~0,0,Bond Charge
+150~135~1~0,0,Cables (sending of)
+150~140~1~0,0,Call Tag
+150~145~1~0,0,Canadian C.Q.Customs Clearance
+150~150~1~0,0,Canadian Currency Exchange
+150~155~1~0,0,Canadian Import Termination Fee
+150~160~1~0,0,Canadian Reconsignment Fee
+150~165~1~0,0,Canadian Remanifest Fee
+150~170~1~0,0,Certificate of Origin
+150~175~1~0,0,Certificate of Registration
+150~180~1~0,0,Chamber of Commerce Service Charge
+150~185~1~0,0,Change of Airbill - Service Fee
+150~186~1~0,0,Chemical Milling Charge
+150~190~1~0,0,City Terminal Charge
+150~205~1~0,0,Collect Surcharge
+150~210~1~0,0,Constant Surveillance Service
+150~215~1~0,0,Consular Legalization Service
+150~220~1~0,0,Consularization Fee
+150~225~1~0,0,Constant Surveillance Service - Armed
+150~230~1~0,0,Credit
+150~235~1~0,0,Customer Account Identification
+150~240~1~0,0,Customs Broker Fee
+150~245~1~0,0,Customs Invoice
+150~250~1~0,0,Customs Invoice - Additional Page
+150~255~1~0,0,Data/Drawing Charge
+150~260~1~0,0,Delivery Surcharge
+150~265~1~0,0,Development Charge
+150~270~1~0,0,Discount - Drop Box/Convenience Ctr.
+150~275~1~0,0,Discount - Incentive
+150~280~1~0,0,Discount - Multiple Shipment
+150~285~1~0,0,Discount - Service Option (Delivery)
+150~290~1~0,0,Discount - Service Option (Pickup)
+150~295~1~0,0,Discount - Special
+150~300~1~0,0,Distribution Fee
+150~310~1~0,0,Dry Ice
+150~315~1~0,0,Duty Charge
+150~320~1~0,0,Endorsement Fee
+150~325~1~0,0,Eur1 Presentation Fee
+150~330~1~0,0,Excess Value Fee
+150~335~1~0,0,Excise Tax - Destination
+150~340~1~0,0,Excise Tax - Origin
+150~345~1~0,0,Expedited One Day Consular Service
+150~350~1~0,0,Expedited Shipments
+150~355~1~0,0,Extra Copies and Mailings
+150~360~1~0,0,Export Customs Clearance
+150~365~1~0,0,Export Declarations - Automated
+150~370~1~0,0,Export Declarations - U.S. Shippers
+150~375~1~0,0,Export License Application
+150~380~1~0,0,Extra Service - Counter-to-Counter
+150~385~1~0,0,Facsimile Charges
+150~390~1~0,0,Facsimile Charges - Additional Pages
+150~392~1~0,0,Failed Lamp Panel Charge
+150~393~1~0,0,First Article Charge
+150~395~1~0,0,Free Domicile Shipment Processing
+150~400~1~0,0,Freight Charge
+150~405~1~0,0,Fuel Surcharge
+150~410~1~0,0,Government Warehouse Fee - Destination
+150~415~1~0,0,Government Warehouse Fee - Origin
+150~416~1~0,0,Grain Flow Charge
+150~420~1~0,0,Hazardous Materials Handling Fee - Domestic
+150~425~1~0,0,Hazardous Materials Handling Fee - International
+150~426~1~0,0,Heat Treat Charge
+150~430~1~0,0,IATA Airbill Preparation
+150~435~1~0,0,IATA Fee
+150~440~1~0,0,Import Service Fee
+150~445~1~0,0,Insurance Fee
+150~450~1~0,0,Inland Transportation
+150~455~1~0,0,Insurance Premium
+150~460~1~0,0,International Door-to-Door Handling Fee
+150~465~1~0,0,Italian Release Charge
+150~470~1~0,0,Letter of Credit Processing
+150~475~1~0,0,Mailing - Postage Cost
+150~480~1~0,0,Mailing - Service Fee
+150~485~1~0,0,Messenger Service
+150~490~1~0,0,Minimum Air Transportation Charge
+150~495~1~0,0,Miscellaneous - Destination
+150~500~1~0,0,Miscellaneous - Origin
+150~505~1~0,0,Missing Account NBR Charge
+150~510~1~0,0,Offshore - Alaska/Hawaii
+150~515~1~0,0,On Hand Service
+150~520~1~0,0,Oversized Premium
+150~525~1~0,0,Passing Shippers Export Entry
+150~535~1~0,0,Pickup - Out of Area
+150~540~1~0,0,Pickup Surcharge
+150~545~1~0,0,Pre-Positioned Inventory Service
+150~550~1~0,0,Preparation of Air Waybill - Origin
+150~555~1~0,0,Preparation of Canadian Customs Invoice
+150~560~1~0,0,Preparation of Commercial Invoice
+150~565~1~0,0,Preparation of Export Entry
+150~570~1~0,0,Preparation of Insurance Certificate
+150~580~1~0,0,Priority Service
+150~585~1~0,0,Preparation of U.S. Export Documentation
+150~586~1~0,0,Processing Charge
+150~590~1~0,0,Rebilled Drayage - Destination
+150~595~1~0,0,Proforma Invoice
+150~600~1~0,0,Recipient Address Correction
+150~605~1~0,0,Rebilled Drayage - Origin
+150~610~1~0,0,Record/Filing
+150~615~1~0,0,Recovery Fee
+150~620~1~0,0,Recrating/Recoopering - Destination
+150~625~1~0,0,Recrating/Recoopering - Origin
+150~635~1~0,0,Registration of Export Shipments
+150~640~1~0,0,Registration of Export for Reentry
+150~641~1~0,0,Reliability Charge
+150~645~1~0,0,Restricted Article Fee
+150~650~1~0,0,Repickup
+150~665~1~0,0,Saturday Delivery
+150~670~1~0,0,Saturday Pick-Up
+150~675~1~0,0,Security Signature Service
+150~680~1~0,0,Service Upgrade
+150~685~1~0,0,Special Delivery
+150~690~1~0,0,Special Handling Service
+150~695~1~0,0,Special Pickup
+150~696~1~0,0,Special Test Equipment Charge
+150~697~1~0,0,Special Tooling Charge
+150~700~1~0,0,Special Vehicle Rent
+150~705~1~0,0,Stamp Fee
+150~706~1~0,0,Straightening Charge
+150~720~1~0,0,Telephone - Destination
+150~725~1~0,0,Telephone - Origin
+150~730~1~0,0,Terminal Service Fee
+150~731~1~0,0,Test/Qualification Charge
+150~732~1~0,0,Tooling Rework Charge
+150~735~1~0,0,Tracing Inbound Via Other Carriers
+150~736~1~0,0,Tracing Service Fee
+150~740~1~0,0,T2L Charge
+150~745~1~0,0,Valuation Fee
+150~750~1~0,0,Value Added Tax (VAT)
+150~755~1~0,0,Waiting Time
+150~760~1~0,0,Waybill and Invoice Distribution
+150~762~1~0,0,X-ray Charge
+150~999~1~0,0,Other (See related description)
+150~AAA~1~0,0,Advertising Allowance
+150~AAJ~1~0,0,Adjustments
+150~AAM~1~0,0,Additional Material
+150~AAN~1~0,0,Allowance Non-performance
+150~AAO~1~0,0,Allowance Advance
+150~AAT~1~0,0,Handling Charge Tax
+150~ADH~1~0,0,Advance Charges Handling
+150~ADV~1~0,0,Advances
+150~AFB~1~0,0,Additional Copies of Freight Bill
+150~ALC~1~0,0,Advance Lading Charge
+150~AMC~1~0,0,Anodizing Charge
+150~APT~1~0,0,Appointment (Notification)
+150~ARB~1~0,0,Arbitrary (In Addition to Through Rates and Charges)
+150~ASC~1~0,0,Assembly Charge
+150~BAA~1~0,0,Beaming Charge
+150~BAB~1~0,0,Brokerage or Duty
+150~BAC~1~0,0,Buyers Car Allowance
+150~BAD~1~0,0,Bad Debt
+150~BAF~1~0,0,Both-Flat
+150~BAP~1~0,0,Broker Package Charge
+150~BAS~1~0,0,Base Charge
+150~BBK~1~0,0,Break Bulk Surface Charge
+150~BDX~1~0,0,Bordeaux Arbitraries
+150~BEY~1~0,0,Beyond Freight Charges
+150~BFD~1~0,0,Bedding/Feeding/Disinfecting
+150~BLA~1~0,0,Bill of Lading Attendancy
+150~BLC~1~0,0,Bill of Lading Charge
+150~BLD~1~0,0,Billed Demand
+150~BLK~1~0,0,Blocking and Bracing Charge
+150~BLW~1~0,0,Blower Charge
+150~BND~1~0,0,Bond Charges
+150~BOB~1~0,0,Bobtail Charges
+150~BRA~1~0,0,Basic Reorder Allowance
+150~BRD~1~0,0,Bridge Toll
+150~CAA~1~0,0,Cancellation Charge
+150~CAB~1~0,0,Cartage
+150~CAC~1~0,0,Cash Discount
+150~CAD~1~0,0,Certification Fee
+150~CAE~1~0,0,Co-manufacturing Discount
+150~CAF~1~0,0,Competitive Allowance
+150~CAG~1~0,0,Competitive Car Allowance
+150~CAH~1~0,0,Compressor Charge
+150~CAJ~1~0,0,Crafting
+150~CAK~1~0,0,Customer Equipment Allowance
+150~CAL~1~0,0,Cutting Charge
+150~CAO~1~0,0,Co-op Credit
+150~CAP~1~0,0,Car Loading
+150~CAQ~1~0,0,Contract Escalation
+150~CAR~1~0,0,Car Rental
+150~CAS~1~0,0,Container Deposits
+150~CAT~1~0,0,Cleaning Charges
+150~CAU~1~0,0,COD Charges
+150~CAV~1~0,0,Contract Allowance
+150~CAW~1~0,0,Cooperative Advertising/Merchandising Allowance (Performance)
+150~CBO~1~0,0,Cents Off
+150~CBP~1~0,0,Competitive Price
+150~CBR~1~0,0,Carrier
+150~CBW~1~0,0,Container Allowance
+150~CBX~1~0,0,City Sales Tax (Only)
+150~CCA~1~0,0,Carrier Credit Allowance
+150~CCH~1~0,0,Certification Charge
+150~CDA~1~0,0,Carrier Debit Allowance
+150~CDF~1~0,0,Cancelled Order, Heavy Duty Flatcar
+150~CER~1~0,0,Container Service Charge UK/EUR
+150~CGL~1~0,0,Canada Great Lakes Additionals
+150~CHG~1~0,0,Charges Forward/Advance Charge
+150~CHN~1~0,0,Chain and Binders
+150~CIR~1~0,0,Special Circus Trains
+150~CLN~1~0,0,Cleaning Charge
+150~CLS~1~0,0,Container Leasing
+150~CMF~1~0,0,City maintenance fee
+150~CMI~1~0,0,Continuous Mileage
+150~CMP~1~0,0,Camp Arbitrary
+150~CNS~1~0,0,Consolidation
+150~COA~1~0,0,Commission Amount
+150~COD~1~0,0,COD Amount
+150~COF~1~0,0,Ocean Freight
+150~COL~1~0,0,Fee for Collecting COD Charge
+150~COM~1~0,0,Combination
+150~CON~1~0,0,Congestion Surcharge
+150~COU~1~0,0,Consignee Unload
+150~CRA~1~0,0,Cost recovery/adjustment
+150~CRC~1~0,0,Core Charge
+150~CRF~1~0,0,Cost Recovery Factor
+150~CSA~1~0,0,Closing & Sealing
+150~CSC~1~0,0,Contract Service Charge
+150~CSE~1~0,0,Customs Entry
+150~CSF~1~0,0,Customs Formalities
+150~CSR~1~0,0,Conservation research fee
+150~CTA~1~0,0,Container/Trailer Allowance
+150~CTC~1~0,0,Container Service Charge USA/Canada
+150~CTF~1~0,0,Chassis Transfer
+150~CTG~1~0,0,Cartage Charge
+150~CTL~1~0,0,Controlled Atmosphere
+150~CUA~1~0,0,Currency Adjustment
+150~CUD~1~0,0,Currency Discount
+150~CUS~1~0,0,Customs Charge
+150~DAA~1~0,0,Deficit Freight
+150~DAB~1~0,0,Deposit
+150~DAC~1~0,0,Distributor Discount/Allowance
+150~DAD~1~0,0,Drum Up Charge
+150~DBD~1~0,0,Dockage - Boat Detention
+150~DCS~1~0,0,Disconnect charge
+150~DCT~1~0,0,City Delivery
+150~DDA~1~0,0,Defective Allowance
+150~DDC~1~0,0,Drum Cost
+150~DDD~1~0,0,Drum Deposit
+150~DDF~1~0,0,Dowel Pin Charge
+150~DEA~1~0,0,Demurrage - Average Agreement
+150~DEL~1~0,0,Delivery Charge
+150~DEM~1~0,0,Demurrage
+150~DEP~1~0,0,Detention of Power Units
+150~DER~1~0,0,Derrick Charge
+150~DES~1~0,0,Demurrage - Special
+150~DET~1~0,0,Detention of Trailers
+150~DFW~1~0,0,Delay Furnishing Destination Weights
+150~DIS~1~0,0,Distribution Service
+150~DIV~1~0,0,Diversion and Reconsignment
+150~DLH~1~0,0,Drayage/Line Haul
+150~DMC~1~0,0,Deadhead Mileage Charge
+150~DMD~1~0,0,Demand charge
+150~DOC~1~0,0,Documentation Charge
+150~DON~1~0,0,Deposit in Lieu of Order
+150~DRC~1~0,0,Drayage
+150~DRP~1~0,0,Deramping
+150~DRY~1~0,0,Dryer Charge
+150~DSC~1~0,0,Discount
+150~DSF~1~0,0,Detention - Special Type Flat Car
+150~DST~1~0,0,Container Destuffing
+150~DTL~1~0,0,Detention Loading
+150~DTU~1~0,0,Detention Unloading
+150~DWC~1~0,0,Driver's Wages
+150~EEA~1~0,0,Early Buy Allowance
+150~EEB~1~0,0,Early Payment Allowance
+150~EEC~1~0,0,Escalation
+150~EED~1~0,0,Exclusive Use
+150~EEF~1~0,0,Expediting Fee
+150~EEG~1~0,0,One Time Engineering Charge
+150~EEH~1~0,0,Engineering Charge
+150~EEP~1~0,0,Expediting Premium
+150~EEX~1~0,0,Export Shipping Charge
+150~EIC~1~0,0,Export/Import Charge
+150~EMS~1~0,0,Emergency Surcharge
+150~ENC~1~0,0,Energy charge
+150~ENS~1~0,0,Energy Surcharge (Fuel Adjustment Factor)
+150~EPC~1~0,0,Emergency Port Charge
+150~EPS~1~0,0,Environmental Protection Service
+150~ESC~1~0,0,Emergency Service
+150~EUC~1~0,0,European Port Charges
+150~EVC~1~0,0,Excessive Value Charge
+150~EXC~1~0,0,Exclusive Use Charge
+150~EXL~1~0,0,Extra Length
+150~EXM~1~0,0,Excess Mileage Charge
+150~EXP~1~0,0,Expedited Service Charge
+150~EXS~1~0,0,Excess Periods
+150~FAB~1~0,0,F.E.T. Federal Excise Tax
+150~FAC~1~0,0,F.E.T. (Percent)
+150~FAD~1~0,0,F.E.T. (Dollar Value)
+150~FAE~1~0,0,Fabrication Charge
+150~FAF~1~0,0,F.E.T. Tires
+150~FAG~1~0,0,Freight Equalization
+150~FAH~1~0,0,Freight Surcharge
+150~FCB~1~0,0,Freight Charges to Border
+150~FCD~1~0,0,Freight Charges to Destination
+150~FDL~1~0,0,Food and Lodging
+150~FFA~1~0,0,Freight Allowance
+150~FFC~1~0,0,Freight Charge
+150~FFI~1~0,0,Finance Charge
+150~FFL~1~0,0,Freshness/Leaker Allowance
+150~FFN~1~0,0,Special Finish Charge
+150~FFP~1~0,0,Freight Passthrough
+150~FFR~1~0,0,Flat Rate
+150~FRC~1~0,0,Franchise fee
+150~FUE~1~0,0,Fuel Charge
+150~FWA~1~0,0,Forwarding Agent Commission
+150~GAR~1~0,0,Garment District
+150~GDR~1~0,0,Grain Doors
+150~GGA~1~0,0,Glaze Allowance
+150~GGF~1~0,0,Gold Factor
+150~GRD~1~0,0,Groupage Discount
+150~HAN~1~0,0,Handling Charges on Distribution Freight Forwarded Beyond
+150~HAZ~1~0,0,Hazardous Cargo Charge
+150~HDG~1~0,0,Holding Charge
+150~HET~1~0,0,Heat in Transit Charges
+150~HHA~1~0,0,Hauling and Hoisting to be Direct Billed
+150~HHB~1~0,0,Handling
+150~HHG~1~0,0,Household Goods Pick-up or Delivery
+150~HIC~1~0,0,Highway Interchange
+150~HOC~1~0,0,Hook-up charge
+150~HOL~1~0,0,Sunday or Holiday  Pick-up or Delivery
+150~HOS~1~0,0,Hose Charge
+150~HOX~1~0,0,Hose Charge Special
+150~HUL~1~0,0,Heavy Lift
+150~HZS~1~0,0,Hazardous Storage
+150~IAA~1~0,0,Industry Price Allowance
+150~IAB~1~0,0,Income Freight (Manufacturing to Shipping Point)
+150~IAC~1~0,0,Inspection Fee
+150~IDL~1~0,0,Inside Delivery
+150~IIA~1~0,0,Invoice Adjustment
+150~IIP~1~0,0,Item Percentage
+150~IIU~1~0,0,Item-Unit
+150~INC~1~0,0,Insurance Surcharge
+150~INP~1~0,0,Interplant Charge
+150~INR~1~0,0,Interest on refund
+150~INS~1~0,0,Insulated Tank Charge
+150~IPC~1~0,0,Intra-plant Charge
+150~IPU~1~0,0,Inside Pick-up
+150~IRA~1~0,0,Irish Arbitraries
+150~ISD~1~0,0,Interest on security deposit
+150~ITC~1~0,0,Insulated Tank Charge
+150~LAA~1~0,0,Labor Charges
+150~LAB~1~0,0,Extra Labor (Helper Service)
+150~LAC~1~0,0,Lading Adjustment Charge
+150~LAD~1~0,0,Labor (Repair and Return Orders)
+150~LAE~1~0,0,License Fee
+150~LAY~1~0,0,Layover Charges
+150~LCG~1~0,0,Late Order Charge
+150~LCR~1~0,0,Labor Cost of Removal
+150~LDG~1~0,0,Loading
+150~LDS~1~0,0,Locomotive Delayed in Switching Service
+150~LFT~1~0,0,Lift Gate (Truck) or Forklift Service at Pick-up/Delivery
+150~LID~1~0,0,Licensing Fee
+150~LLC~1~0,0,Lot Charge
+150~LLD~1~0,0,Lead Factor
+150~LLF~1~0,0,Loan Fee
+150~LLS~1~0,0,Local Sales Tax (All Applicable Sales Taxes by Taxing Authorities  Below the State Level)
+150~LMC~1~0,0,Labor, Modify
+150~LNT~1~0,0,Labor, No Trouble Found
+150~LOA~1~0,0,Loading (Labor Charges)
+150~LOC~1~0,0,Local Delivery/Drayage
+150~LPC~1~0,0,Late payment charge
+150~LSC~1~0,0,Labor Service
+150~LSH~1~0,0,Lashing
+150~LTC~1~0,0,Labor, Test and Calibrate
+150~LUP~1~0,0,Locomotive Under Own Power
+150~LUS~1~0,0,Leaking underground storage tax (LUST)
+150~MAA~1~0,0,Metals Surcharge
+150~MAB~1~0,0,Mileage or Travel
+150~MAC~1~0,0,Mileage Fee (For Repair and Return)
+150~MAD~1~0,0,Minimum Order/Minimum Billing Charge
+150~MAE~1~0,0,Monthly Rental
+150~MAR~1~0,0,Marriage Rule
+150~MDM~1~0,0,Mount/Demount
+150~MES~1~0,0,Escort Service
+150~MIL~1~0,0,Special Mileage Movements
+150~MIN~1~0,0,Minimum Guarantee
+150~MMC~1~0,0,Minimum/Maximum Charge
+150~MMF~1~0,0,Mill Freight
+150~MMS~1~0,0,Market Development Funds
+150~MMT~1~0,0,Metropolitan Transit Tax
+150~MNC~1~0,0,Notify Consignee
+150~MRK~1~0,0,Marking or Tagging Charge
+150~MSC~1~0,0,Other Accessorial Service Charge
+150~MSG~1~0,0,Miscellaneous Charge
+150~MTR~1~0,0,Meter Charge
+150~MVT~1~0,0,Venting Instructions
+150~NAA~1~0,0,Non Generated Freight
+150~NAB~1~0,0,New Store Allowance
+150~NAL~1~0,0,Nozzle Charge
+150~NFY~1~0,0,Carrier Notification Charge
+150~NHB~1~0,0,N.H.D. Wharfage
+150~NYD~1~0,0,New York Delivery Charge
+150~NYP~1~0,0,New York Pick-up Charge
+150~OAA~1~0,0,O.T.O. Charge
+150~OAB~1~0,0,Overrun Charge
+150~OAC~1~0,0,Overtime Loading
+150~ONC~1~0,0,On Carriage
+150~OOC~1~0,0,Option Charge (Color Fabric Office Furniture)
+150~OOF~1~0,0,Order-Flat
+150~OPC~1~0,0,Optional Charge
+150~ORM~1~0,0,Out of Route Miles
+150~OSO~1~0,0,Optional Software Support for Operational Support Systems
+150~OSS~1~0,0,Optional Software Support for Switching Systems
+150~OUT~1~0,0,Out of Zone Pick-up or Delivery
+150~OVR~1~0,0,Over Dimension
+150~PAA~1~0,0,Percent of Product
+150~PAB~1~0,0,Postage Charge
+150~PAC~1~0,0,Pump Air Charge
+150~PAD~1~0,0,Premium Charge
+150~PAE~1~0,0,Premium Transportation
+150~PAF~1~0,0,Price Deviation
+150~PAG~1~0,0,Professional Fees
+150~PAH~1~0,0,Promotional Allowance
+150~PAI~1~0,0,Promotional Discount
+150~PAJ~1~0,0,Pump Charge
+150~PBA~1~0,0,Prior billing amount
+150~PBE~1~0,0,Permits Bonds Escort Attendant
+150~PBL~1~0,0,Pier Charges Other Than Wharfage
+150~PCT~1~0,0,City Pick-up
+150~PEN~1~0,0,Penalty Charge
+150~PER~1~0,0,Permit Charge
+150~PIR~1~0,0,Pier Pick-up and/or Delivery
+150~PMU~1~0,0,Normal Pump Charge
+150~PMX~1~0,0,Special Pump Charge
+150~POD~1~0,0,Proof of Delivery
+150~POS~1~0,0,Positioning at Origin
+150~PPC~1~0,0,Per Pound Charge
+150~PPH~1~0,0,Per Item Charge
+150~PPI~1~0,0,Pick/Up Allowance
+150~PPM~1~0,0,Precious Metal Content
+150~PPN~1~0,0,Pallet Charge
+150~PPO~1~0,0,Per Order Charge
+150~PPR~1~0,0,Performance Award
+150~PPS~1~0,0,Placement and/or Removal Charge
+150~PPT~1~0,0,Parish/County Sales Tax (only)
+150~PRB~1~0,0,Prior Balance
+150~PRC~1~0,0,Pre-carriage
+150~PRE~1~0,0,Pre-carriage Excess
+150~PRM~1~0,0,Premise Use
+150~PSC~1~0,0,Protective Service - Cold
+150~PSH~1~0,0,Protective Service - Heat
+150~PST~1~0,0,Postage
+150~PUC~1~0,0,Pick-up Charge
+150~PUD~1~0,0,Pick-up and Delivery
+150~PWH~1~0,0,Pier Charges - Wharfage
+150~PWT~1~0,0,Pallet Allowance
+150~QAA~1~0,0,Quantity Surcharge
+150~QQD~1~0,0,Quantity Discount
+150~RAA~1~0,0,Rebate
+150~RAB~1~0,0,Reclamation, Federal
+150~RAC~1~0,0,Reclamation, State
+150~RAD~1~0,0,Recovery Allowance
+150~RAE~1~0,0,Redistribution Allowance
+150~RAF~1~0,0,Rental Deduction
+150~RAG~1~0,0,Repack Charge
+150~RAH~1~0,0,Retainer
+150~RAI~1~0,0,Resellers Discount
+150~RAJ~1~0,0,Restocking Charge
+150~RAK~1~0,0,Royalties
+150~RAL~1~0,0,Roll Rebate
+150~RAM~1~0,0,Ramping
+150~RCA~1~0,0,No Return Credit Allowance
+150~RCB~1~0,0,Repair at buyers expense charge
+150~RCE~1~0,0,Repair at customer expense charge
+150~RCG~1~0,0,Repair at government expense charge
+150~RCL~1~0,0,Redelivery
+150~RCP~1~0,0,Recoopering (at Owner's or Shipper's Expense)
+150~RCS~1~0,0,Reconnect charge
+150~RDF~1~0,0,Research & development fee
+150~REF~1~0,0,Refrigeration
+150~REG~1~0,0,Regulatory tax
+150~REP~1~0,0,Residential Pick-up
+150~REQ~1~0,0,Request Via Canada
+150~RES~1~0,0,Residential Delivery
+150~RGA~1~0,0,Regain Allowance
+150~RGC~1~0,0,Regain Charge
+150~RLC~1~0,0,Rents & Leases
+150~RMD~1~0,0,Refrigeration/Mechanical Detention
+150~RPC~1~0,0,Reduction Prepalletized Cargo
+150~RRC~1~0,0,Reel Cable
+150~RRD~1~0,0,Reel Deposit
+150~RRF~1~0,0,Refurbishing Charge
+150~RRN~1~0,0,Rental Charge
+150~RRP~1~0,0,Repair Charge
+150~RRR~1~0,0,Regulatory required refund
+150~RTC~1~0,0,Rate Code
+150~SAA~1~0,0,Subject to Cooperative Advertising Allowance
+150~SAB~1~0,0,Shipping and Handling
+150~SAC~1~0,0,Service Charge (with Cash Discount)
+150~SAD~1~0,0,Scrap Allowance
+150~SAE~1~0,0,Shrink-Wrap Charge
+150~SAF~1~0,0,Special Credit
+150~SAG~1~0,0,State Motor Fuel
+150~SAH~1~0,0,Stenciling Charge
+150~SAI~1~0,0,Super Fund Excise Tax
+150~SAJ~1~0,0,Surcharge (Dollar Value)
+150~SAK~1~0,0,Surcharge (Percentage)
+150~SAM~1~0,0,Stopcharge
+150~SAN~1~0,0,State Sales Charge
+150~SAT~1~0,0,Saturday Pick-up or Delivery Charge
+150~SBC~1~0,0,Standby Charge
+150~SCC~1~0,0,Special Seal Charge
+150~SCG~1~0,0,Small Order Charge
+150~SCL~1~0,0,Scale Charge
+150~SCU~1~0,0,Scale Charge Unloading
+150~SDC~1~0,0,Special Detention Charge
+150~SDL~1~0,0,Split Delivery
+150~SEC~1~0,0,Special Equipment Charge
+150~SEG~1~0,0,Segregating (Sorting)
+150~SEL~1~0,0,Self Unloader
+150~SER~1~0,0,Service Charge
+150~SFT~1~0,0,Special Train Movement
+150~SGL~1~0,0,Single Pick-up
+150~SHL~1~0,0,Shipper Load
+150~SLC~1~0,0,Street lamps charge
+150~SOC~1~0,0,Stop-off Charge
+150~SPA~1~0,0,Special Allowance
+150~SPC~1~0,0,Special Permits
+150~SPD~1~0,0,Spreader Charge
+150~SPL~1~0,0,Spool Charge
+150~SPS~1~0,0,Special Freight Supplements
+150~SPT~1~0,0,Spotting of Trailer
+150~SPU~1~0,0,Split Pick-up
+150~SRG~1~0,0,Storage
+150~SSA~1~0,0,Salvage
+150~SSB~1~0,0,Super Bag Charge
+150~SSC~1~0,0,Stripping, Sorting, and Consolidation
+150~SSF~1~0,0,Single Shipment Fee
+150~SSL~1~0,0,Select Charge
+150~SSO~1~0,0,Pole, Wood-service Charge
+150~SSP~1~0,0,Shipside Pickup
+150~SSS~1~0,0,Software Support Service
+150~SST~1~0,0,Sales Tax (State and Local)
+150~SSX~1~0,0,Sales and Use Tax
+150~STF~1~0,0,Container Stuffing
+150~STM~1~0,0,Steaming Charge
+150~STP~1~0,0,Stopping in Transit
+150~STR~1~0,0,Storage in Transit
+150~STW~1~0,0,Special tooling rework charge
+150~SUC~1~0,0,Special Use
+150~SUF~1~0,0,Sufferance Warehouse Charge (Export or Import)
+150~SUP~1~0,0,Supervisor Charge
+150~SUR~1~0,0,Surcharge
+150~SVA~1~0,0,Single Invoice Allowance
+150~SWC~1~0,0,Switching Charge
+150~TAA~1~0,0,Telephone Charge
+150~TAB~1~0,0,Tank Rental
+150~TAC~1~0,0,Temporary Allowance
+150~TAD~1~0,0,Tax on Transportation
+150~TAE~1~0,0,Temporary Voluntary Allowance
+150~TAF~1~0,0,Terminal Differential
+150~TAG~1~0,0,Testing Charge
+150~TAH~1~0,0,Tool Charge
+150~TAI~1~0,0,Testing Allowance
+150~TAJ~1~0,0,Trade In
+150~TAK~1~0,0,Transportation and Setup
+150~TAL~1~0,0,Truckload Discount
+150~TAX~1~0,0,Governmental Tax
+150~TAY~1~0,0,Tax Charge
+150~TCM~1~0,0,Transportation Charge (Minimum Rate)
+150~TDT~1~0,0,Truck Detention
+150~TER~1~0,0,Terminal Charge
+150~TLC~1~0,0,Trimming Charge
+150~TOC~1~0,0,TOFC Service Charge
+150~TRC~1~0,0,Trailer Rental Charge
+150~TRF~1~0,0,Transfer Charge
+150~TRN~1~0,0,Transit
+150~TRP~1~0,0,Process in Transit Privilege
+150~TRU~1~0,0,Thruway Charge
+150~TSC~1~0,0,Testing Services Charge
+150~TST~1~0,0,Track Storage
+150~TTA~1~0,0,Tank Car Allowance
+150~TTB~1~0,0,Transportation-Direct Billing
+150~TTD~1~0,0,Trade Discount
+150~TTL~1~0,0,Local Tax
+150~TTM~1~0,0,Tax on Miscellaneous Charges
+150~TTP~1~0,0,Third Party Allowance
+150~TTR~1~0,0,Throughput Allowance
+150~TTS~1~0,0,State Tax
+150~TTT~1~0,0,Transportation - Third Party Billing
+150~TTV~1~0,0,Transportation - Vendor Provided
+150~TUR~1~0,0,Turning Charge
+150~TWO~1~0,0,Two Door Pick Up
+150~UND~1~0,0,Unloading
+150~UNL~1~0,0,Unloading (Labor Charges)
+150~USF~1~0,0,Use - Special Type Flat Car
+150~USV~1~0,0,U.S. Vehicles
+150~USW~1~0,0,Unabsorbed Switching
+150~UTP~1~0,0,Use charge tooling/personnel
+150~UUC~1~0,0,Up Charge
+150~UUM~1~0,0,Unsalable Merchandise Allowance
+150~UUT~1~0,0,Use Tax
+150~VAA~1~0,0,Vendor Freight
+150~VAB~1~0,0,Volume Discount
+150~VCR~1~0,0,Voluntary contribution charge
+150~VOR~1~0,0,Vehicle Ordered but Not Used
+150~VVL~1~0,0,Vehicle Load Allowance
+150~VVP~1~0,0,Vehicle Prep Charge (courtesy delivery)
+150~WAR~1~0,0,War Risk Surcharge
+150~WEA~1~0,0,Weather Protection
+150~WFH~1~0,0,Wharfage & Handling
+150~WRC~1~0,0,Load Weighing Charge
+150~WRE~1~0,0,Empty Weighing Charge
+150~WSA~1~0,0,Warehouse Allowance
+150~WTG~1~0,0,Waiting Time
+150~WWC~1~0,0,Wharfage Charge
+150~ZFF~1~0,0,First Flight Out
+152,0,Special Handling Code
+152,1,Code specifying special transportation handling instructions.
+152~A1M~1~0,0,Aggregate 1000
+152~A3M~1~0,0,Aggregate 3000
+152~A5M~1~0,0,Aggregate 5000
+152~AGG~1~0,0,Aggregate Tender Discount
+152~AK~1~0,0,Attachment - Auto Keys
+152~AMM~1~0,0,A.M. Delivery Requirement
+152~ASY~1~0,0,Assembly Service Requested
+152~AT~1~0,0,Attachment to Move with Car
+152~AV~1~0,0,Annual Volume
+152~AW~1~0,0,Attachments - Advance Only Waybill
+152~BA~1~0,0,Clearinghouse Balance
+152~BCP~1~0,0,Bypass Consolidation Point
+152~BL~1~0,0,Blowable Load
+152~BN~1~0,0,If Bad Ordered Notify Shipper
+152~BW~1~0,0,Bill Shipper for Weigh Charge
+152~CAR~1~0,0,ROEE Car or Pick-up Truck
+152~CCH~1~0,0,Certification
+152~CD~1~0,0,Attachment - Customer's Document
+152~CE~1~0,0,Cleared for Export
+152~CI~1~0,0,Customs Inspection
+152~CLS~1~0,0,Class Rates Applied
+152~CMD~1~0,0,Comb. Rates over Detroit
+152~CM~1~0,0,Attachment - Cotton Manifest
+152~CNL~1~0,0,Consolidation and Line Haul
+152~CNS~1~0,0,Consolidation
+152~CON~1~0,0,Contract Rates Apply
+152~COU~1~0,0,Consignee Unload
+152~CO~1~0,0,No Marshalling Required for Hazardous Matls
+152~CR~1~0,0,Circus Ramp Only (TOFC Van)
+152~CW~1~0,0,Bill Consignee for Weigh Charges
+152~CY~1~0,0,Endorsed for Recycling
+152~DA~1~0,0,Dangerous
+152~DIS~1~0,0,Distribution Service Requested
+152~DN~1~0,0,Shipper Authorization Required for Diversion or Consignment
+152~DS~1~0,0,Delivery on Order of Shipper
+152~DT~1~0,0,Dead in Tow
+152~DU~1~0,0,Do Not Uncouple
+152~DW~1~0,0,Destination Weights Apply
+152~END~1~0,0,Endorsement
+152~ER~1~0,0,Return Empty Via Reverse Route
+152~EW~1~0,0,Excessive Weight
+152~EXC~1~0,0,Exclusive Use of Vehicle
+152~EXP~1~0,0,Expedited Rates Applied
+152~EXU~1~0,0,Exclusive Use of Vehicle Damaged
+152~EX~1~0,0,Explosive Flammable Gas
+152~EZE~1~0,0,Roadway Easy Rates Applied
+152~FG~1~0,0,Flammable Gas
+152~FL~1~0,0,Flammable
+152~FP~1~0,0,Flammable Poison Gas
+152~FR~1~0,0,Fragile - Handle with Care
+152~FS~1~0,0,Nontransit Flat Shipment
+152~GI~1~0,0,Grain Inspection
+152~HAN~1~0,0,Handling
+152~HE~1~0,0,Head End Car
+152~HM~1~0,0,Endorsed as Hazardous Material
+152~HO~1~0,0,Hold for Orders
+152~HP~1~0,0,Heated Prior to Loading
+152~HQT~1~0,0,High Cube Trailer Rates
+152~HR~1~0,0,Home for Repair
+152~HT~1~0,0,Heat
+152~HV~1~0,0,High Value Load
+152~HW~1~0,0,High Wide Load
+152~IB~1~0,0,In-bond
+152~IC~1~0,0,Ice
+152~IP~1~0,0,Import Shipment
+152~IR~1~0,0,Rail Incentive Rate
+152~IS~1~0,0,Surveillance Service
+152~JLX~1~0,0,Joint Line Exception
+152~JS~1~0,0,Junction Settlement Account
+152~LBT~1~0,0,Low Boy Trailer/Flat Bed
+152~LC~1~0,0,Car Trip Leased to Consignee
+152~LD~1~0,0,Loading Devices
+152~LF~1~0,0,Loaded to Full Visible Capacity
+152~LS~1~0,0,Local Service Only
+152~LT~1~0,0,Less Than Full Carload
+152~MC~1~0,0,Person in Charge of Car
+152~MES~1~0,0,Escort
+152~MEX~1~0,0,Exclusive Use
+152~MF~1~0,0,Cleared for Border Crossing
+152~MIN~1~0,0,Insulated
+152~MOT~1~0,0,Other
+152~MP~1~0,0,Multiple Pickup
+152~MRF~1~0,0,Refrigerated
+152~MR~1~0,0,Mechanical Refrigeration
+152~NC~1~0,0,Notify Consignee Before Delivery
+152~ND~1~0,0,Do Not Divert
+152~NE~1~0,0,No Special Entrainment Required
+152~NH~1~0,0,Do Not Hump
+152~NP~1~0,0,Do Not Pool
+152~NS~1~0,0,Notify Shipper Before Reconsignment
+152~NT~1~0,0,Do Not Transfer Contents
+152~NW~1~0,0,In Case of Fire Do Not Use Water
+152~NX~1~0,0,Not for Export
+152~OBL~1~0,0,Block Stowage
+152~OCA~1~0,0,Cargo Aboard
+152~OCS~1~0,0,Completing Shipment
+152~OCV~1~0,0,Delivery Verification Not Required
+152~OEH~1~0,0,Exempt Commodity
+152~OFU~1~0,0,Fumigation
+152~OHC~1~0,0,Harmless
+152~ONC~1~0,0,Use No Hooks
+152~ONS~1~0,0,Not Restricted Cargo
+152~OOB~1~0,0,Cargo on Board Certification Required
+152~OOD~1~0,0,On Deck Stowage
+152~OPR~1~0,0,Perishable
+152~OPT~1~0,0,Partial Shipment
+152~OSB~1~0,0,Stow Below Deck
+152~OST~1~0,0,Stow Between Decks
+152~OS~1~0,0,Commodity Loaded Less Than or Equal To the Car Ordered
+152~OTC~1~0,0,Temperature Control
+152~OTD~1~0,0,Time of Delivery and Signature Required
+152~OTS~1~0,0,Total Shipment
+152~OVR~1~0,0,Overflow
+152~OWR~1~0,0,One Way Rates Applied
+152~PB~1~0,0,Perishable in Box Car
+152~PG~1~0,0,Poisonous Gas
+152~PHR~1~0,0,Per Hour Rates Applied
+152~PI~1~0,0,Iced Prior to Loading
+152~PMM~1~0,0,P.M. Delivery Requirement
+152~PMR~1~0,0,Per Mile Rates Apply
+152~PS~1~0,0,Protective Service
+152~PUP~1~0,0,PUP Trailer Rates Apply
+152~PW~1~0,0,Attachment - Prepaid Waybill
+152~RB~1~0,0,Render Bill for Charges
+152~RDR~1~0,0,Roadrailer Service
+152~RM~1~0,0,Radioactive Material
+152~RO~1~0,0,Rush Order
+152~RRR~1~0,0,Round Trip Service
+152~RR~1~0,0,Rear Rider
+152~RS~1~0,0,Inspect Hourly if Car Stopped
+152~RT~1~0,0,Record for Transit
+152~SCL~1~0,0,Shipper Load and Consignee Unload
+152~SC~1~0,0,Shove to Rest and Cover
+152~SD~1~0,0,Subject to Special Detention Rules/Charges
+152~SEC~1~0,0,Special Equipment Charge
+152~SER~1~0,0,Service Charge Applies
+152~SE~1~0,0,Attachment - Shipper's Export Document
+152~SGL~1~0,0,Single Shipment
+152~SHL~1~0,0,Shipper Load
+152~SH~1~0,0,Shiftable Load
+152~SI~1~0,0,Ship to Cross Dock or Pool
+152~SK~1~0,0,Requires Shelf Couplers
+152~SLC~1~0,0,Shipper Load and Count
+152~SM~1~0,0,Attachment - Shipper's Manifest
+152~SP~1~0,0,Attachment - Shipper's Packing Instructions
+152~SR~1~0,0,Speed Restricted
+152~ST~1~0,0,Stack Train
+152~TA~1~0,0,Cars Temporarily Articulated
+152~TLS~1~0,0,Tendered as Truckload (Truckload Service Requested)
+152~TN~1~0,0,Turn Car
+152~TOF~1~0,0,Trailer on Flat Car
+152~TRK~1~0,0,Truck Rates Applicable
+152~TS~1~0,0,Transit Shipment
+152~TT~1~0,0,Team Track Delivery
+152~TV~1~0,0,Time Volume Rates Only
+152~UN~1~0,0,Unload as Placarded
+152~UP~1~0,0,Unprotected Perishable
+152~US~1~0,0,Shipper Certifies Gross Weight under 240,000 pounds
+152~VAN~1~0,0,ROEE Van Type Truck
+152~VT~1~0,0,Ventilation Instructions
+152~WD~1~0,0,Waived Inspection - Set Direct
+152~WE~1~0,0,Weigh Empty
+152~WH~1~0,0,Attachments - High Wide Notice
+152~WI~1~0,0,Waive Inspection
+152~WM~1~0,0,Manifest Must Accompany Waybill
+152~WO~1~0,0,Weigh to Check for Overload
+152~WW~1~0,0,Waste Water
+152~XP~1~0,0,Export
+156,0,State or Province Code
+156,1,Code (Standard State/Province) defined by appropriate governmental agencies.
+166,0,Address Information
+166,1,Free-form field for address information.
+183,0,Volume
+183,1,Value of volumetric measure. Also see: Volume Unit Qualifier (184), Unit of Measurement Code (355.)
+187,0,Weight Qualifier
+187,1,Code defining the type of weight.
+187~A1~1~0,0,Dimensional Weight
+187~A2~1~0,0,Reweighed By Carrier
+187~A3~1~0,0,Shippers Weight
+187~A~1~0,0,Consolidated Weight
+187~B~1~0,0,Billed Weight
+187~C~1~0,0,Actual Net Repeated for Combination
+187~D~1~0,0,Destination Weight Agreement
+187~E~1~0,0,Estimated Net Weight
+187~F~1~0,0,Deficit Weight
+187~G~1~0,0,Gross Weight
+187~H~1~0,0,Weight per 100 Feet
+187~I~1~0,0,Weight per 1000 Feet
+187~J~1~0,0,Light Weight
+187~K~1~0,0,Clean Out
+187~L~1~0,0,Legal Weight
+187~M~1~0,0,Minimum Weight (for rate)
+187~N~1~0,0,Actual Net Weight
+187~O~1~0,0,Excess Weight Over Maximum
+187~P~1~0,0,Weight per 100 Units
+187~Q~1~0,0,Weight per 1000 Units
+187~R~1~0,0,Per Unit Dunnage
+187~S~1~0,0,State Weight
+187~T~1~0,0,Tare Weight
+187~U~1~0,0,Weight per Unit
+187~V~1~0,0,Non Transit Weight (On Transit Bills Only)
+187~W~1~0,0,Transit Weight (On Transit Bills Only)
+187~X~1~0,0,Maximum Weight (for Rate)
+187~Y~1~0,0,Theoretical Weight
+187~Z~1~0,0,Mutually Defined
+189,0,Width
+189,1,Shortest measurement of the two horizontal dimensions measured with the object in the upright position. Also see: Measurement Unit Qualifier (90), Unit of Measurement Code (355).
+19,0,City Name
+19,1,Free-form text for city name.
+206,0,Equipment Initial
+206,1,Prefix or alpha part of an equipment unit's identifying number.
+207,0,Equipment Number
+207,1,Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred).
+208,0,Hazardous Material Code Qualifier
+208,1,Code which qualifies the Hazardous Material Class Code (209).
+208~4~1~0,0,46 Level DOT Code
+208~6~1~0,0,Airline Tariff 6D
+208~9~1~0,0,49 Series of the Standard Transportation Commodity Code (STCC)
+208~A~1~0,0,IATA/ICAO Code
+208~D~1~0,0,Hazardous Materials ID, DOT
+208~E~1~0,0,Endorsement
+208~I~1~0,0,IMO Code (Intergovernmental Maritime Consultative Organization)
+208~R~1~0,0,BOE 6000-A (Rail)
+208~U~1~0,0,United Nations
+209,0,Hazardous Material Class Code
+209,1,Code specifying the kind of hazard for a material. (Code source specified in code set for DE 208)
+212,0,Unit Price
+212,1,Price per unit of product, service, commodity, etc.
+22,0,Commodity Code
+22,1,Code describing a commodity or group of commodities. See Data Element 23.
+23,0,Commodity Code Qualifier
+23,1,Code identifying the commodity coding system used for Commodity Code.
+234,0,Product/Service ID
+234,1,Identifying number for a product or service.
+235,0,Product/Service ID Qualifier
+235,1,Code identifying the type/source of the descriptive number used in Product/Service ID (234).
+235~AB~1~0,0,Assembly
+235~AC~1~0,0,Aggregation Code (Used to Consolidate Part Families)
+235~AI~1~0,0,Alternate ISBN
+235~AR~1~0,0,ARINC Part Number
+235~B1~1~0,0,Volume Set
+235~B2~1~0,0,Library of Congress Code
+235~B3~1~0,0,Edition Code
+235~B4~1~0,0,Binding Code
+235~B5~1~0,0,Title Code
+235~B6~1~0,0,Author Code
+235~B7~1~0,0,Publisher Code
+235~BC~1~0,0,Supplier Brand Code
+235~BE~1~0,0,Buyer's Engineering Change Level Number
+235~BL~1~0,0,Brand/Label
+235~BN~1~0,0,Bar-Coded Serial Number
+235~BO~1~0,0,Buyers Color
+235~BP~1~0,0,Buyer's Part Number
+235~CA~1~0,0,Case
+235~CB~1~0,0,Buyer's Catalog Number
+235~CD~1~0,0,Motor Vehicle-Line Designator
+235~CE~1~0,0,Class of Contract Code
+235~CG~1~0,0,Commodity Grouping
+235~CI~1~0,0,Common Language Equipment Identifier (CLEI)
+235~CL~1~0,0,Color
+235~CM~1~0,0,Two-digit Color Code (NRMA)
+235~CN~1~0,0,Commodity Name
+235~CP~1~0,0,Carry-over Part Number
+235~CQ~1~0,0,Equipment Code per COPAS standard
+235~CR~1~0,0,Contract Number
+235~CS~1~0,0,Service code per COPAS standard
+235~CT~1~0,0,Continuation (ID Number Spans Multiple Product ID Data Elements)
+235~CU~1~0,0,Cut Number
+235~DC~1~0,0,Distribution Codes Institute (DCI)
+235~DE~1~0,0,Design Number
+235~DG~1~0,0,Discount Grouping
+235~DL~1~0,0,Dye Lot Number
+235~DN~1~0,0,Die Number
+235~DR~1~0,0,Drawing Revision Number
+235~EC~1~0,0,Engineering Change Level
+235~EN~1~0,0,European Article Number (EAN)
+235~EQ~1~0,0,Equipment Type
+235~FI~1~0,0,Finish Number
+235~FL~1~0,0,Finish Lot Number
+235~FP~1~0,0,Fabric Pieces Per Roll
+235~FS~1~0,0,Federal Stock Classification and/or National Stock Number
+235~GC~1~0,0,Grade Code
+235~GD~1~0,0,Grain Direction
+235~GN~1~0,0,Grade Name
+235~GR~1~0,0,Gear Ratio
+235~GS~1~0,0,General Specification Number
+235~HI~1~0,0,HIBC (Health Care Industry Bar Code)
+235~HN~1~0,0,Heat Number
+235~IB~1~0,0,International Standard Book Number (ISBN)
+235~IM~1~0,0,Imprint (Trademark Code of Subsidiary)
+235~IN~1~0,0,Buyer's Item Number
+235~IS~1~0,0,International Standard Serial Number (ISSN)
+235~IT~1~0,0,Buyer's Style Number
+235~IZ~1~0,0,Buyer's Size Code
+235~JS~1~0,0,Job Sequence Number
+235~LT~1~0,0,Lot Number
+235~LU~1~0,0,Lot Pricing Unit Number
+235~MA~1~0,0,Machine Number
+235~MF~1~0,0,Manufacturer
+235~MG~1~0,0,Manufacturer's Part Number
+235~MN~1~0,0,Model Number
+235~MS~1~0,0,Military Specification (MILSPEC) Number
+235~MT~1~0,0,Major Product/Material/Machine Type
+235~NC~1~0,0,National Corporate Cash Management Association (NCCMA)
+235~ND~1~0,0,National Drug Code (NDC)
+235~NH~1~0,0,National Health Related Item Code
+235~OE~1~0,0,Original Equipment Number
+235~OH~1~0,0,Opposite-Hand Part Number
+235~ON~1~0,0,Customer Order Number
+235~OP~1~0,0,Obsolete Part Number
+235~PA~1~0,0,Pattern Number
+235~PC~1~0,0,Prime Contractor Part Number
+235~PD~1~0,0,Part Number Description
+235~PE~1~0,0,Pieces and Roll
+235~PG~1~0,0,Packaging Specification Number
+235~PI~1~0,0,Purchaser's Item Code
+235~PJ~1~0,0,Product Date Code (A code indicating the period during which a product was manufactured.)
+235~PK~1~0,0,Packaging Drawing
+235~PL~1~0,0,Purchaser's Order Line Number
+235~PM~1~0,0,Number of Positions on Machine
+235~PN~1~0,0,Company Part Number
+235~PO~1~0,0,Purchase Order Number
+235~PR~1~0,0,Process Number
+235~PS~1~0,0,Position
+235~PT~1~0,0,Print or Drawing
+235~PW~1~0,0,Part Drawing
+235~RC~1~0,0,Returnable Container No.
+235~RD~1~0,0,Reel Number
+235~RK~1~0,0,Rack Number
+235~RN~1~0,0,Release Number
+235~RO~1~0,0,Roll Number
+235~RP~1~0,0,Replaced Part Number
+235~RR~1~0,0,Replacement Product No.
+235~RS~1~0,0,Set Number
+235~RU~1~0,0,Run Number
+235~RY~1~0,0,Record Keeping or Model Year
+235~SE~1~0,0,Section Print Number
+235~SF~1~0,0,Surface Finish
+235~SK~1~0,0,Stock Keeping Unit (SKU)
+235~SM~1~0,0,Three-digit Size Code (NRMA)
+235~SN~1~0,0,Serial Number
+235~SQ~1~0,0,Roll Sequence Number
+235~SR~1~0,0,Substitute Product Number
+235~ST~1~0,0,Style Number
+235~SU~1~0,0,Side Up/Side Down
+235~SV~1~0,0,Service Rendered
+235~SZ~1~0,0,Vendor Alphanumeric Size Code (NRMA)
+235~TM~1~0,0,Telephone Industry Manufacturer Code
+235~UC~1~0,0,UPC Suffix (Defines Packing Variations)
+235~UI~1~0,0,UPC Item Code
+235~UP~1~0,0,Universal Product Code (UPC) (Full 12 Digits)
+235~US~1~0,0,Uniform Stock Symbol System Code Number
+235~UV~1~0,0,Universal Vendor Marking (UVM)
+235~VA~1~0,0,Vendor's Style Number
+235~VB~1~0,0,Vendor's Engineering Change Level Number
+235~VC~1~0,0,Vendor's (Seller's) Catalog Number
+235~VE~1~0,0,Vendor Color
+235~VN~1~0,0,Vendor's (Seller's) Item Number
+235~VO~1~0,0,Vendor's Order Number
+235~VP~1~0,0,Vendor's (Seller's) Part Number
+235~VS~1~0,0,Vendor's Supplemental Item Number
+235~VU~1~0,0,Vendor's Basic Unit Number
+235~VV~1~0,0,Motor Vehicle ID Number
+235~VX~1~0,0,Vendor's Specification Number
+235~ZZ~1~0,0,Mutually Defined
+236,0,Price Qualifier
+236,1,Code identifying pricing specification.
+236~ALT~1~0,0,Alternate Price
+236~CAT~1~0,0,Catalog Price
+236~CDV~1~0,0,Current Domestic Value
+236~CON~1~0,0,Contract Price
+236~CUP~1~0,0,Confirmed Unit Price
+236~CUS~1~0,0,Declared Customs Unit Value
+236~DAP~1~0,0,Dealer Adjusted Price
+236~DIS~1~0,0,Distributor's Price
+236~DPR~1~0,0,Discount Price
+236~DSC~1~0,0,Discount Amount Allowed
+236~EUP~1~0,0,Expected Unit Price
+236~FET~1~0,0,Federal Excise Tax
+236~ICL~1~0,0,Unit Price Through Quantity
+236~INV~1~0,0,Invoice Billing Price
+236~MAX~1~0,0,Maximum Order Quantity Price
+236~MIN~1~0,0,Minimum Order Quantity Price
+236~MNR~1~0,0,Minimum Release Quantity Price
+236~MSR~1~0,0,Manufacturer's Suggested Retail
+236~MXR~1~0,0,Maximum Release Quantity Price
+236~PAQ~1~0,0,Price Break Quantity(s)
+236~PBQ~1~0,0,Unit Price Beginning Quantity
+236~PIE~1~0,0,Price in Effect at Time of Shipment
+236~PPD~1~0,0,Prepaid Freight Charges
+236~PRO~1~0,0,Producer's Price
+236~PRP~1~0,0,Promotional price
+236~QTE~1~0,0,Quote Price
+236~RES~1~0,0,Resale
+236~SHD~1~0,0,Ship and Debit
+236~SUM~1~0,0,Sum of Line Items
+236~TOT~1~0,0,Total Invoice Amount Due
+236~TRF~1~0,0,Transfer
+236~UCP~1~0,0,Unit cost price
+23~A~1~0,0,TSUSA Number
+23~B~1~0,0,Schedule B number
+23~C~1~0,0,Canadian Freight Classification
+23~E~1~0,0,Coordinated Motor Freight Classification
+23~F~1~0,0,Federal Supply Classification and National Stock Number
+23~G~1~0,0,Canadian Wheat Board, Grain Code for Terminal Elevator Accounting
+23~H~1~0,0,Brussels Nomenclature
+23~I~1~0,0,Milstamp AITC or Water Commodity Code
+23~L~1~0,0,Last Contained Contents STCC
+23~N~1~0,0,National Motor Freight Classification (NMFC)
+23~S~1~0,0,Standard International Trade Classification (SITC)
+23~T~1~0,0,Standard Transportation Commodity Code (STCC)
+23~U~1~0,0,Uniform Freight Classification (UFC)
+23~Z~1~0,0,Mutually defined.
+248,0,Allowance or Charge Indicator
+248,1,Code which indicates an allowance or charge for the service specified.
+248~A~1~0,0,Allowance
+248~C~1~0,0,Charge
+248~N~1~0,0,No Allowance or Charge
+26,0,Country Code
+26,1,Code identifying the country.
+280,0,Exchange Rate
+280,1,Value to be used as a multiplier conversion factor to convert monetary value from one currency to another.
+3,0,Free Form Message
+3,1,Free-form text.
+309,0,Location Qualifier
+309,1,Code identifying type of Location Identifier (310) used.
+309~AC~1~0,0,City and State
+309~CC~1~0,0,Country
+309~CI~1~0,0,City
+309~CL~1~0,0,National Rate Basis (NRB)
+309~CO~1~0,0,County/Parish and State
+309~CS~1~0,0,Canadian SPLC
+309~CY~1~0,0,County/Parish
+309~DC~1~0,0,Distribution Center Number
+309~DE~1~0,0,Destination (Shipping)
+309~D~1~0,0,Census Schedule D
+309~FA~1~0,0,Factory
+309~FE~1~0,0,Freight Equalization Point
+309~FI~1~0,0,FIPS 55 (Named Populated Places)
+309~FV~1~0,0,Free Alongside Vessel (F.O.B. Point)
+309~IM~1~0,0,Milstamp
+309~IP~1~0,0,Postal
+309~MI~1~0,0,Mill
+309~NS~1~0,0,City/State from Points
+309~OA~1~0,0,Origin (After Loading on Equipment)
+309~OL~1~0,0,Open and Prepay Station List Code(SCAC & Number)
+309~OP~1~0,0,Overseas Point Location Code
+309~OR~1~0,0,Origin (Shipping Point)
+309~PL~1~0,0,Plant
+309~PP~1~0,0,Pool Point
+309~RS~1~0,0,Standard Carrier Alpha Code
+309~RT~1~0,0,Route Administrative Message To
+309~SC~1~0,0,City/State and Points Within
+309~SL~1~0,0,U.S. SPLC
+309~SN~1~0,0,Store Number
+309~SP~1~0,0,State/Province
+309~TC~1~0,0,Transcontinental Freight Bureau
+309~TL~1~0,0,Terminal Cargo Location
+309~TN~1~0,0,Township
+309~TX~1~0,0,Taxing District
+309~WH~1~0,0,Warehouse
+309~W~1~0,0,Worldwide Geographic Location Code
+309~ZZ~1~0,0,Mutually Defined
+310,0,Location Identifier
+310,1,Code which identifies a specific geographic location.
+324,0,Purchase Order Number
+324,1,Identifying number for Purchase Order assigned by the orderer/purchaser.
+325,0,Tax Identification Number
+325,1,Number assigned to a purchaser (buyer, orderer) by a taxing jurisdiction (state, county, etc.), often called a tax exemption number or certificate number.
+326,0,Request Reference Number
+326,1,Reference number or RFQ number to use to identify a particular transaction set and query (additional reference number or description which can be used with contract number).
+328,0,Release Number
+328,1,Number identifying a release against a Purchase Order previously placed by the parties involved in the transaction.
+329,0,Transaction Set Control Number
+329,1,Identifying control number assigned by the originator for a Transaction Set. Also see: Data Interchange Control Number (28.)
+331,0,Allowance or Charge Method of Handling Code
+331,1,Code indicating method of handling for an allowance or charge.
+331~01~1~0,0,Bill Back
+331~02~1~0,0,Off Invoice
+331~03~1~0,0,Vendor Check to Customer
+331~04~1~0,0,Credit Customer Account
+331~05~1~0,0,Charge to be Paid by Vendor
+331~06~1~0,0,Charge to be Paid by Customer
+331~07~1~0,0,Optional
+331~08~1~0,0,Off Gross Quantity Invoiced
+331~ZZ~1~0,0,Mutually Defined
+332,0,Allowance or Charge Percent
+332,1,Allowance or charge expressed as a percent.
+333,0,Terms Basis Date Code
+333,1,Code identifying the beginning of the terms period.
+333~1~1~0,0,Ship Date
+333~2~1~0,0,Delivery Date
+333~3~1~0,0,Invoice Date
+333~4~1~0,0,Specified Date
+333~5~1~0,0,Invoice Receipt Date
+333~6~1~0,0,Anticipated Delivery Date
+333~7~1~0,0,Effective Date
+333~8~1~0,0,Invoice Transmission Date
+333~ZZ~1~0,0,Mutually Defined
+334,0,Transportation Terms Qualifier Code
+334,1,Code identifying the source of the transportation terms.
+334~01~1~0,0,Incoterms
+334~02~1~0,0,Trade Terms Code (See Data Element 335)
+334~ZZ~1~0,0,Mutually Defined
+335,0,Transportation Terms Code
+335,1,Code identifying the trade terms which apply to the shipment transportation responsibility. Six digit codes represent INCOTERMS.
+335~CAF~1~0,0,Cost and Freight
+335~CIF~1~0,0,Cost, Insurance, and Freight
+335~DAF~1~0,0,Delivered at Frontier
+335~DDP~1~0,0,Delivered Duty Paid
+335~EXQ~1~0,0,Ex Quay
+335~EXS~1~0,0,Ex Ship
+335~EXW~1~0,0,Ex Works
+335~FAS~1~0,0,Free Alongside Ship
+335~FCA~1~0,0,Free Carrier
+335~FCI~1~0,0,Freight Carriage and Insurance Paid To
+335~FCP~1~0,0,Freight Carriage Paid To
+335~FOB~1~0,0,Free on Board
+335~FOR~1~0,0,Free on Rail
+335~FOT~1~0,0,Free on Truck
+335~ZZZ~1~0,0,Mutually Defined
+336,0,Terms Type Code
+336,1,Code identifying type of payment terms.
+336~01~1~0,0,Basic
+336~02~1~0,0,EOM
+336~03~1~0,0,Fixed Date
+336~04~1~0,0,Deferred or Installment
+336~05~1~0,0,Discount Not Applicable
+336~06~1~0,0,Mixed
+336~07~1~0,0,Extended
+336~08~1~0,0,Basic- Discount Offered
+336~09~1~0,0,Proximo
+336~10~1~0,0,Instant
+336~11~1~0,0,Elective
+336~12~1~0,0,10 Days After End of Month (10 EOM)
+336~13~1~0,0,Seller to advise buyer
+336~14~1~0,0,Previously agreed upon
+336~ZZ~1~0,0,Mutually Defined
+337,0,Time
+337,1,Time expressed in 24-hour clock time (HHMM) (Time range: 0000 though 2359).
+338,0,Terms Discount Percent
+338,1,Terms discount percentage, expressed as a percent, available to the purchaser if an invoice is paid on or before the Terms Discount Due Date.
+339,0,Allowance or Charge Quantity
+339,1,Quantity basis when allowance or charge quantity is different from the Purchase Order or Invoice quantity. Also see: Unit of Measurement Code (355.)
+341,0,Allowance or Charge Number
+341,1,The number assigned by a vendor referencing an allowance, promotion, deal or charge.
+342,0,Percent of Invoice Payable
+342,1,Amount of Invoice Payable expressed in percent. (re: Deferred Terms.) Also see: Terms Type Code (336.)
+347,0,Hash Total
+347,1,Sum of values of the specific data element. All values in the data element will be summed without regard to decimal points (explicit or implicit) or signs. Truncation will occur on the leftmost digits if the sum is greater than the maximum size of the hash total of the data element.Example:-.0018  First occurrence of value being hashed.   .18  Second occurrence of value being hashed.   1.8  Third occurrence of value being hashed. 18.01  Fourth occurrence of value being hashed.-------  1855  Hash total prior to truncation.   855  Hash total after truncation to three digit field.
+348,0,Item Description Qualifier
+348,1,Code identifying agency responsible for the code used.
+348~AA~1~0,0,Aluminum Association
+348~AI~1~0,0,Automotive Industry Action Group
+348~BI~1~0,0,Book Industry Systems Advisory Committee
+348~CA~1~0,0,Chemical Abstract Service (CAS)
+348~CI~1~0,0,Chemical Industry Data Exchange (CIDX)
+348~CR~1~0,0,Commander - Rome Air Development Center
+348~DR~1~0,0,Pharmacy
+348~EI~1~0,0,Electronic Industries Association
+348~FA~1~0,0,Fabric and Supplier Linkage Council (FASLINC)
+348~FD~1~0,0,Food (UCS)
+348~IS~1~0,0,International Standards Organization
+348~NE~1~0,0,National Electrical Manufacturers Association
+348~NR~1~0,0,National Retail Merchants Association
+348~OP~1~0,0,Office Products
+348~PA~1~0,0,Paper
+348~RM~1~0,0,Raw Materials
+348~ST~1~0,0,American Iron and Steel Institute
+348~TI~1~0,0,Telecommunications Industry
+348~TX~1~0,0,Textile
+348~VI~1~0,0,Voluntary Interindustry Communication Standards (VICS)
+348~ZZ~1~0,0,Mutually Defined
+349,0,Item Description Type
+349,1,Code indicating the format of a description.
+349~F~1~0,0,Free-form
+349~S~1~0,0,Structured (From Industry Code List)
+349~X~1~0,0,Semi-structured (Code and Text)
+350,0,Assigned Identification
+350,1,Alphanumeric number assigned for differentiation within a transaction set.
+351,0,Terms Discount Days Due
+351,1,Number of days in the terms discount period by which payment is due if terms discount is earned.
+352,0,Description
+352,1,A free-form description to clarify the related data elements and their content.
+353,0,Transaction Set Purpose Code
+353,1,Code identifying purpose of transaction set.
+353~00~1~0,0,Original
+353~01~1~0,0,Cancellation
+353~02~1~0,0,Add
+353~03~1~0,0,Delete
+353~04~1~0,0,Change
+353~05~1~0,0,Replace
+353~06~1~0,0,Confirmation
+353~07~1~0,0,Duplicate
+353~08~1~0,0,Status
+353~10~1~0,0,Not Found
+353~11~1~0,0,Response
+353~12~1~0,0,Not Processed
+353~13~1~0,0,Request
+353~14~1~0,0,Advance Notification
+353~15~1~0,0,Re-Submission
+353~16~1~0,0,Proposed
+353~17~1~0,0,Cancel, to be Reissued
+353~18~1~0,0,Reissue
+353~19~1~0,0,Seller initiated change
+353~ZZ~1~0,0,Mutually Defined
+354,0,Number of Line Items
+354,1,Total number of line items in the transaction set.
+355,0,Unit of Measurement Code
+355,1,Code identifying the basic unit measurement.
+355~01~1~0,0,Actual Pounds
+355~02~1~0,0,Statute Mile
+355~03~1~0,0,Seconds
+355~04~1~0,0,Small Spray
+355~05~1~0,0,Lifts
+355~08~1~0,0,Heat Lots
+355~10~1~0,0,Group
+355~11~1~0,0,Outfit
+355~12~1~0,0,Packet
+355~13~1~0,0,Ration
+355~14~1~0,0,Shot
+355~15~1~0,0,Stick
+355~24~1~0,0,Theoretical Pounds
+355~26~1~0,0,Actual Tons
+355~27~1~0,0,Theoretical Tons
+355~31~1~0,0,Catchweight
+355~50~1~0,0,Actual Kilograms
+355~51~1~0,0,Actual Tonnes
+355~53~1~0,0,Theoretical Kilograms
+355~54~1~0,0,Theoretical Tonnes
+355~56~1~0,0,Sitas
+355~58~1~0,0,Net Kilograms
+355~59~1~0,0,Parts Per Million
+355~60~1~0,0,Percent Weight
+355~61~1~0,0,Parts Per Billion
+355~62~1~0,0,Percent Per 1000 Hours
+355~63~1~0,0,Failure Rate In Time
+355~64~1~0,0,Pounds Per Square Inch Gauge
+355~65~1~0,0,Coulomb (A Unit of Charge)
+355~66~1~0,0,Oersteds
+355~67~1~0,0,Siemens (A Unit of Admittance)
+355~68~1~0,0,Ampere
+355~69~1~0,0,Test Specific Scale
+355~70~1~0,0,Volt
+355~71~1~0,0,Volt-Ampere Per Pound
+355~72~1~0,0,Watts Per Pound
+355~73~1~0,0,Ampere Turn Per Centimeter
+355~74~1~0,0,Milli Pascals
+355~75~1~0,0,Cycles
+355~76~1~0,0,Gauss
+355~77~1~0,0,Mil
+355~78~1~0,0,Kilogauss
+355~79~1~0,0,Electron Volt
+355~80~1~0,0,Pounds Per Square Inch Absolute
+355~81~1~0,0,Henry (A Unit of Inductance)
+355~82~1~0,0,Ohm (A Unit of Resistance)
+355~83~1~0,0,Farad (A Unit of Capacitance)
+355~84~1~0,0,Kilo Pounds Per Square Inch (KSI)
+355~85~1~0,0,Foot Pounds
+355~86~1~0,0,Joules
+355~AA~1~0,0,Ball
+355~AC~1~0,0,Acre
+355~AM~1~0,0,Ampoule
+355~AP~1~0,0,Aluminum Pounds Only
+355~AS~1~0,0,Assortment
+355~AY~1~0,0,Assembly
+355~B2~1~0,0,Bunks
+355~B3~1~0,0,Batting Pound
+355~B4~1~0,0,Barrel, Imperial
+355~B5~1~0,0,Billet
+355~B6~1~0,0,Bun
+355~B7~1~0,0,Cycles
+355~B8~1~0,0,Board
+355~B9~1~0,0,Batt
+355~BA~1~0,0,Bale
+355~BB~1~0,0,Base Box
+355~BC~1~0,0,Bucket
+355~BD~1~0,0,Bundle
+355~BE~1~0,0,Beam
+355~BF~1~0,0,Board Feet
+355~BG~1~0,0,Bag
+355~BH~1~0,0,Brush
+355~BI~1~0,0,Bar
+355~BJ~1~0,0,Band
+355~BK~1~0,0,Book
+355~BL~1~0,0,Block
+355~BM~1~0,0,Bolt
+355~BN~1~0,0,Bulk
+355~BO~1~0,0,Bottle
+355~BP~1~0,0,100 Board Feet
+355~BQ~1~0,0,Brake horse power
+355~BR~1~0,0,Barrel
+355~BS~1~0,0,Basket
+355~BT~1~0,0,Belt
+355~BU~1~0,0,Bushel
+355~BV~1~0,0,Bushel, Dry Imperial
+355~BW~1~0,0,Base Weight
+355~BX~1~0,0,Box
+355~BY~1~0,0,British Thermal Unit (BTU)
+355~BZ~1~0,0,Million BTU's
+355~C1~1~0,0,Composite Product Pounds (Total Weight)
+355~C2~1~0,0,Carset
+355~C3~1~0,0,Centiliter
+355~C4~1~0,0,Carload
+355~C5~1~0,0,Cost
+355~C6~1~0,0,Cell
+355~C7~1~0,0,Centipoise (CPS)
+355~C8~1~0,0,Cubic Decimeter
+355~C9~1~0,0,Coil Group
+355~CA~1~0,0,Case
+355~CB~1~0,0,Carboy
+355~CC~1~0,0,Cubic Centimeter
+355~CD~1~0,0,Carat
+355~CE~1~0,0,Centigrade, Celsius
+355~CF~1~0,0,Cubic Feet
+355~CG~1~0,0,Card
+355~CH~1~0,0,Container
+355~CI~1~0,0,Cubic Inches
+355~CJ~1~0,0,Cone
+355~CK~1~0,0,Connector
+355~CL~1~0,0,Cylinder
+355~CM~1~0,0,Centimeter
+355~CN~1~0,0,Can
+355~CO~1~0,0,Count
+355~CP~1~0,0,Crate
+355~CQ~1~0,0,Cartridge
+355~CR~1~0,0,Cubic Meter
+355~CS~1~0,0,Cassette
+355~CT~1~0,0,Carton
+355~CU~1~0,0,Cup
+355~CV~1~0,0,Cover
+355~CW~1~0,0,Hundred Pounds (CWT)
+355~CX~1~0,0,Coil
+355~CY~1~0,0,Cubic Yard
+355~CZ~1~0,0,Combo
+355~DA~1~0,0,Days
+355~DB~1~0,0,Dry Pounds
+355~DC~1~0,0,Disk (Disc)
+355~DD~1~0,0,Degree
+355~DE~1~0,0,Deal
+355~DF~1~0,0,Dram
+355~DG~1~0,0,Decigram
+355~DH~1~0,0,Miles
+355~DI~1~0,0,Dispenser
+355~DK~1~0,0,Kilometers
+355~DL~1~0,0,Deciliter
+355~DM~1~0,0,Decimeter
+355~DP~1~0,0,Dozen Pair
+355~DR~1~0,0,Drum
+355~DS~1~0,0,Display
+355~DT~1~0,0,Dry Ton
+355~DZ~1~0,0,Dozen
+355~E3~1~0,0,Inches, Fraction--Average
+355~E4~1~0,0,Inches, Fraction--Minimum
+355~E5~1~0,0,Inches, Fraction--Actual
+355~E7~1~0,0,Inches, Decimal--Average
+355~E8~1~0,0,Inches, Decimal--Actual
+355~E9~1~0,0,English, (Feet, Inches)
+355~EA~1~0,0,Each
+355~ED~1~0,0,Inches, Decimal--Nominal
+355~EF~1~0,0,Inches, Fraction-Nominal
+355~EM~1~0,0,Inches, Decimal-Minimum
+355~EP~1~0,0,Eleven pack
+355~EV~1~0,0,Envelope
+355~EX~1~0,0,Feet, Inches and Fraction
+355~EY~1~0,0,Feet, Inches and Decimal
+355~EZ~1~0,0,Feet and Decimal
+355~FA~1~0,0,Fahrenheit
+355~FC~1~0,0,1000 Cubic Feet
+355~FM~1~0,0,Million Cubic Feet
+355~FO~1~0,0,Fluid Ounce
+355~FP~1~0,0,Pounds per Sq. Ft.
+355~FT~1~0,0,Foot
+355~GA~1~0,0,Gallon
+355~GB~1~0,0,Gallons/Day
+355~GG~1~0,0,Great Gross (Dozen Gross)
+355~GH~1~0,0,One-half Gallon
+355~GI~1~0,0,Imperial Gallons
+355~GL~1~0,0,Grams per Liter
+355~GM~1~0,0,Grams per Sq. Meter
+355~GR~1~0,0,Gram
+355~GS~1~0,0,Gross
+355~GY~1~0,0,Gross Yard
+355~GZ~1~0,0,Gage Systems
+355~HA~1~0,0,Hank (100 Feet of Rope)
+355~HB~1~0,0,Hundred Boxes
+355~HC~1~0,0,Hundred Count
+355~HD~1~0,0,Half Dozen
+355~HE~1~0,0,Hundredth of a Carat
+355~HF~1~0,0,Hundred Feet
+355~HG~1~0,0,Hectogram
+355~HH~1~0,0,Hundred Cubic Feet
+355~HI~1~0,0,Hundred Sheets
+355~HJ~1~0,0,Horse power
+355~HK~1~0,0,Hundred Kilograms
+355~HL~1~0,0,Hundred Feet - Linear
+355~HO~1~0,0,Hundred Troy Ounces
+355~HP~1~0,0,Hundred Pounds
+355~HR~1~0,0,Hours
+355~HS~1~0,0,Hundred Square Feet
+355~HT~1~0,0,Half Hour
+355~HU~1~0,0,Hundred
+355~HV~1~0,0,Hundred Weight (Short)
+355~HW~1~0,0,Hundred Weight (Long)
+355~HY~1~0,0,Hundred Yards
+355~IN~1~0,0,Inch
+355~JB~1~0,0,Jumbo
+355~JO~1~0,0,Joint
+355~JR~1~0,0,Jar
+355~JU~1~0,0,Jug
+355~KA~1~0,0,Cake
+355~KD~1~0,0,Kilograms Decimal
+355~KE~1~0,0,Keg
+355~KG~1~0,0,Kilogram
+355~KH~1~0,0,Kilowatt Hour
+355~KI~1~0,0,Kilograms/Millimeter Width
+355~KK~1~0,0,100 Kilograms
+355~KL~1~0,0,Kilograms/Meter
+355~KM~1~0,0,Kilograms per Square Meter, Kilograms, Decimal
+355~KN~1~0,0,Kilometer
+355~KT~1~0,0,Kit
+355~KV~1~0,0,Kelvin
+355~KW~1~0,0,Kilograms per Millimeter
+355~LA~1~0,0,Pounds Per Cubic Inch
+355~LB~1~0,0,Pound
+355~LC~1~0,0,Linear Centimeter
+355~LE~1~0,0,Lite
+355~LF~1~0,0,Linear Foot
+355~LG~1~0,0,Long Ton
+355~LH~1~0,0,Labor Hours
+355~LI~1~0,0,Linear Inch
+355~LJ~1~0,0,Large Spray
+355~LK~1~0,0,Link
+355~LM~1~0,0,Linear Meter
+355~LN~1~0,0,Length
+355~LO~1~0,0,Lot
+355~LP~1~0,0,Liquid Pounds
+355~LR~1~0,0,Layer
+355~LS~1~0,0,Lump Sum
+355~LT~1~0,0,Liter
+355~LY~1~0,0,Linear Yard
+355~M1~1~0,0,Milligrams per Liter
+355~M2~1~0,0,Millimeter-Actual
+355~M3~1~0,0,Mat
+355~M4~1~0,0,Monetary Value
+355~M6~1~0,0,Milligrams/Square Inch
+355~MA~1~0,0,Machine/Unit
+355~MB~1~0,0,Millimeter-Nominal
+355~MC~1~0,0,Microgram
+355~ME~1~0,0,Milligram
+355~MF~1~0,0,Milligram per Sq. Ft. per Side
+355~MG~1~0,0,Metric Gross Ton
+355~MH~1~0,0,Microns
+355~MI~1~0,0,Metric
+355~MJ~1~0,0,Minutes
+355~MK~1~0,0,Milligrams Per Square Inch
+355~ML~1~0,0,Milliliter
+355~MM~1~0,0,Millimeter
+355~MN~1~0,0,Metric Net Ton
+355~MO~1~0,0,Months
+355~MP~1~0,0,Metric Ton
+355~MQ~1~0,0,1000 Meters
+355~MR~1~0,0,Meter
+355~MS~1~0,0,Square Millimeter
+355~MT~1~0,0,Metric Long Ton
+355~MU~1~0,0,Millicurie
+355~MV~1~0,0,Number of Mults
+355~MW~1~0,0,Metric Ton Kilograms
+355~MX~1~0,0,Mixed
+355~MY~1~0,0,Millimeter-Average
+355~MZ~1~0,0,Millimeter-minimum
+355~NB~1~0,0,Barge
+355~NC~1~0,0,Car
+355~NL~1~0,0,Load
+355~NM~1~0,0,Nautical Mile
+355~NN~1~0,0,Train
+355~NT~1~0,0,Trailer
+355~NV~1~0,0,Vehicle
+355~OP~1~0,0,Two pack
+355~OT~1~0,0,Overtime Hours
+355~OZ~1~0,0,Ounce - Av
+355~P1~1~0,0,Percent
+355~P2~1~0,0,Pounds per Foot
+355~P3~1~0,0,Three pack
+355~P4~1~0,0,Four-pack
+355~P5~1~0,0,Five-pack
+355~P6~1~0,0,Six pack
+355~P7~1~0,0,Seven pack
+355~P8~1~0,0,Eight-pack
+355~P9~1~0,0,Nine pack
+355~PA~1~0,0,Pail
+355~PB~1~0,0,Pair Inches
+355~PC~1~0,0,Piece
+355~PD~1~0,0,Pad
+355~PE~1~0,0,Pounds Equivalent
+355~PF~1~0,0,Pallet (Lift)
+355~PG~1~0,0,Pounds Gross
+355~PH~1~0,0,Pack (PAK)
+355~PI~1~0,0,Pitch
+355~PJ~1~0,0,Pounds, Decimal - Pounds per Square Foot - Pound Gage
+355~PK~1~0,0,Package
+355~PL~1~0,0,Pallet/Unit Load
+355~PM~1~0,0,Pounds-Percentage
+355~PN~1~0,0,Pounds Net
+355~PO~1~0,0,Pounds per Inch of Length
+355~PP~1~0,0,Plate
+355~PR~1~0,0,Pair
+355~PS~1~0,0,Pounds per Sq. Inch
+355~PT~1~0,0,Pint
+355~PV~1~0,0,One-Half Pint
+355~PW~1~0,0,Pounds per Inch of Width
+355~PX~1~0,0,Pint, Imperial
+355~PY~1~0,0,Peck, Dry U.S.
+355~PZ~1~0,0,Peck, Dry Imperial
+355~Q1~1~0,0,Quarter (Time)
+355~QD~1~0,0,Quarter Dozen
+355~QR~1~0,0,Quire
+355~QS~1~0,0,Quart, Dry U.S.
+355~QT~1~0,0,Quart
+355~QU~1~0,0,Quart, Imperial
+355~RA~1~0,0,Rack
+355~RD~1~0,0,Rod
+355~RE~1~0,0,Reel
+355~RG~1~0,0,Ring
+355~RK~1~0,0,Roll-Metric Measure
+355~RL~1~0,0,Roll
+355~RM~1~0,0,Ream
+355~RN~1~0,0,Ream-Metric Measure
+355~RO~1~0,0,Round
+355~S2~1~0,0,Seconds (time)
+355~SA~1~0,0,Sandwich
+355~SB~1~0,0,Square Mile
+355~SC~1~0,0,Square Centimeter
+355~SD~1~0,0,Solid Pounds
+355~SE~1~0,0,Section
+355~SF~1~0,0,Square Foot
+355~SG~1~0,0,Segment
+355~SH~1~0,0,Sheet
+355~SI~1~0,0,Square Inch
+355~SJ~1~0,0,Sack
+355~SK~1~0,0,Split Tanktruck
+355~SL~1~0,0,Sleeve
+355~SM~1~0,0,Square Meter
+355~SN~1~0,0,Square Rod
+355~SO~1~0,0,Spool
+355~SP~1~0,0,Shelf Package
+355~SQ~1~0,0,Square
+355~SR~1~0,0,Strip
+355~SS~1~0,0,Sheet-Metric Measure
+355~ST~1~0,0,Set
+355~SU~1~0,0,Short Ton
+355~SV~1~0,0,Skid
+355~SW~1~0,0,Skein
+355~SX~1~0,0,Shipment
+355~SY~1~0,0,Square Yard
+355~T1~1~0,0,Thousand pounds gross
+355~TA~1~0,0,Tenth Cubic Foot
+355~TB~1~0,0,Tube
+355~TC~1~0,0,Truckload
+355~TD~1~0,0,Therms
+355~TE~1~0,0,Tote
+355~TF~1~0,0,Ten Square Yards
+355~TG~1~0,0,Gross Ton
+355~TH~1~0,0,Thousand
+355~TI~1~0,0,Thousand Square Inches
+355~TJ~1~0,0,Thousand Sq. Centimeters
+355~TK~1~0,0,Tank
+355~TL~1~0,0,Thousand Feet (Linear)
+355~TM~1~0,0,Thousand Feet (Board)
+355~TN~1~0,0,Net Ton
+355~TO~1~0,0,Troy Ounce
+355~TP~1~0,0,Ten-pack
+355~TQ~1~0,0,Thousand Feet
+355~TR~1~0,0,Ten Square Feet
+355~TS~1~0,0,Thousand Square Feet
+355~TT~1~0,0,Thousand Linear Meters
+355~TU~1~0,0,Thousand Linear Yards
+355~TV~1~0,0,Thousand Kilograms
+355~TW~1~0,0,Thousand Sheets
+355~TX~1~0,0,Troy Pound
+355~TY~1~0,0,Tray
+355~TZ~1~0,0,Thousand Cubic Feet
+355~UN~1~0,0,Unit
+355~VI~1~0,0,Vial
+355~VT~1~0,0,Voltage
+355~WB~1~0,0,Wet Pound
+355~WE~1~0,0,Wet Ton
+355~WH~1~0,0,Wheel
+355~WI~1~0,0,Weight per Square Inch
+355~WK~1~0,0,Week
+355~WP~1~0,0,Pennyweight
+355~WR~1~0,0,Wrap
+355~WT~1~0,0,Wattage
+355~YD~1~0,0,Yard
+355~YL~1~0,0,100 Lineal Yards
+355~YR~1~0,0,Years
+355~YT~1~0,0,Ten Yards
+355~ZZ~1~0,0,Mutually Defined
+356,0,Pack
+356,1,Number of inner pack units per outer pack unit. Also see: Size (357), Unit of Measurement Code (355).
+357,0,Size
+357,1,Size of supplier units in pack. Also see: Pack (356), Unit of Measurement Code (355).
+359,0,Allowance or Charge Rate
+359,1,Allowance or Charge Rate per Unit.
+360,0,Allowance or Charge Total Amount
+360,1,Total dollar amount for the allowance or charge.
+362,0,Terms Discount Amount
+362,1,Total amount of terms discount.
+363,0,Note Reference Code
+363,1,Code identifying the functional area or purpose for which the note applies. Also see: Free Form Message (3).
+363~ALL~1~0,0,All Documents
+363~CHG~1~0,0,Change
+363~CUS~1~0,0,Customs declaration.
+363~DEL~1~0,0,Delivery
+363~GEN~1~0,0,Entire Transaction Set
+363~INS~1~0,0,Insurance
+363~INV~1~0,0,Invoice Instruction
+363~LIN~1~0,0,Line Item
+363~LOI~1~0,0,Loading Instructions
+363~ORI~1~0,0,Order Instructions
+363~PAY~1~0,0,Payables
+363~PMT~1~0,0,Payment
+363~PRI~1~0,0,Priority
+363~PUR~1~0,0,Purchasing
+363~QUT~1~0,0,Quotation Instruction
+363~REV~1~0,0,Receivables
+363~SPH~1~0,0,Special Handling
+363~TRA~1~0,0,Transportation
+363~WHI~1~0,0,Warehouse Instruction
+363~ZZZ~1~0,0,Mutually Defined
+364,0,Communication Number
+364,1,Complete communications number including country or area code when applicable. Also see: Communications Number Qualifier (365).
+365,0,Communication Number Qualifier
+365,1,Code identifying the type of communication number.
+365~EM~1~0,0,Electronic Mail
+365~FX~1~0,0,Facsimile
+365~IT~1~0,0,International Telephone
+365~PS~1~0,0,Packet Switching
+365~TE~1~0,0,Telephone
+365~TL~1~0,0,Telex
+365~TM~1~0,0,Telemail
+365~TX~1~0,0,TWX
+366,0,Contact Function Code
+366,1,Code identifying the major duty or responsibility of the person or group named.
+366~AC~1~0,0,Administrative Contracting Officer
+366~AD~1~0,0,Accounting Department
+366~AP~1~0,0,Accounts Payable Department
+366~AR~1~0,0,Accounts Receivable Department
+366~BD~1~0,0,Buyer Name or Department
+366~CB~1~0,0,Changed By
+366~CC~1~0,0,Computer Systems Contact
+366~CE~1~0,0,Certifier
+366~CR~1~0,0,Customer Relations
+366~CW~1~0,0,Confirmed With
+366~EB~1~0,0,Entered By
+366~EN~1~0,0,Engineer
+366~EX~1~0,0,Expeditor
+366~HM~1~0,0,Hazardous Material Contact
+366~IC~1~0,0,Information Contact
+366~NP~1~0,0,Notary Public
+366~NT~1~0,0,Notification Contact
+366~OC~1~0,0,Order Contact
+366~OD~1~0,0,Order Department
+366~PM~1~0,0,Product Manager
+366~PR~1~0,0,Prototype Coordinator
+366~QA~1~0,0,Quality Assurance Contact
+366~QC~1~0,0,Quality Coordinator
+366~QI~1~0,0,Quality Inspector
+366~RD~1~0,0,Receiving Dock
+366~SA~1~0,0,Sales Administration
+366~SC~1~0,0,Schedule Contact
+366~SD~1~0,0,Shipping Department
+366~SR~1~0,0,Sales Representative or Department
+366~SU~1~0,0,Supplier Contact
+366~TA~1~0,0,Traffic Administrator
+366~TR~1~0,0,Technical Marketing Representative
+366~WH~1~0,0,Warehouse
+366~ZZ~1~0,0,Mutually Defined
+367,0,Contract Number
+367,1,Contract number.
+368,0,Shipment/Order Status Code
+368,1,Code indicating the status of an order or shipment
+368~AN~1~0,0,Available Now - No Shipping Schedule
+368~AS~1~0,0,Available Now - Scheduled to Ship (date)
+368~AV~1~0,0,Available
+368~BK~1~0,0,Back Ordered from Previous Order
+368~BP~1~0,0,Shipment Partial - Back Order to Follow (date)
+368~BT~1~0,0,Billed total
+368~BW~1~0,0,Billed week-to-date
+368~CA~1~0,0,Customer Inquiry - All Items
+368~CC~1~0,0,Shipment Complete (date)
+368~CE~1~0,0,Shipment Includes Extra Items to Meet Price Break
+368~CI~1~0,0,Customer Inquiry - Shipped Items Only
+368~CK~1~0,0,Cancelled from Previous Order
+368~CM~1~0,0,Shipment Complete with Additional Quantity
+368~CN~1~0,0,Next Carrier Move (date)
+368~CO~1~0,0,Customer Inquiry - Unshipped Items Only
+368~CP~1~0,0,Partial Shipment - Considered Complete No Back Order (date)
+368~CS~1~0,0,Shipment Complete with Substitution
+368~DD~1~0,0,Delivered to Destination (date)
+368~DE~1~0,0,Deleted Order
+368~DS~1~0,0,Out Of Stock Condition
+368~EC~1~0,0,Equipment Capacity
+368~ED~1~0,0,Expect to Ship By (Date)
+368~EW~1~0,0,Expect To Ship Week of (Date)
+368~FS~1~0,0,Units Not Shipped By Agent - To Be Shipped From Factory.
+368~HQ~1~0,0,Held Awaiting Qualification
+368~IC~1~0,0,Item Canceled
+368~IP~1~0,0,Inquiry by Purchase Order
+368~IS~1~0,0,Item Represents Substitution from Original Order
+368~LM~1~0,0,Shipment late
+368~LS~1~0,0,Last Shipment (date)
+368~NF~1~0,0,Not Yet Published
+368~NN~1~0,0,Not in Process - No Shipping Schedule
+368~NS~1~0,0,Not in Process - Scheduled to Ship (date)
+368~OB~1~0,0,Out of Bill & Hold Goods
+368~OF~1~0,0,Order Sent to Factory for Production (date)
+368~OP~1~0,0,Out of Print
+368~PA~1~0,0,Purchase Order Inquiry - All Items
+368~PD~1~0,0,Order Produced Complete
+368~PH~1~0,0,Product On Hold
+368~PI~1~0,0,Purchase Order Inquiry - Shipped Items Only
+368~PK~1~0,0,Packed-to-date (date)
+368~PN~1~0,0,In Process - No Shipping Schedule
+368~PO~1~0,0,Purchase Order Inquiry - Shipped Items Only
+368~PP~1~0,0,Purchase Order Inquiry - Specific Items
+368~PR~1~0,0,Partial Shipment
+368~PS~1~0,0,In Process - Scheduled to Ship (date)
+368~RD~1~0,0,Revised Expect to Ship By (Date)
+368~RW~1~0,0,Revised Expect to Ship Week of (Date)
+368~SD~1~0,0,Shipped Damaged
+368~SL~1~0,0,Shipped-to-date (date)
+368~SP~1~0,0,Scheduled for Production at Factory (date)
+368~SQ~1~0,0,Scheduled to ship (Summary quantity)
+368~SS~1~0,0,Split Shipment
+368~UR~1~0,0,Unsolicited Report
+368~ZZ~1~0,0,Mutually Defined
+370,0,Terms Discount Due Date
+370,1,Date payment is due if discount is to be earned.
+371,0,Change Reason Code
+371,1,Code specifying the reason for price or quantity change.
+371~AQ~1~0,0,Alternate Quantity and Unit of Measure
+371~BD~1~0,0,Blueprint Deviation
+371~DC~1~0,0,Date Change
+371~EV~1~0,0,Estimated Quantity
+371~GU~1~0,0,Gross Volume per Pack and Unit of Measure
+371~GW~1~0,0,Gross Weight per Pack
+371~LD~1~0,0,Length Difference
+371~MC~1~0,0,Pack/Size Measure Difference
+371~PC~1~0,0,Pack Difference
+371~PQ~1~0,0,Pack Qualifier
+371~PS~1~0,0,Product/Services ID Change
+371~QO~1~0,0,Quantity Ordered
+371~QP~1~0,0,Quantity Based on Price Qualifier
+371~QT~1~0,0,Quantity Price Break
+371~SC~1~0,0,Size Difference
+371~UM~1~0,0,Unit of Measure Difference
+371~UP~1~0,0,Unit Price
+371~WD~1~0,0,Width Difference
+371~WO~1~0,0,Weight Qualifier/Gross Weight per Package
+371~ZZ~1~0,0,Mutually Defined
+373,0,Date
+373,1,Date (YYMMDD).
+374,0,Date/Time Qualifier
+374,1,Code specifying type of date or time, or both date and time.
+374~001~1~0,0,Cancel After
+374~002~1~0,0,Delivery Requested
+374~003~1~0,0,Invoice
+374~004~1~0,0,Purchase Order
+374~005~1~0,0,Sailing
+374~006~1~0,0,Sold
+374~007~1~0,0,Effective
+374~008~1~0,0,Purchase Order Received
+374~009~1~0,0,Process
+374~010~1~0,0,Requested Ship
+374~011~1~0,0,Shipped
+374~012~1~0,0,Terms Discount Due
+374~013~1~0,0,Terms Net Due
+374~014~1~0,0,Deferred Payment
+374~015~1~0,0,Promotion Start
+374~016~1~0,0,Promotion End
+374~017~1~0,0,Estimated Delivery
+374~018~1~0,0,Available/Constructive Placement
+374~019~1~0,0,Unloaded
+374~020~1~0,0,Check
+374~021~1~0,0,Charge Back
+374~022~1~0,0,Freight Bill
+374~023~1~0,0,Promotion Order - Start
+374~024~1~0,0,Promotion Order - End
+374~025~1~0,0,Promotion Ship - Start
+374~026~1~0,0,Promotion Ship - End
+374~027~1~0,0,Promotion Requested Delivery - Start
+374~028~1~0,0,Promotion Requested Delivery - End
+374~029~1~0,0,Promotion Performance - Start
+374~030~1~0,0,Promotion Performance - End
+374~031~1~0,0,Promotion Invoice Performance - Start
+374~032~1~0,0,Promotion Invoice Performance - End
+374~033~1~0,0,Promotion Floor Stock Protect - Start
+374~034~1~0,0,Promotion Floor Stock Protect - End
+374~035~1~0,0,Delivered
+374~036~1~0,0,Expiration
+374~037~1~0,0,Ship Not Before
+374~038~1~0,0,Ship No Later
+374~039~1~0,0,Ship Week of
+374~040~1~0,0,Status (After and Including)
+374~041~1~0,0,Status (Prior and Including)
+374~042~1~0,0,Superseded
+374~043~1~0,0,Publication
+374~050~1~0,0,Received
+374~051~1~0,0,Cumulative Quantity Start
+374~052~1~0,0,Cumulative Quantity End
+374~053~1~0,0,Buyers Local
+374~054~1~0,0,Sellers Local
+374~055~1~0,0,Confirmed
+374~056~1~0,0,Estimated Port of Entry
+374~057~1~0,0,Actual Port of Entry
+374~058~1~0,0,Customs Clearance
+374~059~1~0,0,Inland Shipping
+374~060~1~0,0,Engineering Change Level
+374~061~1~0,0,Cancel if Not Delivered by
+374~062~1~0,0,Blueprint
+374~063~1~0,0,Do Not Deliver After
+374~064~1~0,0,Do Not Deliver Before
+374~065~1~0,0,1st Schedule Delivery
+374~066~1~0,0,1st Schedule Ship
+374~067~1~0,0,Current Schedule Delivery
+374~068~1~0,0,Current Schedule Ship
+374~069~1~0,0,Promised for Delivery
+374~070~1~0,0,Scheduled for Delivery (After and Including)
+374~071~1~0,0,Requested for Delivery (After and Including)
+374~072~1~0,0,Promised for Delivery (After and Including)
+374~073~1~0,0,Scheduled for Delivery (Prior to and Including)
+374~074~1~0,0,Requested for Delivery (Prior to and Including)
+374~075~1~0,0,Promised for Delivery (Prior to and Including)
+374~076~1~0,0,Scheduled for Delivery (Week of)
+374~077~1~0,0,Requested for Delivery (Week of)
+374~078~1~0,0,Promised for Delivery (Week of)
+374~079~1~0,0,Promised for Shipment
+374~080~1~0,0,Scheduled for Shipment (After and Including)
+374~081~1~0,0,Requested for Shipment (After and Including)
+374~082~1~0,0,Promised for Shipment (After and Including)
+374~083~1~0,0,Scheduled for Shipment (Prior to and Including)
+374~084~1~0,0,Requested for Shipment (Prior to and Including)
+374~085~1~0,0,Promised for Shipment (Prior to and Including)
+374~086~1~0,0,Scheduled for Shipment (Week of)
+374~087~1~0,0,Requested for Shipment (Week of)
+374~088~1~0,0,Promised for Shipment (Week of)
+374~089~1~0,0,Inquiry
+374~090~1~0,0,Report Start
+374~091~1~0,0,Report End
+374~092~1~0,0,Contract Effective
+374~093~1~0,0,Contract Expiration
+374~094~1~0,0,Manufacture
+374~095~1~0,0,Bill of Lading
+374~096~1~0,0,Discharge
+374~097~1~0,0,Transaction Creation
+374~098~1~0,0,Bid (Effective)
+374~099~1~0,0,Bid-Open (Date Bids Will Be Opened)
+374~100~1~0,0,No Shipping Schedule Established as of
+374~101~1~0,0,No Production Schedule Established as of
+374~106~1~0,0,Required By
+374~107~1~0,0,Deposit
+374~108~1~0,0,Postmark
+374~109~1~0,0,Received at Lockbox
+374~110~1~0,0,Originally Scheduled Ship
+374~111~1~0,0,Manifest/Ship Notice
+374~112~1~0,0,Buyers Dock
+374~113~1~0,0,Sample Required
+374~114~1~0,0,Tooling Required
+374~115~1~0,0,Sample Available
+374~119~1~0,0,Test Performed
+374~120~1~0,0,Control Plan
+374~121~1~0,0,Feasibility Sign Off
+374~122~1~0,0,Failure Mode Effective
+374~124~1~0,0,Group Contract Effective
+374~125~1~0,0,Group Contract Expiration
+374~126~1~0,0,Wholesale Contract Effective
+374~127~1~0,0,Wholesale Contract Expiration
+374~128~1~0,0,Replacement Effective
+374~129~1~0,0,Customer Contract Effective
+374~130~1~0,0,Customer Contract Expiration
+374~131~1~0,0,Item Contract Effective
+374~132~1~0,0,Item Contract Expiration
+374~133~1~0,0,Accounts Receivable - Statement Date
+374~134~1~0,0,Ready for Inspection
+378,0,Allowance/ Charge Percent Qualifier
+378,1,Code indicating on what basis allowance or charge percent is calculated.
+378~1~1~0,0,Item List Cost
+378~2~1~0,0,Item Net Cost
+378~3~1~0,0,Discount/Gross
+378~4~1~0,0,Discount/Net
+378~5~1~0,0,Base Price per Unit
+378~6~1~0,0,Base Price Amount
+378~7~1~0,0,Base Price Amount Less Previous Discount
+378~Z~1~0,0,Mutually Defined
+380,0,Quantity
+380,1,Numeric value of Quantity. Also see: Unit of Measurement Code (355).
+384,0,Gross Weight per Pack
+384,1,Numeric value of gross weight per pack. Also see: Unit of Measurement Code (355).
+385,0,Gross Volume per Pack
+385,1,Numeric value of gross volume per pack. Also see: Unit of Measurement Code (355).
+386,0,Terms Net Days
+386,1,Number of days until total invoice amount is due (discount not applicable).
+387,0,Routing
+387,1,Free-form description of the routing or requested routing for shipment, or the originating carrier's identity.
+388,0,Terms Deferred Due Date
+388,1,Date deferred payment or percent of invoice payable is due. Also see: Percent of Invoice Payable (342).
+389,0,Deferred Amount Due
+389,1,Deferred amount due for payment.
+40,0,Equipment Description Code
+40,1,Code identifying type of equipment used for shipment.
+40~2B~1~0,0,20 ft. IL Container (Closed Top)
+40~2O~1~0,0,20 ft. IL Container (Open Top)
+40~4B~1~0,0,40 ft. IL Container (Closed Top)
+40~4O~1~0,0,40 ft. IL Container (Open Top)
+40~AC~1~0,0,Closed Container
+40~AF~1~0,0,Air Freight (Break Bulk)
+40~AT~1~0,0,Closed Container (Controlled Temperature)
+40~BC~1~0,0,Covered Barge
+40~BG~1~0,0,Bogie
+40~BO~1~0,0,Barge Open
+40~BR~1~0,0,Barge
+40~BX~1~0,0,Boxcar
+40~CA~1~0,0,Container-Van
+40~CB~1~0,0,Chassis, Gooseneck
+40~CC~1~0,0,Container resting on a Chassis
+40~CG~1~0,0,Container, Tank (Gas)
+40~CH~1~0,0,Chassis
+40~CI~1~0,0,Container, Insulated
+40~CJ~1~0,0,Container, Insulated/Ventilated
+40~CK~1~0,0,Container, Heated/Insulated/Ventilated
+40~CL~1~0,0,Container (Closed Top - Length Unspecified)
+40~CM~1~0,0,Container, Open-Sided
+40~CN~1~0,0,Container
+40~CO~1~0,0,Containerized (Closed Top - Unspecified Length)
+40~CP~1~0,0,Coil Car Open
+40~CQ~1~0,0,Container, Tank (Food Grade-Liquid)
+40~CR~1~0,0,Coil-Car Covered
+40~CS~1~0,0,Container-Low Side Open Top
+40~CT~1~0,0,Container-High Side Open Top
+40~CU~1~0,0,Container (Open Top - Length Unspecified)
+40~CV~1~0,0,Closed Van
+40~CW~1~0,0,Container, Tank (Chemicals)
+40~CX~1~0,0,Containerized (Open Top - Unspecified Length)
+40~DT~1~0,0,Drop Back Trailer
+40~DX~1~0,0,Boxcar (DF Equipped)
+40~FH~1~0,0,Flat Bed Trailer with Headboards
+40~FN~1~0,0,Flat Bed Trailer with No Headboards
+40~FR~1~0,0,Flat Bed Trailer - Removable Sides
+40~FT~1~0,0,Flat Bed Trailer
+40~FX~1~0,0,Boxcar Cushion Under Frame OF
+40~HC~1~0,0,Hopper Car (Covered)
+40~HO~1~0,0,Hopper Car (Open)
+40~HP~1~0,0,Hopper Car (Covered; Pneumatic Discharge)
+40~HV~1~0,0,High Cube Van
+40~ID~1~0,0,Idler Car
+40~IX~1~0,0,Boxcar (Insulated)
+40~LU~1~0,0,Load/unload Device on Equipment
+40~NX~1~0,0,Boxcar (Interior Bulkheads)
+40~OB~1~0,0,Ocean Vessel (Break Bulk)
+40~OT~1~0,0,Open-top/flatbed trailer
+40~OV~1~0,0,Open Top Van
+40~PT~1~0,0,Protected Trailer
+40~PU~1~0,0,Pick-up Truck
+40~RC~1~0,0,Refrigerated (Reefer) Car
+40~RE~1~0,0,Flat Car (End Bulkheads)
+40~RF~1~0,0,Flat Car
+40~RG~1~0,0,Gondola Covered
+40~RI~1~0,0,Gondola Car (Covered - Interior Bulkheads)
+40~RO~1~0,0,Gondola Car (Open)
+40~RR~1~0,0,Rail Car
+40~RT~1~0,0,Controller Temperature Trailer (Reefer)
+40~SC~1~0,0,Service Car
+40~SK~1~0,0,Stack Car
+40~ST~1~0,0,Removable Side Trailer
+40~SV~1~0,0,Van - Special IL, IW or IH Requirements
+40~TA~1~0,0,Trailer, Heated/Insulated/Ventilated
+40~TB~1~0,0,Trailer, Boat
+40~TC~1~0,0,Trailer, Car
+40~TF~1~0,0,Trailer, Dry Freight
+40~TG~1~0,0,Trailer, Tank (Gas)
+40~TH~1~0,0,Truck, Open Top High Side
+40~TI~1~0,0,Trailer, Insulated
+40~TJ~1~0,0,Trailer, Tank (Chemicals)
+40~TK~1~0,0,Trailer, Tank (Food Grade-Liquid)
+40~TL~1~0,0,Trailer (not otherwise specified)
+40~TM~1~0,0,Trailer, Insulated/Ventilated
+40~TO~1~0,0,Truck, Open Top
+40~TR~1~0,0,Removable Side Trailer
+40~TT~1~0,0,Telescoping Trailer
+40~TU~1~0,0,Truck, Open Top Low Side
+40~TV~1~0,0,Truck, Van
+40~UL~1~0,0,Unit Load Device (ULD)
+40~UX~1~0,0,Boxcar Cushion Under Frame
+40~VC~1~0,0,Closed Van
+40~VE~1~0,0,Vessel, Ocean
+40~VL~1~0,0,Vessel, Lake
+40~VO~1~0,0,Open Top Van
+40~VR~1~0,0,Vessel, Ocean, Rollon-Rolloff
+40~VS~1~0,0,Vessel, Ocean, Lash
+40~VT~1~0,0,Vessel, Ocean, Containership
+441,0,Tax Exempt Code
+441,1,Code identifying exemption status from sales and use tax.
+441~0~1~0,0,Tax Exempt (For Export)
+441~1~1~0,0,Yes (Tax Exempt)
+441~2~1~0,0,No (Not Tax Exempt)
+441~3~1~0,0,Tax Exempt (For Resale)
+441~4~1~0,0,Tax Exempt (Not For Resale)
+441~5~1~0,0,Not Tax Exempt/For Resale
+441~6~1~0,0,Not Tax Exempt, Not For Resale
+441~7~1~0,0,Direct Pay ID
+441~8~1~0,0,Tax Exempt (Sale to U.S. Govt)
+441~9~1~0,0,Tax Exempt (Per State Law)
+441~A~1~0,0,Labor Taxable, Material Exempt
+441~B~1~0,0,Material Taxable, Labor Exempt
+446,0,Terms Net Due Date
+446,1,Date when total invoice amount becomes due.
+508,0,Account Number
+508,1,Account number assigned.
+559,0,Agency Qualifier Code
+559,1,Code identifying the agency assigning the code values.
+559~AA~1~0,0,Aluminum Association
+559~AI~1~0,0,Automotive Industry Action Group
+559~AX~1~0,0,ANSI X12
+559~BI~1~0,0,Book Industry Systems Advisory Committee
+559~CM~1~0,0,Carbide Manufacturers
+559~EU~1~0,0,Electric Utilities
+559~GU~1~0,0,Natural Gas Utilities
+559~NE~1~0,0,National Association of Electrical Distributors
+559~NR~1~0,0,National Retail Merchants Association
+559~OP~1~0,0,Office Products
+559~PI~1~0,0,Petroleum Industry
+559~ST~1~0,0,American Iron & Steel Institute
+559~TD~1~0,0,TDCC
+559~TI~1~0,0,Telecommunications Industry
+559~VI~1~0,0,Voluntary Interindustry Communication Standards (VICS)
+560,0,Special Services Code
+560,1,Code identifying the special service.
+560~A0010~1~0,0,Alterations
+560~A0020~1~0,0,Anneal/Heat (Steel or Glass Treatment)
+560~A0030~1~0,0,Art Work
+560~AA~1~0,0,Advertising Allowance
+560~AC~1~0,0,Acid (Battery)
+560~AF~1~0,0,Affidavit
+560~AJ~1~0,0,Adjustments
+560~AM~1~0,0,Additional Material
+560~AN~1~0,0,Allowance Non-performance
+560~AO~1~0,0,Allowance Advance
+560~AT~1~0,0,Handling Charge Tax
+560~B0010~1~0,0,Beaming Charge
+560~B0020~1~0,0,Black Lung Tax
+560~B0030~1~0,0,Brokerage or Duty
+560~B0040~1~0,0,Burning
+560~BC~1~0,0,Buyers Car Allowance
+560~BD~1~0,0,Bad Debt
+560~BF~1~0,0,Both-Flat
+560~BP~1~0,0,Broken Package Charge
+560~C0010~1~0,0,Cancellation Charge
+560~C0011~1~0,0,Cartage
+560~C0012~1~0,0,Capping
+560~C0020~1~0,0,Cash Discount
+560~C0030~1~0,0,Certification Fee
+560~C0032~1~0,0,Coating (Dip, Rustproof, EDP)
+560~C0036~1~0,0,Certificate of Conformance
+560~C0038~1~0,0,Certificate of Origin
+560~C0040~1~0,0,Co-manufacturing Discount
+560~C0050~1~0,0,Competitive Allowance
+560~C0060~1~0,0,Competitive Auto Allowance
+560~C0070~1~0,0,Compressor Charge
+560~C0072~1~0,0,Crating
+560~C0080~1~0,0,Customer Equipment Allowance
+560~C0090~1~0,0,Cutting Charge
+560~C1~1~0,0,Shipper Load and Count
+560~CA~1~0,0,Cataloging Services
+560~CB~1~0,0,Commission
+560~CC~1~0,0,Co-op Credit
+560~CD~1~0,0,Car Loading
+560~CE~1~0,0,Contract Escalation
+560~CF~1~0,0,Container Deposits
+560~CG~1~0,0,Cleaning Charge
+560~CK~1~0,0,COD Charge
+560~CL~1~0,0,Contract Allowance
+560~CM~1~0,0,Cooperative Advertising/Merchandising Allowance (Performance)
+560~CN~1~0,0,Combination Performance and Non-performance
+560~CO~1~0,0,Cents Off
+560~CP~1~0,0,Competitive Price
+560~CR~1~0,0,Carrier
+560~CS~1~0,0,Cigarette Stamping
+560~CT~1~0,0,Count and Recount
+560~CW~1~0,0,Container Allowance
+560~CX~1~0,0,City Sales Tax (Only)
+560~CZ~1~0,0,Cable Pressurization
+560~D0010~1~0,0,Deficit Freight
+560~D0020~1~0,0,Determined Freight
+560~D0022~1~0,0,Deposit
+560~D0024~1~0,0,Layout/Design
+560~D0030~1~0,0,Distributor Discount/Allowance
+560~D0031~1~0,0,Driver Assisted Unloading
+560~D0040~1~0,0,Drum Upcharge
+560~DA~1~0,0,Defective Allowance
+560~DC~1~0,0,Drum Cost
+560~DD~1~0,0,Drum Deposit
+560~DF~1~0,0,Dowel Pin Charge
+560~DI~1~0,0,Discount
+560~DL~1~0,0,Delivery
+560~DM~1~0,0,Demurrage
+560~DS~1~0,0,Designated Supplier Inspection
+560~E0010~1~0,0,Early Buy Allowance
+560~E0020~1~0,0,Early Payment Allowance
+560~E0024~1~0,0,Escalation
+560~E0030~1~0,0,Exclusive use
+560~E0040~1~0,0,Expediting Fee
+560~E1~1~0,0,One Time Engineering Charge
+560~E2~1~0,0,Exclusive Use
+560~EC~1~0,0,Engineering Charge
+560~EG~1~0,0,Engraving
+560~EN~1~0,0,Enclosure
+560~EP~1~0,0,Expediting Premium
+560~EX~1~0,0,Export Shipping Charge
+560~F0010~1~0,0,F.E.T. Federal Excise Tax
+560~F0011~1~0,0,F.E.T. (Percent)
+560~F0012~1~0,0,F.E.T. (Dollar Value)
+560~F0014~1~0,0,Fabrication Charge
+560~F0018~1~0,0,F.E.T. Tires
+560~F0020~1~0,0,Freight Equalization
+560~F0030~1~0,0,Freight Surcharge
+560~FA~1~0,0,Freight Allowance
+560~FC~1~0,0,Freight Charge
+560~FG~1~0,0,Free Goods
+560~FI~1~0,0,Finance Charge
+560~FL~1~0,0,Freshness/Leaker Allowance
+560~FN~1~0,0,Special Finish Charge
+560~FP~1~0,0,Freight Passthrough
+560~FR~1~0,0,Flat Rate
+560~FS~1~0,0,Floor Stock Protection
+560~G0010~1~0,0,Grinding
+560~G0052~1~0,0,Government Inspection
+560~GA~1~0,0,Glaze Allowance
+560~GF~1~0,0,Gold Factor
+560~GI~1~0,0,Grouped Items (Indicates the pricing for this line is related to the pricing of some other item either on this invoice or some other prior invoice.)
+560~GP~1~0,0,Gas Pressure
+560~GU~1~0,0,Guaranteed Inspection Technical Service
+560~H0010~1~0,0,Hose Charge
+560~H1~1~0,0,Temperature Protection
+560~HC~1~0,0,Handling Service
+560~HD~1~0,0,Handling
+560~HH~1~0,0,Hointins and Hauling
+560~HS~1~0,0,Hauling and Hoisting
+560~I0010~1~0,0,Industry Price Allowance
+560~I0012~1~0,0,Installation
+560~I0013~1~0,0,Installation & Warranty
+560~I0014~1~0,0,Incoming Freight (Manufacturing to Shipping Point)
+560~I0020~1~0,0,Inspection Fee
+560~I0021~1~0,0,Inspection
+560~I0022~1~0,0,Identification
+560~IA~1~0,0,Invoice Adjustment
+560~IC~1~0,0,Inside Cable Connectors
+560~ID~1~0,0,Inside Delivery Charge
+560~IG~1~0,0,Invoice with Goods
+560~IM~1~0,0,Inspect at Destination
+560~IN~1~0,0,Insurance
+560~IO~1~0,0,Inspect at Origin
+560~IP~1~0,0,Item Percentage
+560~IR~1~0,0,Installation and Training
+560~IS~1~0,0,Invoice Services
+560~IT~1~0,0,In Transit Price Protection
+560~IU~1~0,0,Item-Unit
+560~KO~1~0,0,Koshering
+560~L0010~1~0,0,Labor Charges
+560~L0012~1~0,0,Labor (Repair and Return Orders)
+560~L0020~1~0,0,License Fee
+560~L0022~1~0,0,Licensing Fee
+560~L1~1~0,0,Shipper Load, Carrier Count
+560~LA~1~0,0,Labeling
+560~LC~1~0,0,Lot Charge
+560~LD~1~0,0,Lead Factor
+560~LF~1~0,0,Loan Fee
+560~LS~1~0,0,Local Sales Tax (all applicable sales taxes by taxing authorities below the state level)
+560~M0010~1~0,0,Memo Returnable Container
+560~M0020~1~0,0,Metals Surcharge
+560~M0022~1~0,0,Mileage or Travel
+560~M0024~1~0,0,Mileage Fee (For Repair & Return)
+560~M0030~1~0,0,Minimum Order/Minimum Billing Charge
+560~M0040~1~0,0,Monthly Rental
+560~M0042~1~0,0,Mounting
+560~MF~1~0,0,Mill Freight
+560~MI~1~0,0,Mail Invoice
+560~ML~1~0,0,Mail Invoice to Each Location
+560~MS~1~0,0,Market Development Funds
+560~MT~1~0,0,Metropolitan Transit Tax
+560~N0010~1~0,0,Non-generated Freight
+560~N0020~1~0,0,Non-returnable Containers
+560~N0032~1~0,0,Notarized Affidavit
+560~O0010~1~0,0,O.T.O. Charge
+560~O0012~1~0,0,Overrun Charge
+560~O0020~1~0,0,Overtime Loading
+560~OA~1~0,0,Outside Cable Connectors
+560~OC~1~0,0,Option Charge (Color/Fabric Office Furniture)
+560~OF~1~0,0,Order-Flat
+560~P0010~1~0,0,Percent of Product
+560~P0012~1~0,0,Painting (Primer or Finish)
+560~P0014~1~0,0,Phosphatizing (Steel Treatment)
+560~P0016~1~0,0,Pickle and Oil
+560~P0018~1~0,0,Plating
+560~P0019~1~0,0,Postage Charge
+560~P0020~1~0,0,Premium Charge
+560~P0022~1~0,0,Preparation
+560~P0024~1~0,0,Premium Transportation
+560~P0028~1~0,0,Price Deviation
+560~P0030~1~0,0,Professional Fees
+560~P0040~1~0,0,Promotional Allowance
+560~P0050~1~0,0,Promotional Discount
+560~P0060~1~0,0,Pump Charge
+560~PA~1~0,0,Pack Invoice with Shipment
+560~PB~1~0,0,Previous Billing
+560~PC~1~0,0,Packaging Service
+560~PE~1~0,0,Pulling Eyes
+560~PF~1~0,0,Proof & Composition
+560~PH~1~0,0,Per Item Charge
+560~PI~1~0,0,Pick-up Allowance
+560~PL~1~0,0,Palletizing
+560~PM~1~0,0,Precious Metal Content
+560~PN~1~0,0,Pallet Charge
+560~PO~1~0,0,Per Order Charge
+560~PR~1~0,0,Performance Award
+560~PS~1~0,0,Placement and/or Removal Charge
+560~PT~1~0,0,Parish/County Sales Tax (Only)
+560~Q0010~1~0,0,Quantity Surcharge
+560~QD~1~0,0,Quantity Discount
+560~R0010~1~0,0,Rebate
+560~R0020~1~0,0,Reclamation, Federal
+560~R0030~1~0,0,Reclamation, State
+560~R0040~1~0,0,Recovery Allowance
+560~R0050~1~0,0,Redistribution Allowance
+560~R0060~1~0,0,Rental Deduction
+560~R0070~1~0,0,Repack Charge
+560~R0072~1~0,0,Repair
+560~R0074~1~0,0,Retainer
+560~R0076~1~0,0,Returnable Container
+560~R0080~1~0,0,Resellers Discount
+560~R0090~1~0,0,Restocking Charge
+560~R0100~1~0,0,Royalty
+560~R0110~1~0,0,Rework
+560~R0112~1~0,0,Roll Rebate
+560~RC~1~0,0,Reel Cable
+560~RD~1~0,0,Reel Deposit
+560~RE~1~0,0,Re-Delivery Charge
+560~RF~1~0,0,Refurbishing Charge
+560~RN~1~0,0,Rental Charge
+560~RP~1~0,0,Repair Charge
+560~S0010~1~0,0,Shipping and Handling
+560~S0012~1~0,0,Service Charge (With Cash Discount)
+560~S0014~1~0,0,Shearing
+560~S0016~1~0,0,Shotblasting
+560~S0018~1~0,0,Scrap Allowance
+560~S0020~1~0,0,Shrink-wrap Charge
+560~S0022~1~0,0,Sleeving
+560~S0024~1~0,0,Ship to Stock Quality Audit
+560~S0030~1~0,0,Special Allowance
+560~S0040~1~0,0,Special Credit
+560~S0050~1~0,0,Special Packaging
+560~S0052~1~0,0,Stamping
+560~S0054~1~0,0,Source Inspection
+560~S0056~1~0,0,Strapping
+560~S0058~1~0,0,State Motor Fuel
+560~S0060~1~0,0,Stenciling Charge
+560~S0070~1~0,0,Super Fund Excise Tax
+560~S0080~1~0,0,Supplemental Items
+560~S0092~1~0,0,Surcharge (Dollar Value)
+560~S0093~1~0,0,Surcharge (Percentage)
+560~S1~1~0,0,Shipper Load, Consignee Unload
+560~S2~1~0,0,Slip Sheet, Truck
+560~SA~1~0,0,Salvage
+560~SB~1~0,0,Super Bag Charge
+560~SC~1~0,0,Surcharge
+560~SD~1~0,0,Shrinkage Allowance
+560~SE~1~0,0,Service Charge
+560~SH~1~0,0,Special Handling Service
+560~SI~1~0,0,Switch Charge
+560~SL~1~0,0,Select Charge
+560~SO~1~0,0,Pole, Wood-Service Charge
+560~SP~1~0,0,Stopcharge
+560~SR~1~0,0,Slip Sheet, Rail
+560~SS~1~0,0,State Sales Tax
+560~ST~1~0,0,Sales Tax (State and Local)
+560~SU~1~0,0,Set-up
+560~SW~1~0,0,Swell
+560~SX~1~0,0,Sales and Use Tax
+560~T0010~1~0,0,Telephone Charge
+560~T0012~1~0,0,Tank Rental
+560~T0020~1~0,0,Temporary Allowance
+560~T0022~1~0,0,Tax on Transportation
+560~T0030~1~0,0,Temporary Voluntary Allowance
+560~T0040~1~0,0,Terminal Differential
+560~T0050~1~0,0,Testing Charge
+560~T0060~1~0,0,Tool Charge
+560~T0064~1~0,0,Testing Allowance
+560~T0070~1~0,0,Tools for Printing
+560~T0080~1~0,0,Trade In
+560~T0084~1~0,0,Transportation and Set Up
+560~T0090~1~0,0,Truckload Discount
+560~T1~1~0,0,Onetime Tooling
+560~TA~1~0,0,Tank Car Allowance
+560~TB~1~0,0,Transportation - Direct Billing
+560~TC~1~0,0,Ticketing Service
+560~TD~1~0,0,Trade Discount
+560~TL~1~0,0,Local Tax
+560~TM~1~0,0,Tax on Misc. Charges
+560~TO~1~0,0,Tooling
+560~TP~1~0,0,Third Party Allowance
+560~TR~1~0,0,Through-put Allowance
+560~TS~1~0,0,State Tax
+560~TT~1~0,0,Transportation - Third Party Billing
+560~TV~1~0,0,Transportation - Vendor Provided
+560~TX~1~0,0,Tax
+560~UC~1~0,0,Up Charge
+560~UM~1~0,0,Unsaleable Merchandise Allowance
+560~US~1~0,0,USDA Inspected, Stamping Certification
+560~UT~1~0,0,Use Tax
+560~V0010~1~0,0,Vendor Freight
+560~V0020~1~0,0,Volume Discount
+560~V1~1~0,0,Drop Yard
+560~V2~1~0,0,Drop Dock
+560~VL~1~0,0,Vehicle Load Allowance
+560~VP~1~0,0,Vehicle Prep Charge (Courtesy Delivery)
+560~W0010~1~0,0,Warranties
+560~WC~1~0,0,Wharfage Charge
+560~WH~1~0,0,Warehousing
+560~X0010~1~0,0,Combine All Same Day Shipment
+560~XP~1~0,0,Expanded Service
+560~YY~1~0,0,Split Pickup
+560~ZZ~1~0,0,Mutually Defined
+561,0,Service Marks and Numbers
+561,1,Data used to identify the performance of the service specified by Special Services Code (560).
+563,0,Back-Order Code
+563,1,Code to identify the back-order agreement.
+563~B~1~0,0,Back Order Only if New Item (Book Industry - Not Yet Published Only)
+563~F~1~0,0,Factory Ship
+563~N~1~0,0,No Back Order
+563~W~1~0,0,Warehouse Ship
+563~Y~1~0,0,Back Order if Out of Stock
+563~Z~1~0,0,Mutually Defined
+564,0,Do-Not-Exceed Action Code
+564,1,Code indicating the action to be taken if the order amount exceeds the value of Do-Not-Exceed Amount (565).
+564~0~1~0,0,Cancel Balance of Order/Item that Exceeds Value Specified in Data Element 565
+564~1~1~0,0,Cancel Entire Order/Item
+564~Z~1~0,0,Mutually Defined
+565,0,Do-Not-Exceed Amount
+565,1,Maximum monetary amount value which the order must not exceed.
+596,0,Required Invoice Date
+596,1,Date specified by the sender to be shown on the invoice.
+623,0,Time Zone Qualifier
+623,1,Code qualifying the time zone.
+623~CD~1~0,0,Central Daylight Time
+623~CS~1~0,0,Central Standard Time
+623~CT~1~0,0,Central Time
+623~ED~1~0,0,Eastern Daylight Time
+623~ES~1~0,0,Eastern Standard Time
+623~ET~1~0,0,Eastern Time
+623~MD~1~0,0,Mountain Daylight Time
+623~MS~1~0,0,Mountain Standard Time
+623~MT~1~0,0,Mountain Time
+623~PD~1~0,0,Pacific Daylight Time
+623~PS~1~0,0,Pacific Standard Time
+623~PT~1~0,0,Pacific Time
+639,0,Basis of Unit Price Code
+639,1,Code identifying the type of unit price for an item.
+639~AP~1~0,0,Advise Price
+639~BR~1~0,0,Broker
+639~CA~1~0,0,Catalog
+639~CP~1~0,0,Current Price (Subject to Change)
+639~CT~1~0,0,Contract
+639~DI~1~0,0,Distributor
+639~DR~1~0,0,Dealer
+639~DS~1~0,0,Discount
+639~ES~1~0,0,Estimated
+639~HF~1~0,0,Per 100 Feet
+639~HP~1~0,0,Price per Hundred
+639~LC~1~0,0,Catalog Price per Hundred
+639~LD~1~0,0,Catalog Price per Dozen
+639~LE~1~0,0,Catalog Price per Each
+639~LM~1~0,0,Catalog Price per Thousand
+639~NC~1~0,0,No Charge
+639~NE~1~0,0,Not to exceed
+639~NQ~1~0,0,No Quote
+639~PA~1~0,0,Price per Troy Ounce
+639~PD~1~0,0,Price per Dozen
+639~PE~1~0,0,Price per Each
+639~PO~1~0,0,Price per ounce
+639~PP~1~0,0,Price per Pound
+639~PR~1~0,0,Promotion
+639~PT~1~0,0,Price per Ton
+639~PY~1~0,0,Price per Yard
+639~QE~1~0,0,Quoted Price per Each
+639~QH~1~0,0,Quoted Price per Hundred
+639~QS~1~0,0,Quoted Price per Thousand
+639~QT~1~0,0,Quoted
+639~RC~1~0,0,Retail Price per Hundred
+639~RD~1~0,0,Retail Price per Dozen
+639~RE~1~0,0,Retail Price per Each
+639~RM~1~0,0,Retail Price per Thousand
+639~RT~1~0,0,Retail
+639~SR~1~0,0,Suggested Retail
+639~TB~1~0,0,To be negotiated.
+639~TC~1~0,0,Contract Price per Hundred
+639~TD~1~0,0,Contract Price per Dozen
+639~TE~1~0,0,Contract Price per Each
+639~TF~1~0,0,Per 1000 Feet
+639~TM~1~0,0,Contract Price per Thousand
+639~TP~1~0,0,Price per Thousand
+639~WC~1~0,0,Wholesale Price per Hundred
+639~WD~1~0,0,Wholesale Price per Dozen
+639~WE~1~0,0,Wholesale Price per Each
+639~WH~1~0,0,Wholesale
+639~WM~1~0,0,Wholesale Price per Thousand
+648,0,Price Multiplier Qualifier
+648,1,Code indicating the type of price multiplier.
+648~CSD~1~0,0,Cost Markup Multiplier - Original Cost
+648~CSR~1~0,0,Cost Markup Multiplier - Retail Cost
+648~DIS~1~0,0,Discount Multiplier
+648~PSP~1~0,0,Percent Solution Multiplier
+648~SEL~1~0,0,Selling Multiplier
+649,0,Multiplier
+649,1,Value, identified by price multiplier qualifier, to be used to multiply price to obtain a new value.
+65,0,Height
+65,1,Vertical dimension of an object measured when the object is in the upright position.
+66,0,Identification Code Qualifier
+66,1,Code designating the system/method of code structure used for Identification Code (67).
+661,0,Configuration Code
+661,1,Code indicating the relationship of the subline item to the baseline item.
+661~A~1~0,0,Added
+661~D~1~0,0,Deleted
+661~I~1~0,0,Included
+661~S~1~0,0,Substituted
+662,0,Subline Price Change Code ID
+662,1,Code indicating the relationship of the subline item unit price to the baseline item unit price.
+662~A~1~0,0,Added
+662~D~1~0,0,Deleted
+662~I~1~0,0,Included
+669,0,Currency Market/Exchange Code
+669,1,Code identifying the market upon which the currency exchange rate is based.
+669~IMF~1~0,0,International Monetary Fund
+669~LNF~1~0,0,London (England) Exchange - First Closing
+669~LNS~1~0,0,London (England) Exchange - Second Closing
+669~NYC~1~0,0,New York Foreign Exchange
+669~PHI~1~0,0,Philadelphia Foreign Exchange
+669~ZUR~1~0,0,Zurich (Switzerland) Exchange
+66~10~1~0,0,Department of Defense Active Address Code (DODAAC)
+66~11~1~0,0,Drug Enforcement Administration (DEA)
+66~12~1~0,0,Telephone Number (Phone)
+66~13~1~0,0,Federal Reserve Routing Code (FRRC)
+66~14~1~0,0,International European Article Number (EAN) (Vendor Portion)
+66~15~1~0,0,Standard Address Number (SAN)
+66~16~1~0,0,Zip Code
+66~18~1~0,0,Automotive Industry Action Group (AIAG)
+66~19~1~0,0,FIPS-55 (Named Populated Places)
+66~1~1~0,0,Dun and Bradstreet (Credit Reporting) (DUNS)
+66~20~1~0,0,Standard Point Location Code (SPLC)
+66~21~1~0,0,Health Care Industry I.D. Number
+66~22~1~0,0,Council of Petroleum Accounting Societies code (COPAS).
+66~2~1~0,0,Standard Carrier Alpha Code (Motor) (SCAC)
+66~3~1~0,0,Federal Maritime Commission (Ocean) (FMC)
+66~4~1~0,0,International Air Transport Association (IATA)
+66~5~1~0,0,SIRET
+66~7~1~0,0,Dock
+66~8~1~0,0,Vendor UPC Code
+66~91~1~0,0,Assigned by Seller or Seller's Agent
+66~92~1~0,0,Assigned by Buyer
+66~9~1~0,0,DUNS with 4-character suffix
+66~ZZ~1~0,0,Mutually Defined
+67,0,Identification Code
+67,1,Code identifying a party.
+672,0,Resource Authorization Code
+672,1,Code identifying the resource which the buyer is authorizing the seller to commit to.
+672~FI~1~0,0,Finished (Labor, Material, and Overhead/Burden)
+672~GS~1~0,0,Quantity Based Pricing Groups
+672~LB~1~0,0,Labor
+672~LM~1~0,0,Labor and Material
+672~MT~1~0,0,Material
+672~PQ~1~0,0,Cumulative Quantity Required Prior to First Schedule Period
+672~PR~1~0,0,Previously Released Requirements
+672~ZZ~1~0,0,Mutually Defined
+673,0,Quantity Qualifier
+673,1,Code specifying the type of quantity.
+673~01~1~0,0,Discrete Quantity
+673~02~1~0,0,Cumulative Quantity
+673~03~1~0,0,Discreet Quantity - Rejected Material
+673~04~1~0,0,Discrete Quantity - Rejected Material: Disposition Replacement
+673~05~1~0,0,Discrete Quantity - Rejected Material: Disposition Credit
+673~06~1~0,0,Discrete Quantity - Rejected Material: Disposition Pending
+673~07~1~0,0,Cumulative Quantity - Rejected Material
+673~08~1~0,0,Cumulative Quantity - Rejected Material: Disposition Replacement
+673~09~1~0,0,Cumulative Quantity - Rejected Material: Disposition Credit
+673~10~1~0,0,Cumulative Quantity - Rejected Material: Disposition Pending
+673~11~1~0,0,Split Quantity
+673~12~1~0,0,Ship Notice Quantity
+673~13~1~0,0,Collateral Requirements
+673~14~1~0,0,Quantity in Float
+673~15~1~0,0,Quantity in Hold Out
+673~16~1~0,0,Line Thread Quantity
+673~17~1~0,0,Quantity on Hand
+673~18~1~0,0,Previous Week Quantity
+673~19~1~0,0,Unverified Receipts
+673~20~1~0,0,Unusable Quantity
+673~21~1~0,0,Cumulative Quantity Shipped Short- Disposition Pending
+673~22~1~0,0,Cumulative Quantity Shipped Short- Disposition Challenged
+673~23~1~0,0,Cumulative Quantity Shipped Long- Disposition Pending
+673~24~1~0,0,Cumulative Quantity Shipped Long- Disposition Challenged
+673~25~1~0,0,OEM Inventory
+673~26~1~0,0,Total Inventory
+673~27~1~0,0,Committed Quantity
+673~28~1~0,0,Quantity Available for Return
+673~29~1~0,0,Projected Available Inventory
+673~30~1~0,0,Quote Quantity on Inventory
+673~31~1~0,0,Additional Demand Quantity
+673~32~1~0,0,Quantity Sold
+673~33~1~0,0,Quantity Available for Sale (stock quantity)
+673~34~1~0,0,Noncommitted Inventory on Shelf
+673~35~1~0,0,Inventory on Shelf + Work in Progress
+673~36~1~0,0,Distributor Inventory
+673~37~1~0,0,Work In Process
+673~38~1~0,0,Original Quantity
+673~39~1~0,0,Shipped Quantity
+673~40~1~0,0,Remaining Quantity
+673~41~1~0,0,Number of Batches
+673~42~1~0,0,Number of Checks
+673~45~1~0,0,Cumulative quantity on order
+673~46~1~0,0,Total transactions
+673~53~1~0,0,Original payment item count.
+673~54~1~0,0,Bank reject item count.
+673~55~1~0,0,Net to pay item count.
+673~56~1~0,0,Minimum Contract Quantity
+673~57~1~0,0,Minimum Order Quantity
+675,0,Forecast Type Qualifier
+675,1,Code which qualifies the type of dates used in the forecast.
+675~BB~1~0,0,Broadcast based
+675~DL~1~0,0,Delivery Based
+675~JS~1~0,0,Buyer Production Sequence Schedule
+675~SH~1~0,0,Shipment Based
+675~ZZ~1~0,0,Mutually Defined
+676,0,Forecast Quantity Qualifier
+676,1,Code which qualifies the types of quantities.
+676~A~1~0,0,Actual Discreet Quantities
+676~C~1~0,0,Cumulative Quantities
+676~D~1~0,0,Net Change Quantities
+676~R~1~0,0,Replacement Quantities
+678,0,Ship/Delivery Pattern Code
+678,1,Code which specifies the days for routine shipments or deliveries.
+678~1~1~0,0,1st Week of the Month
+678~2~1~0,0,2nd Week of the Month
+678~3~1~0,0,3rd Week of the Month
+678~4~1~0,0,4th Week of the Month
+678~5~1~0,0,5th Week of the Month
+678~6~1~0,0,1st & 3rd Weeks of the Month
+678~7~1~0,0,2nd & 4th Weeks of the Month
+678~8~1~0,0,1st Working Day of Period
+678~9~1~0,0,Last Working Day of Period
+678~A~1~0,0,Monday through Friday
+678~B~1~0,0,Monday through Saturday
+678~C~1~0,0,Monday through Sunday
+678~D~1~0,0,Monday
+678~E~1~0,0,Tuesday
+678~F~1~0,0,Wednesday
+678~G~1~0,0,Thursday
+678~H~1~0,0,Friday
+678~J~1~0,0,Saturday
+678~K~1~0,0,Sunday
+678~L~1~0,0,Monday through Thursday
+678~M~1~0,0,Immediately
+678~N~1~0,0,As Directed
+678~O~1~0,0,Daily Mon. through Fri.
+678~P~1~0,0,1/2 Mon. & 1/2 Thurs.
+678~Q~1~0,0,1/2 Tues. & 1/2 Thurs.
+678~R~1~0,0,1/2 Wed. & 1/2 Fri.
+678~S~1~0,0,Once Anytime Mon. through Fri.
+678~T~1~0,0,1/2 Tue. & 1/2 Fri.
+678~U~1~0,0,1/2 Mon. & 1/2 Wed.
+678~V~1~0,0,1/3 Mon., 1/3 Wed., 1/3 Fri.
+678~W~1~0,0,Each Week of the Month
+678~X~1~0,0,1/2 By Wed., Bal. By Fri.
+678~Y~1~0,0,None
+678~Z~1~0,0,Mutually Defined
+679,0,Ship/Delivery Pattern Time Code
+679,1,Code which specifies the time for routine shipments or deliveries.
+679~A~1~0,0,1st Shift (Normal Working Hours)
+679~B~1~0,0,2nd Shift
+679~C~1~0,0,3rd Shift
+679~D~1~0,0,A.M.
+679~E~1~0,0,P.M.
+679~F~1~0,0,As Directed
+679~G~1~0,0,Any Shift
+679~Y~1~0,0,None
+679~Z~1~0,0,Mutually Defined
+680,0,Forecast Qualifier
+680,1,Code specifying the sender's confidence level of the forecast data.
+680~A~1~0,0,Immediate
+680~B~1~0,0,Pilot/Prevolume
+680~C~1~0,0,Firm
+680~D~1~0,0,Planning
+680~E~1~0,0,Rounded Container Quantity
+680~S~1~0,0,Strike Protection
+680~Z~1~0,0,Mutually Defined
+681,0,Forecast Timing Qualifier
+681,1,Code specifying interval grouping of the forecast.
+681~A~1~0,0,Annually (Calendar Year)
+681~D~1~0,0,Discrete
+681~F~1~0,0,Flexible Interval (from Date X through Date Y)
+681~M~1~0,0,Monthly Bucket (Calendar Months)
+681~Q~1~0,0,Quarterly (Calendar Quarters)
+681~S~1~0,0,Semi-Annually (Calendar Year)
+681~T~1~0,0,Four week bucket (13 buckets per year)
+681~W~1~0,0,Weekly Bucket (Monday through Sunday)
+681~Z~1~0,0,Mutually Defined
+682,0,Part Release Status Code
+682,1,Code identifying the status of the specific part number being released.
+682~1~1~0,0,Fabrication Authorization Quantity is Final Model Year Requirement.  The Part is a Non carryover Item for the Subsequent Model Year from the Supplier.
+682~2~1~0,0,Material Authorization Quantity is Final Model Year Requirement.  The Part is a Non carryover Item for the Subsequent Model Year from the Supplier.
+682~3~1~0,0,Part will be Canceled at the Material Quantity
+682~4~1~0,0,Part is a Carryover Item from Subsequent Model Year from the Supplier
+682~5~1~0,0,Part is a New Item for the Subsequent Model Year
+682~6~1~0,0,Part is a New Item Due to an Interim Engineering Release
+682~7~1~0,0,Final Release for this Cancelled Part
+682~A~1~0,0,All Time Buy.  Unless Specifically Stated, This Code is Not to be Interpreted as Authorization for Tool Scrap.
+682~B~1~0,0,Balance-Out Part; Eng. Change Pending
+682~D~1~0,0,Terminal Buy
+682~G~1~0,0,Source Surplus
+682~H~1~0,0,Reschedule
+682~J~1~0,0,Minimum or Lot Buy
+682~K~1~0,0,Die Tie
+682~L~1~0,0,Landau Specification
+682~M~1~0,0,Mill Run Purchase
+682~N~1~0,0,Solicitation
+682~P~1~0,0,Pilot/Pre-production
+682~R~1~0,0,Replacement Orders
+682~S~1~0,0,Initial Orders
+682~T~1~0,0,Trim Order
+682~U~1~0,0,Confirming Phone Order
+682~W~1~0,0,Cover Overshipment - Do Not Reship
+687,0,Class of Trade Code
+687,1,Code indicating class of trade.
+687~AG~1~0,0,Agent
+687~BG~1~0,0,Buying Group
+687~BR~1~0,0,Broker
+687~CN~1~0,0,Consolidator (Master Distributor)
+687~CO~1~0,0,Contractor
+687~DE~1~0,0,Dealer
+687~DI~1~0,0,Distributor
+687~EX~1~0,0,Exporter
+687~JB~1~0,0,Jobber
+687~MF~1~0,0,Manufacturer
+687~OE~1~0,0,OEM
+687~RS~1~0,0,Resale
+687~ST~1~0,0,Stationer
+687~TR~1~0,0,General Trade
+687~WH~1~0,0,Wholesaler
+687~WS~1~0,0,User
+731,0,Transit Direction Code
+731,1,The point of origin and point of direction.
+731~BS~1~0,0,Buyer to Seller
+731~SB~1~0,0,Seller to Buyer
+731~SC~1~0,0,Subcontractor to Seller
+731~SS~1~0,0,Seller to Subcontractor
+731~ZZ~1~0,0,Mutually Defined
+732,0,Transit Time Direction Qualifier
+732,1,Code specifying the value of time used to measure the transit time.
+732~AA~1~0,0,Air Hours
+732~AD~1~0,0,Air Days
+732~CD~1~0,0,Calendar Days (Includes weekends and Holidays)
+732~CW~1~0,0,Calendar Weeks (7 Day)
+732~SD~1~0,0,Surface Days
+732~WD~1~0,0,Working Days (Excludes weekends and holidays)
+732~WW~1~0,0,5 Day Work Week
+732~ZZ~1~0,0,Mutually Defined
+733,0,Transit Time
+733,1,The numeric amount of transit time.
+737,0,Measurement Reference ID Code
+737,1,Code specifying the application of physical measurement cited.
+737~9L~1~0,0,Ninth Layer
+737~AA~1~0,0,Meter reading-beginning actual/ending actual
+737~AE~1~0,0,Meter reading-beginning actual/ending estimated
+737~BA~1~0,0,Base Point
+737~BL~1~0,0,Bundle Limitation
+737~BP~1~0,0,Bearing Piece Limitation
+737~BZ~1~0,0,Batten Size
+737~CH~1~0,0,Chemistry
+737~CN~1~0,0,Core Notch Dimensions
+737~CO~1~0,0,Concentration
+737~CS~1~0,0,Core Size
+737~CT~1~0,0,Counts
+737~DT~1~0,0,Dimensional Tolerance
+737~EA~1~0,0,Meter reading-beginning estimated/ending actual
+737~EE~1~0,0,Meter reading-beginning estimated/ending estimated
+737~EN~1~0,0,Environmental Conditions (The data values to be reported reflect the environmental conditions surrounding a situation including but not limited to test environments)
+737~LC~1~0,0,Limited Weight/Size Coils
+737~LL~1~0,0,Lift Limitation
+737~LM~1~0,0,Layer of Multiple Layered Product
+737~P1~1~0,0,Platform Limitation
+737~PC~1~0,0,Parting Cut (Sawcut)
+737~PD~1~0,0,Physical Dimensions (Product Ordered)
+737~PL~1~0,0,Package Limitations
+737~PO~1~0,0,Position
+737~RL~1~0,0,Receiving Facility Limitations
+737~RN~1~0,0,Lengths Limitation
+737~RP~1~0,0,Relative Position
+737~SE~1~0,0,Property Specifications (Indicates that the data to follow are target specifications)
+737~SH~1~0,0,Shipping Tolerance
+737~SL~1~0,0,Skid Limitations
+737~SM~1~0,0,Shade
+737~SP~1~0,0,Splices
+737~SR~1~0,0,Surface Roughness
+737~ST~1~0,0,Surface Treatment
+737~SU~1~0,0,Surface
+737~TD~1~0,0,Splice Tape Dimensions
+737~TE~1~0,0,Temperature
+737~TI~1~0,0,Time
+737~TL~1~0,0,Transportation Equipment Limitations
+737~TR~1~0,0,Test Results (Indicates that the data to follow are the results test measurements)
+737~WT~1~0,0,Weights
+738,0,Measurement Qualifier
+738,1,Code identifying the type of measurement.
+738~AA~1~0,0,Alternating Current
+738~AB~1~0,0,Activation Energy
+738~AC~1~0,0,Actinium
+738~AD~1~0,0,Ambient Temperature
+738~AE~1~0,0,Argon
+738~AF~1~0,0,Angle of Bend
+738~AG~1~0,0,Americium
+738~AH~1~0,0,Astatine
+738~AZ~1~0,0,Arbor Size
+738~A~1~0,0,Consolidated Weight
+738~BA~1~0,0,Barium
+738~BB~1~0,0,Beryllium
+738~BC~1~0,0,Billet Size
+738~BD~1~0,0,Bias
+738~BE~1~0,0,Boron Factor
+738~BF~1~0,0,Brinell
+738~BG~1~0,0,Berkelium
+738~BH~1~0,0,Bromine
+738~BO~1~0,0,Lateral Bow (Camber)
+738~BW~1~0,0,Basis Weight
+738~B~1~0,0,Billed Weight
+738~CA~1~0,0,Caliper
+738~CB~1~0,0,Core Loss
+738~CD~1~0,0,Compression
+738~CE~1~0,0,Capacitance In
+738~CF~1~0,0,Capacitance Out
+738~CG~1~0,0,Cadmium
+738~CH~1~0,0,Cesium
+738~CI~1~0,0,Curium
+738~CJ~1~0,0,Cycle Time
+738~CK~1~0,0,Californium
+738~CL~1~0,0,Cladding Thickness(% of Composite Thickness)
+738~CN~1~0,0,Chlorine
+738~CO~1~0,0,Core Loss
+738~CP~1~0,0,Crimp
+738~CR~1~0,0,Crosswise Spacing
+738~CS~1~0,0,Cross Section
+738~CU~1~0,0,Coil Curvature
+738~CW~1~0,0,Cuttable Width
+738~C~1~0,0,Actual New Repeated for Combination
+738~DA~1~0,0,Delta Value A
+738~DB~1~0,0,Delta Value B
+738~DC~1~0,0,Ductile Class
+738~DD~1~0,0,Depth of Dents
+738~DE~1~0,0,Defects
+738~DF~1~0,0,Distance Across Flats
+738~DG~1~0,0,Direct Current
+738~DH~1~0,0,Dysprosium
+738~DI~1~0,0,Diameter
+738~DL~1~0,0,Delta Value L
+738~DN~1~0,0,Density
+738~DP~1~0,0,Depth
+738~DS~1~0,0,Distance Between Points
+738~DT~1~0,0,Distance From Base Point
+738~DU~1~0,0,Draw Tension
+738~DW~1~0,0,Width, Boxcar Door
+738~DY~1~0,0,Dyeability
+738~D~1~0,0,Destination Weight Agreement
+738~EA~1~0,0,Elongation
+738~EB~1~0,0,Edge Burr
+738~EC~1~0,0,English Coil Dimensions
+738~ED~1~0,0,Eddy
+738~EE~1~0,0,Einsteinium
+738~EF~1~0,0,Europium
+738~EG~1~0,0,Equivalent Temperature
+738~EH~1~0,0,Erbium
+738~EL~1~0,0,Elongation
+738~EN~1~0,0,Entanglement
+738~EX~1~0,0,Eccentricity
+738~E~1~0,0,Estimated New Weight
+738~FA~1~0,0,Fluorine
+738~FB~1~0,0,Flare
+738~FC~1~0,0,Short Cycle Flatness
+738~FD~1~0,0,Frequency of Operation
+738~FE~1~0,0,Fermium
+738~FF~1~0,0,Francium
+738~FH~1~0,0,Finish
+738~FI~1~0,0,Filament Count
+738~FL~1~0,0,Longitudinal Flatness
+738~FN~1~0,0,Flatness
+738~FT~1~0,0,Flange Thickness
+738~FV~1~0,0,Transverse Flatness
+738~FW~1~0,0,Flange Width
+738~F~1~0,0,Deficit Weight
+738~GA~1~0,0,Grain
+738~GB~1~0,0,Guided Bends Root
+738~GC~1~0,0,Gadolinium
+738~GD~1~0,0,Gold
+738~GE~1~0,0,Guided Bends Face
+738~GF~1~0,0,Guided Bends Side
+738~GG~1~0,0,Gauge
+738~GH~1~0,0,Gallium
+738~GP~1~0,0,Group Package Separation
+738~GW~1~0,0,Gross Weight, Maximum
+738~G~1~0,0,Gross Weight
+738~HA~1~0,0,Hydro Pressure
+738~HB~1~0,0,Heavy Aluminas
+738~HC~1~0,0,Helium
+738~HD~1~0,0,High propagation delay time (The time between the specified  reference points on the input and output waveforms with the  output changing from the defined low level to the defined high  level.)
+738~HE~1~0,0,Heavy Silicates
+738~HF~1~0,0,Hardness
+738~HG~1~0,0,Heavy Sulfides
+738~HH~1~0,0,Heavy Globular Oxides
+738~HI~1~0,0,Hafnium
+738~HJ~1~0,0,Holmium
+738~HM~1~0,0,Height, Maximum
+738~HP~1~0,0,Height of Tread Plate Pattern
+738~HR~1~0,0,Height of Runners
+738~HT~1~0,0,Height
+738~IA~1~0,0,Iron
+738~IB~1~0,0,Impact Energy
+738~IC~1~0,0,Incremental Change
+738~ID~1~0,0,Inside Diameter
+738~IE~1~0,0,Impact Energy
+738~IF~1~0,0,Input Low Voltage
+738~IG~1~0,0,Granulated Ingot Size
+738~IH~1~0,0,Input Current
+738~II~1~0,0,Input Setup Time
+738~IJ~1~0,0,Input Hold Time
+738~IK~1~0,0,Indium
+738~IL~1~0,0,Ideal Diameter
+738~IM~1~0,0,Iridium
+738~IN~1~0,0,Input Low Current (The current flowing out of an input when a specified low level voltage is applied to that input.)
+738~IO~1~0,0,Input High Current (The current flowing out of an input when a specified high level voltage is applied to that input.)
+738~IP~1~0,0,Input Leakage Current (The current flowing into an input when the maximum allowed voltage is applied to the input.)
+738~IQ~1~0,0,Input Clamp Diode Voltage (The most negative voltage at an input when the specified current is forced out of that input terminal.)
+738~IR~1~0,0,Ideal Diameter
+738~IS~1~0,0,Input High Voltage
+738~IT~1~0,0,Interrupt Pulse Period
+738~IU~1~0,0,Interrupt Setup Time
+738~IV~1~0,0,Iodine
+738~IZ~1~0,0,Ingot Pound Size
+738~JA~1~0,0,Junction Temperature
+738~KA~1~0,0,Knoop
+738~KB~1~0,0,Krypton
+738~LA~1~0,0,Lanthanum
+738~LB~1~0,0,Lithium
+738~LC~1~0,0,Low Propagation Delay Time (The time between the specified  reference points on the input and output waveforms with the  output changing from high level to the defined low level.)
+738~LD~1~0,0,Lawrencium
+738~LE~1~0,0,Lutetium
+738~LF~1~0,0,Long Fibers
+738~LG~1~0,0,Leg
+738~LL~1~0,0,Long Leg
+738~LM~1~0,0,Length, Maximum
+738~LN~1~0,0,Length
+738~LO~1~0,0,Long Length
+738~LP~1~0,0,Camber of Pattern Line
+738~LS~1~0,0,Short Leg
+738~LT~1~0,0,Lengthwise Spacing
+738~LW~1~0,0,Long Width
+738~L~1~0,0,Legal Weight
+738~MA~1~0,0,Mean Average
+738~MB~1~0,0,Mendelevium
+738~MC~1~0,0,Min./Max Cuttable Width
+738~MD~1~0,0,Measurement Voltage (The reference voltage level on AC waveforms for determining AC performance.)
+738~ME~1~0,0,Maximum Input Low Voltage (The guaranteed input low threshold.)
+738~MF~1~0,0,Minimum Input High Voltage (The guaranteed input high voltage.)
+738~MG~1~0,0,Mercury
+738~MI~1~0,0,Minimum
+738~MJ~1~0,0,Major Section (Stepped)
+738~MN~1~0,0,Minimum Average
+738~MS~1~0,0,Minor Section (Stepped)
+738~MU~1~0,0,Multiplier
+738~MV~1~0,0,Maximum Average
+738~MX~1~0,0,Maximum
+738~M~1~0,0,Minimum Weight (for Weight)
+738~NA~1~0,0,No. per Package
+738~NB~1~0,0,No. per Bundle
+738~NC~1~0,0,No. per Coil Group
+738~ND~1~0,0,Neodymium
+738~NE~1~0,0,Niobium
+738~NF~1~0,0,Neon
+738~NG~1~0,0,Nobelium
+738~NL~1~0,0,No. per Lift
+738~NM~1~0,0,No. Pkgs. per Master Pack
+738~NP~1~0,0,Percent of Specified
+738~NS~1~0,0,No. per Skid
+738~NU~1~0,0,No. per Unit
+738~N~1~0,0,Actual Net Weight
+738~OA~1~0,0,Offset
+738~OB~1~0,0,Osmium
+738~OC~1~0,0,Output Low Voltage (The maximum guaranteed low voltage at an output terminal sinking the specified load current output low current.)
+738~OD~1~0,0,Outside Diameter
+738~OE~1~0,0,Output Low Current (The current flowing into an output which is in the low state.)
+738~OF~1~0,0,Output High Voltage (The minimum guaranteed high voltage at an output terminal for the specified output current `output high current' and at the minimum VCC value.)
+738~OG~1~0,0,Output High Current (The leakage current flowing into a turned off open collector output with a specified high output voltage applied.)
+738~OH~1~0,0,Overhead Height, Receiving Door
+738~OI~1~0,0,Output Off Current Low (The current flowing out of a disabled 3-state output with a specified low output voltage applied.)
+738~OJ~1~0,0,Output Off Current High (The current flowing into a disabled 3-state output with a specified high output voltage applied.)
+738~OK~1~0,0,Output Short-Circuit Current (The current flowing out of an output which is in the high state when that output is short circuit to ground.)
+738~OL~1~0,0,Output Disable Time From Low Level of a 3-State Output (The delay time between the specified reference points on the input and output voltage waveforms with the 3-state output changing from the low level to a high impedance `off' state.)
+738~OM~1~0,0,Outside Diameter, Maximum
+738~ON~1~0,0,Output Disable Time From High Level of a 3-State Output (The delay time between the specified reference points on the input and output voltage waveforms with 3-state output changing from the high level to a high impedance `off' state.)
+738~OO~1~0,0,Output Enable Time From Low Level of a 3-State Output (The delay time between the specified reference points on the input and output voltage waveforms with the 3-state output changing from the high impedance `off' state to the low level.)
+738~OP~1~0,0,Openness
+738~OQ~1~0,0,Output Enable Time From Low Level of a 3-State Output (The delay time between the specified reference points on the input and output voltage waveforms with the 3-state output changing from high impedance `off' state to the high level.)
+738~OR~1~0,0,Distance Between Outside Runners
+738~OS~1~0,0,Open Circuits
+738~OT~1~0,0,Output Delay Time
+738~OW~1~0,0,Overall Width
+738~O~1~0,0,Excess Weight Over Maximum
+738~PA~1~0,0,Package Separation
+738~PB~1~0,0,Pressure
+738~PC~1~0,0,Per Hundred Linear Yards
+738~PD~1~0,0,Platinum
+738~PE~1~0,0,Potassium
+738~PF~1~0,0,Promethium
+738~PG~1~0,0,Polonium
+738~PH~1~0,0,Pulse Setup Time (The interval immediately preceding the active transition of the timing or preceding the transition of the control input to its latching level.)
+738~PI~1~0,0,Pulse Hold Time (The interval immediately following the active transition of the timing pulse or following the transition of control input to its latching level.)
+738~PJ~1~0,0,Pulse Width (The time between the specified reference points on the leading and trailing edges of a pulse.)
+738~PK~1~0,0,Pulse Recovery Time (The time between the reference point on the  trailing edge of an asynchronous input control pulse and the  reference point on the activating edge of a synchronous pulse  input such that the device will respond to the synchronous  input.)
+738~PL~1~0,0,Percent Defective
+738~PM~1~0,0,Practice
+738~PN~1~0,0,Palladium
+738~PO~1~0,0,Percent of Order
+738~PP~1~0,0,Powder/Paste Package Size
+738~PQ~1~0,0,Plutonium
+738~PR~1~0,0,Praseodymium
+738~PSA~1~0,0,Percent Solution Actual
+738~PS~1~0,0,Protactinium
+738~PW~1~0,0,Purchased Width
+738~PZ~1~0,0,Pipe Size Nominal
+738~QA~1~0,0,Quality Index
+738~RA~1~0,0,Relative Humidity
+738~RB~1~0,0,Range Value
+738~RC~1~0,0,Radius of Corner
+738~RD~1~0,0,Readpoint
+738~RE~1~0,0,Ream Weight
+738~RF~1~0,0,Resistivity
+738~RG~1~0,0,Radium
+738~RH~1~0,0,Rhenium
+738~RI~1~0,0,Rubidium
+738~RJ~1~0,0,Rockwell-C
+738~RK~1~0,0,Rockwell-B
+738~RL~1~0,0,Reduction Ration
+738~RM~1~0,0,RMS Range (Side 1)
+738~RN~1~0,0,Required Interrupt Release
+738~RO~1~0,0,Reset Pulse Width
+738~RP~1~0,0,Reduction of Area
+738~RQ~1~0,0,Radon
+738~RR~1~0,0,Reduction Ratio
+738~RS~1~0,0,RMS Range (Side 2)
+738~RU~1~0,0,Rhodium
+738~RV~1~0,0,Ruthenium
+738~RW~1~0,0,Rolling Width
+738~R~1~0,0,Per Unit Dunnage
+738~SA~1~0,0,Sort Code Lab
+738~SB~1~0,0,Sort Code CMC
+738~SC~1~0,0,Schedule Number (Pipe Size)
+738~SD~1~0,0,Strength
+738~SE~1~0,0,Selvage Left
+738~SF~1~0,0,Samarium
+738~SG~1~0,0,Selenium
+738~SH~1~0,0,Strontium
+738~SI~1~0,0,Supply Current (The current flowing into the VCC supply terminal of the circuit with specified input conditions and open outputs.)
+738~SJ~1~0,0,Short Circuits
+738~SK~1~0,0,Shrinkage
+738~SL~1~0,0,Short Length
+738~SM~1~0,0,Shear
+738~SN~1~0,0,Stain
+738~SO~1~0,0,Sort Code LCH
+738~SP~1~0,0,Splinter Count
+738~SQ~1~0,0,Shipped Quantity
+738~SR~1~0,0,Selvage Right
+738~SS~1~0,0,Silver
+738~ST~1~0,0,Stop Recovery Startup Time
+738~SU~1~0,0,Shipped Units
+738~SV~1~0,0,Scandium
+738~SW~1~0,0,Short Width
+738~SX~1~0,0,Sodium
+738~S~1~0,0,State Weight
+738~TA~1~0,0,Thickness Heavy End (Tapered/Stepped)
+738~TB~1~0,0,Thickness Small End (Tapered/Stepped)
+738~TC~1~0,0,Temperature
+738~TD~1~0,0,Thin Aluminas
+738~TE~1~0,0,Tenacity
+738~TF~1~0,0,Tensile
+738~TG~1~0,0,Thin Sulfides
+738~TH~1~0,0,Thickness
+738~TI~1~0,0,Thin Silicates
+738~TJ~1~0,0,Total Supply Current
+738~TK~1~0,0,Timer Pulse Width
+738~TL~1~0,0,Tapered/Stepped Length Type
+738~TM~1~0,0,Length Type: Multiples
+738~TN~1~0,0,Timer Period
+738~TO~1~0,0,Terbium
+738~TP~1~0,0,Thorium
+738~TQ~1~0,0,Thin Globular Oxides
+738~TR~1~0,0,Length Type:  Random
+738~TS~1~0,0,Length Type:  Specific
+738~TT~1~0,0,Time
+738~TU~1~0,0,Technetium
+738~TV~1~0,0,Thallium
+738~TX~1~0,0,Thulium
+738~T~1~0,0,Tare Weight
+738~UA~1~0,0,Uranium
+738~U~1~0,0,Weight per Unit
+738~VH~1~0,0,Height, Van Door
+738~VW~1~0,0,Width, Van Door
+738~WA~1~0,0,Weight per Unit of Area
+738~WB~1~0,0,Web
+738~WC~1~0,0,Wait Recovery Startup Time
+738~WD~1~0,0,Width
+738~WE~1~0,0,Wolfram
+738~WL~1~0,0,Wall Thickness
+738~WM~1~0,0,Width, Maximum
+738~WT~1~0,0,Weight
+738~WU~1~0,0,Weight per Unit of Length
+738~XA~1~0,0,Xenon
+738~XH~1~0,0,Side Height, Flat Bed With Removable Sides
+738~XP~1~0,0,Specified
+738~XQ~1~0,0,Squareness
+738~XZ~1~0,0,Spool Size
+738~X~1~0,0,Maximum Weight (for Rate)
+738~YA~1~0,0,Yttrium
+738~YB~1~0,0,Yield
+738~YC~1~0,0,Ytterbium
+738~ZAL~1~0,0,% of Aluminum
+738~ZAS~1~0,0,% of Arsenic
+738~ZA~1~0,0,Zinc
+738~ZBI~1~0,0,% of Bismuth
+738~ZB~1~0,0,% of Boron
+738~ZCA~1~0,0,% of Calcium
+738~ZCB~1~0,0,% of Columbium
+738~ZCE~1~0,0,% of Cerium
+738~ZCO~1~0,0,% of Cobalt
+738~ZCR~1~0,0,% of Chromium
+738~ZCU~1~0,0,% of Copper
+738~ZC~1~0,0,% of Carbon
+738~ZFE~1~0,0,% of Iron
+738~ZFS~1~0,0,% of Iron plus Silicon
+738~ZGE~1~0,0,% of Germanium
+738~ZH~1~0,0,% of Hydrogen
+738~ZMG~1~0,0,% of Magnesium
+738~ZMN~1~0,0,% of Manganese
+738~ZMO~1~0,0,% of Molybdenum
+738~ZNB~1~0,0,% of Niobium
+738~ZNI~1~0,0,% of Nickel
+738~ZN~1~0,0,% of Nitrogen
+738~ZO~1~0,0,% of Oxygen
+738~ZPB~1~0,0,% of Lead
+738~ZP~1~0,0,% of Phosphorus
+738~ZSB~1~0,0,% of Antimony
+738~ZSE~1~0,0,% of Selenium
+738~ZSI~1~0,0,% of Silicon
+738~ZSN~1~0,0,% of Tin
+738~ZS~1~0,0,% of Sulphur
+738~ZTA~1~0,0,% of Tantalum
+738~ZTE~1~0,0,% of Tellurium
+738~ZTI~1~0,0,% of Titanium
+738~ZV~1~0,0,% of Vanadium
+738~ZW~1~0,0,% of Tungsten
+738~ZZN~1~0,0,% of Zinc
+738~ZZR~1~0,0,% of Zirconium
+738~ZZZ~1~0,0,Mutually Defined
+739,0,Measurement Value
+739,1,The value of the measurement.
+740,0,Range Minimum
+740,1,The value specifying the minimum of the measurement range.
+741,0,Range Maximum
+741,1,The value specifying the maximum of the measurement range.
+750,0,Product Characteristic Code
+750,1,Code specifying the product characteristic being described.
+750~02~1~0,0,General Product Form
+750~08~1~0,0,Product
+750~09~1~0,0,Sub-product
+750~10~1~0,0,Major Grade
+750~11~1~0,0,Society, Government, Customer Specifications
+750~12~1~0,0,Type and/or Process
+750~13~1~0,0,Quality
+750~14~1~0,0,Finish or Surface Roughness
+750~15~1~0,0,Heat Treat/Anneal
+750~16~1~0,0,Temper
+750~17~1~0,0,Coating
+750~18~1~0,0,Surface Treatment, Chemical
+750~19~1~0,0,Surface Treatment, Mechanical
+750~20~1~0,0,Ends:  Slitting, Splitting, Cutting
+750~21~1~0,0,Forming
+750~22~1~0,0,Edge Treatment
+750~23~1~0,0,Welds/Splices
+750~25~1~0,0,End Treatment
+750~28~1~0,0,Test Sample Frequency
+750~29~1~0,0,Test Sample Location
+750~30~1~0,0,Test Sample Direction
+750~32~1~0,0,Type of Test/Inspection
+750~33~1~0,0,Inspection Agencies
+750~34~1~0,0,Filament
+750~35~1~0,0,Color
+750~36~1~0,0,Denier
+750~37~1~0,0,Fiber
+750~38~1~0,0,Grade
+750~39~1~0,0,Luster
+750~40~1~0,0,Shade
+750~41~1~0,0,Tint
+750~42~1~0,0,Tow
+750~43~1~0,0,Twist
+750~54~1~0,0,Section Profile
+750~55~1~0,0,Alloy
+750~56~1~0,0,Special Processing
+750~58~1~0,0,Winding Instructions
+750~59~1~0,0,Surface Protection
+750~60~1~0,0,Machine Run
+750~61~1~0,0,End Use Application
+750~62~1~0,0,Corrosion Resistance
+750~63~1~0,0,Product Life Cycle
+750~64~1~0,0,Package Integrity
+750~65~1~0,0,Visual
+750~66~1~0,0,Electrical
+750~67~1~0,0,Functional Performance
+750~68~1~0,0,Chemistry
+750~69~1~0,0,Physical
+750~70~1~0,0,Magnetic
+750~71~1~0,0,Mechanical
+750~72~1~0,0,Metallography
+750~73~1~0,0,Vendor color description
+750~74~1~0,0,Vendor size description
+750~75~1~0,0,Buyer's Color Description
+750~76~1~0,0,Dye Lot Description
+750~77~1~0,0,Finish Description
+750~78~1~0,0,Pattern Description
+750~79~1~0,0,Put-up Description
+750~99~1~0,0,Precautionary Instructions
+750~9A~1~0,0,Manufacturing Method
+750~9B~1~0,0,Product Application
+751,0,Product Description Code
+751,1,A code from an industry code list which provides specific data about a product characteristic. Also see: Item Description Qualifier (348).
+752,0,Surface/Layer/Position Code
+752,1,Code indicating the product surface, layer or position that is being described.
+752~1S~1~0,0,Side One
+752~2S~1~0,0,Side Two
+752~BS~1~0,0,Both Sides
+752~BT~1~0,0,Bottom
+752~IN~1~0,0,Inside
+752~OA~1~0,0,Overall
+752~OS~1~0,0,One Side
+752~OT~1~0,0,Outside
+752~R0~1~0,0,Relative Position 10
+752~R1~1~0,0,Relative Position 1
+752~R2~1~0,0,Relative Position 2
+752~R3~1~0,0,Relative Position 3
+752~R4~1~0,0,Relative Position 4
+752~R5~1~0,0,Relative Position 5
+752~R6~1~0,0,Relative Position 6
+752~R7~1~0,0,Relative Position 7
+752~R8~1~0,0,Relative Position 8
+752~R9~1~0,0,Relative Position 9
+752~RA~1~0,0,Relative Position 11
+752~RB~1~0,0,Relative Position 12
+752~RC~1~0,0,Relative Position 13
+752~RD~1~0,0,Relative Position 14
+752~RE~1~0,0,Relative Position 15
+752~RF~1~0,0,Relative Position 16
+752~RG~1~0,0,Relative Position 17
+752~RH~1~0,0,Relative Position 18
+752~RI~1~0,0,Relative Position 19
+752~RJ~1~0,0,Relative Position 20
+752~RK~1~0,0,Relative Position 21
+752~RL~1~0,0,Relative Position 22
+752~RM~1~0,0,Relative Position 23
+752~RN~1~0,0,Relative Position 24
+752~RO~1~0,0,Relative Position 25
+752~RP~1~0,0,Relative Position 26
+752~RQ~1~0,0,Relative Position 27
+752~RR~1~0,0,Relative Position 28
+752~RS~1~0,0,Relative Position 29
+752~RT~1~0,0,Relative Position 30
+752~RU~1~0,0,Relative Position 31
+752~RV~1~0,0,Relative Position 32
+752~RW~1~0,0,Relative Position 33
+752~RX~1~0,0,Relative Position 34
+752~RY~1~0,0,Relative Position 35
+752~RZ~1~0,0,Relative Position 36
+752~TP~1~0,0,Top
+752~TS~1~0,0,Two Sides
+753,0,Packaging Characteristic Code
+753,1,Code specifying the marking, packaging, loading and related characteristics being described.
+753~34~1~0,0,Product Marking
+753~35~1~0,0,Type of Package
+753~36~1~0,0,Package Specifications
+753~37~1~0,0,Package Protection
+753~38~1~0,0,Tarping
+753~39~1~0,0,Platform/Skid Location
+753~40~1~0,0,Bearing Piece Location
+753~42~1~0,0,Placement on Carrier
+753~43~1~0,0,Spacing Directions
+753~44~1~0,0,Unloading Device
+753~45~1~0,0,Unloading Equipment
+753~60~1~0,0,Product Marking Pattern
+753~61~1~0,0,Product Marking Location
+753~62~1~0,0,Package/Container Mark Location
+753~63~1~0,0,Marking Method
+753~65~1~0,0,Core Characteristics
+753~66~1~0,0,Receiving Facility Limitations
+753~67~1~0,0,Tagging/Bar Code Instructions
+753~68~1~0,0,Skid/Pallet Type
+754,0,Packaging Description Code
+754,1,A code from an industry code list which provides specific data about the marking, packaging or loading and unloading of a product. Also see: Item Description Qualifier (348).
+755,0,Report Type Code
+755,1,Code indicating the title and/or contents of a document or report.
+755~01~1~0,0,Product Transfer
+755~02~1~0,0,Resale
+755~11~1~0,0,Chemical Analysis
+755~12~1~0,0,Mechanical Properties
+755~13~1~0,0,Certified Test Report
+755~14~1~0,0,Core Loss Test Report
+755~AA~1~0,0,Agent Inventory Report
+755~AD~1~0,0,Agent/Distributor Inventory Report
+755~AO~1~0,0,Average Outgoing Quality Report
+755~AP~1~0,0,Advanced Problem Notification
+755~BL~1~0,0,Bill of Lading
+755~BT~1~0,0,Blanket Test Results
+755~CA~1~0,0,Certificate of Analysis
+755~CC~1~0,0,C.A.A. Certificate of Conformance (British CAA)
+755~CD~1~0,0,Customer/Distributor Inventory Report
+755~CI~1~0,0,Certificate of Inspection Report
+755~CM~1~0,0,Customer/Manufacturer Inventory Report
+755~CP~1~0,0,Certificate of Compliance (Material Certification)
+755~DC~1~0,0,Distributor/Customer Inventory Report
+755~DD~1~0,0,Distributor Inventory Report
+755~DM~1~0,0,Distributor/Manufacturer Inventory Report
+755~DN~1~0,0,Deviation/Nonconformance Test Results and Request for Action
+755~DR~1~0,0,Datalog Report
+755~EA~1~0,0,Electrical Average Outgoing Quality Report
+755~FD~1~0,0,Federal Specification Compliance
+755~FH~1~0,0,Limitation of Heavy Elements
+755~IT~1~0,0,Certified Inspection and Test Results
+755~IV~1~0,0,Invoice
+755~LC~1~0,0,Location Inventory Report
+755~MA~1~0,0,Manufacturer/Agent Inventory Report
+755~MB~1~0,0,Manufacturer/Distributor Inventory Report
+755~MC~1~0,0,Manufacturer/Customer Inventory Report
+755~MD~1~0,0,Material Data Sheets
+755~MM~1~0,0,Manufacturer Inventory Report
+755~MR~1~0,0,Material Inspection and Receiving Report
+755~MS~1~0,0,Material Safety Data Sheet
+755~PC~1~0,0,Process Change Notice
+755~PD~1~0,0,Proof of Delivery
+755~PI~1~0,0,Product Availability Inquiry
+755~PT~1~0,0,Inter-Plant Inventory Report
+755~RF~1~0,0,Reliability Fail Rate Report
+755~RT~1~0,0,Report of Tests and Analysis Report
+755~SI~1~0,0,Seller Inventory Report
+755~SM~1~0,0,Shipping Manifests
+755~SN~1~0,0,Shipping Notice
+755~SQ~1~0,0,Statistical Quality Documents
+755~SR~1~0,0,Statistical Report
+755~SS~1~0,0,Seller Sales Report
+755~US~1~0,0,BUY AMERICA Certification of Compliance
+755~VD~1~0,0,Data Request for Vendor's Specifications or Drawings.
+755~VM~1~0,0,Visual/Mechanical Average Outgoing Quality Report
+756,0,Report Transmission Code
+756,1,Code defining timing and transmission method by which reports are to be sent.
+756~AE~1~0,0,Electronically After Shipping
+756~AM~1~0,0,By Mail After Shipping
+756~BM~1~0,0,By Mail
+756~BW~1~0,0,Best Way (Sender's Option)
+756~EL~1~0,0,Electronically
+756~IE~1~0,0,Electronically with Invoice
+756~IM~1~0,0,By Mail with Invoice
+756~SE~1~0,0,Electronically Before Shipping
+756~SM~1~0,0,By Mail Before Shipping
+756~SN~1~0,0,With Ship Notice
+756~TE~1~0,0,Separately, Electronically at Time of Shipping
+756~TM~1~0,0,Separately, by Mail at Time of Shipping
+756~WS~1~0,0,With Shipment (With Package)
+757,0,Report Copies Needed
+757,1,The number of copies of a report that should be sent to the addressee.
+765,0,Day of Month
+765,1,The numeric value of the day of the month between 1 and the maximum day of the month being referenced.
+79,0,Lading Description
+79,1,Description of an item as required for rating and billing purposes.
+80,0,Lading Quantity
+80,1,Number of units (pieces) of the lading commodity. Also see: Unit of Measurement Code (355.)
+81,0,Weight
+81,1,Numeric value of weight. Also see: Weight Qualifier (187), Weight Unit Qualifier (188), Unit of Measurement Code (355.)
+82,0,Length
+82,1,Largest horizontal dimension of an object measured when the object is in the upright position. Also see: Measurement Unit Qualifier (90), Unit of Measurement Code (355).
+87,0,Marks and Numbers
+87,1,Marks and numbers used to identify a shipment or parts of a shipment. Also see: Marks and Numbers Qualifier (88).
+88,0,Marks and Numbers Qualifier
+88,1,Code specifying the application or source of Marks and Numbers (87).
+88~GM~1~0,0,General Merchandise & Apparel Implementation Committee, (GMAIC) Format.
+88~L~1~0,0,Line Item Only
+88~PB~1~0,0,Premarked by Buyer
+88~SM~1~0,0,Shipper Assigned
+88~SR~1~0,0,Shipper Assigned Roll Number
+88~SS~1~0,0,Shipper Assigned Skid Number
+88~S~1~0,0,Entire Shipment
+88~UC~1~0,0,Uniform Code Council (UCC) format.
+88~ZZ~1~0,0,Mutually Defined
+91,0,Transportation Method Code
+91,1,Code specifying the method of transportation for the shipment.
+91~AC~1~0,0,Air Charter
+91~AE~1~0,0,Air Express
+91~A~1~0,0,Air
+91~BP~1~0,0,Book Postal
+91~BU~1~0,0,Bus
+91~B~1~0,0,Barge
+91~CE~1~0,0,Customer Pickup / Customer's Expense
+91~C~1~0,0,Consolidation
+91~D~1~0,0,Parcel Post
+91~E~1~0,0,Expedited Truck
+91~H~1~0,0,Customer Pickup
+91~I~1~0,0,Common Irregular Carrier
+91~J~1~0,0,Motor
+91~K~1~0,0,Backhaul
+91~LT~1~0,0,Less Than Trailer Load (LTL)
+91~L~1~0,0,Contract Carrier
+91~M~1~0,0,Motor (Common Carrier)
+91~N~1~0,0,Private Vessel
+91~O~1~0,0,Containerized Ocean
+91~PC~1~0,0,Private Carrier
+91~PT~1~0,0,Pooled Truck
+91~P~1~0,0,Pipeline
+91~Q~1~0,0,Conventional Ocean
+91~R~1~0,0,Rail
+91~SR~1~0,0,Supplier Truck
+91~SS~1~0,0,Steamship
+91~S~1~0,0,Ocean
+91~TC~1~0,0,Cab (Taxi)
+91~T~1~0,0,Best Way (Shippers Option)
+91~U~1~0,0,Private Parcel Service
+91~VE~1~0,0,Vessel
+91~W~1~0,0,Inland Waterway
+91~X~1~0,0,Intermodal
+93,0,Name
+93,1,Free form name.
+935,0,Measurement Significance Code
+935,1,Code used to benchmark, qualify or further define a measurement value.
+935~01~1~0,0,Where Air = 1
+935~02~1~0,0,Where Butyl Acetate = 1
+935~03~1~0,0,Approximately
+935~04~1~0,0,Equal to
+935~05~1~0,0,Greater than or equal to
+935~06~1~0,0,Greater than
+935~07~1~0,0,Less than
+935~08~1~0,0,Less than or equal to
+935~09~1~0,0,Where H2O = 1 or Water = 1
+935~10~1~0,0,Not equal to
+936,0,Measurement Attribute Code
+936,1,Code used to express an attribute response when a numeric measurement value cannot be determined.
+936~01~1~0,0,Clear
+936~02~1~0,0,Hazy
+936~03~1~0,0,Excess
+936~04~1~0,0,Some
+936~05~1~0,0,Undetectable
+936~06~1~0,0,Trace
+936~07~1~0,0,Yes
+936~08~1~0,0,Closed
+936~09~1~0,0,Pass
+936~10~1~0,0,Present
+936~11~1~0,0,Gel
+936~12~1~0,0,OK
+936~13~1~0,0,Slight
+936~14~1~0,0,No Good
+936~15~1~0,0,Marginal
+936~16~1~0,0,Nil
+936~17~1~0,0,Oil Free
+936~18~1~0,0,Open
+936~19~1~0,0,Free
+936~20~1~0,0,No
+936~21~1~0,0,Checked
+936~22~1~0,0,Fail
+936~23~1~0,0,Absent
+936~24~1~0,0,Good
+936~25~1~0,0,Fair
+936~26~1~0,0,Poor
+936~27~1~0,0,Excellent
+96,0,Number of Included Segments
+96,1,Total number of segments included in a transaction set including ST and SE segments.
+98,0,Entity Identifier Code
+98,1,Code identifying an organizational entity or a physical location.
+98~11~1~0,0,Party to be billed(AAR Accounting Rule 11)
+98~AC~1~0,0,Air Cargo Company
+98~AD~1~0,0,Party to be advised (Written orders)
+98~AG~1~0,0,Agent
+98~AK~1~0,0,Party to Whom Acknowledgment Should Be Sent
+98~AO~1~0,0,Account Of
+98~BK~1~0,0,Bank
+98~BL~1~0,0,Party to Receive Bill of Lading
+98~BN~1~0,0,Beneficial Owner
+98~BO~1~0,0,Broker or Sales Office
+98~BS~1~0,0,Bill and Ship To
+98~BT~1~0,0,Party to be Billed For Other Than Freight(Bill To)
+98~BW~1~0,0,Borrower
+98~BY~1~0,0,Buying Party (Purchaser)
+98~C1~1~0,0,In Care Of Party no. 1
+98~C2~1~0,0,In Care Of Party no. 2
+98~CA~1~0,0,Carrier
+98~CB~1~0,0,Customs Broker
+98~CC~1~0,0,Claimant
+98~CD~1~0,0,Consignee (To receive small parcels and mail)
+98~CE~1~0,0,Consignee (To receive large parcels and freight)
+98~CL~1~0,0,Container Location
+98~CM~1~0,0,Customs
+98~CN~1~0,0,Consignee
+98~CO~1~0,0,Corporate Office
+98~CP~1~0,0,Party to Receive Cert. of Compliance
+98~CR~1~0,0,Container Return Company
+98~CS~1~0,0,Consolidator
+98~DB~1~0,0,Distributor Branch
+98~DC~1~0,0,Destination Carrier
+98~DE~1~0,0,Depositor
+98~DS~1~0,0,Distributor
+98~EC~1~0,0,Exchanger
+98~EE~1~0,0,Location of Goods for Customs Examination Before Clearance
+98~EM~1~0,0,Party to Receive Electronic Memo of Invoice
+98~EP~1~0,0,Eligible Party to the Rate
+98~EX~1~0,0,Exporter
+98~FH~1~0,0,Party to Receive Limitations of Heavy Elements Report
+98~FR~1~0,0,Message From
+98~FW~1~0,0,Forwarder
+98~IA~1~0,0,Installed At
+98~IC~1~0,0,Intermediate Consignee
+98~II~1~0,0,Issuer of Invoice
+98~IK~1~0,0,Intermediate Carrier
+98~IM~1~0,0,Importer
+98~IN~1~0,0,Insurer
+98~IS~1~0,0,Party to Receive Certified Inspection Report
+98~IT~1~0,0,Installation on Site
+98~LN~1~0,0,Lender
+98~LP~1~0,0,Loading Party
+98~MA~1~0,0,Party for whom Item is Ultimately Intended
+98~MC~1~0,0,Motor Carrier
+98~MF~1~0,0,Manufacturer of Goods
+98~MI~1~0,0,Planning Schedule/Material Release Issuer
+98~MP~1~0,0,Manufacturing Plant
+98~N1~1~0,0,Notify Party no. 1
+98~N2~1~0,0,Notify Party no. 2
+98~OB~1~0,0,Ordered By
+98~OC~1~0,0,Origin Carrier
+98~OI~1~0,0,Outside Inspection Agency
+98~OO~1~0,0,Order Of (Shippers Orders) - (Transportation)
+98~OP~1~0,0,Operator of property or unit
+98~OT~1~0,0,Outside Test Agency
+98~OV~1~0,0,Owner of Vessel
+98~OW~1~0,0,Owner of Property or Unit
+98~PA~1~0,0,Party to Receive Inspection Report
+98~PB~1~0,0,Paying Bank
+98~PC~1~0,0,Party to Receive Cert. of Conformance (C.A.A.)
+98~PD~1~0,0,Purchaser's Department Buyer
+98~PE~1~0,0,Payee
+98~PF~1~0,0,Party to Receive Freight Bill
+98~PG~1~0,0,Prime Contractor
+98~PJ~1~0,0,Party to Receive Correspondence
+98~PM~1~0,0,Party to receive paper Memo of Invoice
+98~PN~1~0,0,Party to Receive Shipping Notice
+98~PP~1~0,0,Property
+98~PR~1~0,0,Payer
+98~PT~1~0,0,Party to Receive Test Report
+98~PU~1~0,0,Party at Pick-up Location
+98~PV~1~0,0,Part performing certification
+98~RB~1~0,0,Receiving Bank
+98~RC~1~0,0,Receiving Location
+98~RE~1~0,0,Party to receive commercial invoice remittance
+98~RL~1~0,0,Reporting Location
+98~RM~1~0,0,Party that remits payment
+98~RP~1~0,0,Receiving Point for Customer Samples
+98~RR~1~0,0,Railroad
+98~RS~1~0,0,Receiving Facility Scheduler
+98~SA~1~0,0,Salvage Carrier
+98~SC~1~0,0,Store Class
+98~SD~1~0,0,Sold To and Ship To
+98~SE~1~0,0,Selling Party
+98~SF~1~0,0,Ship From
+98~SG~1~0,0,Store Group
+98~SH~1~0,0,Shipper
+98~SI~1~0,0,Shipping Schedule Issuer
+98~SM~1~0,0,Party to Receive Shipping Manifest
+98~SN~1~0,0,Store
+98~SO~1~0,0,Sold To If Different From Bill To
+98~SP~1~0,0,Party filling Shipper's Order
+98~SS~1~0,0,Steamship Company
+98~ST~1~0,0,Ship To
+98~SU~1~0,0,Supplier/Manufacturer
+98~SW~1~0,0,Sealing Company
+98~TO~1~0,0,Message To
+98~TR~1~0,0,Terminal
+98~TS~1~0,0,Party to Receive Certified Test Results
+98~TT~1~0,0,Transfer To
+98~UC~1~0,0,Ultimate Consignee
+98~UP~1~0,0,Unloading Party
+98~VN~1~0,0,Vendor
+98~WH~1~0,0,Warehouse
+98~ZZ~1~0,0,Mutually Defined

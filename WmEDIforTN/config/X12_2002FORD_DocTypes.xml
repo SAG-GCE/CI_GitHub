@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<IDataXMLCoder version="1.0">
+		<record javaclass="com.wm.data.BasicData">
+			<record name="version" javaclass="com.wm.data.BasicData">
+				<value name="major">1</value>
+				<value name="minor">0</value>
+			</record>
+		<record name="types" javaclass="com.wm.data.BasicData">
+
+				<idatacodable name="53o75f005cupqpm9000000s3" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75f005cupqpm9000000s3</value>
+					<value name="TypeName">X12 2002FORD 856</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2010-09-23 13:32:27.145</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">X12</value>
+					<value name="version">2002FORD</value>
+					<value name="transaction">856</value>
+				</idatacodable>
+				<idatacodable name="53o75f005cupqpm9000000s4" javaclass="wm.b2b.editn.EDITransactionDocType">
+					<value name="TypeID">53o75f005cupqpm9000000s4</value>
+					<value name="TypeName">X12 2002FORD 862</value>
+					<null name="TypeDescription"/>
+					<idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+						<value name="MBoolean">false</value>
+					</idatacodable>
+					<value name="LastModified">2010-09-23 13:32:27.145</value>
+					<value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+					<record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+						<value name="verify?">no</value>
+						<value name="validate?">no</value>
+						<value name="persist?">yes</value>
+						<value name="unique?">no</value>
+					</record>
+					<value name="standard">X12</value>
+					<value name="version">2002FORD</value>
+					<value name="transaction">862</value>
+				</idatacodable>		</record>
+	</record>
+</IDataXMLCoder>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_process_instance" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+			xmlns:wsdns1="http://localhost/ws/monitor/process/instance/getCustomData">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/process/instance/getCustomData" xmlns:tns="http://localhost/ws/monitor/process/instance/getCustomData" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="__getCustomDataInput">
+            <xsd:sequence>
+              <xsd:element name="instanceId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="instanceIteration" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="stepId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="stepIteration" nillable="true" type="xsd:anyType" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__getCustomDataOutput">
+            <xsd:sequence>
+              <xsd:element name="customFieldList" nillable="true" type="tns:ArrayOf__customFieldList" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__customFieldList">
+            <xsd:sequence>
+              <xsd:element name="instanceId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="instanceIteration" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="stepName" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="stepId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="stepIteration" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="documentName" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="fieldName" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="fieldValue" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="time" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="timeString" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOf__customFieldList">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="tns:__customFieldList[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="getCustomDataInput">
+		<wsdl:part name="instanceId" type="xsd:string"/>
+		<wsdl:part name="instanceIteration" type="xsd:anyType"/>
+		<wsdl:part name="stepId" type="xsd:string"/>
+		<wsdl:part name="stepIteration" type="xsd:anyType"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getCustomDataOutput">
+		<wsdl:part name="customFieldList" type="wsdns1:ArrayOf__customFieldList"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_process_instancePortType">
+		<wsdl:operation name="getCustomData">
+			<wsdl:input message="tns:getCustomDataInput"/>
+			<wsdl:output message="tns:getCustomDataOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_process_instanceBinding" type="tns:ws_monitor_process_instancePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getCustomData">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

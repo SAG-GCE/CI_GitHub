@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_process_model" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdns1="http://localhost/ws/monitor/process/model/isUsedForModelIds"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/process/model/isUsedForModelIds" xmlns:tns="http://localhost/ws/monitor/process/model/isUsedForModelIds" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="__isUsedForModelIdsInput">
+            <xsd:sequence>
+              <xsd:element name="modelId" nillable="true" type="tns:ArrayOfstring" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOfstring">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="xsd:string[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+          <xsd:complexType name="__isUsedForModelIdsOutput">
+            <xsd:sequence>
+              <xsd:element name="used" nillable="true" type="tns:ArrayOfanyType" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOfanyType">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="xsd:anyType[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="isUsedForModelIdsInput">
+		<wsdl:part name="modelId" type="wsdns1:ArrayOfstring"/>
+	</wsdl:message>
+	
+	<wsdl:message name="isUsedForModelIdsOutput">
+		<wsdl:part name="used" type="wsdns1:ArrayOfanyType"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_process_modelPortType">
+		<wsdl:operation name="isUsedForModelIds">
+			<wsdl:input message="tns:isUsedForModelIdsInput"/>
+			<wsdl:output message="tns:isUsedForModelIdsOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_process_modelBinding" type="tns:ws_monitor_process_modelPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="isUsedForModelIds">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.model" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.model" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

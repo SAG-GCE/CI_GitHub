@@ -1,0 +1,2561 @@
+<!DOCTYPE HTML PUBLIC "-//SoftQuad Software//DTD HoTMetaL PRO 6.0::19990601::extensions to HTML 4.0//EN" "hmpro6.dtd">
+<HTML> 
+  <HEAD> 
+	 <TITLE>Trading Networks Properties</TITLE> 
+<!--(Links)=========================================================-->
+	 <LINK REL="StyleSheet" HREF="webM_Styles.css"> 
+  </HEAD>
+   
+<!--(Body)==========================================================-->
+  <BODY BGCOLOR="FFFFCC"> 
+	 <H1><A NAME="top">Trading Networks Properties</A></H1> 
+	 <P>Updating properties on the TN Properties page changes the properties in
+		the Trading Networks properties.cnf file. The properties.cnf file is located in
+		the <I>webMethods\IntegrationServer</I>\packages\WmTN\config\ directory, where
+		<I>webMethods\IntegrationServer</I> is the directory in which your Integration
+		Server is installed.</P> 
+	 <P>You can add properties not currently listed on the TN Properties page.
+		If the property you want to set is not listed, add it by making a new line on
+		the TN Properties page. Be sure you use the correct case.</P> 
+	 <P>For a description of a property, click the link for the property or the
+		link for the property type in the following lists.</P> 
+	 <P></P> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD> 
+			 <P CLASS="webM-TableHead">Property</P></TD> 
+		  <TD> 
+			 <P CLASS="webM-TableHead">Property Type</P></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.archive.archiveAfterDays">tn.archive.archiveAfterDays</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"> <A
+			 HREF="#cluster">Cluster</A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.archive.deleteAfterDays">tn.archive.deleteAfterDays</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A HREF="#database">Database</A>
+			 </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.bam.monitoring.enable">tn.bam.monitoring.enable</A> </TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A HREF="#database_query">Database
+			 Query</A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#big_doc_threshold">tn.BigDocThreshold</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A HREF="#debugging">Debugging
+			 </A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.check.ambiguous.docs">tn.check.ambiguous.docs</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A
+			 HREF="#document_archiving">Document Archiving</A> </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.clean.routePipeline">tn.clean.routePipeline</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A
+			 HREF="#document_delivery">Document Delivery</A> </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.cluster.notifyCacheChange">tn.cluster.notifyCacheChange</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A
+			 HREF="#document_validation">Document Validation</A> </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.cluster.notifyProfileAddUser">tn.cluster.notifyProfileAddUser</A>
+			 </TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A HREF="#flat_file">Flat File</A>
+			 </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.cluster.notifyPropertyChange">tn.cluster.notifyPropertyChange</A>
+			 </TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A
+			 HREF="#large_document_handling">Large Document Handling</A> </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.cluster.sync.RemoteAliases">tn.cluster.sync.remoteAliases</A></TD>
+		  
+		  <TD WIDTH="401" CLASS="webM-Level2"><A
+			 HREF="#localization">Localization</A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.default.idType">tn.default.idType</A> </TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A
+			 HREF="#performance">Performance</A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A HREF="#tn.default.userCreation">
+			 tn.default.userCreation</A> </TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A HREF="#profile">Profile</A></TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.delivery.ftpTransferType">tn.delivery.ftpTransferType</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A HREF="#tasks">Task</A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.doc.saveAsDone">tn.doc.saveAsDone</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2"><A
+			 HREF="#miscellaneous">Miscellaneous</A></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.doc.validate.max_errs">tn.doc.validate.max_errs</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.doctype.includeHidden">tn.doctype.includeHidden</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.export.deleted.profiles">tn.export.deleted.profiles</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.ff.contenttypes">tn.ff.contenttypes</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.ism.stats.saveFrequency">tn.ism.stats.saveFrequency</A></TD> 
+		  <TD WIDTH="401" CLASS="webM-Level2">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.locale.country">tn.locale.country</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.locale.language">tn.locale.language</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.locale.variant">tn.locale.variant</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.mail.from">tn.mail.from</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.mail.onuserfail">tn.mail.onuserfail</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.mail.subject">tn.mail.subject</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.query.maxrows">tn.query.maxrows</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.query.threshold">tn.query.threshold</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.profile.EnableLogProfileChanges">
+			 tn.profile.EnableLogProfileChanges</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.receive.clearKeys">tn.receive.clearKeys</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.receive.clearTNObjects">tn.receive.clearTNObjects</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.recursion.max">tn.recursion.max</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.resubmit.return.bizdocs">tn.resubmit.return.bizdocs</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.server.seq">tn.server.seq</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.store.encoding">tn.store.encoding</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.store.logsql">tn.store.logsql</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.store.pool.stmt">tn.store.pool.stmt</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.task.attempt.notPersisted">tn.task.attempt.notPersisted</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A
+			  HREF="#tn.task.dbupdate.enableNotifications">tn.task.dbupdate.enableNotifications</A></TD>
+		  
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A HREF="#tn.task.dbupdate.retryEnabled">tn.task.dbupdate.retryEnabled</A></TD>
+		  
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2">
+			 <A
+			  HREF="#tn.task.dbupdate.retrySweepTime">tn.task.dbupdate.retrySweepTime</A></TD>
+		  
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.task.init.groupSize">tn.task.init.groupSize</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.task.init.pauseLength">tn.task.init.pauseLength</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.task.maxRetries">tn.task.maxRetries</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.task.notifyFailure">tn.task.notifyFailure</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.task.pauseOnMaxThreads">tn.task.pauseOnMaxThreads</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.task.retryFactor">tn.task.retryFactor</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.task.sweepTime">tn.task.sweepTime</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.task.threadpool.pct">tn.task.threadpool.pct</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.task.ttw">tn.task.ttw</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A HREF="#tn.tmpdir">tn.tmpdir</A>
+			 </TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.tmpfile.time">tn.tmpfile.time</A> </TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.tpa.cacheSize">tn.tpa.cacheSize</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"> <A
+			 HREF="#tn.transport.user">tn.transport.user</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.xml.cacheXQLQueryResults">tn.xml.cacheXQLQueryResults</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="300" CLASS="webM-Level2"><A
+			 HREF="#tn.xml.xqlThreshold">tn.xml.xqlThreshold</A></TD> 
+		  <TD WIDTH="401">&nbsp;</TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="cluster">Cluster Properties</A></H2> 
+	 <P>Set these properties to configure Trading Networks to run in a clustered
+		environment. </P> 
+	 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+		STYLE="font-weight: bold;"><B>Note</B></SPAN>: If you are using Trading
+		Networks in a cluster, be sure to set the <A
+		HREF="#tn.query.threshold">tn.query.threshold</A> property to -1.</P> 
+	 <H3><A
+		NAME="tn.cluster.notifyCacheChange"><B>tn.cluster.notifyCacheChange</B></A></H3>
+	 
+	 <TABLE WIDTH="100%" CELLPADDING="5" CELLSPACING="0"> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> Controls whether an
+			 Integration Server will notify other servers in the cluster when a change
+			 occurs in any of the following: 
+			 <UL> 
+				<LI CLASS="kadov-p-CwebM-Bullet">TN document types</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet">processing rules</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet">attributes</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet">profile summaries</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet">delivery services</LI> 
+			 </UL> 
+			 <P>Specify either "true" or "false". If you specify "true", use the
+				<A HREF="#tn.cluster.sync.RemoteAliases">tn.cluster.sync.remoteAliases</A>
+				property to specify the servers in the cluster that should be
+				notified.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To configure Trading
+			 Networks so that it will <I>not</I> notify servers in the cluster, use the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.cluster.notifyCacheChange=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.cluster.notifyProfileAddUser"><B>tn.cluster.notifyProfileAddUser</B></A></H3>
+	 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Controls whether when a user
+			 account is created on one Integration Server in a cluster, the user account is
+			 also created on the other servers in the cluster. Specify either "true" or
+			 "false". If you specify "true", use the
+			 <A HREF="#tn.cluster.sync.RemoteAliases">tn.cluster.sync.remoteAliases</A>
+			 property to specify the servers in the cluster that should be notified.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To configure Trading
+			 Networks so that it will <I>not</I> automatically create user accounts on other
+			 servers in the cluster, use the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.cluster.notifyProfileAddUser=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.cluster.notifyPropertyChange"><B>tn.cluster.notifyPropertyChange</B></A></H3>
+	 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Controls whether when you update
+			 the Trading Networks properties on one Integration Server in a cluster that the
+			 Trading Networks properties are updated on the other servers in the cluster.
+			 Specify either "true" or "false". If you specify "true", use the
+			 <A HREF="#tn.cluster.sync.RemoteAliases">tn.cluster.sync.remoteAliases</A>
+			 property to specify the servers in the cluster that should be notified.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To configure Trading
+			 Networks so that it will <I>not</I> automatically update properties on all
+			 servers in the cluster, use the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.cluster.notifyPropertyChange=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.cluster.sync.RemoteAliases"><B>tn.cluster.sync.remoteAliases</B></A></H3>
+	 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Specifies the remote server
+			 aliases for the other servers in the cluster.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> No default; if you do
+			 not provide a value, Trading Networks cannot notify other servers when there
+			 are changes.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you have two
+			 servers, Server1 and Server2, running in a cluster, you must create a remote
+			 server alias for Server1 on Server2, and a remote server alias for Server2 on
+			 Server1. For example, the tn.cluster.sync.RemoteAliases property for Server1
+			 would look like the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.cluster.sync.remoteAliases=Server2</FONT></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you have more than
+			 two Integration Servers (for example, Server1, Server2, and Server3) running in
+			 a cluster, separate the remote server aliases with a comma. For example, the
+			 tn.cluster.sync.RemoteAliases property for Server 1 in this instance would look
+			 like the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.cluster.sync.remoteAliases=Server2,Server3</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="database">Database Properties</A></H2> 
+	 <H3><A NAME="tn.store.encoding"><B>tn.store.encoding</B></A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Identifies the encoding that your
+			 database is using. When a string is passed to an INSERT or UPDATE statement and
+			 that string is too long to fit into a column, Trading Networks uses value of
+			 this property to determine where to truncate the string. </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">No default. If you do not specify a
+			 value, Trading Networks uses the default system encoding.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To indicate that your
+			 database uses the AL32UTF8 encoding, specify the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.store.encoding=AL32UTF8</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="database_query">Database Query Properties</A></H2> 
+	 <H3><A NAME="tn.query.maxrows"><B>tn.query.maxrows</B></A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies the default number of
+			 rows that the query services return. The query services are services in the
+			 wm.tn.query folder. An input variable to the query services allows you to
+			 specify a maximum number of rows that you want returned from a query. However,
+			 if you do not specify the number of rows to return when you invoke a query
+			 service, the query service uses the value you specify for this property. If a
+			 query returns more row than allowed by this property, the query service
+			 silently drops the rows that exceed the value you specify.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">0 (This value means there is no
+			 maximum.)</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want to set the
+			 default value for the number of rows a query service returns to 500, specify
+			 the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.query.maxrows=500</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.query.threshold">tn.query.threshold</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The number of rows of query
+			 results that Trading Networks stores in the session object.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> You can have Trading Networks
+			 store query results in the session object to optimize query execution. Trading
+			 Networks stores the number of rows that you specify in the session object on
+			 the server and uses the caching component to store the remaining rows of query
+			 results. This caching component stores these results in files in the location
+			 identified by the <A HREF="#tn.tmpdir">tn.tmpdir property</A>. Trading Networks
+			 uses this property for all queries that you perform from My webMethods and the
+			 Console, for example, queries for documents, tasks, and activity logs. In
+			 addition, this is the default for queries that you perform using the built-in
+			 services in the wm.tn.query folder. For more information about the built-in
+			 service in the wm.tn.query folder, see the webMethods Trading Networks Built-in
+			 Services Reference.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If you are using Trading Networks
+			 in a cluster, Trading Networks should not store query results in the session
+			 object. To prevent Trading Networks from storing query results in the session
+			 object, set this property to "&#150;1".</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If you are not using Trading
+			 Networks in a cluster, for best performance, this setting should be the page
+			 size you use for query results. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 50</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To indicate that you
+			 do <I>not</I> want Trading Networks to store query results in a session object
+			 because you are using Trading Networks in a cluster, specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.query.threshold=-1</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="debugging">Debugging Properties</A></H2> 
+	 <H3><A NAME="tn.store.logsql"><B>tn.store.logsql</B></A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies whether you want Trading
+			 Networks to write each SQL statement to the log as it executes the statement.
+			 Writing the SQL statements to the log will cause the server to run more slowly.
+			 You should only use this feature when in a development environment and not in a
+			 production environment. Specify "true" to have Trading Networks write the SQL
+			 statements to the log or "false" to prevent Trading Networks from writing the
+			 SQL statements to the log. 
+			 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+				STYLE="font-weight: bold;"><B>Note</B></SPAN>: To view the SQL statements in
+				the server log, you must have the detail level for your server log set to 9 or
+				higher. You specify the level of detail you want to view in the server log
+				using the -debug startup option when you start the Integration Server.</P></TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you are running in
+			 a development environment and want Trading Networks to write the SQL statements
+			 to the log, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.store.logsql=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="document_archiving">Document Archiving Properties</A></H2> 
+	 <H3><A
+		NAME="tn.archive.archiveAfterDays"><B>tn.archive.archiveAfterDays</B></A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The number of days after Trading
+			 Networks receives a document that Trading Networks should archive the document.
+			 Specify a number from 0 through 730365. If you omit this property or specify
+			 "0" for this property, Trading Networks does not archive documents.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">No default. If you omit this
+			 property, Trading Networks does not archive documents.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> To archive documents
+			 30 days after they are received, add the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.archive.archiveAfterDays=30</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.archive.deleteAfterDays"><B>tn.archive.deleteAfterDays</B></A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The number of days after Trading
+			 Networks receives the document that Trading Networks should delete the
+			 document. Specify a number from 0 through 730365. If you omit this property or
+			 specify "0" for this property, Trading Networks does not delete documents.</TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">No default. If you omit this
+			 property, Trading Networks does not delete documents.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> To delete documents
+			 60 days after they are received, add the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.archive.deleteAfterDays=60</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="document_delivery">Document Delivery Properties</A></H2> 
+	 <H3><A
+		NAME="tn.delivery.ftpTransferType"><B>tn.delivery.ftpTransferType</B></A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Controls the transfer type for FTP
+			 delivery of documents. Specify "active" if you want to use active mode FTP to
+			 deliver documents. Specify "passive" if you want to use passive mode FTP. </TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">passive</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want to use
+			 active mode FTP to deliver documents, specify the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.delivery.ftpTransferType=active</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.mail.from"><B>tn.mail.from</B></A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The e-mail address you want
+			 Trading Networks to use as the &#147;from&#148; e-mail address in the e-mail
+			 messages that it sends to deliver a document when instructed to use an e-mail
+			 delivery method (Primary E-mail or Secondary E-mail).</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you want the
+			 e-mail messages to use the &#147;from&#148; e-mail address TNAdmin@ifc.com,
+			 specify the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.mail.from=TNAdmin@ifc.com</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.mail.subject">tn.mail.subject</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP" CLASS="webM-Level2"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The subject line you want Trading
+			 Networks to use in the e-mail messages that it sends to deliver a document when
+			 instructed to use an e-mail delivery method (Primary E-mail or Secondary
+			 E-mail).</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> By default, Trading
+			 Networks does not specify a subject line in e-mail messages.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you want the
+			 e-mail messages to use the subject line &#147;Document from IFC&#148;, specify
+			 the following:</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD CLASS="webM-Example"><FONT SIZE="-1">tn.mail.subject=Document From
+			 IFC</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="document_validation">Document Validation Property</A></H2> 
+	 <H3><A NAME="tn.doc.validate.max_errs">tn.doc.validate.max_errs</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The maximum number of errors that
+			 Trading Networks returns when errors occur when validating a document. If the
+			 structure of a document is not valid, the validation service can return many
+			 error messages. Set this property to limit the number of returned error
+			 messages.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">10</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> To limit the number
+			 of errors to 20, specify the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.doc.validate.max_errs=20</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="flat_file">Flat File Property</A></H2> 
+	 <H3><A NAME="tn.ff.contenttypes">tn.ff.contenttypes</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The content types you want the
+			 Integration Server to associate with flat file documents. Use this property to
+			 register content types for flat file documents. To set this property, specify a
+			 comma-separated list of all the content types you want the Integration Server
+			 to treat as flat files. </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If you do <I>not</I> include this
+			 property in the <FONT FACE="Courier New">properties.cnf</FONT> file, by default
+			 the Integration Server treats documents with the content type text/plain as
+			 flat files.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> You <I>cannot</I> register the
+			 following content types as flat files: 
+			 <UL> 
+				<LI CLASS="kadov-p-CwebM-Bullet">
+				  application/x-www-form-urlencoded</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> text/xml</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/x-wmrpc2 </LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/x-x509v3-bin</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/x-wmrpc</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/x-wmrpc-bin</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/x-wmidatabin</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/wm-soap </LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/soap</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> application/soap+xml</LI> 
+			 </UL></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If you want the Integration Server
+			 to treat documents with the content types text/plain, text/csv, text/richtext,
+			 and multipart/digest as flat files, specify the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> </TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.ff.contenttypes=text/plain,text/csv,text/richtext,multipart/digest</FONT>
+			 </TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="large_document_handling"> Large Document Handling
+		Properties</A></H2> 
+	 <P>Set these properties to configure Trading Networks to handle large
+		documents.</P> 
+	 <H3><A NAME="big_doc_threshold">tn.BigDocThreshold</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The threshold size at which
+			 Trading Networks should consider a document to be large.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Possible Values:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> <I>-n</I>, any
+			 negative whole number indicating that Trading Networks considers no documents
+			 as large. Trading Networks processes all documents in the traditional manner,
+			 reading the document content into memory during processing.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">0, indicating that
+			 Trading Networks considers all documents large. Because all documents that
+			 Trading Networks receives contain more than 0 bytes, Trading Networks uses
+			 large document handling for all documents. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"><I>n</I>, any positive
+			 whole number indicating the number of bytes over which Trading Networks
+			 considers a document to be large. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> -1, indicating that
+			 Trading Networks considers no documents to be large.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to consider all documents over 1,000,000 bytes to be large, set this
+			 property to 1000000: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.BigDocThreshold=1000000</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.xml.xqlThreshold">tn.xml.xqlThreshold</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Determines the maximum number of
+			 bytes that Trading Networks reads into memory from the start of an XML document
+			 to perform the XQL queries that are defined in a TN XML document type. The XQL
+			 queries can be identifying queries or queries to extract attributes. In your TN
+			 document types, if you have XQL queries that point to nodes beyond the number
+			 of bytes that Trading Networks reads, the queries will fail. For more
+			 information about queries in TN document types, see the chapter about TN XML
+			 document types in the <I>webMethods Trading Networks Administrator''s
+			 Guide</I>. 
+			 <P>Specify a positive whole number greater than 1000. If you specify
+				a value less than 1000, Trading Networks reads 1000 bytes.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If
+			 tn.xml.xqlThreshold is not defined, Trading Networks uses the value of
+			 <A HREF="#big_doc_threshold">tn.BigDocThreshold</A>.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to read in 50,000 bytes to perform the XQL queries in TN XML
+			 documents, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.xml.xqlThreshold=50000</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="localization">Localization Properties</A></H2> 
+	 <P>Use the localization properties to change the server&#146;s locale. When
+		you change the locale, Trading Networks displays error messages and screen
+		labels using the language that is associated with the locale. To display the
+		messages and screen labels in the language, Trading Networks must have the
+		appropriate resource bundle. These resource bundles reside in the tncore.zip
+		file, which was copied to your system during installation. If you change the
+		locale but the resource bundle does not exist for that locale, Trading Networks
+		attempts to find the best match. For information about how Trading Networks
+		selects the resource bundle that matches best, see Sun<SUP>&reg;</SUP>
+		Microsystems&#146; documentation for the java.util.ResourceBundle class. By
+		default, Trading Networks uses the locale of the host machine. </P> 
+	 <P>To change the locale you must set, at a minimum, the tn.locale.language
+		and tn.locale.country properties. If you do not specify both of these
+		properties, Trading Networks continues to use the default locale (the locale of
+		the host machine).</P> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.locale.language">tn.locale.language</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The two-letter ISO 639 language
+			 code for the language you want Trading Networks to use for messages and screen
+			 labels.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> The two-letter ISO
+			 639 language code for the French language is &#147;fr&#148;. To set this
+			 property to identify the French language, specify:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.locale.language=fr</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.locale.country">tn.locale.country</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The two letter ISO 3166 country
+			 code for the country that is associated with the language.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 
+			 <P> The two-letter ISO 3166 country code for Canada is
+				&#147;CA&#148;. If you want to localize for the French language in Canada, set
+				tn.locale.language to "fr" (as shown above) and set tn.locale.country to "CA":
+				</P> </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.locale.country=CA</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.locale.variant">tn.locale.variant</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> A variant code that further
+			 distinguishes the locale, if necessary. Typically you use the variant code if
+			 there is a difference based on the platform on which the server is running. If
+			 you need to specify more than one variant code, separate them with an
+			 underscore, placing the most important codes first.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> For more information about variant
+			 codes, see the Sun Microsystems&#146; documentation for the java.util.Locale
+			 class.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> You might specify a
+			 variant code because of font differences between platforms. If you are running
+			 on UNIX, you might set the variant code to UNIX:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.locale.variant=UNIX</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="performance">Performance Properties</A></H2> 
+	 <H3><A NAME="tn.clean.routePipeline">tn.clean.routePipeline</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Removes some of the contents of the
+			 pipeline when a document is routed. If set to true, this property removes all
+			 data from the pipeline except "bizdoc", "rule", "TN_parms", and "$tnReprocess."
+			 Setting this property to true can help prevent the pipeline from growing very
+			 large, which could affect system performance.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to remove some of the contents of the pipeline when a document is
+			 routed, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.clean.routePipeline=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.doc.saveAsDone">tn.doc.saveAsDone</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">When Trading Networks originally
+			 receives a document, it saves information about the resulting BizDocEnvelope
+			 for that document to the database. When it saves the BizDocEnvelope to the
+			 database, it sets the status of the BizDocEnvelope. Based on this property,
+			 Trading Networks can set the status of the BizDocEnvelope to one of the
+			 following: 
+			 <UL> 
+				<LI> 
+				  <P><B>NEW</B> If you set this property to "false", Trading
+					 Networks sets the status of the BizDocEnvelope to NEW. This status means that
+					 Trading Networks has received the document, but not yet processed it.</P></LI> 
+				<LI> 
+				  <P><B>DONE</B> If you set this property to "true", Trading
+					 Networks sets the status of the BizDocEnvelope to DONE. Typically, the DONE
+					 status means that Trading Networks has completed processing the document.
+					 However, you can use this property to have Trading Networks immediately set the
+					 status to DONE. This saves a database update per document if Trading Networks
+					 completes processing of the document normally with no errors.</P> 
+				  <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+					 STYLE="font-weight: bold;"><B>IMPORTANT!</B></SPAN> If the server ends
+					 unexpectedly while processing a document, upon server restart, because the
+					 status is already DONE, processing of the document will appear to be complete.
+					 There is a risk that the document might not be processed completely.</P> </LI> 
+			 </UL> </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">false (This value
+			 means that new BizDocEnvelopes are saved with the NEW status.) </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to immediately set the status of a BizDocEnvelope to DONE, specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.doc.saveAsDone=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.receive.clearKeys">tn.receive.clearKeys</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Specifies the pipeline variables
+			 that represent Trading Networks objects that you want Trading Networks to drop
+			 from the pipeline when the <A
+			 HREF="#tn.receive.clearTNObjects">tn.receive.clearTNObjects</A> property is set
+			 to "true". Specify a comma-separated list naming the pipeline variables that
+			 you want Trading Networks to drop. Do not use spaces in the list. Your list can
+			 contain the following Trading Networks objects: 
+			 <UL> 
+				<LI>node</LI> 
+				<LI>bizdoc</LI> 
+				<LI>sender</LI> 
+				<LI>receiver</LI> 
+				<LI>flags</LI> 
+				<LI>ffdata</LI> 
+				<LI>TN_parms</LI> 
+			 </UL> 
+			 <P>If you specify a pipeline variable other than the ones listed
+				above, Trading Networks ignores it, and Trading Networks will not drop the
+				variable.</P> </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">null (which means no
+			 variables appear in the pipeline)</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to drop the pipeline variables node, flags, and ffdata, specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.receive.clearKeys=node,flags,ffdata</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.receive.clearTNObjects">tn.receive.clearTNObjects</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies whether you want Trading
+			 Networks to drop pipeline variables that represent Trading Networks objects.
+			 Trading Networks drops the pipeline variables after it completes the execution
+			 of the wm.tn:receive entry point service. 
+			 <P>You specify the pipeline variables to drop using the
+				<A HREF="#tn.receive.clearKeys">tn.receive.clearKeys</A> property. Dropping
+				these objects reduces the time it takes to process each document and improves
+				the overall performance of the server because the content handler does not have
+				to format the objects for return to the client. </P> 
+			 <P>Specify "true" if you want Trading Networks to drop the objects;
+				specify "false" if you do not want Trading Networks to drop the objects.
+				</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you do not want
+			 Trading Networks to drop the Trading Networks objects, specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.receive.clearTNObjects=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.store.pool.stmt">tn.store.pool.stmt</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies whether you want Trading
+			 Networks to cache SQL statements in memory rather than read them from
+			 <FONT FACE="Courier New">WmTN/config/dbops.sql</FONT>. Specify "true" to have
+			 Trading Networks cache SQL statements; specify "false" to have Trading Networks
+			 read SQL statements from a file.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to read SQL statements from WmTN/config/dbops.sql, specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.store.pool.stmt=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.resubmit.return.bizdocs">tn.resubmit.return.bizdocs</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies whether you want the
+			 wm.tn.doc:resubmit and wm.tn.doc:resubmits services to return BizDocEnvelopes
+			 in the pipeline. 
+			 <P>You use the wm.tn.doc:resubmit and wm.tn.doc:resubmits services to
+				resubmit documents that are in the Trading Networks database for processing.
+				When you resubmit a document, Trading Networks has a BizDocEnvelope for the
+				original document that was in the database and forms an additional
+				BizDocEnvelope for the new instance of the document being resubmitted. This
+				property controls whether the wm.tn.doc:resubmit and wm.tn.doc:resubmits
+				services leave these BizDocEnvelopes in the pipeline when returning to the
+				caller. Performance is improved if the BizDocEnvelopes are <I>not</I> returned
+				in the pipeline. For more information about the wm.tn.doc:resubmit and
+				wm.tn.doc:resubmits services, see the <I>webMethods Trading Networks Built-in
+				Services Reference</I>.</P> 
+			 <P>Specify "false" if you do not want the BizDocEnvelopes returned in
+				the pipeline; specify "true" if you do want the BizDocEnvelopes returned in the
+				pipeline.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want the
+			 wm.tn.doc:resubmit and wm.tn.doc:resubmits services to return the
+			 BizDocEnvelopes in the pipeline, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.resubmit.return.bizdocs=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.tpa.cacheSize">tn.tpa.cacheSize</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies the maximum number of
+			 trading partner agreements (TPAs) that Trading Networks caches in memory.
+			 Trading Networks only caches TPAs that have an Agreed status. Caching TPAs
+			 speeds up the run-time retrieval of TPAs; however, it also increases the amount
+			 of memory used by the server.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">1000</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to cache 1500 TPAs, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.tpa.cacheSize=1500</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.xml.cacheXQLQueryResults">tn.xml.cacheXQLQueryResults</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies whether Trading Networks
+			 should save and reuse the results of XQL queries executed against an XML
+			 document while attempting to match that XML document to an XML TN document
+			 type. 
+			 <P>During document recognition, Trading Networks attempts to locate a
+				single TN document type that the inbound document matches. For an XML document,
+				the XML TN document types can contain XQL queries that Trading Networks
+				performs to determine whether the XML document contains a specific node and
+				optionally whether that node contains a specific value. Several of your XML TN
+				document types might use the same XQL queries. Each time the XQL query is
+				executed, it would produce the same result for the inbound XML document. </P> 
+			 <P>Specify "true" for this property to have Trading Networks perform
+				each unique XQL query only a single time and save the results for subsequent
+				XML TN document types that might use the same XQL query. Specify "false" if you
+				want Trading Networks to perform all XQL queries in each XML TN document type
+				whether they have previously been executed for the document or not.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to execute all XQL queries in all XML TN document types even if some
+			 of the XQL queries might have already been performed against the document being
+			 processed, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.xml.cacheXQLQueryResults=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="profile">Profile Properties</A></H2> 
+	 <H3><A NAME="tn.default.idType">tn.default.idType</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <P>The external ID type (e.g., D-U-N-S<SUP>&reg;</SUP> number) that
+				Trading Networks initially displays when creating or editing a profile in My
+				webMethods and the Console. For example, when you add a profile in My
+				webMethods and click <B>Add ID</B> on the <B>External IDs</B> tab, Trading
+				Networks makes the external ID type that you identify using this property as
+				the selected item in the <B>ID Type</B> list.</P> 
+			 <P>When creating a profile from the Console, this property also works
+				in conjunction with the <A
+				HREF="#tn.default.userCreation">tn.default.userCreation</A> property, which
+				determines whether Trading Networks will create an IS user account for a
+				profile created from the Console.</P> </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> DUNS</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">By default, Trading
+			 Networks displays the DUNS ID type.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to use the "Mutually Defined" external ID for the default ID type,
+			 specify the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.default.idType=Mutually Defined</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.default.userCreation">tn.default.userCreation</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <P> Whether you want Trading Networks to create an IS user account
+				when you define a profile in Trading Networks Console. When this property is
+				"true", Trading Networks automatically creates an IS user account when a new
+				partner profile is created from Console. The user name of the account is set to
+				the value of the new partner's external ID identified by the
+				<A HREF="#tn.default.idType">tn.default.idType</A> property. For example, if
+				the tn.default.idType is set to DUNS and the D-U-N-S number in the profile that
+				you are adding is 987654321, Trading Networks will create an IS user account
+				where the user name is "987654321". </P> 
+			 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+				STYLE="font-weight: bold;"><B>Note</B></SPAN>: </P> 
+			 <UL> 
+				<LI CLASS="webM-BodyPara" STYLE="color: #0000ff;">Functionality to
+				  create and manage profiles in Trading Networks Console is deprecated.</LI> 
+				<LI CLASS="webM-BodyPara" STYLE="color: #0000ff;">If you have
+				  Trading Networks create an IS user account, the value of the external ID cannot
+				  contain blank spaces because blank spaces are invalid in an IS user account
+				  user name.</LI> 
+			 </UL> 
+			 <P>Specify either "true" if you want Trading Networks to create an IS
+				user account when you define a profile in the Console, or "false" if you do
+				not.</P> 
+			 <P></P> 
+			 <P></P> 
+			 <P></P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">By default, Trading
+			 Networks does <I>not</I> create an IS user account when you define a profile
+			 from Trading Networks Console.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to create an IS user account when defining profiles from Trading
+			 Networks Console: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.default.userCreation=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.export.deleted.profiles">tn.export.deleted.profiles</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Displays deleted profiles in the
+			 <B>Export Data</B> dialog box. Specify "true" or "false".</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">When the value for
+			 this property is &#147;false&#148;, Trading Networks does <I>not</I> display
+			 the deleted profiles.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to display the deleted profiles in the <B>Export Data</B> dialog box,
+			 specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT SIZE="-1">
+			 tn.export.deleted.profiles=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.profile.EnableLogProfileChanges">tn.profile.EnableLogProfileChanges</A></H3>
+	 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <P>Whether you want Trading Networks to log profile auditing
+				information to the activity log when you manage profiles from My webMethods.
+				This property also controls whether you want to log actions related to
+				role-based access.</P> 
+			 <P>If profile logging is enabled, when you manage profiles using My
+				webMethods, Trading Networks logs changes that you make to profile components,
+				for example addresses, contacts, delivery methods, etc. Trading Networks logs
+				activity log entries when you add, update, and/or delete profile
+				components.</P> 
+			 <P>Similarly, when you use My webMethods to manage data permissions
+				and general functional permissions, Trading Networks logs changes that you
+				make.</P> 
+			 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+				STYLE="font-weight: bold;"><B>Note</B></SPAN>: This property affects only
+				profile actions you take from My webMethods. It has no affect for actions taken
+				from Trading Networks Console.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">When you specify
+			 "false", Trading Networks does not log profile and role-based access auditing
+			 information.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to log profile and role-based access auditing information, specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT SIZE="-1">
+			 tn.profile.EnableLogProfileChanges=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="tasks">Task Properties</A></H2> 
+	 <H3><A
+		NAME="tn.task.attempt.notPersisted">tn.task.attempt.notPersisted</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> In order to perform reliable
+			 service execution, a document must be persisted. If a processing rule is
+			 executed that is configured to perform reliable service execution, and the
+			 document has not been persisted, this property determines whether to attempt a
+			 single asynchronous execution of the service. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> true (the service
+			 will be executed once, asynchronously; otherwise the service will not be
+			 executed. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to attempt to execute a service on a document that is not persisted,
+			 specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT SIZE="-1">
+			 tn.task.attempt.notPersisted=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.task.dbupdate.enableNotifications">tn.task.dbupdate.enableNotifications</A></H3>
+	 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Controls whether you want Trading
+			 Networks to publish an IS document (i.e., raise an Integration Server event)
+			 when it attempts to update the database for a task after a database failure
+			 condition occurs. </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">You can use the webMethods
+			 Developer to define a trigger that subscribes to the IS document and takes
+			 appropriate actions. For more information about creating triggers, see the
+			 <I>Publish-Subscribe Developer's Guide</I>.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specify either "true" or "false"
+			 for this property. If you specify "true", Trading Networks publishes an IS
+			 document . Trading Networks publishes an IS document each time it retries to
+			 update the database, whether the attempt was successful or failed. The IS
+			 document that Trading Networks publishes is in the format defined by the
+			 wm.tn.rec:TaskDbUpdate IS document type. For more information about the
+			 wm.tn.rec:TaskDbUpdate IS document type, see the <I>webMethods Trading Networks
+			 Built-in Services Reference</I>.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to publish an IS document when it attempts to update the database for
+			 a task after a database failure, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT SIZE="-1">
+			 tn.task.dbupdate.enableNotifications=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.task.dbupdate.retryEnabled">tn.task.dbupdate.retryEnabled</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Controls whether Trading Networks
+			 tries to update the database again after it encounters a database failure when
+			 trying to update the information for a task.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If Trading Networks encounters an
+			 error when attempting to update the information for a task, for example because
+			 it lost connectivity to the database, the information that Trading Networks is
+			 maintaining in memory for the task will not match the information stored in the
+			 database. If the server is shut down, the task information will be incorrect
+			 upon server restart.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If you want Trading Networks to
+			 continuously attempt to retry updating the database until the update is
+			 successful or until the server shuts down, specify "true"; otherwise specify
+			 "false".</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you do not want
+			 Trading Networks to continuously attempt to retry updating the database when it
+			 encounters a database failure, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT SIZE="-1">
+			 tn.task.dbupdate.retryEnabled=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.task.dbupdate.retrySweepTime">tn.task.dbupdate.retrySweepTime</A></H3>
+	 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The number of seconds between
+			 attempts to retry updating the database information for a task.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Trading Networks only uses this
+			 property when the <A
+			 HREF="#tn.task.dbupdate.retryEnabled">tn.task.dbupdate.retryEnabled</A>
+			 property is "true".</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 300</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you want Trading
+			 Networks to retry updating the database every 600 seconds (10 minutes), specify
+			 the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.task.dbupdate.retrySweepTime=600</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.init.groupSize">tn.task.init.groupSize</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Specifies the number of tasks that
+			 Trading Networks processes at one time during server startup. Trading Networks
+			 uses a background thread during startup to read the task data from the database
+			 and create the tasks in groups. The number of tasks in a group is the value you
+			 specify for this property. After creating a group of tasks, Trading Networks
+			 pauses for the amount of time specified by the
+			 <A HREF="#tn.task.init.pauseLength">tn.task.init.pauseLength</A> property. By
+			 pausing between groups, this makes CPU cycles available to other Integration
+			 Server functions that are initializing during startup. This improves
+			 performance when starting Trading Networks when there are many pending
+			 tasks.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">100 </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To have Trading
+			 Networks process 75 tasks at a time during startup, specify the following:
+			 </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.task.init.groupSize=75</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.init.pauseLength">tn.task.init.pauseLength</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Specifies the number of seconds
+			 that Trading Networks pauses between processing groups of tasks during server
+			 startup. Trading Networks uses a background thread during startup to read the
+			 task data from the database and create the tasks in groups. The number of tasks
+			 in a group is the value you specify for the <A
+			 HREF="#tn.task.init.groupSize">tn.task.init.groupSize</A> property. After
+			 creating a group of tasks, Trading Networks pauses for the amount of time
+			 specified by this property. By pausing between groups, this makes CPU cycles
+			 available to other Integration Server functions that are initializing during
+			 startup. This improves startup performance when starting Trading Networks when
+			 there are many pending tasks.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">10 seconds </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To have Trading
+			 Networks pause for 15 seconds between the groups of tasks that it processes
+			 during startup, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.task.init.pauseLength=15</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.maxRetries">tn.task.maxRetries</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The number of times you want
+			 Trading Networks to attempt to re-execute a service when it is executing the
+			 service using reliable execution and the service fails. Specify a whole
+			 number.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 5</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 
+			 <P>If you want Trading Networks to attempt to re-execute a service
+				three times, specify the following: </P> </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.task.maxRetries=3</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.notifyFailure">tn.task.notifyFailure</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Controls whether you want Trading
+			 Networks to publish an IS document (i.e., raise an Integration Server event)
+			 when a task fails.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">You can use the webMethods
+			 Developer to define a trigger that subscribes to the IS document and takes
+			 appropriate actions. For more information about creating triggers, see the
+			 <I>Publish-Subscribe Developer's Guide</I>.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The IS document that Trading
+			 Networks publishes is in the format defined by the wm.tn.rec:TaskFailure IS
+			 document type. For more information about the wm.tn.rec:TaskFailure IS document
+			 type, see the <I>webMethods Trading Networks Built-in Services
+			 Reference</I>.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> To have Trading Networks publish
+			 an IS document when a task fails, specify "true"; otherwise, specify
+			 "false".</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to publish an IS document to notify you of failed tasks, specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.task.notifyFailure=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.pauseOnMaxThreads">tn.task.pauseOnMaxThreads</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Specifies the number of
+			 milliseconds that Trading Networks pauses when the task manager runs out of
+			 threads. You control the number of threads that the task manager is allocated
+			 using the <A HREF="#tn.task.threadpool.pct">tn.task.threadpool.pct</A>
+			 property. If the number of threads specified by the
+			 <A HREF="#tn.task.threadpool.pct">tn.task.threadpool.pct</A> property are in
+			 use and Trading Networks has more tasks to process, Trading Networks pauses the
+			 number of milliseconds specified by this property to allow some of the working
+			 threads to complete and become available.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">500 milliseconds</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to pause for 750 milliseconds when the task manager runs out of
+			 threads, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.task.pauseOnMaxThreads=750</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.retryFactor">tn.task.retryFactor</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The factor you want Trading
+			 Networks to use when determining how long to wait before making the second and
+			 subsequent attempts to re-execute a service that Trading Networks is executing
+			 using reliable execution. </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Trading Networks calculates the
+			 time to wait by multiplying the last wait time by tn.task.retryFactor. Specify
+			 a whole number greater than zero for tn.task.retryFactor.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> The following shows
+			 sample values for the reliable execution properties and how they affect the
+			 wait times between attempts to re-execute a failed service. 
+			 <TABLE WIDTH="99%" CELLPADDING="5"> 
+				<TR> 
+				  <TD WIDTH="54%" CLASS="webM-Example"><FONT
+					 SIZE="-1">tn.task.maxRetries=3</FONT></TD> 
+				  <TD WIDTH="16%" ALIGN="CENTER">&nbsp;</TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER">&nbsp;</TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER">&nbsp;</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="54%" CLASS="webM-Example"> <FONT
+					 SIZE="-1">tn.task.ttw=10000</FONT></TD> 
+				  <TD WIDTH="16%" ALIGN="CENTER">&nbsp;</TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER">&nbsp;</TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER">&nbsp;</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="54%" CLASS="webM-Example"> <FONT
+					 SIZE="-1">tn.task.tn.task.retryFactor=2</FONT></TD> 
+				  <TD WIDTH="16%" ALIGN="CENTER"></TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER">&nbsp;</TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER">&nbsp;</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="54%">&nbsp;</TD> 
+				  <TD WIDTH="16%" ALIGN="CENTER"> 
+					 <P CLASS="webM-TableHead"><U>Retry 1</U></P></TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER"> 
+					 <P CLASS="webM-TableHead"><U>Retry 2</U></P></TD> 
+				  <TD WIDTH="14%" ALIGN="CENTER"> 
+					 <P CLASS="webM-TableHead"><U>Retry 3</U></P></TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="54%"> 
+					 <P CLASS="webM-TableHead">Wait until next attempt</P></TD> 
+				  <TD WIDTH="16%" ALIGN="CENTER" CLASS="webM-Level2"> 10000 ms</TD>
+				  
+				  <TD WIDTH="14%" ALIGN="CENTER" CLASS="webM-Level2"> 20000 ms</TD>
+				  
+				  <TD WIDTH="14%" ALIGN="CENTER" CLASS="webM-Level2"> 40000 ms</TD>
+				  
+				</TR> 
+			 </TABLE></TD> 
+		</TR> 
+	 </TABLE> 
+	 <H3><A NAME="tn.task.sweepTime">tn.task.sweepTime</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The number of seconds the reliable
+			 task manager thread remains idle before checking for tasks it needs to perform
+			 (for example, a task to deliver a document or execute a service).</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The task manager thread becomes
+			 idle when all tasks are completed, failed, or in the wait period between
+			 attempts. The task manager thread waits the number of seconds you specify with
+			 this property before waking up to check for tasks it needs to process. The
+			 tasks that the task manager attempts to process when it wakes up are those
+			 tasks that failed on their last attempt and have not yet reached their retry
+			 limit.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The minimum allowable value for
+			 this property is 1 second. If you attempt to set this property to a value less
+			 than 1 second, the new value will be ignored. In other words, if you set
+			 tn.task.sweepTime to any value below 1 second, the task manager remains idle
+			 for 1 second before checking for tasks it needs to perform.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+				STYLE="font-weight: bold;"><B>Note</B></SPAN>: The task manager wakes up
+				immediately when a new task arrives.</P></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The value of tn.task.sweepTime can
+			 affect how long Trading Networks waits between attempts to retry a task.
+			 Typically, the wait between retries value is governed by one of the
+			 following:</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550"> 
+			 <TABLE WIDTH="100%" CELLPADDING="5"> 
+				<TR> 
+				  <TD WIDTH="166" ALIGN="left"> 
+					 <P CLASS="webM-TableHead">Type of task</P></TD> 
+				  <TD WIDTH="551" ALIGN="left"> 
+					 <P CLASS="webM-TableHead">Wait between retries is governed by
+						&#133;</P></TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="166" CLASS="webM-Level2"> Delivery</TD> 
+				  <TD WIDTH="551" CLASS="webM-Level2"> The <B>Wait between
+					 retries</B> value on the <B>Delivery Method</B> tab of the receiving
+					 partner&#146;s profile.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="166" CLASS="webM-Level2"> Service of execution</TD> 
+				  <TD WIDTH="551" CLASS="webM-Level2"> The <A
+					 HREF="#tn.task.ttw">tn.task.ttw</A> property.</TD> 
+				</TR> 
+			 </TABLE></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> However, Trading Networks could
+			 wait as long as the tn.task.sweepTime. If the task manager thread is idle when
+			 the wait between retries value expires, the task manager thread will not wake
+			 up to process the task until the tn.task.sweepTime expires.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 300</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">To set the sweep time
+			 to 500 seconds, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"><FONT
+			 SIZE="-1">tn.task.sweepTime=500</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.threadpool.pct">tn.task.threadpool.pct</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Controls the percentage of the
+			 Integration Server&#146;s pool of threads that the Task Manager can use to
+			 process tasks simultaneously. This is to prevent the Task Manager from
+			 consuming all Integration Server threads when the Task Manager has a large
+			 number of tasks to process.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Possible property values can range
+			 from .2 to .8. If you set the property value less than the range, the Task
+			 Manager ignores the value and takes the lowest value of the range, or .2. If
+			 you set the property value greater than the range, the Task Manager ignores the
+			 value and takes the greatest value of the range, or .8. No matter how small you
+			 set the property value, the Task Manager is guaranteed to always have at least
+			 one thread with which to execute tasks.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> .5</TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.task.ttw">tn.task.ttw</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The number of milliseconds you
+			 want Trading Networks to wait before making its first attempt to re-execute a
+			 failed service when Trading Networks is executing the service using reliable
+			 execution. (Trading Networks uses this setting along with
+			 <A HREF="#tn.task.retryFactor">tn.task.retryFactor</A> to calculate how long to
+			 wait for subsequent retry attempts.)</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">300</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you want Trading
+			 Networks to wait 500 milliseconds after a service fails before making the first
+			 attempt to re-execute the service, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.task.ttw=500</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.transport.user">tn.transport.user</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The user account to use to invoke
+			 a service that Trading Networks is executing reliably due to a processing
+			 action in a processing rule. This affects the user account used to invoke the
+			 built-in delivery services (which are in the wm.tn.transport folder), custom
+			 delivery services that you create, and services invoked by service execution
+			 tasks.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> To have Trading Networks use the
+			 currently connected user to invoke services, do not supply a value for the
+			 tn.transport.user property. By default, Trading Networks will use the currently
+			 connected user to invoke services. This is the user that submitted the document
+			 to Trading Networks, unless you are resubmitting or reprocessing a document.
+			 When you resubmit or reprocess a document, the current user is the user issuing
+			 the resubmit or reprocess.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If you want Trading Networks to
+			 use a user account other than the currently connected user's account, use this
+			 property to specify the user name. If you want an Administrator account to
+			 execute services from processing rules, specify "Administrator". Some
+			 Integration Server administrators may delete the built-in Administrator account
+			 and create a new one with a different name. If tn.transport.user is
+			 "Administrator", Trading Networks will use an account from the Administrators
+			 group, though it may not be the built-in Administrator account.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550"> 
+			 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+				STYLE="font-weight: bold;"><B>Important</B></SPAN>: Ensure that the ACL you use
+				to protect the service grants Execute access to the user you specify.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> None. Trading
+			 Networks will use the currently-connected user to invoke services fro
+			 processing rules.</TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H2><A NAME="miscellaneous">Miscellaneous Properties</A></H2> 
+	 <H3><A NAME="tn.bam.monitoring.enable">tn.bam.monitoring.enable</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <P>Whether you want Trading Networks documents to be monitored by
+				webMethods Optimize. </P> 
+			 <P>Rather than updating the properties.cnf file, you can set this
+				property to "true" or "false" using the Administration &gt; Integration &gt;
+				B2B &gt; Business Monitoring page in My webMethods. The settings on that page
+				determine which documents and document attributes the system monitors.</P> 
+			 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+				STYLE="font-weight: bold;"><B>Important</B></SPAN>: To enable analysis of
+				Trading Networks documents, in addition to setting this property to "true", you
+				must also set the Integration Server watt.server.optimize.monitoring property
+				to "true".</P> 
+			 <P CLASS="webM-BodyPara" STYLE="color: #0000ff;"><SPAN
+				STYLE="font-weight: bold;"><B>Note</B></SPAN>: You can only configure TN
+				document types for monitoring when this property is set to "true". For more
+				information about how to configure TN document types, see the <I>webMethods
+				Trading Networks Administrator's Guide</I>. For more information about viewing
+				monitoring data for Trading Networks documents, see the <I>webMethods Trading
+				Networks User's Guide</I>.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">When you specify
+			 "false", analysis information is not collected for TN document types.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want to enable
+			 analysis of TN documents, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.bam.monitoring.enable=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.check.ambiguous.docs">tn.check.ambiguous.docs</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <P>Determines whether Trading Networks searches through all TN
+				document types to find a matching TN document type or uses the first match.
+				</P> 
+			 <P>By default, Trading Networks searches through all TN document
+				types to find a single TN document type to use for the incoming document. If it
+				finds multiple TN document types that match it considers the document to be an
+				unknown document because it does not know which TN document type to use.</P> 
+			 <P>However, you can use this property to configure Trading Networks
+				to stop looking for TN document types after it finds the first match and uses
+				the first matching TN document type for the incoming document.</P> </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to use the first TN document type it finds that matches an incoming
+			 document and not check through all TN document types, specify the following:
+			 </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.check.ambiguous.docs=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.doctype.includeHidden">tn.doctype.includeHidden</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Determines whether the
+			 wm.tn.doctype:list service returns the built-in TN document types. You can
+			 override this property when you invoke the wm.tn.doctype:list service by using
+			 the <I>includeHidden</I> input variable. </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Because the Trading Networks
+			 Console uses the wm.tn.doctype:list to retrieve the list of TN document types,
+			 this property also controls whether to show or hide the built-in TN document
+			 types in the Trading Networks Console.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specify "true" if you want the
+			 wm.tn.doctype:list service to return the built-in TN document types and
+			 therefore also show them in the Trading Networks Console. Specify "false" if
+			 you do not want the wm.tn.doctype:list service to return the built-in TN
+			 document types and therefore hide them in the Trading Networks Console.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">true </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you do not want the
+			 wm.tn.doctype:list service to return the built-in TN document types and want to
+			 hide the built-in TN document types in the Trading Networks Console, specify
+			 the following: </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.doctype.includeHidden=false</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A
+		NAME="tn.ism.stats.saveFrequency">tn.ism.stats.saveFrequency</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specifies how frequently (in
+			 seconds) you want Trading Networks to save document processing statistics to
+			 the database. You can view these statistics using My webMethods.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">30 seconds </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to save document processing statistics to the database every 45
+			 seconds, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.ism.stats.saveFrequency=45</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.mail.onuserfail">tn.mail.onuserfail</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Whether you want Trading Networks
+			 to send an e-mail message to the Integration Server Administrator to alert the
+			 administrator of the following errors: 
+			 <UL> 
+				<LI>Sender of the document is not the same as the current
+				  Integration Server user</LI> 
+				<LI>Trading Networks has no profile for current Integration Server
+				  user</LI> 
+				<LI>Trading Networks was unable to retrieve the profile summary for
+				  the sender</LI> 
+				<LI>Sender's profile is Inactive, which does not allow for sending
+				  documents</LI> 
+				<LI>Sender's profile has been deleted</LI> 
+				<LI>Internal exception prevented processing from completing</LI> 
+			 </UL></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specify "true" if you want Trading
+			 Networks to send the alert e-mail messages. Otherwise, specify "false".</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">false</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to send alert e-mail messages for the above error conditions, specify
+			 the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.mail.onuserfail=true</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.recursion.max">tn.recursion.max</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The maximum number of successive
+			 times that Trading Networks can use a processing rule for a specific document.
+			 If Trading Networks attempts to recursively use a processing rule more times
+			 than the number you specify for this property, Trading Networks aborts
+			 processing of the document. 
+			 <P>Trading Networks recursively uses a processing rule if the
+				processing rule uses the <B>Execute a Service</B> processing action to
+				synchronously invoke a service that calls the wm.tn:submit service to submit
+				the same BizDocEnvelope to Trading Networks, and Trading Networks selects the
+				same processing rule again.</P></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> 0 (indicating that
+			 recursive use of processing rules is not allowed)</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you have a
+			 processing rule that executes a service and resubmits the document to Trading
+			 Networks, and Trading Networks will select the same processing rule on the
+			 resubmit, you can set this value to a higher number to allow recursion of the
+			 processing rule. The number you set is the maximum number of subsequent times
+			 that Trading Networks will allow the same document to use the same processing
+			 rule. For example, to allow 5 recursive calls, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.recursion.max=5</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.server.seq">tn.server.seq</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Trading Networks uses this
+			 property when generating internal IDs. To guarantee that Trading Networks
+			 internal IDs are unique across all servers, they consist of: 
+			 <UL> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> hash code of the hostname</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> server sequence number </LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> timestamp -AND-</LI> 
+				<LI CLASS="kadov-p-CwebM-Bullet"> counter</LI> 
+			 </UL> </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The second element, &#147;server
+			 sequence number&#148;, is the value of the tn.server.seq property. Use this
+			 property only if you are running more than one instance of Trading Networks on
+			 the same machine. In this situation, each instance of Trading Networks should
+			 be given a unique value for tn.server.seq.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> If you run multiple instances of
+			 Trading Networks on one machine and do not supply a value for this property,
+			 you run the risk of Trading Networks generating duplicate internal IDs. If you
+			 supply an invalid value (less than 0 or greater than 31), Trading Networks
+			 ignores the setting and uses 0 for the server sequence number portion of
+			 generated internal IDs, which again runs the risk of generating duplicate
+			 internal IDs.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Possible Values:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Specify a value from 0 to 31,
+			 inclusive.</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> If you have two
+			 instances of Trading Networks running on the same machine, you should specify
+			 the tn.server.seq property for each instance of Trading Networks. For example,
+			 for the first instance, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.server.seq=1</FONT></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2"> For the second
+			 instance of Trading Networks, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.server.seq=2</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.tmpdir">tn.tmpdir</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <P>Identifies the location on the server where you want to store
+				temporary files. Trading Networks creates and stores the temporary files:</P> 
+			 <UL> 
+				<LI><B>To store query results.</B> Trading Networks uses a caching
+				  component to store query results. The caching component stores temporary files
+				  in this location. </LI> 
+				<LI><B>When users save document content to their disks.</B> Before
+				  saving the file to the user's disk, Trading Networks saves the document to a
+				  temporary location on the machine running Trading Networks Server. Trading
+				  Networks keeps the file in the temporary location for the length of time
+				  specified by the <A HREF="#tn.tmpfile.time">tn.tmpfile.time</A> property. </LI>
+				
+			 </UL></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">The JVM's temporary
+			 directory, which is the value of the JVM system property, java.io.tempdir.</TD>
+		  
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to save temporary files to the webMethods\IntegrationServer\tempdir
+			 directory, specify the following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.tmpdir=tempdir</FONT></TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2" ALIGN="LEFT">You only
+			 have to set the value to "tempdir" because the JVM has a working directory
+			 equal to the Integration Server install directory. As a result, relative paths
+			 are from that directory.</TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> 
+	 <H3><A NAME="tn.tmpfile.time">tn.tmpfile.time</A></H3> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Description:</P></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> Specifies how many minutes you
+			 want Trading Networks to keep temporary files it has stored in the location
+			 specified by the <A HREF="#tn.tmpdir">tn.tmpdir</A> property. These are
+			 temporary files that Trading Networks creates when a user saves document
+			 content to disk. Before saving the file to the user's disk, Trading Networks
+			 temporarily saves the document to a temporary location on the machine running
+			 Trading Networks Server. </TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Default Value:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">120</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">By default, Trading
+			 Networks maintains the temporary files for 120 minutes (2 hours).</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Level2">If you want Trading
+			 Networks to maintain the temporary files for 60 minutes (1 hour), specify the
+			 following:</TD> 
+		</TR> 
+		<TR VALIGN="TOP"> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" VALIGN="TOP" CLASS="webM-Example"> <FONT
+			 SIZE="-1">tn.tmpfile.time=60</FONT></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P><A HREF="#TOP">Top</A></P> </BODY>
+</HTML>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_process_model" targetNamespace="http://localhost/"
+			xmlns:wsdns1="http://localhost/ws/monitor/process/model/getProcessModel"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/process/model/getProcessModel" xmlns:tns="http://localhost/ws/monitor/process/model/getProcessModel">
+          <xsd:complexType name="__getProcessModelInput">
+            <xsd:sequence>
+
+            	<xsd:element name="modelId" nillable="true" type="xsd:string" minOccurs="0" />
+
+            	<xsd:element name="deploymentVersion" nillable="true" type="xsd:string" minOccurs="0" />
+            	
+            </xsd:sequence>
+
+          </xsd:complexType>
+          <xsd:complexType name="__getProcessModelOutput">
+            <xsd:sequence>
+              <xsd:element name="modelDetail" nillable="true" type="tns:__modelDetail" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__modelDetail">
+            <xsd:sequence>
+
+            	<xsd:element name="modelName" nillable="true" type="xsd:string" minOccurs="0" />
+            	<xsd:element name="modelId" nillable="true" type="xsd:string" minOccurs="0" />
+            	<xsd:element name="modelVersion" type="xsd:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="modelType" nillable="true" type="xsd:anyType" minOccurs="0" />
+            	<xsd:element name="description" nillable="true" type="xsd:string" minOccurs="0" />
+            	<xsd:element name="createdBy" nillable="true" type="xsd:string" minOccurs="0" />
+            	<xsd:element name="processPath" nillable="true" type="xsd:string" minOccurs="0" />
+            	<xsd:element name="deploymentVersion" nillable="true" type="xsd:anyType" minOccurs="0" />
+            	<xsd:element name="executionEnabled" nillable="true" type="xsd:anyType" minOccurs="0" />
+            	<xsd:element name="trackingEnabled" nillable="true" type="xsd:anyType" minOccurs="0" />
+            	<xsd:element name="deploymentTime" nillable="true" type="xsd:anyType" minOccurs="0" />
+              <xsd:element name="loggingLevel" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="logTransitions" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="stepQOS" nillable="true" type="xsd:anyType" minOccurs="0"/>
+
+            </xsd:sequence>
+
+          </xsd:complexType>
+        </xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getProcessModelInput">
+		<wsdl:part name="modelId" type="xsd:string"/>
+        <wsdl:part name="deploymentVersion" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+	<wsdl:message name="getProcessModelOutput">
+		<wsdl:part name="modelDetail" type="wsdns1:__modelDetail"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_process_modelPortType">
+		<wsdl:operation name="getProcessModel">
+			<wsdl:input message="tns:getProcessModelInput"/>
+			<wsdl:output message="tns:getProcessModelOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_process_modelBinding" type="tns:ws_monitor_process_modelPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getProcessModel">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.model" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.model" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

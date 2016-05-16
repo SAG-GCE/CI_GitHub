@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//SoftQuad Software//DTD HoTMetaL PRO 6.0::19990601::extensions to HTML 4.0//EN" "hmpro6.dtd">
+<HTML> 
+  <HEAD> 
+	 <TITLE>EDI Format Settings</TITLE> 
+    
+ <!--(Links)=========================================================-->
+	 <LINK REL="StyleSheet" HREF="webM_Styles.css"> 
+  </HEAD>
+   
+<!--(Body)==========================================================-->
+  <BODY BGCOLOR="FFFFCC"> 
+	 <H1><A NAME="TOP">EDI Format Settings</A></H1> 
+	 <P>Updating the settings on the <B>Format Settings</B> page changes the
+		configuration for format services in the EDI format.xml configuration file and
+		in memory, which results in the changes taking effect immediately. The
+		format.xml file is located in the
+		<I>webMethods\IntegrationServer</I>\packages\WmEDI\config directory, where
+		<I>webMethods\IntegrationServer</I> is the directory in which your Integration
+		Server is installed.</P> 
+	 <P>The format.xml file contains two types of multi-line entries.
+		<A HREF="#cfgformat">In the first type of entry, you configure a format
+		service.</A> <A HREF="#assocformat">In the second type of entry, you associate
+		a format service with an EDI data type.</A></P> 
+	 <H2><A NAME="cfgformat">Configuring a Format Service</A></H2> 
+	 <P>Each configuration entry for a format service entry has the following
+		format:</P> 
+	 <TABLE WIDTH="75%" CELLSPACING="0"> 
+		<TR> 
+		  <TH WIDTH="325" ALIGN="LEFT"> 
+			 <P CLASS="webM-TableHead">Format</P></TH> 
+		  <TH WIDTH="211" ALIGN="LEFT"> 
+			 <P CLASS="webM-TableHead">Example</P></TH> 
+		</TR> 
+	 </TABLE> 
+	 <TABLE BORDER="1" CELLSPACING="0" CELLPADDING="3"
+	  BORDERCOLOR="BLACK" RULES="NONE"> 
+		<TR> 
+		  <TD WIDTH="305"> 
+			 <P><FONT FACE="Courier New">&lt;FormatService</FONT></P></TD> 
+		  <TD WIDTH="325"> 
+			 <P><FONT FACE="Courier New">&lt;FormatService</FONT></P></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="305"> 
+			 <P><FONT FACE="Courier New">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="name_of_format_service"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isEnabled="true_or_false"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;internalFormatString="format"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;externalFormatString="format"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;applyFormat="true_or_false"/&gt;</FONT></P></TD> 
+		  <TD WIDTH="325"> 
+			 <P><FONT FACE="Courier New">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="formatDate6"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isEnabled="true"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;internalFormatString="MM/dd/yy"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;externalFormatString="yyMMdd"<BR>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;applyFormat="true"/&gt;</FONT></P></TD> 
+		</TR> 
+	 </TABLE> 
+	 <P>The following describes the meaning of each setting in an entry:</P> 
+	 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+		<TR> 
+		  <TH ALIGN="LEFT" WIDTH="151"> 
+			 <P CLASS="webM-TableHead">Setting</P></TH> 
+		  <TH ALIGN="LEFT" WIDTH="550"> 
+			 <P CLASS="webM-TableHead">Description</P></TH> 
+		</TR> 
+		<TR> 
+		  <TD VALIGN="TOP" WIDTH="151" CLASS="webM-Level2"><I>name</I></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> The name of the format service
+			 that the entry governs. Do not change the name. The following lists the EDI
+			 format services. For more information about these services, see the
+			 <I>webMethods EDI Module Built-in Services Reference</I>.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" HEIGHT="37">&nbsp;</TD> 
+		  <TD WIDTH="550" HEIGHT="37"> 
+			 <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="5"> 
+				<TR> 
+				  <TH WIDTH="204" ALIGN="LEFT"> 
+					 <P CLASS="webM-TableHead">Format Service</P></TH> 
+				  <TH WIDTH="342" ALIGN="LEFT"> 
+					 <P CLASS="webM-TableHead">Description</P></TH> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatDate6</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2"> Formats fields with EDI data
+					 type DT that have a minimum length of 6 and a maximum length of 6.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatDate8</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2">Formats fields with EDI data
+					 type DT that have a minimum length of 8 and a maximum length of 8.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatDecimal</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2">Formats fields with EDI data
+					 type D.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatImpliedDecimal</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2">This entry affects all
+					 implied decimal services (formatN0-formatN9). These services format fields with
+					 EDI data types N0 - N9.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatTime4_4</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2">Formats fields with EDI data
+					 type TM with a minimum length of 4 and a maximum length of 4.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatTime4_6</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2">Formats fields with EDI data
+					 type TM with a minimum length of 4 and a maximum length of 6.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatTime4_8</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2">Formats fields with EDI data
+					 type TM with a minimum length of 4 and a maximum length of 8.</TD> 
+				</TR> 
+				<TR> 
+				  <TD WIDTH="204" VALIGN="TOP" CLASS="webM-Level2"><FONT
+					 FACE="Courier">formatTime6_6</FONT></TD> 
+				  <TD WIDTH="342" CLASS="webM-Level2">Formats fields with EDI data
+					 type TM with a minimum length of 6 and a maximum length of 6.</TD> 
+				</TR> 
+			 </TABLE></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" CLASS="webM-Level2"><I>isEnabled</I></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Whether the format service is
+			 enabled. Specify either "true" or "false". </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <UL> 
+				<LI>If you specify "true", the format service performs its
+				  processing to convert and/or validate field values.</LI> 
+				<LI>If you specify "false", the format service immediately returns
+				  without performing any conversion or validation.</LI> 
+			 </UL></TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151">&nbsp;</TD> 
+		  <TD WIDTH="550"> 
+			 <TABLE WIDTH="100%" CELLSPACING="0"> 
+				<TR> 
+				  <TD WIDTH="45" VALIGN="TOP" ALIGN="LEFT" CLASS="webM-Note"><SPAN
+					 STYLE="font-weight: bold;"><B>Note</B></SPAN></TD> 
+				  <TD WIDTH="501" CLASS="webM-Note"> You can also configure whether
+					 to enable format services in the configuration of the WmFlatFile package. If
+					 the configuration for the WmFlatFile package specifies not to use format
+					 services, the <FONT FACE="Courier">convertToValues</FONT> and
+					 <FONT FACE="Courier">convertToString</FONT> services will not invoke format
+					 service, even if the <FONT FACE="Courier">isEnabled</FONT> configuration
+					 setting is set to "true". For more information about how to configure the
+					 WmFlatFile package, see the <I>Flat File Schema Developer&#146;s
+					 Guide</I>.</TD> 
+				</TR> 
+			 </TABLE> </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"
+			CLASS="webM-Level2"><I>internalFormatString</I></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">The format required by your
+			 internal application, e.g., your back-end system.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specify a String that follows the
+			 conventions described in the java class java.text.DecimalFormat </TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">(<A
+			 HREF="http://java.sun.com/products/jdk/1.2/docs/api/java/text/DecimalFormat.html">http://java.sun.com/products/jdk/1.2/docs/api/java/text/DecimalFormat.html</A>)</TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">and the java class
+			 java.text.SimpleDateFormat</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">(<A
+			 HREF="http://java.sun.com/products/jdk/1.2/docs/api/java/text/SimpleDateFormat.html">http://java.sun.com/products/jdk/1.2/docs/api/java/text/SimpleDateFormat.html</A>)</TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"
+			CLASS="webM-Level2"><I>externalFormatString</I></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">The format required by the EDI
+			 standard you are using. If you are using the EDI ANSI standard format, you
+			 should not change this setting.</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Specify a String that follows the
+			 conventions described in the java class java.text.DecimalFormat</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">(<A
+			 HREF="http://java.sun.com/products/jdk/1.2/docs/api/java/text/DecimalFormat.html">http://java.sun.com/products/jdk/1.2/docs/api/java/text/DecimalFormat.html</A>)</TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">and the java class
+			 java.text.SimpleDateFormat</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">(<A
+			 HREF="http://java.sun.com/products/jdk/1.2/docs/api/java/text/SimpleDateFormat.html">http://java.sun.com/products/jdk/1.2/docs/api/java/text/SimpleDateFormat.html</A>)</TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151" VALIGN="TOP"
+			CLASS="webM-Level2"><I>applyFormat</I></TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2">Whether the <FONT
+			 FACE="Courier">convertToValues</FONT> or <FONT
+			 FACE="Courier">convertToString</FONT> services should apply the converted
+			 value. Specify either "true" or "false".</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="151">&nbsp;</TD> 
+		  <TD WIDTH="550" CLASS="webM-Level2"> 
+			 <UL> 
+				<LI>Specify "true" if you want the document to reflect the
+				  converted value.</LI> 
+				<LI>Specify "false" if you do not want the document to reflect the
+				  converted value.</LI> 
+			 </UL></TD> 
+		</TR> 
+	 </TABLE> 
+	 <H2><A NAME="assocformat">Associating a Format Service With an EDI Data
+		Type</A></H2> 
+	 <P>You associate a format service with an EDI data type using the <B>Format
+		Settings</B> page. The changes you make are recorded in the format.xml file.
+		The entries to associate a format service with a data type have the following
+		structure:</P> 
+	 <BLOCKQUOTE><FONT FACE="Courier New" COLOR="0000ff">&#139;DatatypeFormat
+		<BR>datatype="data_type"
+		<BR>service="format_service_to_associate_with_datatype"/&gt;</FONT></BLOCKQUOTE>
+	 
+	 <TABLE WIDTH="100%" CELLPADDING="5" CELLSPACING="0"> 
+		<TR> 
+		  <TD WIDTH="87" ALIGN="LEFT" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Examples:</P></TD> 
+		  <TD WIDTH="628" CLASS="webM-Level2">The following entry associates the
+			 data type N1 with the <FONT FACE="Courier">formatN1</FONT> format service. This
+			 entry matches all elements with data type N1, regardless of their length:</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="87" HEIGHT="69">&nbsp;</TD> 
+		  <TD WIDTH="628" CLASS="webM-Example" HEIGHT="69"> 
+			 <BLOCKQUOTE><FONT SIZE="-1">&#139;DatatypeFormat<BR>
+				datatype="N1"<BR>
+				service="wm.b2b.edi.util.formatServices:formatN1"/&gt;</FONT></BLOCKQUOTE></TD>
+		  
+		</TR> 
+		<TR> 
+		  <TD WIDTH="87">&nbsp;</TD> 
+		  <TD WIDTH="628" CLASS="webM-Level2">The following entry associates the
+			 data type TM that has a minimum length of 4 and a maximum length of 8 with
+			 the<FONT FACE="Courier"> formatTime4_8</FONT> format service:</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="87">&nbsp;</TD> 
+		  <TD WIDTH="628" CLASS="webM-Example"> 
+			 <BLOCKQUOTE><FONT
+				SIZE="-1">&#139;DatatypeFormat<BR>datatype="TM,4,8"<BR>
+				service="wm.b2b.edi.util.formatServices:formatTime4_8"/&gt;</FONT></BLOCKQUOTE></TD>
+		  
+		</TR> 
+	 </TABLE> 
+	 <P>The <FONT FACE="Courier">wm.b2b.edi:SEFParse</FONT> service searches the
+		DatatypeFormat entries in the order they appear in the format.xml configuration
+		file and uses the first match. As a result, ensure your entries are listed from
+		the more specific to the less specific.</P> 
+	 <TABLE WIDTH="100%" CELLPADDING="5" CELLSPACING="0"> 
+		<TR> 
+		  <TD WIDTH="84" ALIGN="LEFT" VALIGN="TOP"> 
+			 <P CLASS="webM-TableHead">Example:</P></TD> 
+		  <TD WIDTH="631" CLASS="webM-Level2">To use format service &#147;<FONT
+			 FACE="Courier">example:service1</FONT>&#148; for data type N1 where the minimum
+			 length is 1 and maximum length is 5 and to use format service &#147;<FONT
+			 FACE="Courier">example:service2</FONT>&#148; for all other N1 data types, the
+			 format.xml file would contain DatatypeFormat entries in the following
+			 order:</TD> 
+		</TR> 
+		<TR> 
+		  <TD WIDTH="84">&nbsp;</TD> 
+		  <TD WIDTH="631" CLASS="webM-Example"> 
+			 <BLOCKQUOTE><FONT SIZE="-1">&lt;DatatypeFormat datatype="N1,1,5"
+				service="example:service1"/&gt;<BR>&lt;DatatypeFormat datatype="N1"
+				service="example:service2"/&gt;</FONT></BLOCKQUOTE></TD> 
+		</TR> 
+	 </TABLE> </BODY>
+</HTML>

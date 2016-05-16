@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="ws_monitor_process_instance" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:wsdns1="http://localhost/ws/monitor/process/instance/getImage"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ws/monitor/process/instance/getImage" xmlns:tns="http://localhost/ws/monitor/process/instance/getImage" xmlns:SOAP_ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+          <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+          <xsd:complexType name="__getImageInput">
+            <xsd:sequence>
+              <xsd:element name="instanceId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="stepId" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="requestedType" nillable="true" type="xsd:anyType" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__getImageOutput">
+            <xsd:sequence>
+              <xsd:element name="imageData" nillable="true" type="tns:__imageData" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__imageData">
+            <xsd:sequence>
+              <xsd:element name="imageStream" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="width" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="height" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="type" nillable="true" type="xsd:anyType" minOccurs="0"/>
+              <xsd:element name="imageMap" nillable="true" type="tns:ArrayOf__imageMap" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__imageMap">
+            <xsd:sequence>
+              <xsd:element name="id" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="stepid" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="x" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="y" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="x2" nillable="true" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="y2" nillable="true" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ArrayOf__imageMap">
+            <xsd:complexContent>
+              <xsd:restriction base="SOAP_ENC:Array">
+                <xsd:attribute ref="SOAP_ENC:arrayType" wsdl:arrayType="tns:__imageMap[]"/>
+              </xsd:restriction>
+            </xsd:complexContent>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="getImageInput">
+		<wsdl:part name="instanceId" type="xsd:string"/>
+		<wsdl:part name="stepId" type="xsd:string"/>
+		<wsdl:part name="requestedType" type="xsd:anyType"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getImageOutput">
+		<wsdl:part name="imageData" type="wsdns1:__imageData"/>
+	</wsdl:message>
+	<wsdl:portType name="ws_monitor_process_instancePortType">
+		<wsdl:operation name="getImage">
+			<wsdl:input message="tns:getImageInput"/>
+			<wsdl:output message="tns:getImageOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ws_monitor_process_instanceBinding" type="tns:ws_monitor_process_instancePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getImage">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ws.monitor.process.instance" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	</wsdl:definitions>

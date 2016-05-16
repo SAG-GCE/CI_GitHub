@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.BasicData">
+    <record name="version" javaclass="com.wm.data.BasicData">
+      <value name="major">4</value>
+      <value name="minor">5</value>
+    </record>
+    <record name="types" javaclass="com.wm.data.BasicData">
+      <idatacodable name="EDI Sample Envelope" javaclass="com.wm.app.tn.doc.XMLDocType">
+        <value name="TypeID">0a01359cf70da6f000000498</value>
+        <value name="TypeName">EDI Sample Envelope</value>
+        <null name="TypeDescription"/>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="Hidden" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2001-09-05 15:57:19.467</value>
+        <value name="ValidationSvc">wm.tn.doc.xml:validate</value>
+        <value name="VerificationSvc">wm.tn.doc.xml:verify</value>
+        <value name="SigningSvc">wm.tn.doc.xml:sign</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">no</value>
+          <value name="persistOption?">content, attributes and activity log</value>
+        </record>
+        <null name="Attributes"/>
+        <record name="RequiredAttributes" javaclass="com.wm.data.BasicData">
+          <value name="ConversationID">false</value>
+          <value name="SenderID">false</value>
+          <value name="ReceiverID">false</value>
+        </record>
+        <array name="queries" type="value" depth="1">
+        </array>
+        <record name="envelopeIData" javaclass="com.wm.data.BasicData">
+          <idatacodable name="ConversationID" javaclass="com.wm.app.tn.doc.EnvelopeData">
+            <value name="envId">ConversationID</value>
+            <value name="query">/EDI_Envelope/SenderID | /EDI_Envelope/ReceiverID | /EDI_Envelope/DocumentID</value>
+            <record name="bdat" javaclass="com.wm.data.BasicData">
+              <value name="function">33</value>
+              <array name="args" type="value" depth="1">
+                <value>{0}-{1}-{2}</value>
+              </array>
+              <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+                <value name="AttributeID">ConversationID</value>
+                <value name="AttributeName">envelope</value>
+                <null name="AttributeDescription"/>
+                <value name="AttributeType">STRING</value>
+                <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">false</value>
+                </idatacodable>
+                <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">true</value>
+                </idatacodable>
+                <null name="LastModifiedTime"/>
+                <value name="VERSION_NO">4.5</value>
+              </record>
+              <value name="VERSION_NO">4.5</value>
+            </record>
+            <value name="VERSION_NO">4.5</value>
+          </idatacodable>
+          <idatacodable name="SenderID" javaclass="com.wm.app.tn.doc.EnvelopeData">
+            <value name="envId">SenderID</value>
+            <value name="query">/EDI_Envelope/SenderID</value>
+            <record name="bdat" javaclass="com.wm.data.BasicData">
+              <value name="function">-1</value>
+              <array name="args" type="value" depth="1">
+                <value>00</value>
+              </array>
+              <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+                <value name="AttributeID">SenderID</value>
+                <value name="AttributeName">envelope</value>
+                <null name="AttributeDescription"/>
+                <value name="AttributeType">STRING</value>
+                <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">false</value>
+                </idatacodable>
+                <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">true</value>
+                </idatacodable>
+                <null name="LastModifiedTime"/>
+                <value name="VERSION_NO">4.5</value>
+              </record>
+              <value name="VERSION_NO">4.5</value>
+            </record>
+            <value name="VERSION_NO">4.5</value>
+          </idatacodable>
+          <idatacodable name="ReceiverID" javaclass="com.wm.app.tn.doc.EnvelopeData">
+            <value name="envId">ReceiverID</value>
+            <value name="query">/EDI_Envelope/ReceiverID</value>
+            <record name="bdat" javaclass="com.wm.data.BasicData">
+              <value name="function">-1</value>
+              <array name="args" type="value" depth="1">
+                <value>00</value>
+              </array>
+              <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+                <value name="AttributeID">ReceiverID</value>
+                <value name="AttributeName">envelope</value>
+                <null name="AttributeDescription"/>
+                <value name="AttributeType">STRING</value>
+                <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">false</value>
+                </idatacodable>
+                <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">true</value>
+                </idatacodable>
+                <null name="LastModifiedTime"/>
+                <value name="VERSION_NO">4.5</value>
+              </record>
+              <value name="VERSION_NO">4.5</value>
+            </record>
+            <value name="VERSION_NO">4.5</value>
+          </idatacodable>
+        </record>
+        <array name="nsDecls" type="value" depth="2">
+        </array>
+        <null name="attribQueries"/>
+        <array name="qryEvals" type="value" depth="1">
+        </array>
+        <value name="docType">EDI_Envelope</value>
+        <null name="dtd"/>
+        <null name="sig_queries"/>
+        <value name="VERSION_NO">4.5</value>
+      </idatacodable>
+      <idatacodable name="EDI for TN Demo PO" javaclass="com.wm.app.tn.doc.XMLDocType">
+        <value name="TypeID">0a01359cf70d5957000001ee</value>
+        <value name="TypeName">EDI for TN Demo PO</value>
+        <value name="TypeDescription">Doctype used in the EDI for TN Demo</value>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="Hidden" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2001-09-05 15:40:11.128</value>
+        <value name="ValidationSvc">wm.tn.doc.xml:validate</value>
+        <value name="VerificationSvc">wm.tn.doc.xml:verify</value>
+        <value name="SigningSvc">wm.tn.doc.xml:sign</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">no</value>
+          <value name="persistOption?">content, attributes and activity log</value>
+        </record>
+        <null name="Attributes"/>
+        <record name="RequiredAttributes" javaclass="com.wm.data.BasicData">
+          <value name="SenderID">false</value>
+          <value name="ReceiverID">false</value>
+          <value name="ConversationID">false</value>
+        </record>
+        <array name="queries" type="value" depth="1">
+        </array>
+        <record name="envelopeIData" javaclass="com.wm.data.BasicData">
+          <idatacodable name="SenderID" javaclass="com.wm.app.tn.doc.EnvelopeData">
+            <value name="envId">SenderID</value>
+            <value name="query">/EDIPO/SenderID</value>
+            <record name="bdat" javaclass="com.wm.data.BasicData">
+              <value name="function">-1</value>
+              <array name="args" type="value" depth="1">
+                <value>00</value>
+              </array>
+              <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+                <value name="AttributeID">SenderID</value>
+                <value name="AttributeName">envelope</value>
+                <null name="AttributeDescription"/>
+                <value name="AttributeType">STRING</value>
+                <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">false</value>
+                </idatacodable>
+                <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">true</value>
+                </idatacodable>
+                <null name="LastModifiedTime"/>
+                <value name="VERSION_NO">4.5</value>
+              </record>
+              <value name="VERSION_NO">4.5</value>
+            </record>
+            <value name="VERSION_NO">4.5</value>
+          </idatacodable>
+          <idatacodable name="ReceiverID" javaclass="com.wm.app.tn.doc.EnvelopeData">
+            <value name="envId">ReceiverID</value>
+            <value name="query">/EDIPO/ReceiverID</value>
+            <record name="bdat" javaclass="com.wm.data.BasicData">
+              <value name="function">-1</value>
+              <array name="args" type="value" depth="1">
+                <value>00</value>
+              </array>
+              <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+                <value name="AttributeID">ReceiverID</value>
+                <value name="AttributeName">envelope</value>
+                <null name="AttributeDescription"/>
+                <value name="AttributeType">STRING</value>
+                <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">false</value>
+                </idatacodable>
+                <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">true</value>
+                </idatacodable>
+                <null name="LastModifiedTime"/>
+                <value name="VERSION_NO">4.5</value>
+              </record>
+              <value name="VERSION_NO">4.5</value>
+            </record>
+            <value name="VERSION_NO">4.5</value>
+          </idatacodable>
+          <idatacodable name="ConversationID" javaclass="com.wm.app.tn.doc.EnvelopeData">
+            <value name="envId">ConversationID</value>
+            <value name="query">/EDIPO/SenderID | /EDIPO/ReceiverID | /EDIPO/DocumentID</value>
+            <record name="bdat" javaclass="com.wm.data.BasicData">
+              <value name="function">33</value>
+              <array name="args" type="value" depth="1">
+                <value>{0}-{1}-{2}</value>
+              </array>
+              <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+                <value name="AttributeID">ConversationID</value>
+                <value name="AttributeName">envelope</value>
+                <null name="AttributeDescription"/>
+                <value name="AttributeType">STRING</value>
+                <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">false</value>
+                </idatacodable>
+                <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                  <value name="MBoolean">true</value>
+                </idatacodable>
+                <null name="LastModifiedTime"/>
+                <value name="VERSION_NO">4.5</value>
+              </record>
+              <value name="VERSION_NO">4.5</value>
+            </record>
+            <value name="VERSION_NO">4.5</value>
+          </idatacodable>
+        </record>
+        <array name="nsDecls" type="value" depth="2">
+        </array>
+        <null name="attribQueries"/>
+        <array name="qryEvals" type="value" depth="1">
+        </array>
+        <value name="docType">EDIPO</value>
+        <null name="dtd"/>
+        <null name="sig_queries"/>
+        <value name="VERSION_NO">4.5</value>
+      </idatacodable>
+    </record>
+  </record>
+</IDataXMLCoder>

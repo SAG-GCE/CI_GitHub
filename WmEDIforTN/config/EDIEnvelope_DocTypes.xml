@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.BasicData">
+    <record name="version" javaclass="com.wm.data.BasicData">
+      <value name="major">1</value>
+      <value name="minor">0</value>
+    </record>
+    <record name="types" javaclass="com.wm.data.BasicData">          
+      <idatacodable name="7f000001f70d6491000299df" javaclass="wm.b2b.editn.EDIEnvelopeDocType">
+        <value name="TypeID">7f000001f70d6491000299df</value>
+        <value name="TypeName">VDA Envelope</value>
+        <null name="TypeDescription"/>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          
+	<value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2000-10-02 11:13:47.755</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">no</value>
+          <value name="unique?">no</value>
+        </record>
+        <value name="standard">VDA</value>
+      </idatacodable>      
+      <idatacodable name="7f000001f70d64910000017c" javaclass="wm.b2b.editn.EDIEnvelopeDocType">
+        <value name="TypeID">7f000001f70d64910000017c</value>
+        <value name="TypeName">X12 Envelope</value>
+        <null name="TypeDescription"/>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          
+	<value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2000-10-02 11:13:47.755</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">no</value>
+        </record>
+        <value name="standard">X12</value>
+      </idatacodable>      
+      <idatacodable name="7f000001f70d64910000017d" javaclass="wm.b2b.editn.EDIEnvelopeDocType">
+        <value name="TypeID">7f000001f70d64910000017d</value>
+        <value name="TypeName">UNEDIFACT Envelope</value>
+        <null name="TypeDescription"/>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          
+			<value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2000-10-02 11:13:47.755</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">no</value>
+        </record>
+        <value name="standard">UNEDIFACT</value>
+      </idatacodable>          
+      <idatacodable name="7f000001f70d64910000017g" javaclass="wm.b2b.editn.EDIEnvelopeDocType">
+              <value name="TypeID">7f000001f70d64910000017g</value>
+              <value name="TypeName">VICS Envelope</value>
+              <null name="TypeDescription"/>
+              <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          
+      			<value name="MBoolean">false</value>
+              </idatacodable>
+              <value name="LastModified">2000-10-02 11:13:47.755</value>
+              <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+              <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+                <value name="verify?">no</value>
+                <value name="validate?">no</value>
+                <value name="persist?">yes</value>
+                <value name="unique?">no</value>
+              </record>
+              <value name="standard">VICS</value>
+      </idatacodable> 
+      <idatacodable name="7f000001f70d64910000017i" javaclass="wm.b2b.editn.EDIEnvelopeDocType">
+                    <value name="TypeID">7f000001f70d64910000017i</value>
+                    <value name="TypeName">UCS Envelope</value>
+                    <null name="TypeDescription"/>
+                    <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          
+            			<value name="MBoolean">false</value>
+                    </idatacodable>
+                    <value name="LastModified">2000-10-02 11:13:47.755</value>
+                    <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+                    <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+                      <value name="verify?">no</value>
+                      <value name="validate?">no</value>
+                      <value name="persist?">yes</value>
+                      <value name="unique?">no</value>
+                    </record>
+                    <value name="standard">UCS</value>
+      </idatacodable>  
+      <idatacodable name="7f000001f70d64910000017k" javaclass="wm.b2b.editn.EDIEnvelopeDocType">
+              <value name="TypeID">7f000001f70d64910000017k</value>
+              <value name="TypeName">EANCOM Envelope</value>
+              <null name="TypeDescription"/>
+              <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          
+      	<value name="MBoolean">false</value>
+              </idatacodable>
+              <value name="LastModified">2000-10-02 11:13:47.755</value>
+              <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+              <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+                <value name="verify?">no</value>
+                <value name="validate?">no</value>
+                <value name="persist?">yes</value>
+                <value name="unique?">no</value>
+              </record>
+              <value name="standard">EANCOM</value>
+      </idatacodable>      
+      <idatacodable name="7f000001f70d649100029999" javaclass="wm.b2b.editn.EDIEnvelopeDocType">
+              <value name="TypeID">7f000001f70d649100029999</value>
+              <value name="TypeName">ODETTE Envelope</value>
+              <null name="TypeDescription"/>
+              <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          
+      	<value name="MBoolean">false</value>
+              </idatacodable>
+              <value name="LastModified">2000-10-02 11:13:47.755</value>
+              <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+              <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+                <value name="verify?">no</value>
+                <value name="validate?">no</value>
+                <value name="persist?">yes</value>
+                <value name="unique?">no</value>
+              </record>
+              <value name="standard">ODETTE</value>
+      </idatacodable>      
+	  <idatacodable name="7f000001f70d64910000017e" javaclass="wm.b2b.editn.EDIGroupDocType">
+        <value name="TypeID">7f000001f70d64910000017e</value>
+        <value name="TypeName">X12 Group</value>
+        <null name="TypeDescription"/>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+		  <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2000-10-02 11:13:47.755</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">no</value>
+        </record>
+        <value name="standard">X12</value>
+      </idatacodable>
+      <idatacodable name="7f000001f70d64910000017f" javaclass="wm.b2b.editn.EDIGroupDocType">
+        <value name="TypeID">7f000001f70d64910000017f</value>
+        <value name="TypeName">UNEDIFACT Group</value>
+        <null name="TypeDescription"/>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+		  <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2000-10-02 11:13:47.755</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">no</value>
+        </record>
+        <value name="standard">UNEDIFACT</value>
+      </idatacodable>          
+         <idatacodable name="7f000001f70d64910000017h" javaclass="wm.b2b.editn.EDIGroupDocType">
+        <value name="TypeID">7f000001f70d64910000017h</value>
+        <value name="TypeName">VICS Group</value>
+        <null name="TypeDescription"/>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+		  <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2000-10-02 11:13:47.755</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">no</value>
+        </record>
+        <value name="standard">VICS</value>
+      </idatacodable>
+        <idatacodable name="7f000001f70d64910000017j" javaclass="wm.b2b.editn.EDIGroupDocType">
+              <value name="TypeID">7f000001f70d64910000017j</value>
+              <value name="TypeName">UCS Group</value>
+              <null name="TypeDescription"/>
+              <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+      		  <value name="MBoolean">false</value>
+              </idatacodable>
+              <value name="LastModified">2000-10-02 11:13:47.755</value>
+              <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+              <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+                <value name="verify?">no</value>
+                <value name="validate?">no</value>
+                <value name="persist?">yes</value>
+                <value name="unique?">no</value>
+              </record>
+        <value name="standard">UCS</value>  
+        </idatacodable>
+        <idatacodable name="7f000001f70d64910000017l" javaclass="wm.b2b.editn.EDIGroupDocType">
+	              <value name="TypeID">7f000001f70d64910000017l</value>
+	              <value name="TypeName">EANCOM Group</value>
+	              <null name="TypeDescription"/>
+	              <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+	      		  <value name="MBoolean">false</value>
+	              </idatacodable>
+	              <value name="LastModified">2000-10-02 11:13:47.755</value>
+	              <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+	              <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+	                <value name="verify?">no</value>
+	                <value name="validate?">no</value>
+	                <value name="persist?">yes</value>
+	                <value name="unique?">no</value>
+	              </record>
+	        <value name="standard">EANCOM</value>  
+        </idatacodable>
+        <idatacodable name="7f000001f70d649100029998" javaclass="wm.b2b.editn.EDIGroupDocType">
+	              <value name="TypeID">7f000001f70d649100029998</value>
+	              <value name="TypeName">ODETTE Group</value>
+	              <null name="TypeDescription"/>
+	              <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+	      		  <value name="MBoolean">false</value>
+	              </idatacodable>
+	              <value name="LastModified">2000-10-02 11:13:47.755</value>
+	              <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+	              <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+	                <value name="verify?">no</value>
+	                <value name="validate?">no</value>
+	                <value name="persist?">yes</value>
+	                <value name="unique?">no</value>
+	              </record>
+	        <value name="standard">ODETTE</value>  
+        </idatacodable>
+		<idatacodable name="061a0b21153d45b780b91913" javaclass="wm.b2b.editn.EDITa1Doctype">
+	              <value name="TypeID">061a0b21153d45b780b91913</value>
+	              <value name="TypeName">X12 TA1</value>
+	              <null name="TypeDescription"/>
+	              <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">
+	      		  <value name="MBoolean">false</value>
+	              </idatacodable>
+	              <value name="LastModified">2013-12-17 11:13:47.755</value>
+	              <value name="ValidationSvc">wm.b2b.editn:validateEnvelope</value>
+	              <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+	                <value name="verify?">no</value>
+	                <value name="validate?">no</value>
+	                <value name="persist?">yes</value>
+	                <value name="unique?">no</value>
+	              </record>
+	        <value name="standard">X12</value>  
+        </idatacodable>
+        </record>
+       </record>
+</IDataXMLCoder>
