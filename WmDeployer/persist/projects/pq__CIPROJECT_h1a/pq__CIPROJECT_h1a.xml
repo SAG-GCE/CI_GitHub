@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_71" class="java.beans.XMLDecoder">
+ <object class="com.wm.deployer.project.Project" id="Project0">
+  <void property="bundles">
+   <void method="add">
+    <object class="com.wm.deployer.project.Bundle" id="Bundle0">
+     <void property="allowedSourceServers">
+      <void method="add">
+       <string>CI_Builds</string>
+      </void>
+     </void>
+     <void property="description">
+      <string>CI Deployment Set</string>
+     </void>
+     <void property="fetchBy">
+      <null/>
+     </void>
+     <void property="name">
+      <string>CI_Set</string>
+     </void>
+     <void property="project">
+      <object idref="Project0"/>
+     </void>
+     <void property="sourceOfTruth">
+      <string>FlatFile</string>
+     </void>
+     <void property="sourceSystems">
+      <void method="add">
+       <object class="com.wm.deployer.project.repository.CompositeSourceSystem" id="CompositeSourceSystem0">
+        <void property="bundle">
+         <object idref="Bundle0"/>
+        </void>
+        <void property="composites">
+         <void method="add">
+          <object class="com.wm.deployer.project.repository.AssetComposite">
+           <void property="compositeName">
+            <string>TNGoogleB2B</string>
+           </void>
+           <void property="name">
+            <string>TNGoogleB2B</string>
+           </void>
+           <void property="runtimeType">
+            <string>IS</string>
+           </void>
+           <void property="sourceSystem">
+            <object idref="CompositeSourceSystem0"/>
+           </void>
+           <void property="version">
+            <string>1.0</string>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object class="com.wm.deployer.project.repository.AssetComposite">
+           <void property="compositeName">
+            <string>GoogleB2B</string>
+           </void>
+           <void property="name">
+            <string>GoogleB2B</string>
+           </void>
+           <void property="runtimeType">
+            <string>IS</string>
+           </void>
+           <void property="sourceSystem">
+            <object idref="CompositeSourceSystem0"/>
+           </void>
+           <void property="version">
+            <string>1.0</string>
+           </void>
+          </object>
+         </void>
+        </void>
+        <void property="name">
+         <string>CI_Builds</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="type">
+      <string>Repository</string>
+     </void>
+     <void property="version">
+      <string>4.0</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="concurrentDeployment">
+   <boolean>true</boolean>
+  </void>
+  <void property="deployTNRules">
+   <string>MERGE</string>
+  </void>
+  <void property="description">
+   <string>Deployment of GoogleB2B package to CI environment</string>
+  </void>
+  <void property="disablePorts">
+   <boolean>true</boolean>
+  </void>
+  <void property="disableServices">
+   <boolean>true</boolean>
+  </void>
+  <void property="enableAdapters">
+   <boolean>true</boolean>
+  </void>
+  <void property="enforceAtDeployment">
+   <boolean>false</boolean>
+  </void>
+  <void property="homePage">
+   <object class="com.wm.deployer.project.HomePage">
+    <void property="projectName">
+     <string>CI_PROJECT</string>
+    </void>
+    <void property="version">
+     <string>4.0</string>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>CI_PROJECT</string>
+  </void>
+  <void property="projectType">
+   <string>Repository</string>
+  </void>
+  <void property="propertyMap">
+   <void method="put">
+    <string>ProcessModel</string>
+    <object class="java.util.LinkedList">
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>ProcessModel</string>
+       </void>
+       <void property="propertyName">
+        <string>executionEnabled</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>ProcessModel</string>
+       </void>
+       <void property="propertyName">
+        <string>trackingEnabled</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>MWS</string>
+    <object class="java.util.LinkedList">
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>MWS</string>
+       </void>
+       <void property="propertyName">
+        <string>subscriptions</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>MWS</string>
+       </void>
+       <void property="propertyName">
+        <string>access</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>MWS</string>
+       </void>
+       <void property="propertyName">
+        <string>versions</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>MWS</string>
+       </void>
+       <void property="propertyName">
+        <string>aliasprefix</string>
+       </void>
+       <void property="propertyType">
+        <string>STRING</string>
+       </void>
+       <void property="propertyValue">
+        <string>deployer.</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>MWS</string>
+       </void>
+       <void property="propertyName">
+        <string>principalattribs</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>TRUE</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>MWS</string>
+       </void>
+       <void property="propertyName">
+        <string>autoalias</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>TRUE</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>MWS</string>
+       </void>
+       <void property="propertyName">
+        <string>content</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>Optimize</string>
+    <object class="java.util.LinkedList">
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>Optimize</string>
+       </void>
+       <void property="propertyName">
+        <string>displayDDL</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="com.wm.deployer.project.plugin.PluginProperty">
+       <void property="pluginName">
+        <string>Optimize</string>
+       </void>
+       <void property="propertyName">
+        <string>incDimValues</string>
+       </void>
+       <void property="propertyType">
+        <string>BOOLEAN</string>
+       </void>
+       <void property="propertyValue">
+        <string>FALSE</string>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="stopAdapters">
+   <boolean>true</boolean>
+  </void>
+  <void property="stopPorts">
+   <boolean>false</boolean>
+  </void>
+  <void property="stopSelectedTriggers">
+   <boolean>true</boolean>
+  </void>
+  <void property="stopServices">
+   <boolean>false</boolean>
+  </void>
+  <void property="transactionalDeploymentEnabledForRepo">
+   <boolean>false</boolean>
+  </void>
+  <void property="version">
+   <string>4.0</string>
+  </void>
+ </object>
+</java>

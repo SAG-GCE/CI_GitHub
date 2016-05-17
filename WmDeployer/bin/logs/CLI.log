@@ -1,1557 +1,1680 @@
-[ INFO] [12 May 2016 15:28:54,468] (MainClass.java:initializeLogger:241)
-Logging initialized.
-
-[ INFO] [12 May 2016 15:28:54,471] (MainClass.java:main:172)
-No of command line arguments = 5
-
-[ INFO] [12 May 2016 15:28:54,472] (MainClass.java:main:174)
-Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
-
-[ INFO] [12 May 2016 15:28:54,472] (MainClass.java:main:174)
-Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
-
-[ INFO] [12 May 2016 15:28:54,472] (MainClass.java:main:174)
-Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
-
-[ INFO] [12 May 2016 15:28:54,472] (MainClass.java:main:174)
-Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
-
-[ INFO] [12 May 2016 15:28:54,472] (MainClass.java:main:174)
-Argument 4 = 1
-
-[ INFO] [12 May 2016 15:28:54,477] (MainClass.java:main:202)
-Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
-
-[ INFO] [12 May 2016 15:28:54,605] (MainClass.java:<init>:50)
-Started Operation of Deployer Test Suite
-
-[ INFO] [12 May 2016 15:28:56,224] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [12 May 2016 15:28:56,253] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [12 May 2016 15:28:56,287] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [12 May 2016 15:28:56,327] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [12 May 2016 15:28:56,365] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
-Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
-
-[DEBUG] [12 May 2016 15:28:56,369] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias local of pluginType IS&TN exists.
-
-[DEBUG] [12 May 2016 15:28:56,537] (DeployerUtil.java:createISServerAliases:179)
-Deleting IS Alias : aliasName = local@localhost:5555
-
-[ INFO] [12 May 2016 15:28:56,569] (DeployerUtil.java:createISServerAliases:182)
-Deleted IS Alias : aliasName = local@localhost:5555
-
-[DEBUG] [12 May 2016 15:28:56,569] (DeployerUtil.java:createISServerAliases:185)
-Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
-
-[ INFO] [12 May 2016 15:28:56,635] (DeployerUtil.java:createISServerAliases:210)
-Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
-
-[DEBUG] [12 May 2016 15:28:56,636] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
-
-[DEBUG] [12 May 2016 15:28:56,652] (DeployerUtil.java:createISServerAliases:179)
-Deleting IS Alias : aliasName = is_9555@localhost:9555
-
-[ INFO] [12 May 2016 15:28:56,727] (DeployerUtil.java:createISServerAliases:182)
-Deleted IS Alias : aliasName = is_9555@localhost:9555
-
-[DEBUG] [12 May 2016 15:28:56,727] (DeployerUtil.java:createISServerAliases:185)
-Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
-
-[ INFO] [12 May 2016 15:28:56,755] (DeployerUtil.java:createISServerAliases:210)
-Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
-
-[DEBUG] [12 May 2016 15:28:56,757] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias CI_Builds of pluginType Repository exists.
-
-[DEBUG] [12 May 2016 15:28:56,762] (DeployerUtil.java:createRepositoryServerAliases:1397)
-Creating Repository Server Alias : aliasName = CI_Builds
-
-[ INFO] [12 May 2016 15:28:56,784] (DeployerUtil.java:createRepositoryServerAliases:1400)
-Created Repository Server Alias Alias : aliasName = CI_Builds
-
-[ INFO] [12 May 2016 15:28:56,826] (RepoAssetUtil.java:getRepositoryComposite:288)
-Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
-
-[DEBUG] [12 May 2016 15:28:56,826] (RepoAssetUtil.java:getRepositoryComposite:291)
-CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
-
-[ INFO] [12 May 2016 15:28:56,826] (RepoAssetUtil.java:getRepositoryComposite:288)
-Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
-
-[DEBUG] [12 May 2016 15:28:56,828] (RepoAssetUtil.java:getRepositoryComposite:291)
-CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
-
-[DEBUG] [12 May 2016 15:28:56,832] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
-Deleting Project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:56,850] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
-Creating Project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:57,143] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
-Created Project CI_TestProject1
-
-[DEBUG] [12 May 2016 15:28:57,143] (DeploymentSet.java:create:181)
-Creating Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:57,214] (DeploymentSet.java:create:210)
-Created Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[DEBUG] [12 May 2016 15:28:57,214] (DeploymentSet.java:updateSourceServerAliasToSets:380)
-Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:57,289] (DeploymentSet.java:updateSourceServerAliasToSets:425)
-Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[DEBUG] [12 May 2016 15:28:57,289] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
-Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:57,537] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
-Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:57,936] (DeploymentMap.java:create:78)
-Creating Deployment Map CI_Map in Project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:57,984] (DeploymentMap.java:create:98)
-Successfully created Deployment Map CI_Map in Project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:58,073] (DeploymentCandidate.java:create:87)
-Creating Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:58,135] (DeploymentCandidate.java:create:115)
-Successfully created Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
-
-[ INFO] [12 May 2016 15:28:58,181] (XMLReport.java:runExample:41)
-Started Generating Report ... 
-
-[ INFO] [12 May 2016 15:28:58,181] (XMLReport.java:createDOMTree:88)
+[ INFO] [16 May 2016 14:40:23,208] (XMLReport.java:createDOMTree:88)
 Info Messages Size = 17
 
-[ INFO] [12 May 2016 15:28:58,181] (XMLReport.java:createDOMTree:89)
+[ INFO] [16 May 2016 14:40:23,209] (XMLReport.java:createDOMTree:89)
 Error Messages Size = 0
 
-[ INFO] [12 May 2016 15:28:58,200] (XMLReport.java:runExample:44)
+[ INFO] [16 May 2016 14:40:23,219] (XMLReport.java:runExample:44)
 Generated Automation Test Suite Report file successfully.
 
-[ INFO] [12 May 2016 15:28:58,910] (MainClass.java:initializeLogger:60)
+[ INFO] [16 May 2016 14:40:24,362] (MainClass.java:initializeLogger:60)
 Logging initialized.
 
-[DEBUG] [12 May 2016 15:28:58,930] (ParseDeployerParams.java:parse:65)
+[DEBUG] [16 May 2016 14:40:24,383] (ParseDeployerParams.java:parse:65)
 [Deployer] Entering parse(String[] args) Method
 
-[ INFO] [12 May 2016 15:28:58,936] (ParseDeployerParams.java:parse:1942)
+[ INFO] [16 May 2016 14:40:24,388] (ParseDeployerParams.java:parse:1942)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [12 May 2016 15:28:58,936] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
+[DEBUG] [16 May 2016 14:40:24,389] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
 [Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [12 May 2016 15:28:58,938] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
+[DEBUG] [16 May 2016 14:40:24,390] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
 [Deployer] [Param Authentication] 
 
-[DEBUG] [12 May 2016 15:28:58,939] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
+[DEBUG] [16 May 2016 14:40:24,390] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
 [Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
 
-[DEBUG] [12 May 2016 15:28:58,939] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
+[DEBUG] [16 May 2016 14:40:24,391] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
 [Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
 
-[DEBUG] [12 May 2016 15:28:58,944] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
+[DEBUG] [16 May 2016 14:40:24,395] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
 [Deployer] Operation invoked by User Administrator on Deployer localhost:5555
 
-[DEBUG] [12 May 2016 15:28:58,944] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:40:24,395] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = port Value = 5555
 
-[DEBUG] [12 May 2016 15:28:58,945] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:40:24,395] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = host Value = localhost
 
-[DEBUG] [12 May 2016 15:28:58,945] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:40:24,396] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = action Value = deploy
 
-[DEBUG] [12 May 2016 15:28:58,945] (ParseDeployerParams.java:printParamMap:5111)
+[DEBUG] [16 May 2016 14:40:24,396] (ParseDeployerParams.java:printParamMap:5111)
 [Deployer][ParamMap] Key = pwd.Value present but not shown.
 
-[DEBUG] [12 May 2016 15:28:58,945] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:40:24,396] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = user Value = Administrator
 
-[ INFO] [12 May 2016 15:28:58,946] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
+[ INFO] [16 May 2016 14:40:24,396] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [12 May 2016 15:28:58,946] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
+[DEBUG] [16 May 2016 14:40:24,396] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
 [Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [12 May 2016 15:28:58,951] (DeployerServiceUtils.java:deployAction:657)
+[DEBUG] [16 May 2016 14:40:24,403] (DeployerServiceUtils.java:deployAction:657)
 [Deployer] Entering deployAction(HashMap paramMap) Method
 
-[DEBUG] [12 May 2016 15:28:58,953] (DeployerServiceUtils.java:deployAction:660)
+[DEBUG] [16 May 2016 14:40:24,405] (DeployerServiceUtils.java:deployAction:660)
 [Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
 
-[DEBUG] [12 May 2016 15:28:58,953] (DeployerServiceUtils.java:deployAction:666)
+[DEBUG] [16 May 2016 14:40:24,405] (DeployerServiceUtils.java:deployAction:666)
 [Deployer] Service invoked by User Administrator
 
-[DEBUG] [12 May 2016 15:28:58,953] (DeployerServiceUtils.java:deployAction:668)
+[DEBUG] [16 May 2016 14:40:24,406] (DeployerServiceUtils.java:deployAction:668)
 [Deployer] Parameters to the service 
 
-[DEBUG] [12 May 2016 15:28:58,962] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:40:24,414] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	project = CI_PROJECT
 
-[DEBUG] [12 May 2016 15:28:58,962] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:40:24,414] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	deploymentName = CI_DEPLOY
 
-[DEBUG] [12 May 2016 15:28:58,962] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:40:24,414] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	preDeployString = false
 
-[DEBUG] [12 May 2016 15:28:58,962] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:40:24,414] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	force = false
 
-[DEBUG] [12 May 2016 15:28:58,962] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:40:24,414] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
 
-[DEBUG] [12 May 2016 15:28:58,963] (DeployerServiceUtils.java:executeService:1484)
+[DEBUG] [16 May 2016 14:40:24,414] (DeployerServiceUtils.java:executeService:1484)
 [Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [12 May 2016 15:28:59,565] (DeployerServiceUtils.java:executeService:1535)
+[DEBUG] [16 May 2016 14:40:24,880] (DeployerServiceUtils.java:executeService:1535)
 [Deployer] Initiating connection Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:28:59,634] (DeployerServiceUtils.java:executeService:1537)
+[DEBUG] [16 May 2016 14:40:24,942] (DeployerServiceUtils.java:executeService:1537)
 [Deployer] Connection Established Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:28:59,635] (DeployerServiceUtils.java:executeService:1539)
+[DEBUG] [16 May 2016 14:40:24,943] (DeployerServiceUtils.java:executeService:1539)
 [Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:28:59,664] (DeployerServiceUtils.java:executeService:1541)
+[DEBUG] [16 May 2016 14:40:24,950] (DeployerServiceUtils.java:executeService:1541)
 [Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:28:59,671] (DeployerServiceUtils.java:executeService:1577)
+[DEBUG] [16 May 2016 14:40:24,951] (DeployerServiceUtils.java:executeService:1577)
 [Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [12 May 2016 15:28:59,674] (DeployerServiceUtils.java:deployAction:710)
+[DEBUG] [16 May 2016 14:40:24,952] (DeployerServiceUtils.java:deployAction:710)
 [Deployer Service Status] Stature returned with status error
 
-[DEBUG] [12 May 2016 15:28:59,674] (DeployerServiceUtils.java:deployAction:714)
+[DEBUG] [16 May 2016 14:40:24,952] (DeployerServiceUtils.java:deployAction:714)
 [Deployer Service Status] Message = [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
 
-[DEBUG] [12 May 2016 15:28:59,675] (DeployerServiceUtils.java:deployAction:726)
+[DEBUG] [16 May 2016 14:40:24,952] (DeployerServiceUtils.java:deployAction:726)
 [Deployer] Exiting deployAction(HashMap paramMap) Method
 
-[DEBUG] [12 May 2016 15:28:59,676] (ParseDeployerParams.java:addStatusRecordToReport:5088)
+[DEBUG] [16 May 2016 14:40:24,952] (ParseDeployerParams.java:addStatusRecordToReport:5088)
 [Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[DEBUG] [12 May 2016 15:28:59,677] (ParseDeployerParams.java:addStatusRecordToReport:5099)
+[DEBUG] [16 May 2016 14:40:24,953] (ParseDeployerParams.java:addStatusRecordToReport:5099)
 [Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[ INFO] [12 May 2016 15:28:59,678] (ParseDeployerParams.java:parse:1977)
+[ INFO] [16 May 2016 14:40:24,953] (ParseDeployerParams.java:parse:1977)
 [[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
 
-[ INFO] [12 May 2016 15:38:20,727] (MainClass.java:initializeLogger:241)
+[ INFO] [16 May 2016 14:41:21,773] (MainClass.java:initializeLogger:241)
 Logging initialized.
 
-[ INFO] [12 May 2016 15:38:20,731] (MainClass.java:main:172)
+[ INFO] [16 May 2016 14:41:21,776] (MainClass.java:main:172)
 No of command line arguments = 5
 
-[ INFO] [12 May 2016 15:38:20,731] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:41:21,776] (MainClass.java:main:174)
 Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
 
-[ INFO] [12 May 2016 15:38:20,731] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:41:21,776] (MainClass.java:main:174)
 Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
 
-[ INFO] [12 May 2016 15:38:20,732] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:41:21,776] (MainClass.java:main:174)
 Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
 
-[ INFO] [12 May 2016 15:38:20,732] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:41:21,777] (MainClass.java:main:174)
 Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
 
-[ INFO] [12 May 2016 15:38:20,732] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:41:21,777] (MainClass.java:main:174)
 Argument 4 = 1
 
-[ INFO] [12 May 2016 15:38:20,735] (MainClass.java:main:202)
+[ INFO] [16 May 2016 14:41:21,779] (MainClass.java:main:202)
 Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
 
-[ INFO] [12 May 2016 15:38:20,871] (MainClass.java:<init>:50)
+[ INFO] [16 May 2016 14:41:21,887] (MainClass.java:<init>:50)
 Started Operation of Deployer Test Suite
 
-[ INFO] [12 May 2016 15:38:22,511] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:41:23,354] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [12 May 2016 15:38:22,537] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:41:23,370] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [12 May 2016 15:38:22,574] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
+[ INFO] [16 May 2016 14:41:23,397] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
 Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
 
-[DEBUG] [12 May 2016 15:38:22,577] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:41:23,399] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias local of pluginType IS&TN exists.
 
-[DEBUG] [12 May 2016 15:38:22,726] (DeployerUtil.java:createISServerAliases:179)
+[DEBUG] [16 May 2016 14:41:23,513] (DeployerUtil.java:createISServerAliases:179)
 Deleting IS Alias : aliasName = local@localhost:5555
 
-[ INFO] [12 May 2016 15:38:22,748] (DeployerUtil.java:createISServerAliases:182)
+[ INFO] [16 May 2016 14:41:23,532] (DeployerUtil.java:createISServerAliases:182)
 Deleted IS Alias : aliasName = local@localhost:5555
 
-[DEBUG] [12 May 2016 15:38:22,748] (DeployerUtil.java:createISServerAliases:185)
+[DEBUG] [16 May 2016 14:41:23,532] (DeployerUtil.java:createISServerAliases:185)
 Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
 
-[ INFO] [12 May 2016 15:38:22,781] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:41:23,569] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [12 May 2016 15:38:22,795] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:41:23,595] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [12 May 2016 15:38:22,835] (DeployerUtil.java:createISServerAliases:210)
+[ INFO] [16 May 2016 14:41:23,637] (DeployerUtil.java:createISServerAliases:210)
 Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
 
-[DEBUG] [12 May 2016 15:38:22,835] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:41:23,644] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
 
-[DEBUG] [12 May 2016 15:38:22,841] (DeployerUtil.java:createISServerAliases:179)
+[DEBUG] [16 May 2016 14:41:23,652] (DeployerUtil.java:createISServerAliases:179)
 Deleting IS Alias : aliasName = is_9555@localhost:9555
 
-[ INFO] [12 May 2016 15:38:22,858] (DeployerUtil.java:createISServerAliases:182)
+[ INFO] [16 May 2016 14:41:23,671] (DeployerUtil.java:createISServerAliases:182)
 Deleted IS Alias : aliasName = is_9555@localhost:9555
 
-[DEBUG] [12 May 2016 15:38:22,858] (DeployerUtil.java:createISServerAliases:185)
+[DEBUG] [16 May 2016 14:41:23,672] (DeployerUtil.java:createISServerAliases:185)
 Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
 
-[ INFO] [12 May 2016 15:38:22,881] (DeployerUtil.java:createISServerAliases:210)
+[ INFO] [16 May 2016 14:41:23,700] (DeployerUtil.java:createISServerAliases:210)
 Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
 
-[DEBUG] [12 May 2016 15:38:22,882] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:41:23,702] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias CI_Builds of pluginType Repository exists.
 
-[DEBUG] [12 May 2016 15:38:22,888] (DeployerUtil.java:createRepositoryServerAliases:1391)
+[DEBUG] [16 May 2016 14:41:23,708] (DeployerUtil.java:createRepositoryServerAliases:1391)
 Deleting Repository Server Alias CI_Builds
 
-[ INFO] [12 May 2016 15:38:22,893] (DeployerUtil.java:createRepositoryServerAliases:1394)
+[ INFO] [16 May 2016 14:41:23,715] (DeployerUtil.java:createRepositoryServerAliases:1394)
 Deleted Repository Server Alias CI_Builds
 
-[DEBUG] [12 May 2016 15:38:22,893] (DeployerUtil.java:createRepositoryServerAliases:1397)
+[DEBUG] [16 May 2016 14:41:23,716] (DeployerUtil.java:createRepositoryServerAliases:1397)
 Creating Repository Server Alias : aliasName = CI_Builds
 
-[ INFO] [12 May 2016 15:38:22,905] (DeployerUtil.java:createRepositoryServerAliases:1400)
+[ INFO] [16 May 2016 14:41:23,730] (DeployerUtil.java:createRepositoryServerAliases:1400)
 Created Repository Server Alias Alias : aliasName = CI_Builds
 
-[ INFO] [12 May 2016 15:38:22,923] (RepoAssetUtil.java:getRepositoryComposite:288)
+[ INFO] [16 May 2016 14:41:23,755] (RepoAssetUtil.java:getRepositoryComposite:288)
 Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
 
-[DEBUG] [12 May 2016 15:38:22,923] (RepoAssetUtil.java:getRepositoryComposite:291)
+[DEBUG] [16 May 2016 14:41:23,755] (RepoAssetUtil.java:getRepositoryComposite:291)
 CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
 
-[ INFO] [12 May 2016 15:38:22,924] (RepoAssetUtil.java:getRepositoryComposite:288)
+[ INFO] [16 May 2016 14:41:23,756] (RepoAssetUtil.java:getRepositoryComposite:288)
 Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
 
-[DEBUG] [12 May 2016 15:38:22,924] (RepoAssetUtil.java:getRepositoryComposite:291)
+[DEBUG] [16 May 2016 14:41:23,756] (RepoAssetUtil.java:getRepositoryComposite:291)
 CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
 
-[DEBUG] [12 May 2016 15:38:22,926] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
+[DEBUG] [16 May 2016 14:41:23,758] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
 Deleting Project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,034] (ProjectPlanExecutorXMLParser.java:getProjectDetails:611)
+[ INFO] [16 May 2016 14:41:23,811] (ProjectPlanExecutorXMLParser.java:getProjectDetails:611)
 Deleted Project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,034] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
+[ INFO] [16 May 2016 14:41:23,811] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
 Creating Project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,127] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
+[ INFO] [16 May 2016 14:41:23,898] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
 Created Project CI_TestProject1
 
-[DEBUG] [12 May 2016 15:38:23,127] (DeploymentSet.java:create:181)
+[DEBUG] [16 May 2016 14:41:23,898] (DeploymentSet.java:create:181)
 Creating Deployment Set CI_Set of type Repository for project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,151] (DeploymentSet.java:create:210)
+[ INFO] [16 May 2016 14:41:23,946] (DeploymentSet.java:create:210)
 Created Deployment Set CI_Set of type Repository for project CI_TestProject1
 
-[DEBUG] [12 May 2016 15:38:23,152] (DeploymentSet.java:updateSourceServerAliasToSets:380)
+[DEBUG] [16 May 2016 14:41:23,947] (DeploymentSet.java:updateSourceServerAliasToSets:380)
 Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,183] (DeploymentSet.java:updateSourceServerAliasToSets:425)
+[ INFO] [16 May 2016 14:41:23,981] (DeploymentSet.java:updateSourceServerAliasToSets:425)
 Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
 
-[DEBUG] [12 May 2016 15:38:23,184] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
+[DEBUG] [16 May 2016 14:41:23,982] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
 Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,277] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
+[ INFO] [16 May 2016 14:41:24,088] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
 Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,529] (DeploymentMap.java:create:78)
+[ INFO] [16 May 2016 14:41:24,385] (DeploymentMap.java:create:78)
 Creating Deployment Map CI_Map in Project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,546] (DeploymentMap.java:create:98)
+[ INFO] [16 May 2016 14:41:24,404] (DeploymentMap.java:create:98)
 Successfully created Deployment Map CI_Map in Project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,567] (DeploymentCandidate.java:create:87)
+[ INFO] [16 May 2016 14:41:24,429] (DeploymentCandidate.java:create:87)
 Creating Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,581] (DeploymentCandidate.java:create:115)
+[ INFO] [16 May 2016 14:41:24,443] (DeploymentCandidate.java:create:115)
 Successfully created Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
 
-[ INFO] [12 May 2016 15:38:23,622] (XMLReport.java:runExample:41)
+[ INFO] [16 May 2016 14:41:24,480] (XMLReport.java:runExample:41)
 Started Generating Report ... 
 
-[ INFO] [12 May 2016 15:38:23,622] (XMLReport.java:createDOMTree:88)
+[ INFO] [16 May 2016 14:41:24,480] (XMLReport.java:createDOMTree:88)
 Info Messages Size = 19
 
-[ INFO] [12 May 2016 15:38:23,622] (XMLReport.java:createDOMTree:89)
+[ INFO] [16 May 2016 14:41:24,480] (XMLReport.java:createDOMTree:89)
 Error Messages Size = 0
 
-[ INFO] [12 May 2016 15:38:23,642] (XMLReport.java:runExample:44)
+[ INFO] [16 May 2016 14:41:24,505] (XMLReport.java:runExample:44)
 Generated Automation Test Suite Report file successfully.
 
-[ INFO] [12 May 2016 15:38:24,354] (MainClass.java:initializeLogger:60)
+[ INFO] [16 May 2016 14:41:25,655] (MainClass.java:initializeLogger:60)
 Logging initialized.
 
-[DEBUG] [12 May 2016 15:38:24,378] (ParseDeployerParams.java:parse:65)
+[DEBUG] [16 May 2016 14:41:25,682] (ParseDeployerParams.java:parse:65)
 [Deployer] Entering parse(String[] args) Method
 
-[ INFO] [12 May 2016 15:38:24,383] (ParseDeployerParams.java:parse:1942)
+[ INFO] [16 May 2016 14:41:25,688] (ParseDeployerParams.java:parse:1942)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [12 May 2016 15:38:24,383] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
+[DEBUG] [16 May 2016 14:41:25,688] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
 [Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [12 May 2016 15:38:24,385] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
+[DEBUG] [16 May 2016 14:41:25,690] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
 [Deployer] [Param Authentication] 
 
-[DEBUG] [12 May 2016 15:38:24,385] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
+[DEBUG] [16 May 2016 14:41:25,690] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
 [Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
 
-[DEBUG] [12 May 2016 15:38:24,385] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
+[DEBUG] [16 May 2016 14:41:25,690] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
 [Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
 
-[DEBUG] [12 May 2016 15:38:24,390] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
+[DEBUG] [16 May 2016 14:41:25,694] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
 [Deployer] Operation invoked by User Administrator on Deployer localhost:5555
 
-[DEBUG] [12 May 2016 15:38:24,390] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:41:25,694] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = port Value = 5555
 
-[DEBUG] [12 May 2016 15:38:24,390] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:41:25,695] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = host Value = localhost
 
-[DEBUG] [12 May 2016 15:38:24,391] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:41:25,695] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = action Value = deploy
 
-[DEBUG] [12 May 2016 15:38:24,391] (ParseDeployerParams.java:printParamMap:5111)
+[DEBUG] [16 May 2016 14:41:25,695] (ParseDeployerParams.java:printParamMap:5111)
 [Deployer][ParamMap] Key = pwd.Value present but not shown.
 
-[DEBUG] [12 May 2016 15:38:24,391] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:41:25,695] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = user Value = Administrator
 
-[ INFO] [12 May 2016 15:38:24,391] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
+[ INFO] [16 May 2016 14:41:25,695] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [12 May 2016 15:38:24,391] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
+[DEBUG] [16 May 2016 14:41:25,696] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
 [Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [12 May 2016 15:38:24,398] (DeployerServiceUtils.java:deployAction:657)
+[DEBUG] [16 May 2016 14:41:25,701] (DeployerServiceUtils.java:deployAction:657)
 [Deployer] Entering deployAction(HashMap paramMap) Method
 
-[DEBUG] [12 May 2016 15:38:24,399] (DeployerServiceUtils.java:deployAction:660)
+[DEBUG] [16 May 2016 14:41:25,703] (DeployerServiceUtils.java:deployAction:660)
 [Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
 
-[DEBUG] [12 May 2016 15:38:24,399] (DeployerServiceUtils.java:deployAction:666)
+[DEBUG] [16 May 2016 14:41:25,703] (DeployerServiceUtils.java:deployAction:666)
 [Deployer] Service invoked by User Administrator
 
-[DEBUG] [12 May 2016 15:38:24,400] (DeployerServiceUtils.java:deployAction:668)
+[DEBUG] [16 May 2016 14:41:25,703] (DeployerServiceUtils.java:deployAction:668)
 [Deployer] Parameters to the service 
 
-[DEBUG] [12 May 2016 15:38:24,406] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:41:25,712] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	project = CI_PROJECT
 
-[DEBUG] [12 May 2016 15:38:24,406] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:41:25,712] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	deploymentName = CI_DEPLOY
 
-[DEBUG] [12 May 2016 15:38:24,407] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:41:25,712] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	preDeployString = false
 
-[DEBUG] [12 May 2016 15:38:24,407] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:41:25,712] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	force = false
 
-[DEBUG] [12 May 2016 15:38:24,407] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:41:25,712] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
 
-[DEBUG] [12 May 2016 15:38:24,407] (DeployerServiceUtils.java:executeService:1484)
+[DEBUG] [16 May 2016 14:41:25,712] (DeployerServiceUtils.java:executeService:1484)
 [Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [12 May 2016 15:38:24,878] (DeployerServiceUtils.java:executeService:1535)
+[DEBUG] [16 May 2016 14:41:26,125] (DeployerServiceUtils.java:executeService:1535)
 [Deployer] Initiating connection Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:38:24,950] (DeployerServiceUtils.java:executeService:1537)
+[DEBUG] [16 May 2016 14:41:26,180] (DeployerServiceUtils.java:executeService:1537)
 [Deployer] Connection Established Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:38:24,950] (DeployerServiceUtils.java:executeService:1539)
+[DEBUG] [16 May 2016 14:41:26,180] (DeployerServiceUtils.java:executeService:1539)
 [Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:38:24,958] (DeployerServiceUtils.java:executeService:1541)
+[DEBUG] [16 May 2016 14:41:26,187] (DeployerServiceUtils.java:executeService:1541)
 [Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [12 May 2016 15:38:24,960] (DeployerServiceUtils.java:executeService:1577)
+[DEBUG] [16 May 2016 14:41:26,192] (DeployerServiceUtils.java:executeService:1577)
 [Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [12 May 2016 15:38:24,960] (DeployerServiceUtils.java:deployAction:710)
+[DEBUG] [16 May 2016 14:41:26,192] (DeployerServiceUtils.java:deployAction:710)
 [Deployer Service Status] Stature returned with status error
 
-[DEBUG] [12 May 2016 15:38:24,961] (DeployerServiceUtils.java:deployAction:714)
+[DEBUG] [16 May 2016 14:41:26,193] (DeployerServiceUtils.java:deployAction:714)
 [Deployer Service Status] Message = [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
 
-[DEBUG] [12 May 2016 15:38:24,961] (DeployerServiceUtils.java:deployAction:726)
+[DEBUG] [16 May 2016 14:41:26,193] (DeployerServiceUtils.java:deployAction:726)
 [Deployer] Exiting deployAction(HashMap paramMap) Method
 
-[DEBUG] [12 May 2016 15:38:24,961] (ParseDeployerParams.java:addStatusRecordToReport:5088)
+[DEBUG] [16 May 2016 14:41:26,193] (ParseDeployerParams.java:addStatusRecordToReport:5088)
 [Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[DEBUG] [12 May 2016 15:38:24,962] (ParseDeployerParams.java:addStatusRecordToReport:5099)
+[DEBUG] [16 May 2016 14:41:26,193] (ParseDeployerParams.java:addStatusRecordToReport:5099)
 [Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[ INFO] [12 May 2016 15:38:24,962] (ParseDeployerParams.java:parse:1977)
+[ INFO] [16 May 2016 14:41:26,194] (ParseDeployerParams.java:parse:1977)
 [[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
 
-[ INFO] [16 May 2016 14:16:33,753] (MainClass.java:initializeLogger:241)
+[ INFO] [16 May 2016 14:48:05,557] (MainClass.java:initializeLogger:241)
 Logging initialized.
 
-[ INFO] [16 May 2016 14:16:33,756] (MainClass.java:main:172)
+[ INFO] [16 May 2016 14:48:05,560] (MainClass.java:main:172)
 No of command line arguments = 5
 
-[ INFO] [16 May 2016 14:16:33,757] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:48:05,560] (MainClass.java:main:174)
 Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
 
-[ INFO] [16 May 2016 14:16:33,757] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:48:05,560] (MainClass.java:main:174)
 Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
 
-[ INFO] [16 May 2016 14:16:33,757] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:48:05,560] (MainClass.java:main:174)
 Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
 
-[ INFO] [16 May 2016 14:16:33,757] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:48:05,560] (MainClass.java:main:174)
 Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
 
-[ INFO] [16 May 2016 14:16:33,757] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:48:05,560] (MainClass.java:main:174)
 Argument 4 = 1
 
-[ INFO] [16 May 2016 14:16:33,762] (MainClass.java:main:202)
+[ INFO] [16 May 2016 14:48:05,564] (MainClass.java:main:202)
 Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
 
-[ INFO] [16 May 2016 14:16:33,873] (MainClass.java:<init>:50)
+[ INFO] [16 May 2016 14:48:05,664] (MainClass.java:<init>:50)
 Started Operation of Deployer Test Suite
 
-[ INFO] [16 May 2016 14:16:35,442] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:48:07,172] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:16:35,470] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:48:07,192] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:16:35,508] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
+[ INFO] [16 May 2016 14:48:07,218] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
 Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
 
-[DEBUG] [16 May 2016 14:16:35,511] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:48:07,220] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias local of pluginType IS&TN exists.
 
-[DEBUG] [16 May 2016 14:16:35,654] (DeployerUtil.java:createISServerAliases:179)
+[DEBUG] [16 May 2016 14:48:07,336] (DeployerUtil.java:createISServerAliases:179)
 Deleting IS Alias : aliasName = local@localhost:5555
 
-[ INFO] [16 May 2016 14:16:35,693] (DeployerUtil.java:createISServerAliases:182)
+[ INFO] [16 May 2016 14:48:07,355] (DeployerUtil.java:createISServerAliases:182)
 Deleted IS Alias : aliasName = local@localhost:5555
 
-[DEBUG] [16 May 2016 14:16:35,694] (DeployerUtil.java:createISServerAliases:185)
+[DEBUG] [16 May 2016 14:48:07,356] (DeployerUtil.java:createISServerAliases:185)
 Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
 
-[ INFO] [16 May 2016 14:16:35,728] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:48:07,393] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:16:35,744] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:48:07,418] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:16:35,852] (DeployerUtil.java:createISServerAliases:210)
+[ INFO] [16 May 2016 14:48:07,445] (DeployerUtil.java:createISServerAliases:210)
 Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
 
-[DEBUG] [16 May 2016 14:16:35,861] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:48:07,446] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
 
-[DEBUG] [16 May 2016 14:16:35,905] (DeployerUtil.java:createISServerAliases:179)
+[DEBUG] [16 May 2016 14:48:07,453] (DeployerUtil.java:createISServerAliases:179)
 Deleting IS Alias : aliasName = is_9555@localhost:9555
 
-[ INFO] [16 May 2016 14:16:35,935] (DeployerUtil.java:createISServerAliases:182)
+[ INFO] [16 May 2016 14:48:07,470] (DeployerUtil.java:createISServerAliases:182)
 Deleted IS Alias : aliasName = is_9555@localhost:9555
 
-[DEBUG] [16 May 2016 14:16:35,936] (DeployerUtil.java:createISServerAliases:185)
+[DEBUG] [16 May 2016 14:48:07,470] (DeployerUtil.java:createISServerAliases:185)
 Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
 
-[ INFO] [16 May 2016 14:16:35,961] (DeployerUtil.java:createISServerAliases:210)
+[ INFO] [16 May 2016 14:48:07,496] (DeployerUtil.java:createISServerAliases:210)
 Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
 
-[DEBUG] [16 May 2016 14:16:35,962] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:48:07,498] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias CI_Builds of pluginType Repository exists.
 
-[DEBUG] [16 May 2016 14:16:36,020] (DeployerUtil.java:createRepositoryServerAliases:1391)
+[DEBUG] [16 May 2016 14:48:07,504] (DeployerUtil.java:createRepositoryServerAliases:1391)
 Deleting Repository Server Alias CI_Builds
 
-[ INFO] [16 May 2016 14:16:36,032] (DeployerUtil.java:createRepositoryServerAliases:1394)
+[ INFO] [16 May 2016 14:48:07,512] (DeployerUtil.java:createRepositoryServerAliases:1394)
 Deleted Repository Server Alias CI_Builds
 
-[DEBUG] [16 May 2016 14:16:36,032] (DeployerUtil.java:createRepositoryServerAliases:1397)
+[DEBUG] [16 May 2016 14:48:07,513] (DeployerUtil.java:createRepositoryServerAliases:1397)
 Creating Repository Server Alias : aliasName = CI_Builds
 
-[ INFO] [16 May 2016 14:16:36,052] (DeployerUtil.java:createRepositoryServerAliases:1400)
+[ INFO] [16 May 2016 14:48:07,529] (DeployerUtil.java:createRepositoryServerAliases:1400)
 Created Repository Server Alias Alias : aliasName = CI_Builds
 
-[ INFO] [16 May 2016 14:16:36,155] (RepoAssetUtil.java:getRepositoryComposite:288)
+[ INFO] [16 May 2016 14:48:07,554] (RepoAssetUtil.java:getRepositoryComposite:288)
 Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
 
-[DEBUG] [16 May 2016 14:16:36,155] (RepoAssetUtil.java:getRepositoryComposite:291)
+[DEBUG] [16 May 2016 14:48:07,554] (RepoAssetUtil.java:getRepositoryComposite:291)
 CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
 
-[ INFO] [16 May 2016 14:16:36,156] (RepoAssetUtil.java:getRepositoryComposite:288)
+[ INFO] [16 May 2016 14:48:07,555] (RepoAssetUtil.java:getRepositoryComposite:288)
 Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
 
-[DEBUG] [16 May 2016 14:16:36,156] (RepoAssetUtil.java:getRepositoryComposite:291)
+[DEBUG] [16 May 2016 14:48:07,555] (RepoAssetUtil.java:getRepositoryComposite:291)
 CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
 
-[DEBUG] [16 May 2016 14:16:36,158] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
-Deleting Project CI_TestProject1
+[DEBUG] [16 May 2016 14:48:07,558] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
+Deleting Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:36,732] (ProjectPlanExecutorXMLParser.java:getProjectDetails:611)
-Deleted Project CI_TestProject1
+[ INFO] [16 May 2016 14:48:07,567] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
+Creating Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:36,732] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
-Creating Project CI_TestProject1
+[ INFO] [16 May 2016 14:48:07,632] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
+Created Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,017] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
-Created Project CI_TestProject1
+[DEBUG] [16 May 2016 14:48:07,632] (DeploymentSet.java:create:181)
+Creating Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[DEBUG] [16 May 2016 14:16:37,017] (DeploymentSet.java:create:181)
-Creating Deployment Set CI_Set of type Repository for project CI_TestProject1
+[ INFO] [16 May 2016 14:48:07,653] (DeploymentSet.java:create:210)
+Created Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,062] (DeploymentSet.java:create:210)
-Created Deployment Set CI_Set of type Repository for project CI_TestProject1
+[DEBUG] [16 May 2016 14:48:07,654] (DeploymentSet.java:updateSourceServerAliasToSets:380)
+Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[DEBUG] [16 May 2016 14:16:37,062] (DeploymentSet.java:updateSourceServerAliasToSets:380)
-Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
+[ INFO] [16 May 2016 14:48:07,676] (DeploymentSet.java:updateSourceServerAliasToSets:425)
+Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,126] (DeploymentSet.java:updateSourceServerAliasToSets:425)
-Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
+[DEBUG] [16 May 2016 14:48:07,677] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
+Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[DEBUG] [16 May 2016 14:16:37,126] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
-Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
+[ INFO] [16 May 2016 14:48:07,739] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
+Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,331] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
-Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
+[ INFO] [16 May 2016 14:48:07,937] (DeploymentMap.java:create:78)
+Creating Deployment Map CI_MAP in Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,639] (DeploymentMap.java:create:78)
-Creating Deployment Map CI_Map in Project CI_TestProject1
+[ INFO] [16 May 2016 14:48:07,967] (DeploymentMap.java:create:98)
+Successfully created Deployment Map CI_MAP in Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,664] (DeploymentMap.java:create:98)
-Successfully created Deployment Map CI_Map in Project CI_TestProject1
+[ INFO] [16 May 2016 14:48:08,000] (DeploymentCandidate.java:create:87)
+Creating Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,702] (DeploymentCandidate.java:create:87)
-Creating Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
+[ INFO] [16 May 2016 14:48:08,018] (DeploymentCandidate.java:create:115)
+Successfully created Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:16:37,726] (DeploymentCandidate.java:create:115)
-Successfully created Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:16:37,765] (XMLReport.java:runExample:41)
+[ INFO] [16 May 2016 14:48:08,061] (XMLReport.java:runExample:41)
 Started Generating Report ... 
 
-[ INFO] [16 May 2016 14:16:37,765] (XMLReport.java:createDOMTree:88)
-Info Messages Size = 19
-
-[ INFO] [16 May 2016 14:16:37,766] (XMLReport.java:createDOMTree:89)
-Error Messages Size = 0
-
-[ INFO] [16 May 2016 14:16:37,779] (XMLReport.java:runExample:44)
-Generated Automation Test Suite Report file successfully.
-
-[ INFO] [16 May 2016 14:16:38,977] (MainClass.java:initializeLogger:60)
-Logging initialized.
-
-[DEBUG] [16 May 2016 14:16:39,004] (ParseDeployerParams.java:parse:65)
-[Deployer] Entering parse(String[] args) Method
-
-[ INFO] [16 May 2016 14:16:39,011] (ParseDeployerParams.java:parse:1942)
-[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
-
-[DEBUG] [16 May 2016 14:16:39,011] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
-[Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
-
-[DEBUG] [16 May 2016 14:16:39,013] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
-[Deployer] [Param Authentication] 
-
-[DEBUG] [16 May 2016 14:16:39,013] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
-[Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
-
-[DEBUG] [16 May 2016 14:16:39,013] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
-[Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
-
-[DEBUG] [16 May 2016 14:16:39,018] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
-[Deployer] Operation invoked by User Administrator on Deployer localhost:5555
-
-[DEBUG] [16 May 2016 14:16:39,018] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = port Value = 5555
-
-[DEBUG] [16 May 2016 14:16:39,018] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = host Value = localhost
-
-[DEBUG] [16 May 2016 14:16:39,019] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = action Value = deploy
-
-[DEBUG] [16 May 2016 14:16:39,019] (ParseDeployerParams.java:printParamMap:5111)
-[Deployer][ParamMap] Key = pwd.Value present but not shown.
-
-[DEBUG] [16 May 2016 14:16:39,019] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = user Value = Administrator
-
-[ INFO] [16 May 2016 14:16:39,019] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
-[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
-
-[DEBUG] [16 May 2016 14:16:39,019] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
-[Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
-
-[DEBUG] [16 May 2016 14:16:39,023] (DeployerServiceUtils.java:deployAction:657)
-[Deployer] Entering deployAction(HashMap paramMap) Method
-
-[DEBUG] [16 May 2016 14:16:39,025] (DeployerServiceUtils.java:deployAction:660)
-[Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
-
-[DEBUG] [16 May 2016 14:16:39,025] (DeployerServiceUtils.java:deployAction:666)
-[Deployer] Service invoked by User Administrator
-
-[DEBUG] [16 May 2016 14:16:39,025] (DeployerServiceUtils.java:deployAction:668)
-[Deployer] Parameters to the service 
-
-[DEBUG] [16 May 2016 14:16:39,032] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	project = CI_PROJECT
-
-[DEBUG] [16 May 2016 14:16:39,032] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	deploymentName = CI_DEPLOY
-
-[DEBUG] [16 May 2016 14:16:39,032] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	preDeployString = false
-
-[DEBUG] [16 May 2016 14:16:39,033] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	force = false
-
-[DEBUG] [16 May 2016 14:16:39,033] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
-
-[DEBUG] [16 May 2016 14:16:39,033] (DeployerServiceUtils.java:executeService:1484)
-[Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
-
-[DEBUG] [16 May 2016 14:16:39,493] (DeployerServiceUtils.java:executeService:1535)
-[Deployer] Initiating connection Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:16:39,554] (DeployerServiceUtils.java:executeService:1537)
-[Deployer] Connection Established Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:16:39,555] (DeployerServiceUtils.java:executeService:1539)
-[Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:16:39,573] (DeployerServiceUtils.java:executeService:1541)
-[Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:16:39,575] (DeployerServiceUtils.java:executeService:1577)
-[Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
-
-[DEBUG] [16 May 2016 14:16:39,575] (DeployerServiceUtils.java:deployAction:710)
-[Deployer Service Status] Stature returned with status error
-
-[DEBUG] [16 May 2016 14:16:39,575] (DeployerServiceUtils.java:deployAction:714)
-[Deployer Service Status] Message = [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
-
-[DEBUG] [16 May 2016 14:16:39,576] (DeployerServiceUtils.java:deployAction:726)
-[Deployer] Exiting deployAction(HashMap paramMap) Method
-
-[DEBUG] [16 May 2016 14:16:39,576] (ParseDeployerParams.java:addStatusRecordToReport:5088)
-[Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
-
-[DEBUG] [16 May 2016 14:16:39,576] (ParseDeployerParams.java:addStatusRecordToReport:5099)
-[Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
-
-[ INFO] [16 May 2016 14:16:39,576] (ParseDeployerParams.java:parse:1977)
-[[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
-
-[ INFO] [16 May 2016 14:21:25,165] (MainClass.java:initializeLogger:241)
-Logging initialized.
-
-[ INFO] [16 May 2016 14:21:25,168] (MainClass.java:main:172)
-No of command line arguments = 5
-
-[ INFO] [16 May 2016 14:21:25,169] (MainClass.java:main:174)
-Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
-
-[ INFO] [16 May 2016 14:21:25,169] (MainClass.java:main:174)
-Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
-
-[ INFO] [16 May 2016 14:21:25,169] (MainClass.java:main:174)
-Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
-
-[ INFO] [16 May 2016 14:21:25,169] (MainClass.java:main:174)
-Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
-
-[ INFO] [16 May 2016 14:21:25,169] (MainClass.java:main:174)
-Argument 4 = 1
-
-[ INFO] [16 May 2016 14:21:25,172] (MainClass.java:main:202)
-Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
-
-[ INFO] [16 May 2016 14:21:25,273] (MainClass.java:<init>:50)
-Started Operation of Deployer Test Suite
-
-[ INFO] [16 May 2016 14:21:26,820] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:21:26,864] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:21:26,915] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
-Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
-
-[DEBUG] [16 May 2016 14:21:26,919] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias local of pluginType IS&TN exists.
-
-[DEBUG] [16 May 2016 14:21:27,082] (DeployerUtil.java:createISServerAliases:179)
-Deleting IS Alias : aliasName = local@localhost:5555
-
-[ INFO] [16 May 2016 14:21:27,114] (DeployerUtil.java:createISServerAliases:182)
-Deleted IS Alias : aliasName = local@localhost:5555
-
-[DEBUG] [16 May 2016 14:21:27,115] (DeployerUtil.java:createISServerAliases:185)
-Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
-
-[ INFO] [16 May 2016 14:21:27,154] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:21:27,179] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:21:27,215] (DeployerUtil.java:createISServerAliases:210)
-Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
-
-[DEBUG] [16 May 2016 14:21:27,221] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
-
-[DEBUG] [16 May 2016 14:21:27,237] (DeployerUtil.java:createISServerAliases:179)
-Deleting IS Alias : aliasName = is_9555@localhost:9555
-
-[ INFO] [16 May 2016 14:21:27,260] (DeployerUtil.java:createISServerAliases:182)
-Deleted IS Alias : aliasName = is_9555@localhost:9555
-
-[DEBUG] [16 May 2016 14:21:27,260] (DeployerUtil.java:createISServerAliases:185)
-Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
-
-[ INFO] [16 May 2016 14:21:27,285] (DeployerUtil.java:createISServerAliases:210)
-Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
-
-[DEBUG] [16 May 2016 14:21:27,287] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias CI_Builds of pluginType Repository exists.
-
-[DEBUG] [16 May 2016 14:21:27,292] (DeployerUtil.java:createRepositoryServerAliases:1391)
-Deleting Repository Server Alias CI_Builds
-
-[ INFO] [16 May 2016 14:21:27,298] (DeployerUtil.java:createRepositoryServerAliases:1394)
-Deleted Repository Server Alias CI_Builds
-
-[DEBUG] [16 May 2016 14:21:27,298] (DeployerUtil.java:createRepositoryServerAliases:1397)
-Creating Repository Server Alias : aliasName = CI_Builds
-
-[ INFO] [16 May 2016 14:21:27,309] (DeployerUtil.java:createRepositoryServerAliases:1400)
-Created Repository Server Alias Alias : aliasName = CI_Builds
-
-[ INFO] [16 May 2016 14:21:27,328] (RepoAssetUtil.java:getRepositoryComposite:288)
-Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
-
-[DEBUG] [16 May 2016 14:21:27,328] (RepoAssetUtil.java:getRepositoryComposite:291)
-CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
-
-[ INFO] [16 May 2016 14:21:27,328] (RepoAssetUtil.java:getRepositoryComposite:288)
-Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
-
-[DEBUG] [16 May 2016 14:21:27,329] (RepoAssetUtil.java:getRepositoryComposite:291)
-CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
-
-[DEBUG] [16 May 2016 14:21:27,331] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
-Deleting Project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,336] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
-Creating Project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,429] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
-Created Project CI_TestProject1
-
-[DEBUG] [16 May 2016 14:21:27,429] (DeploymentSet.java:create:181)
-Creating Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,456] (DeploymentSet.java:create:210)
-Created Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[DEBUG] [16 May 2016 14:21:27,456] (DeploymentSet.java:updateSourceServerAliasToSets:380)
-Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,482] (DeploymentSet.java:updateSourceServerAliasToSets:425)
-Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[DEBUG] [16 May 2016 14:21:27,482] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
-Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,585] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
-Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,914] (DeploymentMap.java:create:78)
-Creating Deployment Map CI_Map in Project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,937] (DeploymentMap.java:create:98)
-Successfully created Deployment Map CI_Map in Project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,972] (DeploymentCandidate.java:create:87)
-Creating Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:27,994] (DeploymentCandidate.java:create:115)
-Successfully created Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:21:28,051] (XMLReport.java:runExample:41)
-Started Generating Report ... 
-
-[ INFO] [16 May 2016 14:21:28,051] (XMLReport.java:createDOMTree:88)
+[ INFO] [16 May 2016 14:48:08,062] (XMLReport.java:createDOMTree:88)
 Info Messages Size = 18
 
-[ INFO] [16 May 2016 14:21:28,051] (XMLReport.java:createDOMTree:89)
+[ INFO] [16 May 2016 14:48:08,062] (XMLReport.java:createDOMTree:89)
 Error Messages Size = 0
 
-[ INFO] [16 May 2016 14:21:28,064] (XMLReport.java:runExample:44)
+[ INFO] [16 May 2016 14:48:08,075] (XMLReport.java:runExample:44)
 Generated Automation Test Suite Report file successfully.
 
-[ INFO] [16 May 2016 14:21:29,218] (MainClass.java:initializeLogger:60)
+[ INFO] [16 May 2016 14:48:09,209] (MainClass.java:initializeLogger:60)
 Logging initialized.
 
-[DEBUG] [16 May 2016 14:21:29,239] (ParseDeployerParams.java:parse:65)
+[DEBUG] [16 May 2016 14:48:09,227] (ParseDeployerParams.java:parse:65)
 [Deployer] Entering parse(String[] args) Method
 
-[ INFO] [16 May 2016 14:21:29,245] (ParseDeployerParams.java:parse:1942)
+[ INFO] [16 May 2016 14:48:09,232] (ParseDeployerParams.java:parse:1942)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [16 May 2016 14:21:29,245] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
+[DEBUG] [16 May 2016 14:48:09,233] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
 [Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [16 May 2016 14:21:29,247] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
+[DEBUG] [16 May 2016 14:48:09,235] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
 [Deployer] [Param Authentication] 
 
-[DEBUG] [16 May 2016 14:21:29,247] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
+[DEBUG] [16 May 2016 14:48:09,235] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
 [Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
 
-[DEBUG] [16 May 2016 14:21:29,248] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
+[DEBUG] [16 May 2016 14:48:09,235] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
 [Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
 
-[DEBUG] [16 May 2016 14:21:29,252] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
+[DEBUG] [16 May 2016 14:48:09,239] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
 [Deployer] Operation invoked by User Administrator on Deployer localhost:5555
 
-[DEBUG] [16 May 2016 14:21:29,252] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:48:09,239] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = port Value = 5555
 
-[DEBUG] [16 May 2016 14:21:29,252] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:48:09,240] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = host Value = localhost
 
-[DEBUG] [16 May 2016 14:21:29,253] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:48:09,240] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = action Value = deploy
 
-[DEBUG] [16 May 2016 14:21:29,253] (ParseDeployerParams.java:printParamMap:5111)
+[DEBUG] [16 May 2016 14:48:09,240] (ParseDeployerParams.java:printParamMap:5111)
 [Deployer][ParamMap] Key = pwd.Value present but not shown.
 
-[DEBUG] [16 May 2016 14:21:29,253] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:48:09,240] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = user Value = Administrator
 
-[ INFO] [16 May 2016 14:21:29,253] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
+[ INFO] [16 May 2016 14:48:09,241] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [16 May 2016 14:21:29,253] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
+[DEBUG] [16 May 2016 14:48:09,242] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
 [Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [16 May 2016 14:21:29,258] (DeployerServiceUtils.java:deployAction:657)
+[DEBUG] [16 May 2016 14:48:09,246] (DeployerServiceUtils.java:deployAction:657)
 [Deployer] Entering deployAction(HashMap paramMap) Method
 
-[DEBUG] [16 May 2016 14:21:29,259] (DeployerServiceUtils.java:deployAction:660)
+[DEBUG] [16 May 2016 14:48:09,248] (DeployerServiceUtils.java:deployAction:660)
 [Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
 
-[DEBUG] [16 May 2016 14:21:29,259] (DeployerServiceUtils.java:deployAction:666)
+[DEBUG] [16 May 2016 14:48:09,248] (DeployerServiceUtils.java:deployAction:666)
 [Deployer] Service invoked by User Administrator
 
-[DEBUG] [16 May 2016 14:21:29,259] (DeployerServiceUtils.java:deployAction:668)
+[DEBUG] [16 May 2016 14:48:09,250] (DeployerServiceUtils.java:deployAction:668)
 [Deployer] Parameters to the service 
 
-[DEBUG] [16 May 2016 14:21:29,265] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:48:09,256] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	project = CI_PROJECT
 
-[DEBUG] [16 May 2016 14:21:29,266] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:48:09,256] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	deploymentName = CI_DEPLOY
 
-[DEBUG] [16 May 2016 14:21:29,266] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:48:09,256] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	preDeployString = false
 
-[DEBUG] [16 May 2016 14:21:29,266] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:48:09,256] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	force = false
 
-[DEBUG] [16 May 2016 14:21:29,266] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:48:09,257] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
 
-[DEBUG] [16 May 2016 14:21:29,266] (DeployerServiceUtils.java:executeService:1484)
+[DEBUG] [16 May 2016 14:48:09,257] (DeployerServiceUtils.java:executeService:1484)
 [Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [16 May 2016 14:21:29,692] (DeployerServiceUtils.java:executeService:1535)
+[DEBUG] [16 May 2016 14:48:09,688] (DeployerServiceUtils.java:executeService:1535)
 [Deployer] Initiating connection Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:21:29,763] (DeployerServiceUtils.java:executeService:1537)
+[DEBUG] [16 May 2016 14:48:09,757] (DeployerServiceUtils.java:executeService:1537)
 [Deployer] Connection Established Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:21:29,764] (DeployerServiceUtils.java:executeService:1539)
+[DEBUG] [16 May 2016 14:48:09,758] (DeployerServiceUtils.java:executeService:1539)
 [Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:21:29,772] (DeployerServiceUtils.java:executeService:1541)
+[DEBUG] [16 May 2016 14:48:09,767] (DeployerServiceUtils.java:executeService:1541)
 [Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:21:29,774] (DeployerServiceUtils.java:executeService:1577)
+[DEBUG] [16 May 2016 14:48:09,768] (DeployerServiceUtils.java:executeService:1577)
 [Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [16 May 2016 14:21:29,775] (DeployerServiceUtils.java:deployAction:710)
+[DEBUG] [16 May 2016 14:48:09,768] (DeployerServiceUtils.java:deployAction:710)
 [Deployer Service Status] Stature returned with status error
 
-[DEBUG] [16 May 2016 14:21:29,775] (DeployerServiceUtils.java:deployAction:714)
-[Deployer Service Status] Message = [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
+[DEBUG] [16 May 2016 14:48:09,769] (DeployerServiceUtils.java:deployAction:714)
+[Deployer Service Status] Message = [DEP.0002.0149] Deployment candidate CI_DEPLOY in project CI_PROJECT is not checkpointed. Use the Deployer command-line interface to create a checkpoint for the deployment candiate. If you want to deploy without creating a checkpoint, use the -force flag.
 
-[DEBUG] [16 May 2016 14:21:29,775] (DeployerServiceUtils.java:deployAction:726)
+[DEBUG] [16 May 2016 14:48:09,769] (DeployerServiceUtils.java:deployAction:726)
 [Deployer] Exiting deployAction(HashMap paramMap) Method
 
-[DEBUG] [16 May 2016 14:21:29,775] (ParseDeployerParams.java:addStatusRecordToReport:5088)
+[DEBUG] [16 May 2016 14:48:09,769] (ParseDeployerParams.java:addStatusRecordToReport:5088)
 [Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[DEBUG] [16 May 2016 14:21:29,776] (ParseDeployerParams.java:addStatusRecordToReport:5099)
+[DEBUG] [16 May 2016 14:48:09,769] (ParseDeployerParams.java:addStatusRecordToReport:5099)
 [Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[ INFO] [16 May 2016 14:21:29,776] (ParseDeployerParams.java:parse:1977)
-[[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
+[ INFO] [16 May 2016 14:48:09,770] (ParseDeployerParams.java:parse:1977)
+[[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0149] Deployment candidate CI_DEPLOY in project CI_PROJECT is not checkpointed. Use the Deployer command-line interface to create a checkpoint for the deployment candiate. If you want to deploy without creating a checkpoint, use the -force flag.
 
-[ INFO] [16 May 2016 14:30:20,794] (MainClass.java:initializeLogger:241)
+[ INFO] [16 May 2016 14:53:19,773] (MainClass.java:initializeLogger:241)
 Logging initialized.
 
-[ INFO] [16 May 2016 14:30:20,798] (MainClass.java:main:172)
+[ INFO] [16 May 2016 14:53:19,776] (MainClass.java:main:172)
 No of command line arguments = 5
 
-[ INFO] [16 May 2016 14:30:20,798] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:53:19,776] (MainClass.java:main:174)
 Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
 
-[ INFO] [16 May 2016 14:30:20,798] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:53:19,777] (MainClass.java:main:174)
 Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
 
-[ INFO] [16 May 2016 14:30:20,799] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:53:19,777] (MainClass.java:main:174)
 Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
 
-[ INFO] [16 May 2016 14:30:20,799] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:53:19,777] (MainClass.java:main:174)
 Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
 
-[ INFO] [16 May 2016 14:30:20,799] (MainClass.java:main:174)
+[ INFO] [16 May 2016 14:53:19,777] (MainClass.java:main:174)
 Argument 4 = 1
 
-[ INFO] [16 May 2016 14:30:20,803] (MainClass.java:main:202)
+[ INFO] [16 May 2016 14:53:19,780] (MainClass.java:main:202)
 Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
 
-[ INFO] [16 May 2016 14:30:20,905] (MainClass.java:<init>:50)
+[ INFO] [16 May 2016 14:53:19,882] (MainClass.java:<init>:50)
 Started Operation of Deployer Test Suite
 
-[ INFO] [16 May 2016 14:30:22,593] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:53:21,357] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:30:22,618] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:53:21,386] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:30:22,655] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
+[ INFO] [16 May 2016 14:53:21,423] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
 Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
 
-[DEBUG] [16 May 2016 14:30:22,658] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:53:21,426] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias local of pluginType IS&TN exists.
 
-[DEBUG] [16 May 2016 14:30:22,787] (DeployerUtil.java:createISServerAliases:179)
+[DEBUG] [16 May 2016 14:53:21,554] (DeployerUtil.java:createISServerAliases:179)
 Deleting IS Alias : aliasName = local@localhost:5555
 
-[ INFO] [16 May 2016 14:30:22,805] (DeployerUtil.java:createISServerAliases:182)
+[ INFO] [16 May 2016 14:53:21,573] (DeployerUtil.java:createISServerAliases:182)
 Deleted IS Alias : aliasName = local@localhost:5555
 
-[DEBUG] [16 May 2016 14:30:22,806] (DeployerUtil.java:createISServerAliases:185)
+[DEBUG] [16 May 2016 14:53:21,573] (DeployerUtil.java:createISServerAliases:185)
 Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
 
-[ INFO] [16 May 2016 14:30:22,842] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:53:21,613] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:30:22,865] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+[ INFO] [16 May 2016 14:53:21,639] (KeyObfuscator.java:decryptAndUnobfuscate:161)
 Successfully retrieved the key from the given obfuscated file.
 
-[ INFO] [16 May 2016 14:30:22,895] (DeployerUtil.java:createISServerAliases:210)
+[ INFO] [16 May 2016 14:53:21,667] (DeployerUtil.java:createISServerAliases:210)
 Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
 
-[DEBUG] [16 May 2016 14:30:22,895] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:53:21,668] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
 
-[DEBUG] [16 May 2016 14:30:22,902] (DeployerUtil.java:createISServerAliases:179)
+[DEBUG] [16 May 2016 14:53:21,676] (DeployerUtil.java:createISServerAliases:179)
 Deleting IS Alias : aliasName = is_9555@localhost:9555
 
-[ INFO] [16 May 2016 14:30:22,922] (DeployerUtil.java:createISServerAliases:182)
+[ INFO] [16 May 2016 14:53:21,693] (DeployerUtil.java:createISServerAliases:182)
 Deleted IS Alias : aliasName = is_9555@localhost:9555
 
-[DEBUG] [16 May 2016 14:30:22,923] (DeployerUtil.java:createISServerAliases:185)
+[DEBUG] [16 May 2016 14:53:21,693] (DeployerUtil.java:createISServerAliases:185)
 Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
 
-[ INFO] [16 May 2016 14:30:22,945] (DeployerUtil.java:createISServerAliases:210)
+[ INFO] [16 May 2016 14:53:21,723] (DeployerUtil.java:createISServerAliases:210)
 Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
 
-[DEBUG] [16 May 2016 14:30:22,947] (ServerAlias.java:doesServerAliasExist:92)
+[DEBUG] [16 May 2016 14:53:21,725] (ServerAlias.java:doesServerAliasExist:92)
 Checking if the  Server Alias CI_Builds of pluginType Repository exists.
 
-[DEBUG] [16 May 2016 14:30:22,952] (DeployerUtil.java:createRepositoryServerAliases:1397)
-Creating Repository Server Alias : aliasName = CI_Builds
-
-[ INFO] [16 May 2016 14:30:22,967] (DeployerUtil.java:createRepositoryServerAliases:1400)
-Created Repository Server Alias Alias : aliasName = CI_Builds
-
-[ INFO] [16 May 2016 14:30:22,989] (RepoAssetUtil.java:getRepositoryComposite:288)
-Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
-
-[DEBUG] [16 May 2016 14:30:22,989] (RepoAssetUtil.java:getRepositoryComposite:291)
-CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
-
-[ INFO] [16 May 2016 14:30:22,989] (RepoAssetUtil.java:getRepositoryComposite:288)
-Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
-
-[DEBUG] [16 May 2016 14:30:22,989] (RepoAssetUtil.java:getRepositoryComposite:291)
-CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
-
-[DEBUG] [16 May 2016 14:30:22,992] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
-Deleting Project CI_TestProject1
-
-[ INFO] [16 May 2016 14:30:22,998] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
-Creating Project CI_TestProject1
-
-[ INFO] [16 May 2016 14:30:23,091] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
-Created Project CI_TestProject1
-
-[DEBUG] [16 May 2016 14:30:23,091] (DeploymentSet.java:create:181)
-Creating Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[DEBUG] [16 May 2016 14:30:23,099] (DeploymentSet.java:create:247)
-Error invoking Service wm.deployer.gui.UIProject:addBundleToProject on server localhost:5555
-
-[ERROR] [16 May 2016 14:30:23,100] (DeploymentSet.java:create:252)
-Error creating deployment set CI_Set in Project CI_TestProject1 : [DEP.0002.0011] Project CI_TestProject1 already contains a deployment set named CI_Set. Use a different name for the new deployment set.
-
-[DEBUG] [16 May 2016 14:30:23,100] (DeploymentSet.java:updateSourceServerAliasToSets:380)
-Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:30:23,140] (DeploymentSet.java:updateSourceServerAliasToSets:425)
-Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[DEBUG] [16 May 2016 14:30:23,140] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
-Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:30:23,259] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
-Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:30:23,555] (DeploymentMap.java:create:78)
-Creating Deployment Map CI_Map in Project CI_TestProject1
-
-[DEBUG] [16 May 2016 14:30:23,566] (DeploymentMap.java:create:128)
-Error invoking Service wm.deployer.gui.UITarget:addMapSetToProject on server localhost:5555
-
-[ERROR] [16 May 2016 14:30:23,567] (DeploymentMap.java:create:133)
-Error creating deployment map CI_Map in Project CI_TestProject1 : [DEP.0002.0019] Deployment map CI_Map already exists in project CI_TestProject1.
-
-[DEBUG] [16 May 2016 14:30:23,579] (DeploymentMap.java:addServerAliasesToDeploymentMap:322)
-Error invoking Service wm.deployer.gui.UITarget:addMapsToSet on server localhost:5555
-
-[ERROR] [16 May 2016 14:30:23,580] (DeploymentMap.java:addServerAliasesToDeploymentMap:327)
-Error adding server aliases to deployment map CI_Map in Project CI_TestProject1 : [DEP.0002.0138] You tried to add a target server or a target group of the same name as one that already exists in the deployment map.
-
-[ INFO] [16 May 2016 14:30:23,580] (DeploymentCandidate.java:create:87)
-Creating Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:30:23,596] (DeploymentCandidate.java:create:115)
-Successfully created Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
-
-[ INFO] [16 May 2016 14:30:23,640] (XMLReport.java:runExample:41)
-Started Generating Report ... 
-
-[ INFO] [16 May 2016 14:30:23,641] (XMLReport.java:createDOMTree:88)
-Info Messages Size = 14
-
-[ INFO] [16 May 2016 14:30:23,641] (XMLReport.java:createDOMTree:89)
-Error Messages Size = 3
-
-[ INFO] [16 May 2016 14:30:23,657] (XMLReport.java:runExample:44)
-Generated Automation Test Suite Report file successfully.
-
-[ INFO] [16 May 2016 14:30:24,848] (MainClass.java:initializeLogger:60)
-Logging initialized.
-
-[DEBUG] [16 May 2016 14:30:24,869] (ParseDeployerParams.java:parse:65)
-[Deployer] Entering parse(String[] args) Method
-
-[ INFO] [16 May 2016 14:30:24,874] (ParseDeployerParams.java:parse:1942)
-[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
-
-[DEBUG] [16 May 2016 14:30:24,875] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
-[Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
-
-[DEBUG] [16 May 2016 14:30:24,876] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
-[Deployer] [Param Authentication] 
-
-[DEBUG] [16 May 2016 14:30:24,876] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
-[Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
-
-[DEBUG] [16 May 2016 14:30:24,877] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
-[Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
-
-[DEBUG] [16 May 2016 14:30:24,881] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
-[Deployer] Operation invoked by User Administrator on Deployer localhost:5555
-
-[DEBUG] [16 May 2016 14:30:24,882] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = port Value = 5555
-
-[DEBUG] [16 May 2016 14:30:24,882] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = host Value = localhost
-
-[DEBUG] [16 May 2016 14:30:24,882] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = action Value = deploy
-
-[DEBUG] [16 May 2016 14:30:24,883] (ParseDeployerParams.java:printParamMap:5111)
-[Deployer][ParamMap] Key = pwd.Value present but not shown.
-
-[DEBUG] [16 May 2016 14:30:24,883] (ParseDeployerParams.java:printParamMap:5114)
-[Deployer][ParamMap] Key = user Value = Administrator
-
-[ INFO] [16 May 2016 14:30:24,885] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
-[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
-
-[DEBUG] [16 May 2016 14:30:24,886] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
-[Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
-
-[DEBUG] [16 May 2016 14:30:24,891] (DeployerServiceUtils.java:deployAction:657)
-[Deployer] Entering deployAction(HashMap paramMap) Method
-
-[DEBUG] [16 May 2016 14:30:24,895] (DeployerServiceUtils.java:deployAction:660)
-[Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
-
-[DEBUG] [16 May 2016 14:30:24,895] (DeployerServiceUtils.java:deployAction:666)
-[Deployer] Service invoked by User Administrator
-
-[DEBUG] [16 May 2016 14:30:24,895] (DeployerServiceUtils.java:deployAction:668)
-[Deployer] Parameters to the service 
-
-[DEBUG] [16 May 2016 14:30:24,900] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	project = CI_PROJECT
-
-[DEBUG] [16 May 2016 14:30:24,900] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	deploymentName = CI_DEPLOY
-
-[DEBUG] [16 May 2016 14:30:24,901] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	preDeployString = false
-
-[DEBUG] [16 May 2016 14:30:24,901] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	force = false
-
-[DEBUG] [16 May 2016 14:30:24,901] (DeployerServiceUtils.java:deployAction:680)
-[Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
-
-[DEBUG] [16 May 2016 14:30:24,901] (DeployerServiceUtils.java:executeService:1484)
-[Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
-
-[DEBUG] [16 May 2016 14:30:25,338] (DeployerServiceUtils.java:executeService:1535)
-[Deployer] Initiating connection Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:30:25,411] (DeployerServiceUtils.java:executeService:1537)
-[Deployer] Connection Established Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:30:25,411] (DeployerServiceUtils.java:executeService:1539)
-[Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:30:25,417] (DeployerServiceUtils.java:executeService:1541)
-[Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
-
-[DEBUG] [16 May 2016 14:30:25,418] (DeployerServiceUtils.java:executeService:1577)
-[Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
-
-[DEBUG] [16 May 2016 14:30:25,419] (DeployerServiceUtils.java:deployAction:710)
-[Deployer Service Status] Stature returned with status error
-
-[DEBUG] [16 May 2016 14:30:25,419] (DeployerServiceUtils.java:deployAction:714)
-[Deployer Service Status] Message = [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
-
-[DEBUG] [16 May 2016 14:30:25,419] (DeployerServiceUtils.java:deployAction:726)
-[Deployer] Exiting deployAction(HashMap paramMap) Method
-
-[DEBUG] [16 May 2016 14:30:25,419] (ParseDeployerParams.java:addStatusRecordToReport:5088)
-[Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
-
-[DEBUG] [16 May 2016 14:30:25,420] (ParseDeployerParams.java:addStatusRecordToReport:5099)
-[Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
-
-[ INFO] [16 May 2016 14:30:25,420] (ParseDeployerParams.java:parse:1977)
-[[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
-
-[ INFO] [16 May 2016 14:35:11,671] (MainClass.java:initializeLogger:241)
-Logging initialized.
-
-[ INFO] [16 May 2016 14:35:11,674] (MainClass.java:main:172)
-No of command line arguments = 5
-
-[ INFO] [16 May 2016 14:35:11,674] (MainClass.java:main:174)
-Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
-
-[ INFO] [16 May 2016 14:35:11,675] (MainClass.java:main:174)
-Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
-
-[ INFO] [16 May 2016 14:35:11,675] (MainClass.java:main:174)
-Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
-
-[ INFO] [16 May 2016 14:35:11,675] (MainClass.java:main:174)
-Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
-
-[ INFO] [16 May 2016 14:35:11,675] (MainClass.java:main:174)
-Argument 4 = 1
-
-[ INFO] [16 May 2016 14:35:11,678] (MainClass.java:main:202)
-Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
-
-[ INFO] [16 May 2016 14:35:11,781] (MainClass.java:<init>:50)
-Started Operation of Deployer Test Suite
-
-[ INFO] [16 May 2016 14:35:13,448] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:35:13,470] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:35:13,504] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
-Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
-
-[DEBUG] [16 May 2016 14:35:13,506] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias local of pluginType IS&TN exists.
-
-[DEBUG] [16 May 2016 14:35:13,656] (DeployerUtil.java:createISServerAliases:179)
-Deleting IS Alias : aliasName = local@localhost:5555
-
-[ INFO] [16 May 2016 14:35:13,679] (DeployerUtil.java:createISServerAliases:182)
-Deleted IS Alias : aliasName = local@localhost:5555
-
-[DEBUG] [16 May 2016 14:35:13,680] (DeployerUtil.java:createISServerAliases:185)
-Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
-
-[ INFO] [16 May 2016 14:35:13,716] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:35:13,732] (KeyObfuscator.java:decryptAndUnobfuscate:161)
-Successfully retrieved the key from the given obfuscated file.
-
-[ INFO] [16 May 2016 14:35:13,760] (DeployerUtil.java:createISServerAliases:210)
-Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
-
-[DEBUG] [16 May 2016 14:35:13,761] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
-
-[DEBUG] [16 May 2016 14:35:13,768] (DeployerUtil.java:createISServerAliases:179)
-Deleting IS Alias : aliasName = is_9555@localhost:9555
-
-[ INFO] [16 May 2016 14:35:13,788] (DeployerUtil.java:createISServerAliases:182)
-Deleted IS Alias : aliasName = is_9555@localhost:9555
-
-[DEBUG] [16 May 2016 14:35:13,788] (DeployerUtil.java:createISServerAliases:185)
-Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
-
-[ INFO] [16 May 2016 14:35:13,815] (DeployerUtil.java:createISServerAliases:210)
-Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
-
-[DEBUG] [16 May 2016 14:35:13,817] (ServerAlias.java:doesServerAliasExist:92)
-Checking if the  Server Alias CI_Builds of pluginType Repository exists.
-
-[DEBUG] [16 May 2016 14:35:13,827] (DeployerUtil.java:createRepositoryServerAliases:1391)
+[DEBUG] [16 May 2016 14:53:21,731] (DeployerUtil.java:createRepositoryServerAliases:1391)
 Deleting Repository Server Alias CI_Builds
 
-[ INFO] [16 May 2016 14:35:13,838] (DeployerUtil.java:createRepositoryServerAliases:1394)
+[ INFO] [16 May 2016 14:53:21,739] (DeployerUtil.java:createRepositoryServerAliases:1394)
 Deleted Repository Server Alias CI_Builds
 
-[DEBUG] [16 May 2016 14:35:13,838] (DeployerUtil.java:createRepositoryServerAliases:1397)
+[DEBUG] [16 May 2016 14:53:21,739] (DeployerUtil.java:createRepositoryServerAliases:1397)
 Creating Repository Server Alias : aliasName = CI_Builds
 
-[ INFO] [16 May 2016 14:35:13,851] (DeployerUtil.java:createRepositoryServerAliases:1400)
+[ INFO] [16 May 2016 14:53:21,753] (DeployerUtil.java:createRepositoryServerAliases:1400)
 Created Repository Server Alias Alias : aliasName = CI_Builds
 
-[ INFO] [16 May 2016 14:35:13,872] (RepoAssetUtil.java:getRepositoryComposite:288)
+[ INFO] [16 May 2016 14:53:21,779] (RepoAssetUtil.java:getRepositoryComposite:288)
 Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
 
-[DEBUG] [16 May 2016 14:35:13,872] (RepoAssetUtil.java:getRepositoryComposite:291)
+[DEBUG] [16 May 2016 14:53:21,780] (RepoAssetUtil.java:getRepositoryComposite:291)
 CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
 
-[ INFO] [16 May 2016 14:35:13,872] (RepoAssetUtil.java:getRepositoryComposite:288)
+[ INFO] [16 May 2016 14:53:21,780] (RepoAssetUtil.java:getRepositoryComposite:288)
 Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
 
-[DEBUG] [16 May 2016 14:35:13,873] (RepoAssetUtil.java:getRepositoryComposite:291)
+[DEBUG] [16 May 2016 14:53:21,780] (RepoAssetUtil.java:getRepositoryComposite:291)
 CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
 
-[DEBUG] [16 May 2016 14:35:13,875] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
-Deleting Project CI_TestProject1
+[DEBUG] [16 May 2016 14:53:21,782] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
+Deleting Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:13,931] (ProjectPlanExecutorXMLParser.java:getProjectDetails:611)
-Deleted Project CI_TestProject1
+[ INFO] [16 May 2016 14:53:21,854] (ProjectPlanExecutorXMLParser.java:getProjectDetails:611)
+Deleted Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:13,931] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
-Creating Project CI_TestProject1
+[ INFO] [16 May 2016 14:53:21,854] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
+Creating Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,011] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
-Created Project CI_TestProject1
+[ INFO] [16 May 2016 14:53:21,928] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
+Created Project CI_PROJECT
 
-[DEBUG] [16 May 2016 14:35:14,011] (DeploymentSet.java:create:181)
-Creating Deployment Set CI_Set of type Repository for project CI_TestProject1
+[DEBUG] [16 May 2016 14:53:21,929] (DeploymentSet.java:create:181)
+Creating Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,050] (DeploymentSet.java:create:210)
-Created Deployment Set CI_Set of type Repository for project CI_TestProject1
+[ INFO] [16 May 2016 14:53:21,953] (DeploymentSet.java:create:210)
+Created Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[DEBUG] [16 May 2016 14:35:14,050] (DeploymentSet.java:updateSourceServerAliasToSets:380)
-Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
+[DEBUG] [16 May 2016 14:53:21,953] (DeploymentSet.java:updateSourceServerAliasToSets:380)
+Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,078] (DeploymentSet.java:updateSourceServerAliasToSets:425)
-Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_TestProject1
+[ INFO] [16 May 2016 14:53:21,975] (DeploymentSet.java:updateSourceServerAliasToSets:425)
+Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[DEBUG] [16 May 2016 14:35:14,078] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
-Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
+[DEBUG] [16 May 2016 14:53:21,976] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
+Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,169] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
-Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_TestProject1
+[ INFO] [16 May 2016 14:53:22,050] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
+Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,425] (DeploymentMap.java:create:78)
-Creating Deployment Map CI_Map in Project CI_TestProject1
+[ INFO] [16 May 2016 14:53:22,256] (DeploymentMap.java:create:78)
+Creating Deployment Map CI_MAP in Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,443] (DeploymentMap.java:create:98)
-Successfully created Deployment Map CI_Map in Project CI_TestProject1
+[ INFO] [16 May 2016 14:53:22,280] (DeploymentMap.java:create:98)
+Successfully created Deployment Map CI_MAP in Project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,463] (DeploymentCandidate.java:create:87)
-Creating Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
+[ INFO] [16 May 2016 14:53:22,309] (DeploymentCandidate.java:create:87)
+Creating Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,478] (DeploymentCandidate.java:create:115)
-Successfully created Deployment Candidate CI_Deploy with Deployment Map CI_Map for project CI_TestProject1
+[ INFO] [16 May 2016 14:53:22,326] (DeploymentCandidate.java:create:115)
+Successfully created Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
 
-[ INFO] [16 May 2016 14:35:14,518] (XMLReport.java:runExample:41)
+[ INFO] [16 May 2016 14:53:22,361] (XMLReport.java:runExample:41)
 Started Generating Report ... 
 
-[ INFO] [16 May 2016 14:35:14,518] (XMLReport.java:createDOMTree:88)
+[ INFO] [16 May 2016 14:53:22,361] (XMLReport.java:createDOMTree:88)
 Info Messages Size = 19
 
-[ INFO] [16 May 2016 14:35:14,518] (XMLReport.java:createDOMTree:89)
+[ INFO] [16 May 2016 14:53:22,361] (XMLReport.java:createDOMTree:89)
 Error Messages Size = 0
 
-[ INFO] [16 May 2016 14:35:14,534] (XMLReport.java:runExample:44)
+[ INFO] [16 May 2016 14:53:22,376] (XMLReport.java:runExample:44)
 Generated Automation Test Suite Report file successfully.
 
-[ INFO] [16 May 2016 14:35:15,759] (MainClass.java:initializeLogger:60)
+[ INFO] [16 May 2016 14:53:23,538] (MainClass.java:initializeLogger:60)
 Logging initialized.
 
-[DEBUG] [16 May 2016 14:35:15,780] (ParseDeployerParams.java:parse:65)
+[DEBUG] [16 May 2016 14:53:23,556] (ParseDeployerParams.java:parse:65)
 [Deployer] Entering parse(String[] args) Method
 
-[ INFO] [16 May 2016 14:35:15,785] (ParseDeployerParams.java:parse:1942)
+[ INFO] [16 May 2016 14:53:23,562] (ParseDeployerParams.java:parse:1942)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [16 May 2016 14:35:15,785] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
+[DEBUG] [16 May 2016 14:53:23,562] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
 [Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [16 May 2016 14:35:15,787] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
+[DEBUG] [16 May 2016 14:53:23,563] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
 [Deployer] [Param Authentication] 
 
-[DEBUG] [16 May 2016 14:35:15,787] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
+[DEBUG] [16 May 2016 14:53:23,564] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
 [Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
 
-[DEBUG] [16 May 2016 14:35:15,787] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
+[DEBUG] [16 May 2016 14:53:23,564] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
 [Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
 
-[DEBUG] [16 May 2016 14:35:15,792] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
+[DEBUG] [16 May 2016 14:53:23,568] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
 [Deployer] Operation invoked by User Administrator on Deployer localhost:5555
 
-[DEBUG] [16 May 2016 14:35:15,792] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:53:23,569] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = port Value = 5555
 
-[DEBUG] [16 May 2016 14:35:15,792] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:53:23,569] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = host Value = localhost
 
-[DEBUG] [16 May 2016 14:35:15,792] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:53:23,569] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = action Value = deploy
 
-[DEBUG] [16 May 2016 14:35:15,793] (ParseDeployerParams.java:printParamMap:5111)
+[DEBUG] [16 May 2016 14:53:23,569] (ParseDeployerParams.java:printParamMap:5111)
 [Deployer][ParamMap] Key = pwd.Value present but not shown.
 
-[DEBUG] [16 May 2016 14:35:15,793] (ParseDeployerParams.java:printParamMap:5114)
+[DEBUG] [16 May 2016 14:53:23,569] (ParseDeployerParams.java:printParamMap:5114)
 [Deployer][ParamMap] Key = user Value = Administrator
 
-[ INFO] [16 May 2016 14:35:15,793] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
+[ INFO] [16 May 2016 14:53:23,570] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
 [[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
 
-[DEBUG] [16 May 2016 14:35:15,793] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
+[DEBUG] [16 May 2016 14:53:23,570] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
 [Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
 
-[DEBUG] [16 May 2016 14:35:15,797] (DeployerServiceUtils.java:deployAction:657)
+[DEBUG] [16 May 2016 14:53:23,574] (DeployerServiceUtils.java:deployAction:657)
 [Deployer] Entering deployAction(HashMap paramMap) Method
 
-[DEBUG] [16 May 2016 14:35:15,799] (DeployerServiceUtils.java:deployAction:660)
+[DEBUG] [16 May 2016 14:53:23,575] (DeployerServiceUtils.java:deployAction:660)
 [Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
 
-[DEBUG] [16 May 2016 14:35:15,799] (DeployerServiceUtils.java:deployAction:666)
+[DEBUG] [16 May 2016 14:53:23,575] (DeployerServiceUtils.java:deployAction:666)
 [Deployer] Service invoked by User Administrator
 
-[DEBUG] [16 May 2016 14:35:15,799] (DeployerServiceUtils.java:deployAction:668)
+[DEBUG] [16 May 2016 14:53:23,576] (DeployerServiceUtils.java:deployAction:668)
 [Deployer] Parameters to the service 
 
-[DEBUG] [16 May 2016 14:35:15,806] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:53:23,582] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	project = CI_PROJECT
 
-[DEBUG] [16 May 2016 14:35:15,806] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:53:23,582] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	deploymentName = CI_DEPLOY
 
-[DEBUG] [16 May 2016 14:35:15,807] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:53:23,582] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	preDeployString = false
 
-[DEBUG] [16 May 2016 14:35:15,807] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:53:23,582] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	force = false
 
-[DEBUG] [16 May 2016 14:35:15,807] (DeployerServiceUtils.java:deployAction:680)
+[DEBUG] [16 May 2016 14:53:23,582] (DeployerServiceUtils.java:deployAction:680)
 [Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
 
-[DEBUG] [16 May 2016 14:35:15,808] (DeployerServiceUtils.java:executeService:1484)
+[DEBUG] [16 May 2016 14:53:23,582] (DeployerServiceUtils.java:executeService:1484)
 [Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [16 May 2016 14:35:16,242] (DeployerServiceUtils.java:executeService:1535)
+[DEBUG] [16 May 2016 14:53:24,053] (DeployerServiceUtils.java:executeService:1535)
 [Deployer] Initiating connection Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:35:16,311] (DeployerServiceUtils.java:executeService:1537)
+[DEBUG] [16 May 2016 14:53:24,182] (DeployerServiceUtils.java:executeService:1537)
 [Deployer] Connection Established Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:35:16,312] (DeployerServiceUtils.java:executeService:1539)
+[DEBUG] [16 May 2016 14:53:24,182] (DeployerServiceUtils.java:executeService:1539)
 [Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:35:16,323] (DeployerServiceUtils.java:executeService:1541)
+[DEBUG] [16 May 2016 14:53:24,192] (DeployerServiceUtils.java:executeService:1541)
 [Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
 
-[DEBUG] [16 May 2016 14:35:16,325] (DeployerServiceUtils.java:executeService:1577)
+[DEBUG] [16 May 2016 14:53:24,194] (DeployerServiceUtils.java:executeService:1577)
 [Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
 
-[DEBUG] [16 May 2016 14:35:16,325] (DeployerServiceUtils.java:deployAction:710)
+[DEBUG] [16 May 2016 14:53:24,194] (DeployerServiceUtils.java:deployAction:710)
 [Deployer Service Status] Stature returned with status error
 
-[DEBUG] [16 May 2016 14:35:16,325] (DeployerServiceUtils.java:deployAction:714)
-[Deployer Service Status] Message = [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
+[DEBUG] [16 May 2016 14:53:24,194] (DeployerServiceUtils.java:deployAction:714)
+[Deployer Service Status] Message = [DEP.0002.0149] Deployment candidate CI_DEPLOY in project CI_PROJECT is not checkpointed. Use the Deployer command-line interface to create a checkpoint for the deployment candiate. If you want to deploy without creating a checkpoint, use the -force flag.
 
-[DEBUG] [16 May 2016 14:35:16,325] (DeployerServiceUtils.java:deployAction:726)
+[DEBUG] [16 May 2016 14:53:24,195] (DeployerServiceUtils.java:deployAction:726)
 [Deployer] Exiting deployAction(HashMap paramMap) Method
 
-[DEBUG] [16 May 2016 14:35:16,325] (ParseDeployerParams.java:addStatusRecordToReport:5088)
+[DEBUG] [16 May 2016 14:53:24,195] (ParseDeployerParams.java:addStatusRecordToReport:5088)
 [Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[DEBUG] [16 May 2016 14:35:16,326] (ParseDeployerParams.java:addStatusRecordToReport:5099)
+[DEBUG] [16 May 2016 14:53:24,195] (ParseDeployerParams.java:addStatusRecordToReport:5099)
 [Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
 
-[ INFO] [16 May 2016 14:35:16,326] (ParseDeployerParams.java:parse:1977)
-[[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0148] No such deployment candidate CI_DEPLOY found in project CI_PROJECT. Delete and recreate the deployment candidate.
+[ INFO] [16 May 2016 14:53:24,196] (ParseDeployerParams.java:parse:1977)
+[[DEP.0100.4.01] Error -999][DEP.0100.-999] Service Error [DEP.0002.0149] Deployment candidate CI_DEPLOY in project CI_PROJECT is not checkpointed. Use the Deployer command-line interface to create a checkpoint for the deployment candiate. If you want to deploy without creating a checkpoint, use the -force flag.
+
+[ INFO] [16 May 2016 14:59:39,423] (MainClass.java:initializeLogger:241)
+Logging initialized.
+
+[ INFO] [16 May 2016 14:59:39,426] (MainClass.java:main:172)
+No of command line arguments = 5
+
+[ INFO] [16 May 2016 14:59:39,426] (MainClass.java:main:174)
+Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
+
+[ INFO] [16 May 2016 14:59:39,427] (MainClass.java:main:174)
+Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
+
+[ INFO] [16 May 2016 14:59:39,427] (MainClass.java:main:174)
+Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
+
+[ INFO] [16 May 2016 14:59:39,427] (MainClass.java:main:174)
+Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
+
+[ INFO] [16 May 2016 14:59:39,427] (MainClass.java:main:174)
+Argument 4 = 1
+
+[ INFO] [16 May 2016 14:59:39,430] (MainClass.java:main:202)
+Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
+
+[ INFO] [16 May 2016 14:59:39,529] (MainClass.java:<init>:50)
+Started Operation of Deployer Test Suite
+
+[ INFO] [16 May 2016 14:59:41,028] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 14:59:41,046] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 14:59:41,083] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
+Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
+
+[DEBUG] [16 May 2016 14:59:41,086] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias local of pluginType IS&TN exists.
+
+[DEBUG] [16 May 2016 14:59:41,201] (DeployerUtil.java:createISServerAliases:179)
+Deleting IS Alias : aliasName = local@localhost:5555
+
+[ INFO] [16 May 2016 14:59:41,219] (DeployerUtil.java:createISServerAliases:182)
+Deleted IS Alias : aliasName = local@localhost:5555
+
+[DEBUG] [16 May 2016 14:59:41,220] (DeployerUtil.java:createISServerAliases:185)
+Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
+
+[ INFO] [16 May 2016 14:59:41,255] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 14:59:41,281] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 14:59:41,313] (DeployerUtil.java:createISServerAliases:210)
+Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
+
+[DEBUG] [16 May 2016 14:59:41,315] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
+
+[DEBUG] [16 May 2016 14:59:41,323] (DeployerUtil.java:createISServerAliases:179)
+Deleting IS Alias : aliasName = is_9555@localhost:9555
+
+[ INFO] [16 May 2016 14:59:41,340] (DeployerUtil.java:createISServerAliases:182)
+Deleted IS Alias : aliasName = is_9555@localhost:9555
+
+[DEBUG] [16 May 2016 14:59:41,341] (DeployerUtil.java:createISServerAliases:185)
+Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
+
+[ INFO] [16 May 2016 14:59:41,372] (DeployerUtil.java:createISServerAliases:210)
+Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
+
+[DEBUG] [16 May 2016 14:59:41,374] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias CI_Builds of pluginType Repository exists.
+
+[DEBUG] [16 May 2016 14:59:41,380] (DeployerUtil.java:createRepositoryServerAliases:1397)
+Creating Repository Server Alias : aliasName = CI_Builds
+
+[ INFO] [16 May 2016 14:59:41,393] (DeployerUtil.java:createRepositoryServerAliases:1400)
+Created Repository Server Alias Alias : aliasName = CI_Builds
+
+[ INFO] [16 May 2016 14:59:41,417] (RepoAssetUtil.java:getRepositoryComposite:288)
+Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
+
+[DEBUG] [16 May 2016 14:59:41,417] (RepoAssetUtil.java:getRepositoryComposite:291)
+CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
+
+[ INFO] [16 May 2016 14:59:41,417] (RepoAssetUtil.java:getRepositoryComposite:288)
+Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
+
+[DEBUG] [16 May 2016 14:59:41,417] (RepoAssetUtil.java:getRepositoryComposite:291)
+CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
+
+[DEBUG] [16 May 2016 14:59:41,420] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
+Deleting Project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,426] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
+Creating Project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,496] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
+Created Project CI_PROJECT
+
+[DEBUG] [16 May 2016 14:59:41,496] (DeploymentSet.java:create:181)
+Creating Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,520] (DeploymentSet.java:create:210)
+Created Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[DEBUG] [16 May 2016 14:59:41,521] (DeploymentSet.java:updateSourceServerAliasToSets:380)
+Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,554] (DeploymentSet.java:updateSourceServerAliasToSets:425)
+Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[DEBUG] [16 May 2016 14:59:41,554] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
+Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,614] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
+Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,815] (DeploymentMap.java:create:78)
+Creating Deployment Map CI_MAP in Project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,830] (DeploymentMap.java:create:98)
+Successfully created Deployment Map CI_MAP in Project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,852] (DeploymentCandidate.java:create:87)
+Creating Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,868] (DeploymentCandidate.java:create:115)
+Successfully created Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
+
+[ INFO] [16 May 2016 14:59:41,905] (XMLReport.java:runExample:41)
+Started Generating Report ... 
+
+[ INFO] [16 May 2016 14:59:41,905] (XMLReport.java:createDOMTree:88)
+Info Messages Size = 17
+
+[ INFO] [16 May 2016 14:59:41,905] (XMLReport.java:createDOMTree:89)
+Error Messages Size = 0
+
+[ INFO] [16 May 2016 14:59:41,917] (XMLReport.java:runExample:44)
+Generated Automation Test Suite Report file successfully.
+
+[ INFO] [16 May 2016 14:59:43,056] (MainClass.java:initializeLogger:60)
+Logging initialized.
+
+[DEBUG] [16 May 2016 14:59:43,078] (ParseDeployerParams.java:parse:65)
+[Deployer] Entering parse(String[] args) Method
+
+[ INFO] [16 May 2016 14:59:43,084] (ParseDeployerParams.java:parse:1942)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[DEBUG] [16 May 2016 14:59:43,084] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
+[Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [16 May 2016 14:59:43,086] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
+[Deployer] [Param Authentication] 
+
+[DEBUG] [16 May 2016 14:59:43,086] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
+[Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
+
+[DEBUG] [16 May 2016 14:59:43,086] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
+[Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
+
+[DEBUG] [16 May 2016 14:59:43,093] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
+[Deployer] Operation invoked by User Administrator on Deployer localhost:5555
+
+[DEBUG] [16 May 2016 14:59:43,094] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = port Value = 5555
+
+[DEBUG] [16 May 2016 14:59:43,094] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = host Value = localhost
+
+[DEBUG] [16 May 2016 14:59:43,094] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = action Value = deploy
+
+[DEBUG] [16 May 2016 14:59:43,094] (ParseDeployerParams.java:printParamMap:5111)
+[Deployer][ParamMap] Key = pwd.Value present but not shown.
+
+[DEBUG] [16 May 2016 14:59:43,095] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = user Value = Administrator
+
+[ INFO] [16 May 2016 14:59:43,095] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[ INFO] [16 May 2016 14:59:43,096] (ParseDeployerParams.java:validateCommandLineParametersForAction:4062)
+[DEP.0100.5.62] -force flag is true
+
+[DEBUG] [16 May 2016 14:59:43,096] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
+[Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [16 May 2016 14:59:43,108] (DeployerServiceUtils.java:deployAction:657)
+[Deployer] Entering deployAction(HashMap paramMap) Method
+
+[DEBUG] [16 May 2016 14:59:43,108] (DeployerServiceUtils.java:deployAction:660)
+[Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
+
+[DEBUG] [16 May 2016 14:59:43,109] (DeployerServiceUtils.java:deployAction:666)
+[Deployer] Service invoked by User Administrator
+
+[DEBUG] [16 May 2016 14:59:43,109] (DeployerServiceUtils.java:deployAction:668)
+[Deployer] Parameters to the service 
+
+[DEBUG] [16 May 2016 14:59:43,117] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	project = CI_PROJECT
+
+[DEBUG] [16 May 2016 14:59:43,117] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	deploymentName = CI_DEPLOY
+
+[DEBUG] [16 May 2016 14:59:43,118] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	preDeployString = false
+
+[DEBUG] [16 May 2016 14:59:43,118] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	force = true
+
+[DEBUG] [16 May 2016 14:59:43,118] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
+
+[DEBUG] [16 May 2016 14:59:43,118] (DeployerServiceUtils.java:executeService:1484)
+[Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [16 May 2016 14:59:43,579] (DeployerServiceUtils.java:executeService:1535)
+[Deployer] Initiating connection Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 14:59:43,648] (DeployerServiceUtils.java:executeService:1537)
+[Deployer] Connection Established Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 14:59:43,649] (DeployerServiceUtils.java:executeService:1539)
+[Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 14:59:48,534] (DeployerServiceUtils.java:executeService:1541)
+[Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 14:59:48,537] (DeployerServiceUtils.java:executeService:1577)
+[Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [16 May 2016 14:59:48,538] (DeployerServiceUtils.java:deployAction:701)
+[Deployer Service Status] Stature returned with status success
+
+[DEBUG] [16 May 2016 14:59:48,538] (DeployerServiceUtils.java:deployAction:714)
+[Deployer Service Status] Message = [DEP.0005.0201] Deployment succeeded
+
+[DEBUG] [16 May 2016 14:59:48,538] (DeployerServiceUtils.java:deployAction:726)
+[Deployer] Exiting deployAction(HashMap paramMap) Method
+
+[DEBUG] [16 May 2016 14:59:48,538] (ParseDeployerParams.java:addStatusRecordToReport:5088)
+[Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[DEBUG] [16 May 2016 14:59:48,539] (ParseDeployerParams.java:addStatusRecordToReport:5099)
+[Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[ INFO] [16 May 2016 14:59:48,540] (ParseDeployerParams.java:parse:1958)
+[[DEP.0100.4.00] Success0] [DEP.0005.0201] Deployment succeeded
+
+[ INFO] [16 May 2016 15:00:55,372] (MainClass.java:initializeLogger:241)
+Logging initialized.
+
+[ INFO] [16 May 2016 15:00:55,375] (MainClass.java:main:172)
+No of command line arguments = 5
+
+[ INFO] [16 May 2016 15:00:55,375] (MainClass.java:main:174)
+Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
+
+[ INFO] [16 May 2016 15:00:55,375] (MainClass.java:main:174)
+Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
+
+[ INFO] [16 May 2016 15:00:55,375] (MainClass.java:main:174)
+Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
+
+[ INFO] [16 May 2016 15:00:55,375] (MainClass.java:main:174)
+Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
+
+[ INFO] [16 May 2016 15:00:55,375] (MainClass.java:main:174)
+Argument 4 = 1
+
+[ INFO] [16 May 2016 15:00:55,378] (MainClass.java:main:202)
+Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
+
+[ INFO] [16 May 2016 15:00:55,478] (MainClass.java:<init>:50)
+Started Operation of Deployer Test Suite
+
+[ INFO] [16 May 2016 15:00:57,106] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 15:00:57,130] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 15:00:57,162] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
+Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
+
+[DEBUG] [16 May 2016 15:00:57,164] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias local of pluginType IS&TN exists.
+
+[DEBUG] [16 May 2016 15:00:57,284] (DeployerUtil.java:createISServerAliases:179)
+Deleting IS Alias : aliasName = local@localhost:5555
+
+[ INFO] [16 May 2016 15:00:57,300] (DeployerUtil.java:createISServerAliases:182)
+Deleted IS Alias : aliasName = local@localhost:5555
+
+[DEBUG] [16 May 2016 15:00:57,300] (DeployerUtil.java:createISServerAliases:185)
+Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
+
+[ INFO] [16 May 2016 15:00:57,334] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 15:00:57,350] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [16 May 2016 15:00:57,379] (DeployerUtil.java:createISServerAliases:210)
+Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
+
+[DEBUG] [16 May 2016 15:00:57,379] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
+
+[DEBUG] [16 May 2016 15:00:57,385] (DeployerUtil.java:createISServerAliases:179)
+Deleting IS Alias : aliasName = is_9555@localhost:9555
+
+[ INFO] [16 May 2016 15:00:57,418] (DeployerUtil.java:createISServerAliases:182)
+Deleted IS Alias : aliasName = is_9555@localhost:9555
+
+[DEBUG] [16 May 2016 15:00:57,418] (DeployerUtil.java:createISServerAliases:185)
+Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
+
+[ INFO] [16 May 2016 15:00:57,462] (DeployerUtil.java:createISServerAliases:210)
+Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
+
+[DEBUG] [16 May 2016 15:00:57,463] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias CI_Builds of pluginType Repository exists.
+
+[DEBUG] [16 May 2016 15:00:57,470] (DeployerUtil.java:createRepositoryServerAliases:1391)
+Deleting Repository Server Alias CI_Builds
+
+[ INFO] [16 May 2016 15:00:57,477] (DeployerUtil.java:createRepositoryServerAliases:1394)
+Deleted Repository Server Alias CI_Builds
+
+[DEBUG] [16 May 2016 15:00:57,477] (DeployerUtil.java:createRepositoryServerAliases:1397)
+Creating Repository Server Alias : aliasName = CI_Builds
+
+[ INFO] [16 May 2016 15:00:57,492] (DeployerUtil.java:createRepositoryServerAliases:1400)
+Created Repository Server Alias Alias : aliasName = CI_Builds
+
+[ INFO] [16 May 2016 15:00:57,548] (RepoAssetUtil.java:getRepositoryComposite:288)
+Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
+
+[DEBUG] [16 May 2016 15:00:57,548] (RepoAssetUtil.java:getRepositoryComposite:291)
+CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
+
+[ INFO] [16 May 2016 15:00:57,549] (RepoAssetUtil.java:getRepositoryComposite:288)
+Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
+
+[DEBUG] [16 May 2016 15:00:57,549] (RepoAssetUtil.java:getRepositoryComposite:291)
+CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
+
+[DEBUG] [16 May 2016 15:00:57,551] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
+Deleting Project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:57,608] (ProjectPlanExecutorXMLParser.java:getProjectDetails:611)
+Deleted Project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:57,609] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
+Creating Project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:57,709] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
+Created Project CI_PROJECT
+
+[DEBUG] [16 May 2016 15:00:57,709] (DeploymentSet.java:create:181)
+Creating Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:57,733] (DeploymentSet.java:create:210)
+Created Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[DEBUG] [16 May 2016 15:00:57,733] (DeploymentSet.java:updateSourceServerAliasToSets:380)
+Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:57,795] (DeploymentSet.java:updateSourceServerAliasToSets:425)
+Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[DEBUG] [16 May 2016 15:00:57,795] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
+Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:57,879] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
+Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:58,093] (DeploymentMap.java:create:78)
+Creating Deployment Map CI_MAP in Project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:58,108] (DeploymentMap.java:create:98)
+Successfully created Deployment Map CI_MAP in Project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:58,128] (DeploymentCandidate.java:create:87)
+Creating Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:58,141] (DeploymentCandidate.java:create:115)
+Successfully created Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
+
+[ INFO] [16 May 2016 15:00:58,176] (XMLReport.java:runExample:41)
+Started Generating Report ... 
+
+[ INFO] [16 May 2016 15:00:58,177] (XMLReport.java:createDOMTree:88)
+Info Messages Size = 19
+
+[ INFO] [16 May 2016 15:00:58,177] (XMLReport.java:createDOMTree:89)
+Error Messages Size = 0
+
+[ INFO] [16 May 2016 15:00:58,189] (XMLReport.java:runExample:44)
+Generated Automation Test Suite Report file successfully.
+
+[ INFO] [16 May 2016 15:00:59,371] (MainClass.java:initializeLogger:60)
+Logging initialized.
+
+[DEBUG] [16 May 2016 15:00:59,392] (ParseDeployerParams.java:parse:65)
+[Deployer] Entering parse(String[] args) Method
+
+[ INFO] [16 May 2016 15:00:59,398] (ParseDeployerParams.java:parse:1942)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[DEBUG] [16 May 2016 15:00:59,398] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
+[Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [16 May 2016 15:00:59,400] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
+[Deployer] [Param Authentication] 
+
+[DEBUG] [16 May 2016 15:00:59,400] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
+[Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
+
+[DEBUG] [16 May 2016 15:00:59,400] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
+[Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
+
+[DEBUG] [16 May 2016 15:00:59,404] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
+[Deployer] Operation invoked by User Administrator on Deployer localhost:5555
+
+[DEBUG] [16 May 2016 15:00:59,405] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = port Value = 5555
+
+[DEBUG] [16 May 2016 15:00:59,405] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = host Value = localhost
+
+[DEBUG] [16 May 2016 15:00:59,405] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = action Value = deploy
+
+[DEBUG] [16 May 2016 15:00:59,405] (ParseDeployerParams.java:printParamMap:5111)
+[Deployer][ParamMap] Key = pwd.Value present but not shown.
+
+[DEBUG] [16 May 2016 15:00:59,405] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = user Value = Administrator
+
+[ INFO] [16 May 2016 15:00:59,406] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[ INFO] [16 May 2016 15:00:59,406] (ParseDeployerParams.java:validateCommandLineParametersForAction:4062)
+[DEP.0100.5.62] -force flag is true
+
+[DEBUG] [16 May 2016 15:00:59,406] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
+[Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [16 May 2016 15:00:59,413] (DeployerServiceUtils.java:deployAction:657)
+[Deployer] Entering deployAction(HashMap paramMap) Method
+
+[DEBUG] [16 May 2016 15:00:59,413] (DeployerServiceUtils.java:deployAction:660)
+[Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
+
+[DEBUG] [16 May 2016 15:00:59,413] (DeployerServiceUtils.java:deployAction:666)
+[Deployer] Service invoked by User Administrator
+
+[DEBUG] [16 May 2016 15:00:59,414] (DeployerServiceUtils.java:deployAction:668)
+[Deployer] Parameters to the service 
+
+[DEBUG] [16 May 2016 15:00:59,421] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	project = CI_PROJECT
+
+[DEBUG] [16 May 2016 15:00:59,421] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	deploymentName = CI_DEPLOY
+
+[DEBUG] [16 May 2016 15:00:59,421] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	preDeployString = false
+
+[DEBUG] [16 May 2016 15:00:59,421] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	force = true
+
+[DEBUG] [16 May 2016 15:00:59,421] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
+
+[DEBUG] [16 May 2016 15:00:59,422] (DeployerServiceUtils.java:executeService:1484)
+[Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [16 May 2016 15:00:59,858] (DeployerServiceUtils.java:executeService:1535)
+[Deployer] Initiating connection Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 15:00:59,919] (DeployerServiceUtils.java:executeService:1537)
+[Deployer] Connection Established Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 15:00:59,920] (DeployerServiceUtils.java:executeService:1539)
+[Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 15:01:04,189] (DeployerServiceUtils.java:executeService:1541)
+[Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [16 May 2016 15:01:04,191] (DeployerServiceUtils.java:executeService:1577)
+[Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [16 May 2016 15:01:04,191] (DeployerServiceUtils.java:deployAction:701)
+[Deployer Service Status] Stature returned with status success
+
+[DEBUG] [16 May 2016 15:01:04,191] (DeployerServiceUtils.java:deployAction:714)
+[Deployer Service Status] Message = [DEP.0005.0201] Deployment succeeded
+
+[DEBUG] [16 May 2016 15:01:04,191] (DeployerServiceUtils.java:deployAction:726)
+[Deployer] Exiting deployAction(HashMap paramMap) Method
+
+[DEBUG] [16 May 2016 15:01:04,191] (ParseDeployerParams.java:addStatusRecordToReport:5088)
+[Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[DEBUG] [16 May 2016 15:01:04,192] (ParseDeployerParams.java:addStatusRecordToReport:5099)
+[Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[ INFO] [16 May 2016 15:01:04,192] (ParseDeployerParams.java:parse:1958)
+[[DEP.0100.4.00] Success0] [DEP.0005.0201] Deployment succeeded
+
+[ INFO] [17 May 2016 10:41:05,866] (MainClass.java:initializeLogger:241)
+Logging initialized.
+
+[ INFO] [17 May 2016 10:41:05,870] (MainClass.java:main:172)
+No of command line arguments = 5
+
+[ INFO] [17 May 2016 10:41:05,870] (MainClass.java:main:174)
+Argument 0 = C:/CI-WORKSPACE/Automater/CI_ProjectAutomator.xml
+
+[ INFO] [17 May 2016 10:41:05,870] (MainClass.java:main:174)
+Argument 1 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRuntime.xsd
+
+[ INFO] [17 May 2016 10:41:05,870] (MainClass.java:main:174)
+Argument 2 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\config\ProjectAutomatorForRepository.xsd
+
+[ INFO] [17 May 2016 10:41:05,871] (MainClass.java:main:174)
+Argument 3 = C:\SoftwareAG\IntegrationServer\instances\default\packages\WmDeployer\bin\\..\..\..\..\..\..\IntegrationServer\packages\WmDeployer\bin\log4j.properties
+
+[ INFO] [17 May 2016 10:41:05,871] (MainClass.java:main:174)
+Argument 4 = 1
+
+[ INFO] [17 May 2016 10:41:05,874] (MainClass.java:main:202)
+Operating System on which ProjectAutomator is running is a WINDOWS or a WINDOWS Variant
+
+[ INFO] [17 May 2016 10:41:05,974] (MainClass.java:<init>:50)
+Started Operation of Deployer Test Suite
+
+[ INFO] [17 May 2016 10:41:07,543] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [17 May 2016 10:41:07,572] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [17 May 2016 10:41:07,610] (ProjectPlanExecutorXMLParser.java:getDeployerServerDetails:448)
+Using WmDeployer package on the Server localhost:5555 configured with the user Administrator
+
+[DEBUG] [17 May 2016 10:41:07,613] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias local of pluginType IS&TN exists.
+
+[DEBUG] [17 May 2016 10:41:07,764] (DeployerUtil.java:createISServerAliases:179)
+Deleting IS Alias : aliasName = local@localhost:5555
+
+[ INFO] [17 May 2016 10:41:07,785] (DeployerUtil.java:createISServerAliases:182)
+Deleted IS Alias : aliasName = local@localhost:5555
+
+[DEBUG] [17 May 2016 10:41:07,785] (DeployerUtil.java:createISServerAliases:185)
+Creating IS Alias : aliasName = local@localhost:5555 with the user Administrator
+
+[ INFO] [17 May 2016 10:41:07,823] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [17 May 2016 10:41:07,845] (KeyObfuscator.java:decryptAndUnobfuscate:161)
+Successfully retrieved the key from the given obfuscated file.
+
+[ INFO] [17 May 2016 10:41:07,878] (DeployerUtil.java:createISServerAliases:210)
+Created IS Alias : aliasName = local@localhost:5555 with the user Administrator
+
+[DEBUG] [17 May 2016 10:41:07,879] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias is_9555 of pluginType IS&TN exists.
+
+[DEBUG] [17 May 2016 10:41:07,913] (DeployerUtil.java:createISServerAliases:179)
+Deleting IS Alias : aliasName = is_9555@localhost:9555
+
+[ INFO] [17 May 2016 10:41:07,945] (DeployerUtil.java:createISServerAliases:182)
+Deleted IS Alias : aliasName = is_9555@localhost:9555
+
+[DEBUG] [17 May 2016 10:41:07,945] (DeployerUtil.java:createISServerAliases:185)
+Creating IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
+
+[ INFO] [17 May 2016 10:41:07,966] (DeployerUtil.java:createISServerAliases:210)
+Created IS Alias : aliasName = is_9555@localhost:9555 with the user Administrator
+
+[DEBUG] [17 May 2016 10:41:07,968] (ServerAlias.java:doesServerAliasExist:92)
+Checking if the  Server Alias CI_Builds of pluginType Repository exists.
+
+[DEBUG] [17 May 2016 10:41:07,972] (DeployerUtil.java:createRepositoryServerAliases:1391)
+Deleting Repository Server Alias CI_Builds
+
+[ INFO] [17 May 2016 10:41:07,979] (DeployerUtil.java:createRepositoryServerAliases:1394)
+Deleted Repository Server Alias CI_Builds
+
+[DEBUG] [17 May 2016 10:41:07,979] (DeployerUtil.java:createRepositoryServerAliases:1397)
+Creating Repository Server Alias : aliasName = CI_Builds
+
+[ INFO] [17 May 2016 10:41:07,994] (DeployerUtil.java:createRepositoryServerAliases:1400)
+Created Repository Server Alias Alias : aliasName = CI_Builds
+
+[ INFO] [17 May 2016 10:41:08,016] (RepoAssetUtil.java:getRepositoryComposite:288)
+Adding asset GoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
+
+[DEBUG] [17 May 2016 10:41:08,017] (RepoAssetUtil.java:getRepositoryComposite:291)
+CI_Builds$IS$GoogleB2B$COMPOSITE_INCL
+
+[ INFO] [17 May 2016 10:41:08,017] (RepoAssetUtil.java:getRepositoryComposite:288)
+Adding asset TNGoogleB2B from srcAlias=CI_Builds to Deployment Set CI_Set
+
+[DEBUG] [17 May 2016 10:41:08,017] (RepoAssetUtil.java:getRepositoryComposite:291)
+CI_Builds$IS$TNGoogleB2B$COMPOSITE_INCL
+
+[DEBUG] [17 May 2016 10:41:08,019] (ProjectPlanExecutorXMLParser.java:getProjectDetails:608)
+Deleting Project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,089] (ProjectPlanExecutorXMLParser.java:getProjectDetails:611)
+Deleted Project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,089] (ProjectPlanExecutorXMLParser.java:getProjectDetails:613)
+Creating Project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,186] (ProjectPlanExecutorXMLParser.java:getProjectDetails:615)
+Created Project CI_PROJECT
+
+[DEBUG] [17 May 2016 10:41:08,186] (DeploymentSet.java:create:181)
+Creating Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,221] (DeploymentSet.java:create:210)
+Created Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[DEBUG] [17 May 2016 10:41:08,221] (DeploymentSet.java:updateSourceServerAliasToSets:380)
+Updating Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,278] (DeploymentSet.java:updateSourceServerAliasToSets:425)
+Updated Source Server Aliases on Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[DEBUG] [17 May 2016 10:41:08,278] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2820)
+Adding Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,379] (DeploymentSet.java:addRepoCompositesToDeploymentSet:2849)
+Added Repository Objects to Deployment Set CI_Set of type Repository for project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,597] (DeploymentMap.java:create:78)
+Creating Deployment Map CI_MAP in Project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,613] (DeploymentMap.java:create:98)
+Successfully created Deployment Map CI_MAP in Project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,634] (DeploymentCandidate.java:create:87)
+Creating Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,648] (DeploymentCandidate.java:create:115)
+Successfully created Deployment Candidate CI_DEPLOY with Deployment Map CI_MAP for project CI_PROJECT
+
+[ INFO] [17 May 2016 10:41:08,703] (XMLReport.java:runExample:41)
+Started Generating Report ... 
+
+[ INFO] [17 May 2016 10:41:08,703] (XMLReport.java:createDOMTree:88)
+Info Messages Size = 19
+
+[ INFO] [17 May 2016 10:41:08,704] (XMLReport.java:createDOMTree:89)
+Error Messages Size = 0
+
+[ INFO] [17 May 2016 10:41:08,720] (XMLReport.java:runExample:44)
+Generated Automation Test Suite Report file successfully.
+
+[ INFO] [17 May 2016 10:41:09,953] (MainClass.java:initializeLogger:60)
+Logging initialized.
+
+[DEBUG] [17 May 2016 10:41:09,975] (ParseDeployerParams.java:parse:65)
+[Deployer] Entering parse(String[] args) Method
+
+[ INFO] [17 May 2016 10:41:09,981] (ParseDeployerParams.java:parse:1942)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[DEBUG] [17 May 2016 10:41:09,981] (ParseDeployerParams.java:validateCommandLineParametersForAction:2553)
+[Deployer] Entering validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [17 May 2016 10:41:09,983] (ParseDeployerParams.java:validateCommandLineParametersForAction:2829)
+[Deployer] [Param Authentication] 
+
+[DEBUG] [17 May 2016 10:41:09,983] (ParseDeployerParams.java:validateCommandLineParametersForAction:2832)
+[Deployer] [Config File Parameters]isUserSpecifiedinConfigFile = false
+
+[DEBUG] [17 May 2016 10:41:09,983] (ParseDeployerParams.java:validateCommandLineParametersForAction:2835)
+[Deployer] [Config File Parameters]isPasswordSpecifiedinConfigFile = false
+
+[DEBUG] [17 May 2016 10:41:09,987] (ParseDeployerParams.java:validateCommandLineParametersForAction:2837)
+[Deployer] Operation invoked by User Administrator on Deployer localhost:5555
+
+[DEBUG] [17 May 2016 10:41:09,988] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = port Value = 5555
+
+[DEBUG] [17 May 2016 10:41:09,988] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = host Value = localhost
+
+[DEBUG] [17 May 2016 10:41:09,988] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = action Value = deploy
+
+[DEBUG] [17 May 2016 10:41:09,988] (ParseDeployerParams.java:printParamMap:5111)
+[Deployer][ParamMap] Key = pwd.Value present but not shown.
+
+[DEBUG] [17 May 2016 10:41:09,988] (ParseDeployerParams.java:printParamMap:5114)
+[Deployer][ParamMap] Key = user Value = Administrator
+
+[ INFO] [17 May 2016 10:41:09,989] (ParseDeployerParams.java:validateCommandLineParametersForAction:3989)
+[[DEP.0100.5.56] Operation] [DEP.0100.5.23] Deploy Deployment Candidate
+
+[ INFO] [17 May 2016 10:41:09,989] (ParseDeployerParams.java:validateCommandLineParametersForAction:4062)
+[DEP.0100.5.62] -force flag is true
+
+[DEBUG] [17 May 2016 10:41:09,990] (ParseDeployerParams.java:validateCommandLineParametersForAction:5081)
+[Deployer] Exiting validateCommandLineParametersForAction(Args arg,	CommandLineParser parser)
+
+[DEBUG] [17 May 2016 10:41:09,997] (DeployerServiceUtils.java:deployAction:657)
+[Deployer] Entering deployAction(HashMap paramMap) Method
+
+[DEBUG] [17 May 2016 10:41:09,998] (DeployerServiceUtils.java:deployAction:660)
+[Deployer] Invoking Service wm.deployer.UIDeployer.deployToTargets on Deployer localhost:5555
+
+[DEBUG] [17 May 2016 10:41:09,998] (DeployerServiceUtils.java:deployAction:666)
+[Deployer] Service invoked by User Administrator
+
+[DEBUG] [17 May 2016 10:41:10,000] (DeployerServiceUtils.java:deployAction:668)
+[Deployer] Parameters to the service 
+
+[DEBUG] [17 May 2016 10:41:10,007] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	project = CI_PROJECT
+
+[DEBUG] [17 May 2016 10:41:10,007] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	deploymentName = CI_DEPLOY
+
+[DEBUG] [17 May 2016 10:41:10,007] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	preDeployString = false
+
+[DEBUG] [17 May 2016 10:41:10,007] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	force = true
+
+[DEBUG] [17 May 2016 10:41:10,008] (DeployerServiceUtils.java:deployAction:680)
+[Deployer] 	reportFilePath = C:/CI-WORKSPACE/Builds/CurrentBuilds
+
+[DEBUG] [17 May 2016 10:41:10,008] (DeployerServiceUtils.java:executeService:1484)
+[Deployer] Entering executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [17 May 2016 10:41:10,466] (DeployerServiceUtils.java:executeService:1535)
+[Deployer] Initiating connection Secure Socket Layer = false
+
+[DEBUG] [17 May 2016 10:41:10,540] (DeployerServiceUtils.java:executeService:1537)
+[Deployer] Connection Established Secure Socket Layer = false
+
+[DEBUG] [17 May 2016 10:41:10,540] (DeployerServiceUtils.java:executeService:1539)
+[Deployer] Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [17 May 2016 10:41:15,727] (DeployerServiceUtils.java:executeService:1541)
+[Deployer] Completed Executing Service wm.deployer.UIDeployer:deployToTargets Secure Socket Layer = false
+
+[DEBUG] [17 May 2016 10:41:15,729] (DeployerServiceUtils.java:executeService:1577)
+[Deployer] Exiting executeService(String server, String user, String pwd, String packageStr, String service,IData inputDocument) Method
+
+[DEBUG] [17 May 2016 10:41:15,729] (DeployerServiceUtils.java:deployAction:701)
+[Deployer Service Status] Stature returned with status success
+
+[DEBUG] [17 May 2016 10:41:15,730] (DeployerServiceUtils.java:deployAction:714)
+[Deployer Service Status] Message = [DEP.0005.0201] Deployment succeeded
+
+[DEBUG] [17 May 2016 10:41:15,730] (DeployerServiceUtils.java:deployAction:726)
+[Deployer] Exiting deployAction(HashMap paramMap) Method
+
+[DEBUG] [17 May 2016 10:41:15,730] (ParseDeployerParams.java:addStatusRecordToReport:5088)
+[Deployer] Entering addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[DEBUG] [17 May 2016 10:41:15,731] (ParseDeployerParams.java:addStatusRecordToReport:5099)
+[Deployer] Exiting addStatusRecordToReport(int errorCode, String message, boolean isUsageRecord) Method
+
+[ INFO] [17 May 2016 10:41:15,731] (ParseDeployerParams.java:parse:1958)
+[[DEP.0100.4.00] Success0] [DEP.0005.0201] Deployment succeeded
 
